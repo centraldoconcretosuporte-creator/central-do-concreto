@@ -16,6 +16,15 @@
   --color-cc-gray-700: #404040;
   --color-cc-gray-800: #262626;
   --color-cc-gray-900: #171717;
+
+  /* Paleta BJ-style (migração) */
+  --color-cc-green: #1F4D3A;
+  --color-cc-green-hover: #2A6049;
+  --color-cc-whatsapp: #00B14F;
+  --color-cc-whatsapp-hover: #00984A;
+  --color-cc-coral: #B84A39;
+  --color-cc-cream: #F7F5F0;
+
   --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
 }
 
