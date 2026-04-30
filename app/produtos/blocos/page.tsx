@@ -1,47 +1,49 @@
-import Link from "next/link";
+import type { Metadata } from "next";
+import { Eyebrow } from "@/components/Eyebrow";
 
-const WHATSAPP_URL =
-  "https://wa.me/5551996691757?text=Oi%2C%20visitei%20o%20site%20Central%20do%20Concreto%20e%20gostaria%20de%20atendimento.";
+const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const WHATSAPP_URL = "https://wa.me/5551996691757";
 
-export const metadata = {
-  title: "Blocos de Concreto — Central do Concreto · Ivoti-RS",
-  description:
-    "Blocos de concreto para alvenaria estrutural e de vedação em Ivoti-RS. Resistência conferida por lote conforme normas ABNT.",
+export const metadata: Metadata = {
+  title: "Blocos de Concreto · Central do Concreto",
+  description: "Blocos de concreto pra alvenaria estrutural e vedação.",
+  alternates: { canonical: `${SITE_URL}/produtos/blocos` },
 };
 
 export default function BlocosPage() {
   return (
-    <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20">
-      <nav aria-label="Navegação" className="mb-8">
-        <Link
-          href="/produtos"
-          className="inline-flex items-center gap-1 text-sm text-cc-gray-600 hover:text-cc-orange transition-colors"
-        >
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
-            <path d="M19 12H5M12 19l-7-7 7-7" />
-          </svg>
-          Voltar pro catálogo
-        </Link>
-      </nav>
+    <>
+      <section className="bg-cc-green py-20 md:py-28 text-center">
+        <div className="mx-auto max-w-3xl px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            Blocos
+          </h1>
+          <p className="text-base md:text-lg text-white/90 leading-relaxed max-w-xl mx-auto">
+            Blocos de concreto pra alvenaria estrutural e vedação.
+          </p>
+        </div>
+      </section>
 
-      <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cc-black mb-6 text-center">
-        Blocos de Concreto
-      </h1>
-
-      <div className="bg-cc-gray-50 border border-cc-gray-200 rounded-lg p-6 sm:p-10 text-center">
-        <p className="text-base sm:text-lg text-cc-gray-600 mb-8 leading-relaxed">
-          Página em construção. Em breve, dimensões padronizadas, classes de resistência (alvenaria estrutural vs vedação), aplicações e referências ABNT NBR 6136.
-        </p>
-
-        <a
-          href={WHATSAPP_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 bg-cc-orange hover:bg-cc-orange-dark text-white px-8 py-4 rounded-md text-base font-semibold transition-colors"
-        >
-          Falar com André no WhatsApp
-        </a>
-      </div>
-    </section>
+      <section className="py-16 md:py-24 bg-white">
+        <div className="mx-auto max-w-3xl px-4 text-center">
+          <Eyebrow className="mb-4 justify-center">Em breve</Eyebrow>
+          <h2 className="text-2xl md:text-3xl font-medium text-cc-green mb-4">
+            Página completa em construção
+          </h2>
+          <p className="text-base text-cc-gray-600 leading-relaxed mb-8">
+            Estamos preparando a ficha técnica completa de blocos. Enquanto isso · pra orçamento ou
+            dúvida · fala direto pelo WhatsApp.
+          </p>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium transition-colors shadow-lg"
+          >
+            Falar no WhatsApp · (51) 99669-1757
+          </a>
+        </div>
+      </section>
+    </>
   );
 }

@@ -1,158 +1,115 @@
-import CardProdutoDestaque from "@/components/CardProdutoDestaque";
-import CardProdutoPadrao from "@/components/CardProdutoPadrao";
+import type { Metadata } from "next";
+import Link from "next/link";
+import Image from "next/image";
 
-export const metadata = {
-  title: "Produtos — Central do Concreto · Catálogo de Artefatos em Ivoti-RS",
+const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+
+export const metadata: Metadata = {
+  title: "Produtos · Central do Concreto",
   description:
-    "Tubos, caixas de passagem, pergolados, muros, postes, blocos, PAVS, piso atérmico, fossas. Direto da fábrica em Ivoti-RS, com normas técnicas e entrega na Serra Gaúcha.",
+    "Pergolados, tubos, caixas, muros, postes, blocos, piso atérmico, PAVS, fossa séptica · todos os produtos da Central do Concreto.",
+  alternates: { canonical: `${SITE_URL}/produtos` },
 };
 
-const WHATSAPP_URL =
-  "https://wa.me/5551996691757?text=Oi%2C%20visitei%20o%20site%20Central%20do%20Concreto%20e%20gostaria%20de%20atendimento.";
-
-const destaques = [
+const produtos = [
   {
-    slug: "tubos",
-    title: "Tubos de Concreto",
-    desc: "Drenagem e saneamento com resistência superior. PA1, PA2, parede fina e grossa, ponta-bolsa, macho-fêmea.",
-    image: "/produtos/tubos.webp",
-    imageAlt: "Tubos de concreto pré-moldados em Ivoti-RS",
-    badge: "B2B",
+    titulo: "Pergolado de Concreto",
+    desc: "Pré-moldado · 30+ anos · pra Litoral Norte",
+    href: "/produtos/pergolado-de-concreto",
+    foto: "/home/produtos/pergolados.webp",
+    destaque: true,
   },
   {
-    slug: "caixas-de-passagem",
-    title: "Caixas de Passagem",
-    desc: "Conexões seguras com acesso rápido para drenagem urbana. Padrões dimensionais conforme normas ABNT.",
-    image: "/produtos/caixas.webp",
-    imageAlt: "Caixa de passagem de concreto para inspeção em Ivoti-RS",
-    badge: "B2B",
+    titulo: "Piso Atérmico",
+    desc: "Placas 49x49 antiderrapantes pra piscina",
+    href: "/produtos/piso-atermico",
+    foto: "/home/produtos/piso-atermico.webp",
+    destaque: true,
   },
   {
-    slug: "pergolado-de-concreto",
-    title: "Pergolado de Concreto",
-    desc: "Estrutura pré-moldada amadeirada para áreas residenciais. 30+ anos sem cupim, sem manutenção, sem retrabalho.",
-    image: "/produtos/pergolado.webp",
-    imageAlt: "Pergolado de concreto com piscina em Ivoti-RS",
-    badge: "Residencial",
-  },
-];
-
-const padroes = [
-  {
-    slug: "muros-e-gradis",
-    title: "Muros e Gradis",
-    desc: "Placa veneziana e gradil em concreto. Fechamento com qualidade controlada.",
-    image: "/produtos/muros.webp",
-    imageAlt: "Muro de concreto pré-moldado em Ivoti-RS",
+    titulo: "Tubos de Concreto",
+    desc: "Drenagem · esgoto · água pluvial",
+    href: "/produtos/tubos",
+    foto: "/home/produtos/tubos.webp",
   },
   {
-    slug: "postes-e-meio-fio",
-    title: "Postes e Meio-fio",
-    desc: "Pavimentação e iluminação. Estruturas robustas com máxima durabilidade.",
-    image: "/produtos/postes.webp",
-    imageAlt: "Poste de concreto e meio-fio em Ivoti-RS",
+    titulo: "Caixas de Passagem",
+    desc: "Inspeção · sifão · infraestrutura",
+    href: "/produtos/caixas-de-passagem",
+    foto: "/produtos/caixas/hero.webp",
   },
   {
-    slug: "blocos",
-    title: "Blocos de Concreto",
-    desc: "Alvenaria estrutural e de vedação. Resistência conferida por lote.",
-    image: "/produtos/blocos.svg",
-    imageAlt: "Bloco de concreto para alvenaria em Ivoti-RS",
+    titulo: "Muros e Gradis",
+    desc: "Placas + pilares · gradil decorativo",
+    href: "/produtos/muros-e-gradis",
+    foto: "/home/produtos/muros.webp",
   },
   {
-    slug: "piso-atermico",
-    title: "Piso Atérmico",
-    desc: "Antiderrapante, não esquenta no sol. Placas 49x49 ideais para áreas de piscina.",
-    image: "/produtos/piso-atermico.webp",
-    imageAlt: "Piso atérmico em área gourmet com piscina em Ivoti-RS",
+    titulo: "Postes e Meio-fio",
+    desc: "Postes de concreto · meio-fio rua",
+    href: "/produtos/postes-e-meio-fio",
+    foto: "/produtos/postes/hero.webp",
   },
   {
-    slug: "pavs",
-    title: "PAVS",
-    desc: "Sextavado e holandês. Pisos intertravados com instalação inclusa.",
-    image: "/produtos/pavs.webp",
-    imageAlt: "PAVS sextavado e holandês em Ivoti-RS",
+    titulo: "Blocos",
+    desc: "Alvenaria estrutural e vedação",
+    href: "/produtos/blocos",
+    foto: "/produtos/blocos/hero.webp",
   },
   {
-    slug: "fossa-e-filtro",
-    title: "Fossa e Filtro",
-    desc: "Tratamento de esgoto sob medida. Rastreabilidade por lote, conforme ABNT.",
-    image: "/produtos/fossa.webp",
-    imageAlt: "Fossa séptica e filtro anaeróbio de concreto em Ivoti-RS",
+    titulo: "PAVS",
+    desc: "Pavimento sextavado · holandês · estrela",
+    href: "/produtos/pavs",
+    foto: "/produtos/pavs/hero.webp",
+  },
+  {
+    titulo: "Fossa e Filtro",
+    desc: "Sistema completo séptico + anaeróbio",
+    href: "/produtos/fossa-e-filtro",
+    foto: "/home/produtos/fossa.webp",
   },
 ];
 
 export default function ProdutosPage() {
   return (
     <>
-      <section
-        className="bg-cc-gray-50 border-b border-cc-gray-200 py-12 sm:py-16"
-        aria-labelledby="produtos-title"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1
-            id="produtos-title"
-            className="text-3xl sm:text-4xl lg:text-5xl font-bold text-cc-black mb-4"
-          >
-            Catálogo de Artefatos de Concreto
+      <section className="bg-cc-green py-20 md:py-28 text-center">
+        <div className="mx-auto max-w-3xl px-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            Todos os produtos
           </h1>
-          <p className="text-base sm:text-lg text-cc-gray-600 max-w-2xl mx-auto leading-relaxed">
-            Direto da fábrica. Normas técnicas de fabricação. Entrega na Serra Gaúcha.
+          <p className="text-base md:text-lg text-white/90 leading-relaxed">
+            9 categorias · pré-moldados de concreto direto da fábrica.
           </p>
         </div>
       </section>
 
-      <section
-        className="py-12 sm:py-16 bg-white"
-        aria-labelledby="destaques-title"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 id="destaques-title" className="sr-only">
-            Produtos em destaque
-          </h2>
-          <div className="grid md:grid-cols-3 gap-6">
-            {destaques.map((p) => (
-              <CardProdutoDestaque key={p.slug} {...p} />
+      <section className="py-16 md:py-24 bg-white">
+        <div className="mx-auto max-w-6xl px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {produtos.map((p) => (
+              <Link
+                key={p.titulo}
+                href={p.href}
+                className={`group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors ${
+                  p.destaque ? "lg:col-span-2 min-h-[300px]" : "min-h-[220px]"
+                }`}
+              >
+                <Image
+                  src={p.foto}
+                  alt={p.titulo}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  sizes="(max-width: 768px) 100vw, 33vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-5">
+                  <h3 className="text-xl font-medium text-white mb-1">{p.titulo} →</h3>
+                  <p className="text-sm text-white/90">{p.desc}</p>
+                </div>
+              </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      <section
-        className="py-8 sm:py-12 bg-white border-t border-cc-gray-200"
-        aria-labelledby="catalogo-title"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2
-            id="catalogo-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-black mb-8 text-center"
-          >
-            Demais produtos do catálogo
-          </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
-            {padroes.map((p) => (
-              <CardProdutoPadrao key={p.slug} {...p} />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <section className="bg-cc-orange py-12 sm:py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-3">
-            Não encontrou o que procura?
-          </h2>
-          <p className="text-base sm:text-lg mb-6 opacity-95">
-            Fabricamos sob medida. Fale com nossa equipe técnica.
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white text-cc-orange hover:bg-cc-gray-100 px-7 py-3.5 rounded-md text-base font-bold transition-colors"
-          >
-            Falar no WhatsApp: (51) 99669-1757
-          </a>
         </div>
       </section>
     </>

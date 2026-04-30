@@ -7,10 +7,21 @@ import { useState } from "react";
 const WHATSAPP_URL =
   "https://wa.me/5551996691757?text=Oi%2C%20visitei%20o%20site%20Central%20do%20Concreto%20e%20gostaria%20de%20atendimento.";
 
+const produtosLinks = [
+  { label: "Pergolados de Concreto", href: "/produtos/pergolado-de-concreto" },
+  { label: "Piso Atérmico", href: "/produtos/piso-atermico" },
+  { label: "Tubos de Concreto", href: "/produtos/tubos" },
+  { label: "Caixas de Passagem", href: "/produtos/caixas-de-passagem" },
+  { label: "Muros e Gradis", href: "/produtos/muros-e-gradis" },
+  { label: "Postes e Meio-fio", href: "/produtos/postes-e-meio-fio" },
+  { label: "Blocos", href: "/produtos/blocos" },
+  { label: "PAVS", href: "/produtos/pavs" },
+  { label: "Fossa e Filtro", href: "/produtos/fossa-e-filtro" },
+  { label: "— Ver todos os produtos", href: "/produtos" },
+];
+
 const navItems = [
   { href: "/", label: "Início" },
-  { href: "/produtos", label: "Produtos" },
-  { href: "/entregas", label: "Entregas" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];
@@ -22,7 +33,11 @@ function isActiveLink(pathname: string, href: string) {
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [produtosOpenMobile, setProdutosOpenMobile] = useState(false);
   const pathname = usePathname() ?? "/";
+
+  const produtosActive =
+    pathname.startsWith("/produtos") || pathname.startsWith("/atendimento");
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-cc-gray-200">
@@ -36,16 +51,65 @@ export default function Header() {
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Menu principal">
-          {navItems.map((item) => {
+          <Link
+            href="/"
+            className={`text-sm transition-colors font-medium ${
+              isActiveLink(pathname, "/")
+                ? "text-cc-coral"
+                : "text-cc-black hover:text-cc-coral"
+            }`}
+            aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
+          >
+            Início
+          </Link>
+
+          <div className="relative group">
+            <button
+              className={`text-sm font-medium flex items-center gap-1 transition-colors ${
+                produtosActive
+                  ? "text-cc-coral"
+                  : "text-cc-black hover:text-cc-coral"
+              }`}
+              aria-haspopup="menu"
+            >
+              Produtos
+              <svg
+                className="w-4 h-4 transition-transform group-hover:rotate-180"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+                aria-hidden="true"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <ul
+              className="absolute left-0 top-full w-64 bg-white border border-cc-gray-200 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all py-2 z-50"
+              role="menu"
+            >
+              {produtosLinks.map((p) => (
+                <li key={p.href} role="none">
+                  <Link
+                    href={p.href}
+                    role="menuitem"
+                    className="block px-4 py-2 text-sm text-cc-gray-600 hover:bg-cc-cream hover:text-cc-coral transition-colors"
+                  >
+                    {p.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {navItems.slice(1).map((item) => {
             const active = isActiveLink(pathname, item.href);
             return (
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm transition-colors ${
-                  active
-                    ? "text-cc-coral font-medium"
-                    : "text-cc-black hover:text-cc-coral font-medium"
+                className={`text-sm transition-colors font-medium ${
+                  active ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
                 }`}
                 aria-current={active ? "page" : undefined}
               >
@@ -75,7 +139,16 @@ export default function Header() {
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
         >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
             {menuOpen ? (
               <path d="M6 18L18 6M6 6l12 12" />
             ) : (
@@ -90,18 +163,72 @@ export default function Header() {
       </div>
 
       {menuOpen && (
-        <nav id="mobile-menu" className="lg:hidden border-t border-cc-gray-200 px-4 py-4 bg-white" aria-label="Menu mobile">
+        <nav
+          id="mobile-menu"
+          className="lg:hidden border-t border-cc-gray-200 px-4 py-4 bg-white"
+          aria-label="Menu mobile"
+        >
           <ul className="flex flex-col gap-1">
-            {navItems.map((item) => {
+            <li>
+              <Link
+                href="/"
+                className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
+                  isActiveLink(pathname, "/")
+                    ? "text-cc-coral"
+                    : "text-cc-black hover:text-cc-coral"
+                }`}
+                aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
+                onClick={() => setMenuOpen(false)}
+              >
+                Início
+              </Link>
+            </li>
+
+            <li className="border-b border-cc-gray-100">
+              <button
+                onClick={() => setProdutosOpenMobile(!produtosOpenMobile)}
+                className={`w-full flex items-center justify-between py-3 px-2 text-base font-medium transition-colors ${
+                  produtosActive ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
+                }`}
+                aria-expanded={produtosOpenMobile}
+              >
+                Produtos
+                <svg
+                  className={`w-4 h-4 transition-transform ${produtosOpenMobile ? "rotate-180" : ""}`}
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                </svg>
+              </button>
+              {produtosOpenMobile && (
+                <ul className="pl-4 pb-2">
+                  {produtosLinks.map((p) => (
+                    <li key={p.href}>
+                      <Link
+                        href={p.href}
+                        className="block py-2 px-2 text-sm text-cc-gray-600 hover:text-cc-coral transition-colors"
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {p.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+
+            {navItems.slice(1).map((item) => {
               const active = isActiveLink(pathname, item.href);
               return (
                 <li key={item.href}>
                   <Link
                     href={item.href}
                     className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
-                      active
-                        ? "text-cc-coral"
-                        : "text-cc-black hover:text-cc-coral"
+                      active ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
                     }`}
                     aria-current={active ? "page" : undefined}
                     onClick={() => setMenuOpen(false)}
@@ -111,6 +238,7 @@ export default function Header() {
                 </li>
               );
             })}
+
             <li className="pt-3">
               <a
                 href={WHATSAPP_URL}
@@ -119,7 +247,12 @@ export default function Header() {
                 className="flex items-center justify-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white text-center py-3 rounded-full font-semibold transition-colors"
                 onClick={() => setMenuOpen(false)}
               >
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <svg
+                  className="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
                 </svg>
                 WhatsApp
