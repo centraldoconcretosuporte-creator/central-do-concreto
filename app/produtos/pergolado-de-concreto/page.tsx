@@ -1,9 +1,41 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 
-export const metadata = {
-  title: "Pergolado de Concreto pra Litoral Norte | Central do Concreto",
+const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const PAGE_URL = `${SITE_URL}/produtos/pergolado-de-concreto`;
+const OG_IMAGE = "/og/pergolado-litoral.jpg";
+
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: "Pergolado de concreto pré-moldado pro Litoral Norte | Central do Concreto",
   description:
-    "Pergolado de concreto pré-moldado direto da fábrica em Ivoti pra casas, condomínios, pousadas e hotéis do Litoral Norte e Médio do RS. Estrutura reforçada, equipe própria de instalação, iluminação integrada.",
+    "Pergolado de concreto pré-moldado direto da fábrica em Ivoti pro Litoral Norte e Médio. Estrutura reforçada, equipe própria de instalação e iluminação integrada.",
+  openGraph: {
+    title: "Pergolado de concreto pré-moldado pro Litoral Norte",
+    description:
+      "Direto da fábrica em Ivoti, com instalação por equipe própria. Atendemos Xangri-Lá, Capão da Canoa, Torres e todo o Litoral Norte e Médio.",
+    type: "website",
+    locale: "pt_BR",
+    url: PAGE_URL,
+    siteName: "Central do Concreto",
+    images: [
+      {
+        url: OG_IMAGE,
+        width: 1200,
+        height: 630,
+        alt: "Pergolado de concreto pré-moldado da Central do Concreto",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Pergolado de concreto pré-moldado pro Litoral Norte",
+    description: "Direto da fábrica em Ivoti, com instalação por equipe própria.",
+    images: [OG_IMAGE],
+  },
+  alternates: {
+    canonical: PAGE_URL,
+  },
 };
 
 const WHATSAPP_URL =
@@ -31,45 +63,26 @@ const tipos = [
   {
     title: "Solarium",
     desc: "Pergolado pra área de piscina e banho de sol. Mais comum em casa de praia e condomínio fechado.",
+    image: "/produtos/pergolado/tipos/solarium.webp",
+    alt: "Pergolado de concreto solarium em casa de praia com piscina",
   },
   {
     title: "Área gourmet",
     desc: "Pra churrasqueira, mesa e espaço de receber. Combina com piso atérmico ao redor.",
+    image: "/produtos/pergolado/tipos/gourmet.webp",
+    alt: "Pergolado de concreto cobrindo área gourmet com mesa e cadeiras",
   },
   {
     title: "Empreendimento",
     desc: "Áreas comuns de condomínio, edifício e loteamento. Atendemos construtor com escala.",
+    image: "/produtos/pergolado/tipos/empreendimento.webp",
+    alt: "Pergolado de concreto em empreendimento residencial",
   },
   {
     title: "Hotelaria e pousada",
     desc: "Decks de boas-vindas, áreas de descanso, varandas. Foco em estrutura premium pra rede hoteleira.",
-  },
-];
-
-const combine = [
-  {
-    slug: "piso-atermico",
-    title: "Piso Atérmico",
-    desc: "Placas antiderrapantes 49x49 pra área de piscina.",
-    href: "/produtos/piso-atermico",
-  },
-  {
-    slug: "cobogos",
-    title: "Cobogó",
-    desc: "Parede vazada decorativa que fecha um lado do pergolado.",
-    href: "/produtos/cobogos",
-  },
-  {
-    slug: "muros-e-gradis",
-    title: "Muro pré-moldado",
-    desc: "Fechamento da área externa em concreto pré-moldado.",
-    href: "/produtos/muros-e-gradis",
-  },
-  {
-    slug: "revestimentos",
-    title: "Revestimentos",
-    desc: "Acabamento estético pras paredes da área externa.",
-    href: "#",
+    image: "/produtos/pergolado/tipos/hotelaria.webp",
+    alt: "Pergolado de concreto em pousada com jardim",
   },
 ];
 
@@ -250,21 +263,32 @@ export default function PergoladoDeConcretoPage() {
             {tipos.map((t) => (
               <div
                 key={t.title}
-                className="bg-white border border-cc-gray-200 rounded-lg p-5"
+                className="group bg-white rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-orange transition-colors"
               >
-                <h3 className="text-base font-bold text-cc-black mb-2">
-                  {t.title}
-                </h3>
-                <p className="text-sm text-cc-gray-600 leading-relaxed">
-                  {t.desc}
-                </p>
+                <div className="relative aspect-[4/3]">
+                  <Image
+                    src={t.image}
+                    alt={t.alt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  />
+                </div>
+                <div className="p-5">
+                  <h3 className="text-base font-bold text-cc-black mb-2">
+                    {t.title}
+                  </h3>
+                  <p className="text-sm text-cc-gray-600 leading-relaxed">
+                    {t.desc}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* 05 COMBINE */}
+      {/* 05 COMBINE · Mosaico assimétrico */}
       <section
         className="py-12 sm:py-16 bg-white"
         aria-labelledby="combine-title"
@@ -272,25 +296,101 @@ export default function PergoladoDeConcretoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="combine-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-3 text-center"
           >
             Combine seu pergolado
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
-            {combine.map((c) => (
-              <a
-                key={c.slug}
-                href={c.href}
-                className="block bg-cc-gray-50 border border-cc-gray-200 rounded-lg p-5 hover:border-cc-orange transition-colors"
-              >
-                <h3 className="text-base font-bold text-cc-black mb-2">
-                  {c.title} →
+          <p className="text-base text-cc-gray-600 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
+            Os produtos da Central do Concreto que mais entregamos junto com pergolado pra obra externa ficar completa.
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-4 md:min-h-[480px]">
+            {/* Card grande · Piso Atérmico */}
+            <a
+              href="/produtos/piso-atermico"
+              className="md:col-span-2 md:row-span-3 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-orange transition-colors min-h-[300px]"
+            >
+              <Image
+                src="/produtos/combine/piso-atermico.webp"
+                alt="Piso atérmico antiderrapante 49x49 ao redor de piscina"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 66vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6 md:p-8">
+                <h3 className="text-2xl md:text-3xl font-medium text-white mb-2">
+                  Piso Atérmico →
                 </h3>
-                <p className="text-sm text-cc-gray-600 leading-relaxed">
-                  {c.desc}
+                <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-md">
+                  Placas antiderrapantes 49x49 pra área da piscina. Combina direto com pergolado solarium.
                 </p>
-              </a>
-            ))}
+              </div>
+            </a>
+
+            {/* Card pequeno 1 · Cobogó */}
+            <a
+              href="/produtos/cobogos"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-orange transition-colors min-h-[140px]"
+            >
+              <Image
+                src="/produtos/combine/cobogo.webp"
+                alt="Cobogó decorativo de concreto pré-moldado"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="text-lg font-medium text-white mb-1">Cobogó →</h3>
+                <p className="text-xs text-white/85 leading-snug">
+                  Painel vazado decorativo que fecha um lado do pergolado.
+                </p>
+              </div>
+            </a>
+
+            {/* Card pequeno 2 · Muro pré-moldado */}
+            <a
+              href="/produtos/muros-e-gradis"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-orange transition-colors min-h-[140px]"
+            >
+              <Image
+                src="/produtos/combine/muro.webp"
+                alt="Muro pré-moldado de concreto da Central do Concreto"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="text-lg font-medium text-white mb-1">Muro pré-moldado →</h3>
+                <p className="text-xs text-white/85 leading-snug">
+                  Fechamento da área externa em concreto pré-moldado.
+                </p>
+              </div>
+            </a>
+
+            {/* Card pequeno 3 · Revestimentos */}
+            {/* TODO: avaliar foto definitiva de revestimento (categoria não está totalmente fechada no banco CC) */}
+            <a
+              href="/produtos/revestimentos"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-orange transition-colors min-h-[140px]"
+            >
+              <Image
+                src="/produtos/combine/revestimentos.webp"
+                alt="Revestimento decorativo Rock Face para fachada externa"
+                fill
+                className="object-cover group-hover:scale-105 transition-transform duration-500"
+                sizes="(max-width: 768px) 100vw, 33vw"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-4">
+                <h3 className="text-lg font-medium text-white mb-1">Revestimentos →</h3>
+                <p className="text-xs text-white/85 leading-snug">
+                  Acabamento estético pras paredes da área externa.
+                </p>
+              </div>
+            </a>
           </div>
         </div>
       </section>
