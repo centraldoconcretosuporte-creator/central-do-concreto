@@ -31,8 +31,8 @@ const destaques = [
     slug: "pergolado-de-concreto",
     title: "Pergolado de Concreto",
     desc: "Estrutura pré-moldada amadeirada para áreas residenciais. 30+ anos sem cupim, sem manutenção, sem retrabalho.",
-    image: "/produtos/pergolado.svg",
-    imageAlt: "Pergolado de concreto pré-moldado em Ivoti-RS",
+    image: "/produtos/pergolado.webp",
+    imageAlt: "Pergolado de concreto com piscina em Ivoti-RS",
     badge: "Residencial",
   },
 ];
@@ -63,8 +63,8 @@ const padroes = [
     slug: "piso-atermico",
     title: "Piso Atérmico",
     desc: "Antiderrapante, não esquenta no sol. Placas 49x49 ideais para áreas de piscina.",
-    image: "/produtos/piso-atermico.svg",
-    imageAlt: "Piso atérmico de concreto antiderrapante em Ivoti-RS",
+    image: "/produtos/piso-atermico.webp",
+    imageAlt: "Piso atérmico em área gourmet com piscina em Ivoti-RS",
   },
   {
     slug: "pavs",
