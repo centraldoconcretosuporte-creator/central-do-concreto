@@ -73,12 +73,6 @@ const tipos = [
     alt: "Pergolado de concreto cobrindo área gourmet com mesa e cadeiras",
   },
   {
-    title: "Empreendimento",
-    desc: "Áreas comuns de condomínio, edifício e loteamento. Atendemos construtor com escala.",
-    image: "/produtos/pergolado/tipos/empreendimento.webp",
-    alt: "Pergolado de concreto em empreendimento residencial",
-  },
-  {
     title: "Hotelaria e pousada",
     desc: "Decks de boas-vindas, áreas de descanso, varandas. Foco em estrutura premium pra rede hoteleira.",
     image: "/produtos/pergolado/tipos/hotelaria.webp",
@@ -259,7 +253,7 @@ export default function PergoladoDeConcretoPage() {
           >
             Tipos de pergolado
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 max-w-5xl mx-auto">
             {tipos.map((t) => (
               <div
                 key={t.title}

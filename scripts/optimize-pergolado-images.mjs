@@ -22,13 +22,6 @@ const jobs = [
     fit: "cover",
   },
   {
-    src: `${BANCO}/PERGOLADO DE CONCRETO/pergolado-concreto-central-concreto-ivoti-014.jpg`,
-    dst: `${OUT}/produtos/pergolado/tipos/empreendimento.webp`,
-    width: 800,
-    height: 600,
-    fit: "cover",
-  },
-  {
     src: `${BANCO}/PERGOLADO DE CONCRETO/pergolado-concreto-central-concreto-ivoti-001.jpg`,
     dst: `${OUT}/produtos/pergolado/tipos/hotelaria.webp`,
     width: 800,
@@ -52,7 +45,7 @@ const jobs = [
     fit: "cover",
   },
   {
-    src: `${BANCO}/Banco-de-Imagens/Muros/muro-aplicacao-007.jpg`,
+    src: `${BANCO}/Banco-de-Imagens/Muros/selecionadas/muro-aplicacao-022.jpg`,
     dst: `${OUT}/produtos/combine/muro.webp`,
     width: 600,
     height: 600,
