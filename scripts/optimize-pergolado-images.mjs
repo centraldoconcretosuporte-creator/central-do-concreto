@@ -59,6 +59,25 @@ const jobs = [
     fit: "cover",
   },
 
+  // Hero full-bleed (1920x1080)
+  {
+    src: `${BANCO}/PERGOLADO DE CONCRETO/pergolado-concreto-central-concreto-ivoti-008.jpg`,
+    dst: `${OUT}/produtos/pergolado/hero/pergolado-litoral-hero.webp`,
+    width: 1920,
+    height: 1080,
+    fit: "cover",
+    quality: 80,
+  },
+
+  // Conhecemos a região (foto pequena na seção 8.1)
+  {
+    src: `${BANCO}/PERGOLADO DE CONCRETO/pergolado-concreto-central-concreto-ivoti-010.jpg`,
+    dst: `${OUT}/produtos/pergolado/conhecemos-litoral.webp`,
+    width: 600,
+    height: 600,
+    fit: "cover",
+  },
+
   // OG image (1200x630)
   {
     src: `${BANCO}/PERGOLADO DE CONCRETO/pergolado-concreto-central-concreto-ivoti-008.jpg`,
@@ -81,7 +100,7 @@ for (const job of jobs) {
   if (job.format === "jpeg") {
     pipeline = pipeline.jpeg({ quality: job.quality ?? 85, mozjpeg: true });
   } else {
-    pipeline = pipeline.webp({ quality: 82 });
+    pipeline = pipeline.webp({ quality: job.quality ?? 82 });
   }
 
   await pipeline.toFile(job.dst);

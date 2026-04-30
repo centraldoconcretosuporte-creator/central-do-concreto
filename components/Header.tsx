@@ -1,47 +1,58 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import { usePathname } from "next/navigation";
 import { useState } from "react";
 
 const WHATSAPP_URL =
   "https://wa.me/5551996691757?text=Oi%2C%20visitei%20o%20site%20Central%20do%20Concreto%20e%20gostaria%20de%20atendimento.";
 
 const navItems = [
-  { href: "/", label: "Home" },
+  { href: "/", label: "Início" },
   { href: "/produtos", label: "Produtos" },
   { href: "/entregas", label: "Entregas" },
   { href: "/sobre", label: "Sobre" },
   { href: "/contato", label: "Contato" },
 ];
 
+function isActiveLink(pathname: string, href: string) {
+  if (href === "/") return pathname === "/";
+  return pathname === href || pathname.startsWith(`${href}/`);
+}
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname() ?? "/";
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-cc-gray-200">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-        <Link href="/" className="flex items-center" aria-label="Central do Concreto - Home">
-          <Image
-            src="/logo.png"
-            alt="Central do Concreto - logotipo"
-            width={180}
-            height={48}
-            className="h-10 w-auto"
-            priority
-          />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
+        <Link
+          href="/"
+          className="text-base sm:text-xl md:text-2xl font-bold text-cc-black tracking-tight whitespace-nowrap"
+          aria-label="Central do Concreto - Início"
+        >
+          CENTRAL DO CONCRETO
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Menu principal">
-          {navItems.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className="text-cc-black hover:text-cc-orange transition-colors text-sm font-medium"
-            >
-              {item.label}
-            </Link>
-          ))}
+          {navItems.map((item) => {
+            const active = isActiveLink(pathname, item.href);
+            return (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={`text-sm transition-colors ${
+                  active
+                    ? "text-cc-coral font-medium"
+                    : "text-cc-black hover:text-cc-coral font-medium"
+                }`}
+                aria-current={active ? "page" : undefined}
+              >
+                {item.label}
+              </Link>
+            );
+          })}
         </nav>
 
         <a
@@ -81,17 +92,25 @@ export default function Header() {
       {menuOpen && (
         <nav id="mobile-menu" className="lg:hidden border-t border-cc-gray-200 px-4 py-4 bg-white" aria-label="Menu mobile">
           <ul className="flex flex-col gap-1">
-            {navItems.map((item) => (
-              <li key={item.href}>
-                <Link
-                  href={item.href}
-                  className="block py-3 px-2 text-cc-black hover:text-cc-orange text-base font-medium border-b border-cc-gray-100"
-                  onClick={() => setMenuOpen(false)}
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {navItems.map((item) => {
+              const active = isActiveLink(pathname, item.href);
+              return (
+                <li key={item.href}>
+                  <Link
+                    href={item.href}
+                    className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
+                      active
+                        ? "text-cc-coral"
+                        : "text-cc-black hover:text-cc-coral"
+                    }`}
+                    aria-current={active ? "page" : undefined}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            })}
             <li className="pt-3">
               <a
                 href={WHATSAPP_URL}
