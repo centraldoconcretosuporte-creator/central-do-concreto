@@ -3,7 +3,16 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/Eyebrow";
-import { CIDADES_LITORAL, getCidade } from "@/lib/cidades-litoral";
+import { CIDADES_LITORAL, getCidade, type CidadeLitoral } from "@/lib/cidades-litoral";
+
+function subtituloHeroCidade(cidade: CidadeLitoral): string {
+  const vizinhasTexto =
+    cidade.vizinhas.length > 0
+      ? `${cidade.nome}, ${cidade.vizinhas.slice(0, 2).join(" e ")}`
+      : cidade.nome;
+
+  return `Pergolado de concreto pré-moldado em ${cidade.nome}. Saímos da fábrica em Ivoti e instalamos com equipe própria — estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos. Atendemos ${cidade.perfil.toLowerCase()} em ${vizinhasTexto}.`;
+}
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 const WHATSAPP_URL =
@@ -27,10 +36,10 @@ export async function generateMetadata({
   return {
     metadataBase: new URL(SITE_URL),
     title: `Pergolado de concreto em ${c.nome}-RS · Central do Concreto`,
-    description: `Pergolado pré-moldado em ${c.nome}-RS · direto da fábrica em Ivoti com equipe própria de instalação. ${c.distanciaKm} · ${c.tempoEstimado}.`,
+    description: `Pergolado pré-moldado em ${c.nome}. Saímos da fábrica em Ivoti com equipe própria — estrutura reforçada pra vento e maresia. ${c.distanciaKm} · ${c.tempoEstimado}.`,
     openGraph: {
       title: `Pergolado de concreto em ${c.nome}-RS`,
-      description: `Equipe própria · estrutura reforçada · iluminação integrada. Atendemos ${c.nome} e cidades vizinhas.`,
+      description: `Equipe própria · estrutura reforçada pra vento e maresia · ganchos pra rede, tomada e iluminação embutidos.`,
       type: "website",
       locale: "pt_BR",
       url,
@@ -45,38 +54,38 @@ export async function generateMetadata({
 
 const diferenciadores = [
   {
-    title: "Estrutura reforçada",
-    desc: "Concreto armado calculado pra cargas residenciais e comerciais. Resiste a vento de litoral, salinidade e peso de cobertura.",
+    title: "Estrutura reforçada pra vento e maresia",
+    desc: "Pilares de concreto armado e fixação com parafuso inox. Pra aguentar o vento sul e a corrosão da maresia sem ferrugem nem rachadura.",
   },
   {
-    title: "Equipe técnica própria",
-    desc: "Nossa equipe vai até a obra, monta a estrutura e entrega pronta. Sem terceirizar instalação.",
+    title: "Equipe própria · da medição à instalação",
+    desc: "Não terceirizamos. A mesma equipe que vai medir é a que monta · alinhamento garantido e prazo controlado pela própria fábrica.",
   },
   {
-    title: "Iluminação e tomadas integradas",
-    desc: "Espera de iluminação no teto e pontos de tomada externa pra área gourmet. Tudo embutido na estrutura.",
+    title: "Ganchos pra rede, tomada e iluminação embutidos",
+    desc: "Já saem da fábrica · não precisa furar concreto depois. Tomada com tampa pra área externa, fios passados por dentro do pilar.",
   },
 ];
 
 const tipos = [
   {
     eyebrow: "Solarium",
-    title: "Pergolado solarium",
-    desc: "Pergolado pra área de piscina e banho de sol. Mais comum em casa de praia e condomínio fechado.",
+    title: "Solarium da casa de veraneio",
+    desc: "Pergolado sobre o deck ou pátio da casa de praia. Estrutura limpa, fica exposta ao tempo sem manchar nem apodrecer.",
     image: "/produtos/pergolado/tipos/solarium.webp",
     alt: "Pergolado de concreto solarium em casa de praia com piscina",
   },
   {
     eyebrow: "Área gourmet",
-    title: "Pergolado área gourmet",
-    desc: "Pra churrasqueira, mesa e espaço de receber. Combina com piso atérmico ao redor.",
+    title: "Área gourmet ao redor da piscina",
+    desc: "Pra cobrir churrasqueira, mesa e área de circulação. Tomada e iluminação embutidos · você liga forno elétrico ou luminária sem fio aparente.",
     image: "/produtos/pergolado/tipos/gourmet.webp",
     alt: "Pergolado de concreto cobrindo área gourmet com mesa e cadeiras",
   },
   {
     eyebrow: "Hotelaria e pousada",
-    title: "Pergolado pra pousada",
-    desc: "Decks de boas-vindas, áreas de descanso, varandas. Foco em estrutura premium pra rede hoteleira.",
+    title: "Hotel e pousada · cobertura pra área externa",
+    desc: "Estrutura modular pra cobrir piscina, recepção externa ou área de café da manhã. Vence vão grande sem coluna no meio.",
     image: "/produtos/pergolado/tipos/hotelaria.webp",
     alt: "Pergolado de concreto em pousada com jardim",
   },
@@ -85,12 +94,12 @@ const tipos = [
 const grupo = [
   {
     title: "Telhas Ivoti",
-    desc: "Cobertura sanduíche metálica pra fechar o pergolado contra sol e chuva.",
+    desc: "Cobertura sanduíche com isolamento térmico · TP40, TP25 ou Colonial. Pra fechar o pergolado e reduzir até 8°C na área coberta.",
     href: "https://telhasivoti.com.br",
   },
   {
     title: "Bom Jardim Ivoti",
-    desc: "Madeiras, deck, pedras naturais e paisagismo pra completar a área externa.",
+    desc: "Pisantes atérmicos, pedras Rock Face, madeiras e paisagismo · pra completar a área externa ao redor do pergolado.",
     href: "https://bomjardimivoti.com.br",
   },
 ];
@@ -101,11 +110,11 @@ const faqs = [
     perguntas: [
       {
         q: "Qual a durabilidade do pergolado de concreto?",
-        a: "Estruturas em concreto armado, com manutenção mínima, têm vida útil acima de 50 anos. Não apodrece, não enferruja, não cupiniza.",
+        a: "Cada pilar sai da fábrica com armação de aço CA-50 e concreto fck 25. Com manutenção mínima passa dos 50 anos · não apodrece, não enferruja, não cupiniza.",
       },
       {
         q: "Aguenta maresia do Litoral Norte?",
-        a: "Sim. Concreto armado tem desempenho superior a madeira e ferro em ambiente salino. É a escolha técnica pra casa de praia e empreendimento litorâneo.",
+        a: "Aguenta. Usamos concreto armado e fixação com parafuso inox e chumbador químico · pra resistir o vento sul e a corrosão da maresia. É o que a gente mais entrega de Imbé a Torres.",
       },
     ],
   },
@@ -114,11 +123,11 @@ const faqs = [
     perguntas: [
       {
         q: "Qual o prazo da instalação?",
-        a: "Após confirmação do projeto, fabricamos em 7 a 14 dias úteis e instalamos em 1 a 2 dias na obra. Prazo total varia conforme tamanho e logística.",
+        a: "Saímos toda semana pro Litoral. Da medição até a instalação · em geral 15 a 25 dias · dependendo da fila da fábrica e do tamanho da obra. Instalamos em 1 a 2 dias na obra.",
       },
       {
         q: "Como peço orçamento?",
-        a: "Manda pelo WhatsApp (51) 99669-1757 a medida estimada e a cidade. Retornamos com proposta no mesmo dia.",
+        a: "Manda no WhatsApp (51) 99669-1757 a medida estimada e a cidade. Respondemos no mesmo dia com proposta e prazo.",
       },
     ],
   },
@@ -133,7 +142,7 @@ export default async function CidadePage({
   const c = getCidade(cidade);
   if (!c) notFound();
 
-  const subtitulo = `Direto da fábrica em Ivoti, com estrutura reforçada, equipe própria de instalação e pontos de iluminação integrados. Atendemos ${c.nome} e cidades vizinhas.`;
+  const subtitulo = subtituloHeroCidade(c);
 
   return (
     <>
@@ -272,10 +281,16 @@ export default async function CidadePage({
               <p className="text-sm text-cc-gray-600">de viagem por estrada</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-cc-gray-200">
-              <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">A combinar</p>
+              <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+                Saímos toda semana
+              </p>
               <p className="text-sm text-cc-gray-600">prazo conforme projeto</p>
             </div>
           </div>
+
+          <p className="text-base text-cc-gray-600 leading-relaxed mb-8 max-w-3xl">
+            Atendemos {c.nome} e mais 7 cidades do Litoral Norte · de Imbé a Torres.
+          </p>
 
           <div className="text-center">
             <a

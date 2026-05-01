@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
+import { CIDADES_LITORAL } from "@/lib/cidades-litoral";
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 const PAGE_URL = `${SITE_URL}/produtos/pergolado-de-concreto`;
@@ -48,38 +49,38 @@ const WHATSAPP_COBERTURA_URL =
 
 const diferenciadores = [
   {
-    title: "Estrutura reforçada",
-    desc: "Concreto armado calculado pra cargas residenciais e comerciais. Resiste a vento de litoral, salinidade e peso de cobertura.",
+    title: "Estrutura reforçada pra vento e maresia",
+    desc: "Pilares de concreto armado e fixação com parafuso inox. Pra aguentar o vento sul e a corrosão da maresia sem ferrugem nem rachadura.",
   },
   {
-    title: "Equipe técnica própria",
-    desc: "Nossa equipe vai até a obra, monta a estrutura e entrega pronta. Sem terceirizar instalação.",
+    title: "Equipe própria · da medição à instalação",
+    desc: "Não terceirizamos. A mesma equipe que vai medir é a que monta · alinhamento garantido e prazo controlado pela própria fábrica.",
   },
   {
-    title: "Iluminação e tomadas integradas",
-    desc: "Espera de iluminação no teto e pontos de tomada externa pra área gourmet. Tudo embutido na estrutura.",
+    title: "Ganchos pra rede, tomada e iluminação embutidos",
+    desc: "Já saem da fábrica · não precisa furar concreto depois. Tomada com tampa pra área externa, fios passados por dentro do pilar.",
   },
 ];
 
 const tipos = [
   {
     eyebrow: "Solarium",
-    title: "Pergolado solarium",
-    desc: "Pergolado pra área de piscina e banho de sol. Mais comum em casa de praia e condomínio fechado.",
+    title: "Solarium da casa de veraneio",
+    desc: "Pergolado sobre o deck ou pátio da casa de praia. Estrutura limpa, fica exposta ao tempo sem manchar nem apodrecer.",
     image: "/produtos/pergolado/tipos/solarium.webp",
     alt: "Pergolado de concreto solarium em casa de praia com piscina",
   },
   {
     eyebrow: "Área gourmet",
-    title: "Pergolado área gourmet",
-    desc: "Pra churrasqueira, mesa e espaço de receber. Combina com piso atérmico ao redor.",
+    title: "Área gourmet ao redor da piscina",
+    desc: "Pra cobrir churrasqueira, mesa e área de circulação. Tomada e iluminação embutidos · você liga forno elétrico ou luminária sem fio aparente.",
     image: "/produtos/pergolado/tipos/gourmet.webp",
     alt: "Pergolado de concreto cobrindo área gourmet com mesa e cadeiras",
   },
   {
     eyebrow: "Hotelaria e pousada",
-    title: "Pergolado pra pousada",
-    desc: "Decks de boas-vindas, áreas de descanso, varandas. Foco em estrutura premium pra rede hoteleira.",
+    title: "Hotel e pousada · cobertura pra área externa",
+    desc: "Estrutura modular pra cobrir piscina, recepção externa ou área de café da manhã. Vence vão grande sem coluna no meio.",
     image: "/produtos/pergolado/tipos/hotelaria.webp",
     alt: "Pergolado de concreto em pousada com jardim",
   },
@@ -88,12 +89,12 @@ const tipos = [
 const grupo = [
   {
     title: "Telhas Ivoti",
-    desc: "Cobertura sanduíche metálica pra fechar o pergolado contra sol e chuva.",
-    href: "#",
+    desc: "Cobertura sanduíche com isolamento térmico · TP40, TP25 ou Colonial. Pra fechar o pergolado e reduzir até 8°C na área coberta.",
+    href: "https://telhasivoti.com.br",
   },
   {
     title: "Bom Jardim Ivoti",
-    desc: "Madeiras, deck, pedras naturais e paisagismo pra completar a área externa.",
+    desc: "Pisantes atérmicos, pedras Rock Face, madeiras e paisagismo · pra completar a área externa ao redor do pergolado.",
     href: "https://bomjardimivoti.com.br",
   },
 ];
@@ -104,11 +105,11 @@ const faqs = [
     perguntas: [
       {
         q: "Qual a durabilidade do pergolado de concreto?",
-        a: "Estruturas em concreto armado, com manutenção mínima, têm vida útil acima de 50 anos. Não apodrece, não enferruja, não cupiniza.",
+        a: "Cada pilar sai da fábrica com armação de aço CA-50 e concreto fck 25. Com manutenção mínima passa dos 50 anos · não apodrece, não enferruja, não cupiniza.",
       },
       {
         q: "Aguenta maresia do Litoral Norte?",
-        a: "Sim. Concreto armado tem desempenho superior a madeira e ferro em ambiente salino. É a escolha técnica pra casa de praia e empreendimento litorâneo.",
+        a: "Aguenta. Usamos concreto armado e fixação com parafuso inox e chumbador químico · pra resistir o vento sul e a corrosão da maresia. É o que a gente mais entrega de Imbé a Torres.",
       },
     ],
   },
@@ -117,11 +118,11 @@ const faqs = [
     perguntas: [
       {
         q: "Qual o prazo da instalação?",
-        a: "Após confirmação do projeto, fabricamos em 7 a 14 dias úteis e instalamos em 1 a 2 dias na obra. Prazo total varia conforme tamanho e logística.",
+        a: "Saímos toda semana pro Litoral. Da medição até a instalação · em geral 15 a 25 dias · dependendo da fila da fábrica e do tamanho da obra. Instalamos em 1 a 2 dias na obra.",
       },
       {
         q: "Como peço orçamento?",
-        a: "Manda pelo WhatsApp (51) 99669-1757 a medida estimada e a cidade. Retornamos com proposta no mesmo dia.",
+        a: "Manda no WhatsApp (51) 99669-1757 a medida estimada e a cidade. Respondemos no mesmo dia com proposta e prazo.",
       },
     ],
   },
@@ -130,28 +131,17 @@ const faqs = [
     perguntas: [
       {
         q: "Vocês fazem cobertura junto?",
-        a: "A estrutura já vem pronta pra receber cobertura. Pra fechamento, indicamos a Telhas Ivoti, do mesmo grupo.",
+        a: "A estrutura já sai pronta pra receber cobertura. Pra fechar, a Telhas Ivoti (mesmo grupo) entrega telha sanduíche TP40 ou Colonial direto da fábrica.",
       },
       {
         q: "A iluminação já vem instalada?",
-        a: "Os pontos elétricos vêm preparados na estrutura — espera de luz no teto e tomadas externas. A finalização da fiação e dos pontos de luz é feita pelo eletricista da obra.",
+        a: "Os fios passam por dentro do pilar e a tomada com tampa pra área externa já vem embutida. O eletricista da obra finaliza a fiação e os pontos de luz · sem furar o concreto depois.",
       },
     ],
   },
 ];
 
-const cidades = [
-  "Xangri-Lá",
-  "Capão da Canoa",
-  "Atlântida",
-  "Capão Novo",
-  "Pinhal",
-  "Tramandaí",
-  "Imbé",
-  "Cidreira",
-  "Torres",
-  "Arroio do Sal",
-];
+const cidades = CIDADES_LITORAL.map((c) => c.nome);
 
 export default function PergoladoDeConcretoPage() {
   return (
@@ -188,7 +178,7 @@ export default function PergoladoDeConcretoPage() {
           </h1>
 
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Direto da fábrica em Ivoti, com estrutura reforçada, equipe própria de instalação e pontos de iluminação integrados. Atendemos casas, condomínios, pousadas e hotéis de Xangri-Lá a Torres.
+            Pré-moldado direto da fábrica em Ivoti. Seguimos pro Litoral toda semana — estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos. Atendemos hotel, pousada e residência de veraneio de Imbé a Torres.
           </p>
 
           <div className="flex justify-center mb-8">
@@ -323,7 +313,7 @@ export default function PergoladoDeConcretoPage() {
                   Piso Atérmico →
                 </h3>
                 <p className="text-sm md:text-base text-white/90 leading-relaxed max-w-md">
-                  Placas antiderrapantes 49x49 pra área da piscina. Combina direto com pergolado solarium.
+                  Placa 49x49 antiderrapante. Não esquenta no sol · pé descalço sai da piscina sem queimar.
                 </p>
               </div>
             </a>
@@ -344,7 +334,7 @@ export default function PergoladoDeConcretoPage() {
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="text-lg font-medium text-white mb-1">Cobogó →</h3>
                 <p className="text-xs text-white/85 leading-snug">
-                  Painel vazado decorativo que fecha um lado do pergolado.
+                  Concreto vazado pra fechar a lateral do pergolado · ventila e mantém a privacidade.
                 </p>
               </div>
             </a>
@@ -365,7 +355,7 @@ export default function PergoladoDeConcretoPage() {
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="text-lg font-medium text-white mb-1">Muro pré-moldado →</h3>
                 <p className="text-xs text-white/85 leading-snug">
-                  Fechamento da área externa em concreto pré-moldado.
+                  Placa + pilar instalado em 1 dia. Combina com o pergolado pra fechar o terreno todo.
                 </p>
               </div>
             </a>
@@ -387,7 +377,7 @@ export default function PergoladoDeConcretoPage() {
               <div className="absolute bottom-0 left-0 right-0 p-4">
                 <h3 className="text-lg font-medium text-white mb-1">Revestimentos →</h3>
                 <p className="text-xs text-white/85 leading-snug">
-                  Acabamento estético pras paredes da área externa.
+                  Pedra Rock Face, Moledo ou Mosaico 3D pra parede atrás do pergolado · da Bom Jardim Ivoti.
                 </p>
               </div>
             </a>
@@ -528,7 +518,7 @@ export default function PergoladoDeConcretoPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
               <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
                 <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
-                  130-210 km
+                  140 a 210 km
                 </p>
                 <p className="text-sm text-cc-gray-600">
                   de Ivoti até o Litoral
@@ -536,7 +526,7 @@ export default function PergoladoDeConcretoPage() {
               </div>
               <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
                 <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
-                  1h45 - 3h
+                  1h45 a 2h45
                 </p>
                 <p className="text-sm text-cc-gray-600">
                   de viagem por estrada
@@ -544,7 +534,7 @@ export default function PergoladoDeConcretoPage() {
               </div>
               <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
                 <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
-                  A combinar
+                  Saímos toda semana
                 </p>
                 <p className="text-sm text-cc-gray-600">
                   prazo conforme projeto
@@ -601,8 +591,7 @@ export default function PergoladoDeConcretoPage() {
               Entregas no Litoral Norte e Médio
             </h3>
             <p className="text-base text-cc-gray-600 leading-relaxed max-w-3xl mb-8">
-              Saímos da fábrica em Ivoti e instalamos nas 10 cidades abaixo. Consulte
-              disponibilidade e prazo conforme tamanho do projeto.
+              Atendemos de Imbé a Torres · 8 cidades · 140 a 210 km da fábrica.
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-10">
