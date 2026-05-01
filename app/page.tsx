@@ -30,7 +30,7 @@ const produtosDestaque = [
   {
     titulo: "Pergolados de Concreto",
     descricao:
-      "Estrutura pré-moldada que dura 30+ anos. Não apodrece, não dá cupim. Instalação própria.",
+      "Pré-moldado pra Litoral Norte · estrutura reforçada pra vento e maresia. Ganchos pra rede, tomada e iluminação embutidos.",
     badge: "Mais procurado",
     href: "/produtos/pergolado-de-concreto",
     foto: "/home/produtos/pergolados.webp",
@@ -39,7 +39,7 @@ const produtosDestaque = [
   {
     titulo: "Piso Atérmico",
     descricao:
-      "Placas 49x49cm antiderrapantes pra área da piscina. Não esquenta no sol. Três cores disponíveis.",
+      "Placa 49×49cm antiderrapante. Não esquenta no sol · pé descalço sai da piscina sem queimar. Três cores: branco, marfim e cinza.",
     badge: "Não esquenta no sol",
     href: "/produtos/piso-atermico",
     foto: "/home/produtos/piso-atermico.webp",
@@ -48,7 +48,7 @@ const produtosDestaque = [
   {
     titulo: "Tubos e Caixas",
     descricao:
-      "Tubos de drenagem, esgoto e água pluvial. Caixas de passagem e inspeção. Pra construtoras e prefeituras.",
+      "Tubo de drenagem, esgoto e água pluvial. Caixa de passagem e inspeção. Pra construtora e prefeitura.",
     badge: null,
     href: "/produtos/tubos",
     foto: "/home/produtos/tubos.webp",
@@ -56,7 +56,8 @@ const produtosDestaque = [
   },
   {
     titulo: "Muros e Gradis",
-    descricao: "Muro pré-moldado com placas e pilares. Gradil em concreto vazado decorativo.",
+    descricao:
+      "Placa + pilar instalados em 1 dia. Modelo decorativo vazado também disponível pra fechar o terreno todo.",
     badge: null,
     href: "/produtos/muros-e-gradis",
     foto: "/home/produtos/muros.webp",
@@ -64,7 +65,8 @@ const produtosDestaque = [
   },
   {
     titulo: "Fossa e Filtro",
-    descricao: "Sistema completo de fossa séptica + filtro anaeróbio. Pra áreas sem rede de esgoto.",
+    descricao:
+      "Fossa séptica + filtro anaeróbio · saneamento rural ou área sem rede de esgoto. Sistema completo, instalação inclusa.",
     badge: null,
     href: "/produtos/fossa-e-filtro",
     foto: "/home/produtos/fossa.webp",
@@ -77,25 +79,6 @@ const objetivos = [
   { titulo: "Drenar terreno", icone: "drop", href: "/produtos/tubos" },
   { titulo: "Construir muro", icone: "wall", href: "/produtos/muros-e-gradis" },
   { titulo: "Saneamento rural", icone: "home", href: "/produtos/fossa-e-filtro" },
-];
-
-const cidadesAtendidas = [
-  "Ivoti (retirada)",
-  "Dois Irmãos",
-  "Linha Nova",
-  "Novo Hamburgo",
-  "Gramado",
-  "Picada Café",
-  "Harmonia",
-  "Caxias do Sul",
-  "Canela",
-  "Feliz",
-  "Três Coroas",
-  "Bento Gonçalves",
-  "Nova Petrópolis",
-  "Bom Princípio",
-  "Morro Reuter",
-  "Litoral Norte",
 ];
 
 export default function HomePage() {
@@ -117,8 +100,7 @@ export default function HomePage() {
             Pergolados, tubos e pré-moldados de concreto
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Fábrica em Ivoti-RS · atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte com equipe
-            própria de instalação.
+            Fábrica em Ivoti · pré-moldados saindo direto da forma. Saímos toda semana pra Serra Gaúcha, pro Vale dos Sinos e pro Litoral Norte com equipe própria de instalação.
           </p>
           <div className="flex justify-center mb-8">
             <a
@@ -153,7 +135,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-3">Nossos produtos</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Pergolados, drenagem, muros e pré-moldados · tudo direto da fábrica em Ivoti.
+              Pergolado pro Litoral Norte · tubo e fossa pra obra B2B · muro e pisante pro residencial. Tudo saindo da forma em Ivoti.
             </p>
           </div>
 
@@ -224,7 +206,7 @@ export default function HomePage() {
               O que você quer fazer?
             </h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Escolha pelo objetivo · te mostramos o produto certo.
+              Conta o que você quer resolver · indicamos o produto.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -345,25 +327,21 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ONDE ATENDEMOS */}
+      {/* === ONDE ATENDEMOS · simplificada · onda 2 === */}
       <section className="py-16 md:py-24 bg-cc-green/95">
-        <div className="mx-auto max-w-6xl px-4 text-center">
+        <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Onde atendemos</h2>
-          <p className="text-base text-white/85 max-w-2xl mx-auto mb-12">
-            Serra Gaúcha · Vale dos Sinos · Litoral Norte e Médio
+          <p className="text-base md:text-lg text-white/90 leading-relaxed mb-3 max-w-2xl mx-auto">
+            Saímos da fábrica em Ivoti pra Vale do Rio dos Sinos, Serra Gaúcha e Litoral Norte · com equipe própria de instalação.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-3 text-sm md:text-base text-white/90 mb-12 max-w-4xl mx-auto">
-            {cidadesAtendidas.map((cidade, i) => (
-              <div key={cidade} className={i === 0 ? "text-cc-coral font-medium" : ""}>
-                {cidade}
-              </div>
-            ))}
-          </div>
+          <p className="text-sm md:text-base text-cc-coral leading-relaxed mb-10 max-w-2xl mx-auto">
+            Pergolado é cobertura exclusiva do Litoral Norte · de Imbé a Torres.
+          </p>
           <Link
             href="/entregas"
-            className="inline-flex items-center gap-2 text-white/90 hover:text-white text-sm transition-colors"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-6 py-3 rounded-full font-medium text-sm transition-colors"
           >
-            Ver nossa área de cobertura completa →
+            Ver cobertura completa →
           </Link>
         </div>
       </section>
@@ -373,7 +351,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Fala com a gente agora</h2>
           <p className="text-base text-white/85 mb-10">
-            Mandando mensagem pelo WhatsApp você recebe orçamento rápido.
+            Manda foto da obra ou as medidas pelo WhatsApp · respondo com orçamento em 1 dia útil. Quem fala com você é o André, da Central.
           </p>
           <a
             href={WHATSAPP_URL}
