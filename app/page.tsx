@@ -273,6 +273,8 @@ export default function HomePage() {
       {/* SOBRE O GRUPO */}
       <section className="py-16 md:py-24 bg-cc-green relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+
+          {/* Coluna esquerda · texto + CTA */}
           <div>
             <Eyebrow className="mb-4 text-white/80">{GRUPO_IVOTI_CANON.eyebrow}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-medium text-white mb-6 leading-tight">
@@ -281,22 +283,35 @@ export default function HomePage() {
             <p className="text-base text-white/85 leading-relaxed mb-6">
               {paragrafoGrupo("centralDoConcreto")}
             </p>
-            <Link
-              href={GRUPO_IVOTI_CANON.ctaBotao.href}
+            <a
+              href={GRUPO_IVOTI_CANON.paginaGrupo.href}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-6 py-3 rounded-full font-medium text-sm transition-colors"
             >
-              {GRUPO_IVOTI_CANON.ctaBotao.label}
-            </Link>
+              {GRUPO_IVOTI_CANON.paginaGrupo.label}
+            </a>
           </div>
+
+          {/* Coluna direita · 3 cards das empresas */}
           <div className="space-y-3">
-            <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-5">
-              <h3 className="text-lg font-medium text-white mb-1">
-                {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.nome}
-              </h3>
-              <p className="text-sm text-white/80">
-                {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.descricaoCurta}
+
+            {/* Card empresa atual · selo "VOCÊ ESTÁ AQUI" em coral · sem link externo · border mais forte */}
+            <div className="bg-white/15 backdrop-blur border-2 border-white/30 rounded-xl p-5">
+              <div className="flex items-baseline justify-between mb-1 gap-3">
+                <h3 className="text-lg font-medium text-white">
+                  {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.nome}
+                </h3>
+                <span className="text-[11px] text-cc-coral font-medium tracking-widest uppercase whitespace-nowrap">
+                  Você está aqui
+                </span>
+              </div>
+              <p className="text-sm text-white/85 leading-relaxed">
+                {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.subtitulo}
               </p>
             </div>
+
+            {/* Card BJ · com seta · link externo · subtitulo (texto mais rico) */}
             <a
               href={GRUPO_IVOTI_CANON.empresas.bomJardim.url}
               target="_blank"
@@ -306,10 +321,12 @@ export default function HomePage() {
               <h3 className="text-lg font-medium text-white mb-1">
                 {GRUPO_IVOTI_CANON.empresas.bomJardim.nome} →
               </h3>
-              <p className="text-sm text-white/80">
-                {GRUPO_IVOTI_CANON.empresas.bomJardim.descricaoCurta}
+              <p className="text-sm text-white/80 leading-relaxed">
+                {GRUPO_IVOTI_CANON.empresas.bomJardim.subtitulo}
               </p>
             </a>
+
+            {/* Card Telhas · com seta · link externo · subtitulo (texto mais rico) */}
             <a
               href={GRUPO_IVOTI_CANON.empresas.telhas.url}
               target="_blank"
@@ -319,10 +336,11 @@ export default function HomePage() {
               <h3 className="text-lg font-medium text-white mb-1">
                 {GRUPO_IVOTI_CANON.empresas.telhas.nome} →
               </h3>
-              <p className="text-sm text-white/80">
-                {GRUPO_IVOTI_CANON.empresas.telhas.descricaoCurta}
+              <p className="text-sm text-white/80 leading-relaxed">
+                {GRUPO_IVOTI_CANON.empresas.telhas.subtitulo}
               </p>
             </a>
+
           </div>
         </div>
       </section>
