@@ -299,7 +299,7 @@ export default async function CidadePage({
             Pacote completo · Grupo Ivoti
           </h2>
           <p className="text-base text-cc-gray-600 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
-            Três empresas no mesmo endereço pra entregar a obra externa completa.
+            Três empresas no mesmo lugar pra entregar a obra externa completa.
           </p>
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {grupo.map((g) => (

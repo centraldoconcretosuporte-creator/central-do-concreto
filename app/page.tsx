@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
+import { GRUPO_IVOTI_CANON, paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 
@@ -273,44 +274,54 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-cc-green relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
           <div>
-            <Eyebrow className="mb-4 text-white/80">Sobre o grupo</Eyebrow>
+            <Eyebrow className="mb-4 text-white/80">{GRUPO_IVOTI_CANON.eyebrow}</Eyebrow>
             <h2 className="text-3xl md:text-4xl font-medium text-white mb-6 leading-tight">
-              Três empresas · um só endereço pra resolver
+              {GRUPO_IVOTI_CANON.h2Cc}
             </h2>
             <p className="text-base text-white/85 leading-relaxed mb-6">
-              A Central do Concreto faz parte do Grupo Ivoti com a Bom Jardim Ivoti (pedras,
-              madeiras e revestimentos) e a Telhas Ivoti (telha sanduíche metálica). Atendemos
-              juntos · da estrutura ao acabamento.
+              {paragrafoGrupo("centralDoConcreto")}
             </p>
             <Link
-              href="/sobre"
+              href={GRUPO_IVOTI_CANON.ctaBotao.href}
               className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-6 py-3 rounded-full font-medium text-sm transition-colors"
             >
-              Conheça o grupo →
+              {GRUPO_IVOTI_CANON.ctaBotao.label}
             </Link>
           </div>
           <div className="space-y-3">
             <div className="bg-white/10 backdrop-blur border border-white/20 rounded-xl p-5">
-              <h3 className="text-lg font-medium text-white mb-1">Central do Concreto</h3>
-              <p className="text-sm text-white/80">Pergolados e pré-moldados de concreto</p>
+              <h3 className="text-lg font-medium text-white mb-1">
+                {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.nome}
+              </h3>
+              <p className="text-sm text-white/80">
+                {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.descricaoCurta}
+              </p>
             </div>
             <a
-              href="https://bomjardimivoti.com.br"
+              href={GRUPO_IVOTI_CANON.empresas.bomJardim.url}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/10 backdrop-blur border border-white/20 rounded-xl p-5 hover:bg-white/15 transition-colors"
             >
-              <h3 className="text-lg font-medium text-white mb-1">Bom Jardim Ivoti →</h3>
-              <p className="text-sm text-white/80">Pedras, madeiras, revestimentos</p>
+              <h3 className="text-lg font-medium text-white mb-1">
+                {GRUPO_IVOTI_CANON.empresas.bomJardim.nome} →
+              </h3>
+              <p className="text-sm text-white/80">
+                {GRUPO_IVOTI_CANON.empresas.bomJardim.descricaoCurta}
+              </p>
             </a>
             <a
-              href="https://telhasivoti.com.br"
+              href={GRUPO_IVOTI_CANON.empresas.telhas.url}
               target="_blank"
               rel="noopener noreferrer"
               className="block bg-white/10 backdrop-blur border border-white/20 rounded-xl p-5 hover:bg-white/15 transition-colors"
             >
-              <h3 className="text-lg font-medium text-white mb-1">Telhas Ivoti →</h3>
-              <p className="text-sm text-white/80">Telha sanduíche com isolamento térmico</p>
+              <h3 className="text-lg font-medium text-white mb-1">
+                {GRUPO_IVOTI_CANON.empresas.telhas.nome} →
+              </h3>
+              <p className="text-sm text-white/80">
+                {GRUPO_IVOTI_CANON.empresas.telhas.descricaoCurta}
+              </p>
             </a>
           </div>
         </div>

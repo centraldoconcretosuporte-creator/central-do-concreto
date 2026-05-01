@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
+import { paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
@@ -73,8 +74,7 @@ export default function SobrePage() {
               fossas, muros e pisantes.
             </p>
             <p className="text-base text-cc-gray-600 leading-relaxed">
-              Faz parte do Grupo Ivoti junto da Bom Jardim Ivoti e da Telhas Ivoti · três empresas
-              no mesmo endereço pra resolver da estrutura ao acabamento.
+              {paragrafoGrupo("centralDoConcreto")}
             </p>
           </div>
         </div>
