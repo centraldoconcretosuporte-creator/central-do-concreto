@@ -133,9 +133,7 @@ export default async function CidadePage({
   const c = getCidade(cidade);
   if (!c) notFound();
 
-  const subtitulo =
-    c.descricao ??
-    `Direto da fábrica em Ivoti, com estrutura reforçada, equipe própria de instalação e pontos de iluminação integrados. Atendemos ${c.nome} e cidades vizinhas.`;
+  const subtitulo = `Direto da fábrica em Ivoti, com estrutura reforçada, equipe própria de instalação e pontos de iluminação integrados. Atendemos ${c.nome} e cidades vizinhas.`;
 
   return (
     <>

@@ -3,27 +3,77 @@ export type CidadeLitoral = {
   nome: string;
   distanciaKm: string;
   tempoEstimado: string;
-  descricao?: string;
+  // Cidade vizinha pra usar no copy "atendemos X e Y"
+  vizinhas: string[];
+  // Tipo de mercado predominante · ajuda na contextualização do copy
+  perfil: string;
 };
 
 export const CIDADES_LITORAL: CidadeLitoral[] = [
+  {
+    slug: "imbe",
+    nome: "Imbé",
+    distanciaKm: "145 km",
+    tempoEstimado: "1h50",
+    vizinhas: ["Tramandaí"],
+    perfil: "Residência de veraneio e segunda casa",
+  },
+  {
+    slug: "tramandai",
+    nome: "Tramandaí",
+    distanciaKm: "140 km",
+    tempoEstimado: "1h45",
+    vizinhas: ["Imbé", "Xangri-Lá"],
+    perfil: "Residência de veraneio, hotel e pousada",
+  },
   {
     slug: "xangri-la",
     nome: "Xangri-Lá",
     distanciaKm: "165 km",
     tempoEstimado: "2h",
-    descricao:
-      "Cobertura exclusiva CC · pergolado em residência de veraneio e condomínio fechado.",
+    vizinhas: ["Atlântida", "Capão da Canoa"],
+    perfil: "Condomínio fechado, residência de luxo",
   },
-  { slug: "capao-da-canoa", nome: "Capão da Canoa", distanciaKm: "170 km", tempoEstimado: "2h05" },
-  { slug: "atlantida", nome: "Atlântida", distanciaKm: "168 km", tempoEstimado: "2h" },
-  { slug: "capao-novo", nome: "Capão Novo", distanciaKm: "175 km", tempoEstimado: "2h10" },
-  { slug: "pinhal", nome: "Pinhal", distanciaKm: "150 km", tempoEstimado: "1h50" },
-  { slug: "tramandai", nome: "Tramandaí", distanciaKm: "140 km", tempoEstimado: "1h45" },
-  { slug: "imbe", nome: "Imbé", distanciaKm: "145 km", tempoEstimado: "1h50" },
-  { slug: "cidreira", nome: "Cidreira", distanciaKm: "130 km", tempoEstimado: "1h45" },
-  { slug: "torres", nome: "Torres", distanciaKm: "210 km", tempoEstimado: "2h45" },
-  { slug: "arroio-do-sal", nome: "Arroio do Sal", distanciaKm: "200 km", tempoEstimado: "2h30" },
+  {
+    slug: "atlantida",
+    nome: "Atlântida",
+    distanciaKm: "168 km",
+    tempoEstimado: "2h",
+    vizinhas: ["Xangri-Lá", "Capão da Canoa"],
+    perfil: "Condomínio fechado, residência de veraneio",
+  },
+  {
+    slug: "capao-da-canoa",
+    nome: "Capão da Canoa",
+    distanciaKm: "170 km",
+    tempoEstimado: "2h05",
+    vizinhas: ["Atlântida", "Capão Novo"],
+    perfil: "Hotel, pousada e residência de veraneio",
+  },
+  {
+    slug: "capao-novo",
+    nome: "Capão Novo",
+    distanciaKm: "175 km",
+    tempoEstimado: "2h10",
+    vizinhas: ["Capão da Canoa", "Arroio do Sal"],
+    perfil: "Residência de veraneio e empreendimento",
+  },
+  {
+    slug: "arroio-do-sal",
+    nome: "Arroio do Sal",
+    distanciaKm: "200 km",
+    tempoEstimado: "2h30",
+    vizinhas: ["Capão Novo", "Torres"],
+    perfil: "Residência de veraneio, casa de praia",
+  },
+  {
+    slug: "torres",
+    nome: "Torres",
+    distanciaKm: "210 km",
+    tempoEstimado: "2h45",
+    vizinhas: ["Arroio do Sal"],
+    perfil: "Hotel, pousada, residência de veraneio",
+  },
 ];
 
 export function getCidade(slug: string): CidadeLitoral | undefined {
