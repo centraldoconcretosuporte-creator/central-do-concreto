@@ -37,7 +37,7 @@ export default function Header() {
   const pathname = usePathname() ?? "/";
 
   const produtosActive =
-    pathname.startsWith("/produtos") || pathname.startsWith("/atendimento");
+    pathname.startsWith("/produtos") || pathname.startsWith("/pre-moldados");
 
   return (
     <header className="sticky top-0 z-40 bg-white border-b border-cc-gray-200">

@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
-import { CIDADES_LITORAL } from "@/lib/cidades-litoral";
+import { CIDADES_LITORAL } from "@/lib/cidades-atendimento";
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 const PAGE_URL = `${SITE_URL}/produtos/pergolado-de-concreto`;

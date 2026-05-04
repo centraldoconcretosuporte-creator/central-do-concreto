@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { CIDADES_LITORAL } from "@/lib/cidades-litoral";
+import { CIDADES_ATENDIMENTO } from "@/lib/cidades-atendimento";
 
 const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
 
@@ -25,10 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/entregas`, lastModified: now, priority: 0.7 },
   ];
 
-  const cidadesRoutes = CIDADES_LITORAL.map((c) => ({
-    url: `${SITE_URL}/atendimento/${c.slug}`,
+  const cidadesRoutes = CIDADES_ATENDIMENTO.map((c) => ({
+    url: `${SITE_URL}/pre-moldados/${c.slug}`,
     lastModified: now,
-    priority: 0.8,
+    priority: 0.7,
   }));
 
   return [...staticRoutes, ...cidadesRoutes];

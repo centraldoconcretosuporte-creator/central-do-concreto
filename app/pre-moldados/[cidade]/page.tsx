@@ -3,9 +3,21 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/Eyebrow";
-import { CIDADES_LITORAL, getCidade, type CidadeLitoral } from "@/lib/cidades-litoral";
+import {
+  CIDADES_ATENDIMENTO,
+  getCidade,
+  type Cidade,
+} from "@/lib/cidades-atendimento";
 
-function subtituloHeroCidade(cidade: CidadeLitoral): string {
+const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const WHATSAPP_URL =
+  "https://wa.me/5551996691757?text=Oi%20Andr%C3%A9%2C%20quero%20or%C3%A7amento%20de%20pergolado%20de%20concreto.";
+const WHATSAPP_COBERTURA_URL =
+  "https://wa.me/5551996691757?text=Oi%2C%20quero%20consultar%20entrega%20de%20pergolado%20pra%20minha%20cidade";
+const WHATSAPP_PRE_MOLDADOS_URL =
+  "https://wa.me/5551996691757?text=Oi%2C%20quero%20or%C3%A7amento%20de%20pr%C3%A9-moldados%20de%20concreto.";
+
+function subtituloHeroCidade(cidade: Cidade): string {
   const vizinhasTexto =
     cidade.vizinhas.length > 0
       ? `${cidade.nome}, ${cidade.vizinhas.slice(0, 2).join(" e ")}`
@@ -14,14 +26,8 @@ function subtituloHeroCidade(cidade: CidadeLitoral): string {
   return `Pergolado de concreto pré-moldado em ${cidade.nome}. Saímos da fábrica em Ivoti e instalamos com equipe própria — estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos. Atendemos ${cidade.perfil.toLowerCase()} em ${vizinhasTexto}.`;
 }
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
-const WHATSAPP_URL =
-  "https://wa.me/5551996691757?text=Oi%20Andr%C3%A9%2C%20quero%20or%C3%A7amento%20de%20pergolado%20de%20concreto.";
-const WHATSAPP_COBERTURA_URL =
-  "https://wa.me/5551996691757?text=Oi%2C%20quero%20consultar%20entrega%20de%20pergolado%20pra%20minha%20cidade";
-
 export async function generateStaticParams() {
-  return CIDADES_LITORAL.map((c) => ({ cidade: c.slug }));
+  return CIDADES_ATENDIMENTO.map((c) => ({ cidade: c.slug }));
 }
 
 export async function generateMetadata({
@@ -32,7 +38,25 @@ export async function generateMetadata({
   const { cidade } = await params;
   const c = getCidade(cidade);
   if (!c) return {};
-  const url = `${SITE_URL}/atendimento/${c.slug}`;
+  const url = `${SITE_URL}/pre-moldados/${c.slug}`;
+
+  if (c.regiao === "serra") {
+    return {
+      metadataBase: new URL(SITE_URL),
+      title: `Pré-Moldados de Concreto em ${c.nome} · Central do Concreto`,
+      description: `Pergolados, blocos, tubos e artefatos de concreto pré-moldado em ${c.nome}. Direto da fábrica em Ivoti · entrega rápida e instalação especializada.`,
+      openGraph: {
+        title: `Pré-Moldados de Concreto em ${c.nome}`,
+        description: `Pergolados, blocos, tubos e artefatos de concreto pré-moldado em ${c.nome}. Direto da fábrica em Ivoti.`,
+        type: "website",
+        locale: "pt_BR",
+        url,
+        siteName: "Central do Concreto",
+      },
+      alternates: { canonical: url },
+    };
+  }
+
   return {
     metadataBase: new URL(SITE_URL),
     title: `Pergolado de concreto em ${c.nome}-RS · Central do Concreto`,
@@ -133,15 +157,7 @@ const faqs = [
   },
 ];
 
-export default async function CidadePage({
-  params,
-}: {
-  params: Promise<{ cidade: string }>;
-}) {
-  const { cidade } = await params;
-  const c = getCidade(cidade);
-  if (!c) notFound();
-
+function CidadeLitoralView({ c }: { c: Cidade }) {
   const subtitulo = subtituloHeroCidade(c);
 
   return (
@@ -388,4 +404,99 @@ export default async function CidadePage({
       </section>
     </>
   );
+}
+
+function CidadeSerraView({ c }: { c: Cidade }) {
+  return (
+    <>
+      {/* HERO · placeholder genérica · conteúdo único vem em rodada futura */}
+      <section className="bg-cc-green py-20 md:py-28 text-center">
+        <div className="mx-auto max-w-3xl px-4">
+          <nav
+            aria-label="Breadcrumb"
+            className="mb-8 flex items-center justify-center gap-2 text-sm text-white/90 flex-wrap"
+          >
+            <Link href="/" className="hover:text-white">
+              Início
+            </Link>
+            <span aria-hidden="true">›</span>
+            <Link href="/entregas" className="hover:text-white">
+              Atendimento
+            </Link>
+            <span aria-hidden="true">›</span>
+            <span className="text-white font-medium">{c.nome}</span>
+          </nav>
+
+          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
+            Pré-Moldados de Concreto em {c.nome}
+          </h1>
+          <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl mx-auto">
+            Pergolados, blocos, tubos e artefatos de concreto pré-moldado direto da fábrica em Ivoti-RS · entrega em {c.nome} e região da Serra Gaúcha.
+          </p>
+          <a
+            href={WHATSAPP_PRE_MOLDADOS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+          >
+            Pedir orçamento no WhatsApp
+          </a>
+        </div>
+      </section>
+
+      {/* CTA · explorar produtos */}
+      <section className="py-16 md:py-24 bg-cc-cream text-center">
+        <div className="mx-auto max-w-3xl px-4">
+          <Eyebrow className="mb-3">Catálogo</Eyebrow>
+          <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-6">
+            Conheça nossos pré-moldados
+          </h2>
+          <p className="text-base text-cc-gray-600 leading-relaxed mb-8">
+            Pergolados, tubos, caixas, muros, blocos, fossa e mais · tudo saindo da forma em Ivoti.
+          </p>
+          <Link
+            href="/produtos"
+            className="inline-flex items-center gap-2 bg-cc-orange hover:bg-cc-orange/90 text-white px-7 py-3.5 rounded-full font-medium transition-colors"
+          >
+            Ver todos os produtos →
+          </Link>
+        </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="bg-cc-orange py-12 sm:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3">
+            Atende {c.nome}?
+          </h2>
+          <p className="text-base sm:text-lg mb-6 opacity-95">
+            Manda no WhatsApp a medida estimada e o produto · respondemos no mesmo dia.
+          </p>
+          <a
+            href={WHATSAPP_PRE_MOLDADOS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-white text-cc-orange hover:bg-cc-gray-100 px-7 py-3.5 rounded-md text-base font-bold transition-colors mb-6"
+          >
+            Falar no WhatsApp · (51) 99669-1757
+          </a>
+          <p className="text-sm opacity-90">
+            Av. Bom Jardim, 149 · Loja 04 · Vista Alegre · Ivoti-RS
+          </p>
+        </div>
+      </section>
+    </>
+  );
+}
+
+export default async function CidadePage({
+  params,
+}: {
+  params: Promise<{ cidade: string }>;
+}) {
+  const { cidade } = await params;
+  const c = getCidade(cidade);
+  if (!c) notFound();
+
+  return c.regiao === "serra" ? <CidadeSerraView c={c} /> : <CidadeLitoralView c={c} />;
 }
