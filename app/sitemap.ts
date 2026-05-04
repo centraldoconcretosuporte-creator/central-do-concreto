@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/produtos/blocos`, lastModified: now, priority: 0.6 },
     { url: `${SITE_URL}/produtos/pavs`, lastModified: now, priority: 0.6 },
     { url: `${SITE_URL}/produtos/fossa-e-filtro`, lastModified: now, priority: 0.7 },
+    { url: `${SITE_URL}/produtos/revestimentos-de-concreto`, lastModified: now, priority: 0.8 },
+    { url: `${SITE_URL}/produtos/cobogos`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/sobre`, lastModified: now, priority: 0.6 },
     { url: `${SITE_URL}/contato`, lastModified: now, priority: 0.6 },
     { url: `${SITE_URL}/entregas`, lastModified: now, priority: 0.7 },
