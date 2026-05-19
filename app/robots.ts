@@ -1,12 +1,12 @@
 import type { MetadataRoute } from "next";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
-      disallow: "/",
+      allow: "/",
     },
     sitemap: `${SITE_URL}/sitemap.xml`,
   };

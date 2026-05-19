@@ -26,10 +26,6 @@ export const metadata: Metadata = {
     locale: "pt_BR",
     siteName: "Central do Concreto",
   },
-  robots: {
-    index: false,
-    follow: false,
-  },
 };
 
 export default function RootLayout({
