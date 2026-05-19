@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 import { CIDADES_LITORAL } from "@/lib/cidades-atendimento";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const PAGE_URL = `${SITE_URL}/produtos/pergolado-de-concreto`;
 const OG_IMAGE = "/og/pergolado-litoral.jpg";
 

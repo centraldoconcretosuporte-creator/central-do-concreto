@@ -51,7 +51,7 @@ export const GRUPO_IVOTI_CANON = {
       whatsapp: "(51) 99669-1757",
       whatsappLink: "https://wa.me/5551996691757",
       site: "centraldoconcretoentrega.com.br",
-      url: "https://central-do-concreto-br6r.vercel.app",
+      url: "https://centraldoconcretoentrega.com.br",
     },
     telhas: {
       nome: "Telhas Ivoti",

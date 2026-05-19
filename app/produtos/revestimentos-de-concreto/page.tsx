@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/Eyebrow";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 const PAGE_URL = `${SITE_URL}/produtos/revestimentos-de-concreto`;
 const PAGE_TITLE = "Revestimentos de Concreto em Ivoti-RS · Central do Concreto";

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/Eyebrow";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 export const metadata: Metadata = {

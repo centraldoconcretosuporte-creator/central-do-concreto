@@ -4,7 +4,7 @@ import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
 import { GRUPO_IVOTI_CANON, paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),

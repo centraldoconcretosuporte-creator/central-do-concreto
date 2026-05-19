@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 export const metadata: Metadata = {
   title: "Contato · Central do Concreto · WhatsApp e endereço",

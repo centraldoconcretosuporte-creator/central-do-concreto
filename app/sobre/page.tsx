@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
 import { paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 export const metadata: Metadata = {

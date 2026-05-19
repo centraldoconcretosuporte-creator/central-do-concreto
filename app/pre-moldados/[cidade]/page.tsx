@@ -9,7 +9,7 @@ import {
   type Cidade,
 } from "@/lib/cidades-atendimento";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL =
   "https://wa.me/5551996691757?text=Oi%20Andr%C3%A9%2C%20quero%20or%C3%A7amento%20de%20pergolado%20de%20concreto.";
 const WHATSAPP_COBERTURA_URL =

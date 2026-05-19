@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { CIDADES_ATENDIMENTO } from "@/lib/cidades-atendimento";
 
-const SITE_URL = "https://central-do-concreto-br6r.vercel.app";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
