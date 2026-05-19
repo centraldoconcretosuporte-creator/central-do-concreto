@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes = [
     { url: SITE_URL, lastModified: now, priority: 1.0 },
     { url: `${SITE_URL}/tubo-de-concreto`, lastModified: now, priority: 0.9 },
+    { url: `${SITE_URL}/tubo-de-concreto/tipos-de-encaixe`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/produtos`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/produtos/pergolado-de-concreto`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/produtos/piso-atermico`, lastModified: now, priority: 0.7 },
