@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/tubo-de-concreto/classes-de-carga`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/diametros`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/tubo-dreno`, lastModified: now, priority: 0.8 },
+    { url: `${SITE_URL}/tubo-de-concreto/aplicacoes`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/produtos`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/produtos/pergolado-de-concreto`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/produtos/piso-atermico`, lastModified: now, priority: 0.7 },
