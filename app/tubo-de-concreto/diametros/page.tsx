@@ -658,21 +658,15 @@ export default function DiametrosPage() {
               </p>
               <p>
                 A Central também instala — pode-se pedir orçamento de
-                fornecimento ou de fornecimento mais instalação. Veja outras{" "}
-                <Link
-                  href="/tubo-de-concreto/aplicacoes"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
-                >
-                  aplicações do tubo de concreto em obras de drenagem
-                </Link>{" "}
-                ou{" "}
+                fornecimento ou de fornecimento mais instalação. Para decidir
+                entre concreto simples e armado, veja as{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
                   className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
                 >
                   classes de carga PA1 a PA4
-                </Link>{" "}
-                para decidir entre concreto simples e armado.
+                </Link>
+                .
               </p>
             </div>
           </section>
