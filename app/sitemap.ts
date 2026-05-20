@@ -11,6 +11,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/tubo-de-concreto`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/tubo-de-concreto/tipos-de-encaixe`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/classes-de-carga`, lastModified: now, priority: 0.8 },
+    { url: `${SITE_URL}/tubo-de-concreto/diametros`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/tubo-dreno`, lastModified: now, priority: 0.8 },
     { url: `${SITE_URL}/produtos`, lastModified: now, priority: 0.9 },
     { url: `${SITE_URL}/produtos/pergolado-de-concreto`, lastModified: now, priority: 0.9 },
