@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -114,7 +115,13 @@ export default function TiposDeEncaixePage() {
             <span className="text-white font-medium">Tipos de encaixe</span>
           </nav>
 
-          {/* FOTO_TOPO_S1: foto real de tubos PB empilhados no estoque da Central, com encaixe visível em primeiro plano */}
+          <Image
+            src="/images/tubo-de-concreto/tubo-concreto-encaixe-mf-diametros.webp"
+            alt="Tubos de concreto com encaixe macho e fêmea em diâmetros variados na Central do Concreto"
+            width={1600}
+            height={900}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Tipos de encaixe de tubo de concreto
@@ -188,7 +195,12 @@ export default function TiposDeEncaixePage() {
                 da Central.
               </p>
             </div>
-            {/* FOTO_PB: foto real do encaixe ponta e bolsa de um tubo da Central, em close, mostrando o aumento de espessura na bolsa */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-ponta-bolsa.webp"
+              alt="Tubo de concreto com encaixe ponta e bolsa pronto para drenagem"
+              width={1600}
+              height={1200}
+            />
           </section>
 
           {/* H2 2 — O que é o encaixe macho e fêmea (MF)? */}
@@ -218,7 +230,12 @@ export default function TiposDeEncaixePage() {
                 com junta elástica não seja prática usual.
               </p>
             </div>
-            {/* FOTO_MF: foto real do encaixe macho e fêmea, em close, mostrando o entalhe a meia espessura */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-macho-femea.webp"
+              alt="Tubo de concreto com encaixe macho e fêmea para junta elástica"
+              width={1600}
+              height={1200}
+            />
           </section>
 
           {/* H2 3 — Ponta e bolsa ou macho e fêmea: qual a diferença? */}
@@ -427,7 +444,12 @@ export default function TiposDeEncaixePage() {
                 com base na ficha do projeto.
               </p>
             </div>
-            {/* FOTO_ESTOQUE_S1: foto real do estoque da Central com tubos PB em primeiro plano e MF ao fundo, mostrando a diversidade da linha */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-deposito-encaixes.webp"
+              alt="Depósito de tubos de concreto com diferentes encaixes na Central do Concreto, Ivoti RS"
+              width={1600}
+              height={1200}
+            />
           </section>
         </div>
       </article>

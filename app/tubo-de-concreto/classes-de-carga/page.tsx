@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -115,7 +116,13 @@ export default function ClassesDeCargaPage() {
             <span className="text-white font-medium">Classes de carga</span>
           </nav>
 
-          {/* FOTO_TOPO_S2: foto real de tubos armados (PA) no estoque ou em obra da Central, com armadura aparente ou peças empilhadas em primeiro plano */}
+          <Image
+            src="/images/tubo-de-concreto/tubo-concreto-classes-carga-tamanhos.webp"
+            alt="Tubos de concreto em diferentes diâmetros e classes de carga conforme NBR 8890"
+            width={1600}
+            height={2133}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Classes de resistência do tubo de concreto
@@ -468,7 +475,12 @@ export default function ClassesDeCargaPage() {
                 classe com base no tipo de via e na profundidade da rede.
               </p>
             </div>
-            {/* FOTO_ESTOQUE_S2: foto real do estoque da Central com tubos armados (PA1 e PA2) em primeiro plano, com a marcação da classe visível na peça quando possível */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-pronta-entrega.webp"
+              alt="Tubos de concreto pronta entrega em diferentes classes de carga na Central do Concreto"
+              width={1600}
+              height={1200}
+            />
           </section>
         </div>
       </article>

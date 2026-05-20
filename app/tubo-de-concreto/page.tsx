@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -103,7 +104,13 @@ export default function TuboDeConcretoPage() {
             <span className="text-white font-medium">Tubo de concreto</span>
           </nav>
 
-          {/* FOTO_TOPO: foto de tubos no pátio da Central — entra em outra tarefa */}
+          <Image
+            src="/images/tubo-de-concreto/tubo-concreto-estoque-ivoti.webp"
+            alt="Estoque de tubos de concreto para pronta entrega na Central do Concreto em Ivoti, RS"
+            width={960}
+            height={1280}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Tubo de concreto
@@ -180,7 +187,12 @@ export default function TuboDeConcretoPage() {
             >
               Quais são os tipos de encaixe do tubo de concreto?
             </h2>
-            {/* FOTO_ENCAIXE: close das juntas ponta e bolsa e macho e fêmea — entra em outra tarefa */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-encaixe-detalhe.webp"
+              alt="Detalhe do encaixe ponta e bolsa em tubo de concreto"
+              width={1600}
+              height={1200}
+            />
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O tubo de concreto tem dois tipos de encaixe principais: ponta e bolsa (PB) e
@@ -332,7 +344,12 @@ export default function TuboDeConcretoPage() {
             >
               Onde o tubo de concreto é usado?
             </h2>
-            {/* FOTO_APLICACOES: foto de uma rede de tubos instalada em obra — entra em outra tarefa */}
+            <Image
+              src="/images/tubo-de-concreto/tubo-concreto-aplicacao-drenagem.webp"
+              alt="Tubo de concreto instalado em obra de drenagem pluvial"
+              width={817}
+              height={613}
+            />
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O tubo de concreto é usado em qualquer obra que precise retirar água do caminho de
