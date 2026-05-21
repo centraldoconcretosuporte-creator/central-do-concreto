@@ -265,8 +265,14 @@ export default function TuboDrenoPage() {
               <p>
                 O tubo dreno de concreto é usado em obras de drenagem subterrânea de médio e grande
                 porte, onde o diâmetro maior e a resistência estrutural do concreto fazem mais
-                sentido que o tubo de PEAD. Quatro aplicações concentram quase todo o uso da linha
-                da Central.
+                sentido que o tubo de PEAD. Quatro{" "}
+                <Link
+                  href="/tubo-de-concreto/aplicacoes"
+                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                >
+                  aplicações do tubo de concreto
+                </Link>{" "}
+                concentram quase todo o uso da linha da Central.
               </p>
               <p>
                 <strong>Muro de arrimo de médio e grande porte.</strong> Dreno corrido na base, ao

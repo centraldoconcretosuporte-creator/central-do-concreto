@@ -344,10 +344,16 @@ export default function TiposDeEncaixePage() {
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O encaixe correto depende de três fatores: o diâmetro do tubo, o que ele vai
-                transportar e o nível de estanqueidade exigido. Tubos de até DN 500 só podem ser
-                PB. Tubos para esgoto sanitário precisam obrigatoriamente de PB com junta
-                elástica. Tubos para drenagem pluvial em diâmetros DN 500 ou maiores podem ser PB
-                ou MF, conforme o projeto.
+                transportar e o nível de estanqueidade exigido — combinação que muda conforme as{" "}
+                <Link
+                  href="/tubo-de-concreto/aplicacoes"
+                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                >
+                  aplicações do tubo de concreto
+                </Link>{" "}
+                na obra. Tubos de até DN 500 só podem ser PB. Tubos para esgoto sanitário precisam
+                obrigatoriamente de PB com junta elástica. Tubos para drenagem pluvial em diâmetros
+                DN 500 ou maiores podem ser PB ou MF, conforme o projeto.
               </p>
             </div>
 
