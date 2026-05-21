@@ -58,7 +58,7 @@ const jsonLd = {
         {
           "@type": "ListItem",
           position: 1,
-          name: "Central do Concreto",
+          name: "Início",
           item: "https://centraldoconcretoentrega.com.br/",
         },
         {
