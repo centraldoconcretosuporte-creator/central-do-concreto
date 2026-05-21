@@ -351,7 +351,19 @@ export default function ClassesDeCargaPage() {
               </table>
             </div>
 
-            {/* TABELA_NBR_COMPLETA_S2: a tabela completa diâmetro × classe × carga (DN 300, 400, 500, 600, 800, 1000, 1200, 1500, 2000) entra com base na ficha técnica da Central — assim o site passa a ter a tabela como HTML semântico, citável pela IA, em vez de imagem como ABTC e concorrentes */}
+            <figure className="my-8 mx-auto max-w-3xl">
+              <img
+                src="/cluster-drenagem/fichas-tecnicas/tubo-dn600-pa1.svg"
+                alt="Ficha técnica ABNT do tubo de concreto DN 600 PA-1 ponta e bolsa: vista frontal com bolsa, corte transversal A-A, cotas Ø 600 mm interno, Ø 720 mm externo, parede 60 mm e comprimento útil 1000 mm conforme ABNT NBR 8890:2020. Aplicações: redes de drenagem pluvial, galerias urbanas, travessias rodoviárias, loteamentos e esgoto sanitário."
+                width={1050}
+                height={800}
+                loading="lazy"
+                className="w-full h-auto border border-cc-gray-200 rounded-lg bg-white"
+              />
+              <figcaption className="mt-3 text-sm text-cc-gray-700 italic text-center">
+                Ficha técnica · Tubo de concreto Ø 600 PA-1 ponta e bolsa · Central do Concreto · Conforme ABNT NBR 8890:2020
+              </figcaption>
+            </figure>
 
             <div className="mt-6 space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>

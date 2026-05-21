@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1050 800" style="font-family:system-ui,Arial,sans-serif;background:#fff">
+    <defs>
+      <pattern id="hatchConcreto" patternUnits="userSpaceOnUse" width="7" height="7" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="7" stroke="#888" stroke-width="0.7"/>
+      </pattern>
+      <pattern id="hatchVista" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)">
+        <line x1="0" y1="0" x2="0" y2="10" stroke="#b8b5ab" stroke-width="0.5"/>
+      </pattern>
+      <mask id="maskParede">
+        <rect x="615" y="155" width="250" height="250" fill="white"/>
+        <circle cx="740" cy="280" r="95.83333333333334" fill="black"/>
+      </mask>
+    </defs>
+    <rect width="1050" height="800" fill="#fff"/>
+    <rect x="18" y="18" width="1014" height="764" fill="none" stroke="#1a1a18" stroke-width="2.2"/>
+    <rect x="22" y="22" width="1006" height="756" fill="none" stroke="#1a1a18" stroke-width="0.5"/>
+
+    <text x="525" y="64" text-anchor="middle" font-size="26" font-weight="700" fill="#1a1a18" letter-spacing="1.2">TUBO DE CONCRETO DN 600 PA-1 PONTA E BOLSA</text>
+    <text x="525" y="90" text-anchor="middle" font-size="15" fill="#555">ABNT NBR 8890:2020 · Central do Concreto — Ivoti/RS · WhatsApp (51) 99669-1757</text>
+    <line x1="36" y1="108" x2="1014" y2="108" stroke="#1a1a18" stroke-width="1.3"/>
+
+    <text x="265" y="138" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a18" letter-spacing="3">VISTA FRONTAL</text>
+    <text x="740" y="138" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a18" letter-spacing="3">CORTE A-A</text>
+
+
+    <line x1="126.33333333333334" y1="260" x2="426.05555555555554" y2="260" stroke="#444" stroke-width="0.7" stroke-dasharray="12,4,3,4"/>
+    <rect x="161.94444444444446" y="175" width="236.11111111111111" height="170" fill="url(#hatchVista)" opacity="0.35"/>
+    <rect x="161.94444444444446" y="175" width="236.11111111111111" height="170" fill="none" stroke="#1a1a18" stroke-width="2.5"/>
+    <line x1="165.94444444444446" y1="184" x2="394.05555555555554" y2="184" stroke="#1a1a18" stroke-width="1.3" stroke-dasharray="8,3"/>
+    <line x1="165.94444444444446" y1="336" x2="394.05555555555554" y2="336" stroke="#1a1a18" stroke-width="1.3" stroke-dasharray="8,3"/>
+    <path d="M 161.94444444444446 175&#10;             L 152.94444444444446 170.77777777777777&#10;             L 138.33333333333334 170.77777777777777&#10;             L 138.33333333333334 349.22222222222223&#10;             L 152.94444444444446 349.22222222222223&#10;             L 161.94444444444446 345 Z" fill="#fafaf7" stroke="#1a1a18" stroke-width="2.5"/>
+    <line x1="143.33333333333334" y1="175" x2="160.94444444444446" y2="175" stroke="#1a1a18" stroke-width="1.3" stroke-dasharray="6,3"/>
+    <line x1="143.33333333333334" y1="345" x2="160.94444444444446" y2="345" stroke="#1a1a18" stroke-width="1.3" stroke-dasharray="6,3"/>
+    <line x1="408.05555555555554" y1="184" x2="456.05555555555554" y2="184" stroke="#555" stroke-width="1.1"/>
+    <line x1="408.05555555555554" y1="336" x2="456.05555555555554" y2="336" stroke="#555" stroke-width="1.1"/>
+    <line x1="446.05555555555554" y1="184" x2="446.05555555555554" y2="336" stroke="#555" stroke-width="1.1"/>
+    <polygon points="446.05555555555554,184 441.05555555555554,193 451.05555555555554,193" fill="#555"/>
+    <polygon points="446.05555555555554,336 441.05555555555554,327 451.05555555555554,327" fill="#555"/>
+    <text x="464.05555555555554" y="258" font-size="17" font-weight="600" fill="#222">Ø 600 mm</text>
+    <text x="464.05555555555554" y="278" font-size="13" fill="#7a7570" font-style="italic">(interno · DN)</text>
+    <line x1="161.94444444444446" y1="373" x2="398.05555555555554" y2="373" stroke="#555" stroke-width="1.1"/>
+    <line x1="161.94444444444446" y1="352" x2="161.94444444444446" y2="383" stroke="#555" stroke-width="0.9"/>
+    <line x1="398.05555555555554" y1="352" x2="398.05555555555554" y2="383" stroke="#555" stroke-width="0.9"/>
+    <polygon points="161.94444444444446,373 169.94444444444446,368 169.94444444444446,378" fill="#555"/>
+    <polygon points="398.05555555555554,373 390.05555555555554,368 390.05555555555554,378" fill="#555"/>
+    <text x="280" y="402" text-anchor="middle" font-size="15" fill="#222">1000 mm (comprimento útil)</text>
+    <text x="150.1388888888889" y="151.77777777777777" text-anchor="middle" font-size="13" fill="#7a7570" font-style="italic">bolsa</text>
+
+
+    <line x1="595" y1="280" x2="885" y2="280" stroke="#444" stroke-width="0.7" stroke-dasharray="12,4,3,4"/>
+    <line x1="740" y1="135" x2="740" y2="425" stroke="#444" stroke-width="0.7" stroke-dasharray="12,4,3,4"/>
+    <circle cx="740" cy="280" r="115" fill="url(#hatchConcreto)" mask="url(#maskParede)"/>
+    <circle cx="740" cy="280" r="115" fill="none" stroke="#1a1a18" stroke-width="2.8"/>
+    <circle cx="740" cy="280" r="95.83333333333334" fill="white" stroke="#1a1a18" stroke-width="2.2"/>
+    <line x1="820.5" y1="199.5" x2="910" y2="147" stroke="#555" stroke-width="0.9" stroke-dasharray="5,3"/>
+    <circle cx="820.5" cy="199.5" r="2.5" fill="#555"/>
+    <text x="915" y="147" font-size="17" font-weight="600" fill="#222">Ø 720 mm</text>
+    <text x="915" y="164" font-size="13" fill="#7a7570" font-style="italic">(externo)</text>
+    <line x1="835.8333333333334" y1="308.75" x2="910" y2="303" stroke="#555" stroke-width="0.9" stroke-dasharray="5,3"/>
+    <circle cx="835.8333333333334" cy="308.75" r="2.5" fill="#555"/>
+    <text x="915" y="303" font-size="17" font-weight="600" fill="#222">Ø 600 mm</text>
+    <text x="915" y="322" font-size="13" fill="#7a7570" font-style="italic">(interno · DN)</text>
+    <line x1="634.5833333333334" y1="387" x2="590" y2="425" stroke="#555" stroke-width="0.9" stroke-dasharray="5,3"/>
+    <circle cx="634.5833333333334" cy="387" r="2.5" fill="#555"/>
+    <text x="585" y="430" text-anchor="end" font-size="17" font-weight="600" fill="#222">60 mm</text>
+    <text x="585" y="448" text-anchor="end" font-size="13" fill="#7a7570" font-style="italic">(parede)</text>
+    <text x="611" y="286" text-anchor="end" font-size="16" font-weight="700" fill="#1a1a18">A</text>
+    <text x="869" y="286" font-size="16" font-weight="700" fill="#1a1a18">A</text>
+
+
+    <line x1="36" y1="478" x2="1014" y2="478" stroke="#bbb" stroke-width="1.2"/>
+
+    <text x="55" y="510" font-size="15" font-weight="700" fill="#1a1a18" letter-spacing="1.8">ESPECIFICAÇÕES TÉCNICAS</text>
+    <text x="55" y="540" font-size="14" fill="#333">· DN: 600 mm (diâmetro interno)</text><text x="55" y="561" font-size="14" fill="#333">· Diâmetro externo: 720 mm</text><text x="55" y="582" font-size="14" fill="#333">· Comprimento útil: 1000 mm</text><text x="55" y="603" font-size="14" fill="#333">· Esp. parede mín.: 60 mm</text><text x="55" y="624" font-size="14" fill="#333">· Junta: Rígida (ponta e bolsa)</text><text x="55" y="645" font-size="14" fill="#333">· Classe: PA-1</text><text x="55" y="666" font-size="14" fill="#333">· Norma: ABNT NBR 8890:2020</text>
+
+    <line x1="500" y1="485" x2="500" y2="695" stroke="#bbb" stroke-width="1.2"/>
+
+    <text x="520" y="510" font-size="15" font-weight="700" fill="#1a1a18" letter-spacing="1.8">APLICAÇÕES</text>
+    <text x="520" y="540" font-size="14" fill="#333">· redes de drenagem pluvial</text><text x="520" y="561" font-size="14" fill="#333">· galerias urbanas</text><text x="520" y="582" font-size="14" fill="#333">· travessias rodoviárias</text><text x="520" y="603" font-size="14" fill="#333">· loteamentos e condomínios</text><text x="520" y="624" font-size="14" fill="#333">· esgoto sanitário</text>
+
+    <line x1="36" y1="690" x2="1014" y2="690" stroke="#bbb" stroke-width="1.1"/>
+    <text x="55" y="710" font-size="11.5" fill="#888" font-style="italic">NOTA 1: Dimensões em milímetros. DN refere-se ao diâmetro interno (NBR 8890).</text>
+    <text x="55" y="727" font-size="11.5" fill="#888" font-style="italic">NOTA 2: Desenho meramente ilustrativo. Consultar ABNT NBR 8890:2020 para especificações completas.</text>
+    <text x="55" y="744" font-size="11.5" fill="#888" font-style="italic">NOTA 3: Produto sujeito a alterações técnicas sem aviso prévio.</text>
+
+    <rect x="790" y="672" width="222" height="105" fill="none" stroke="#1a1a18" stroke-width="1.4"/>
+    <rect x="790" y="672" width="222" height="25" fill="#1a1a18"/>
+    <text x="901" y="690" text-anchor="middle" font-size="13" font-weight="700" fill="#fff" letter-spacing="1.5">CENTRAL DO CONCRETO</text>
+    <text x="901" y="714" text-anchor="middle" font-size="12" fill="#333">DN 600 · PA-1 · Ponta e Bolsa</text>
+    <text x="901" y="732" text-anchor="middle" font-size="11" fill="#666">ABNT NBR 8890:2020</text>
+    <text x="901" y="750" text-anchor="middle" font-size="11" fill="#666">Escala: S/E · Data: 21/05/2026</text>
+    <text x="901" y="768" text-anchor="middle" font-size="11" font-weight="600" fill="#c84b18">Ivoti-RS · (51) 99669-1757</text>
+  </svg>
