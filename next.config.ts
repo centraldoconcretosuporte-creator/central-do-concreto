@@ -1,3 +1,4 @@
+import path from "path";
 import type { NextConfig } from "next";
 
 const CIDADES_LITORAL_SLUGS = [
@@ -39,6 +40,9 @@ const REDIRECTS_SITE_ANTIGO: Array<{ source: string; destination: string }> = [
 ];
 
 const nextConfig: NextConfig = {
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   images: {
     remotePatterns: [
       {
