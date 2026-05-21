@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -115,7 +116,13 @@ export default function DiametrosPage() {
             <span className="text-white font-medium">Diâmetros e medidas</span>
           </nav>
 
-          {/* FOTO_HERO_S4 — foto noturna central-concreto-produto-887.jpg */}
+          <Image
+            src="/cluster-drenagem/diametros-tubo-concreto-pronta-entrega.webp"
+            alt="Tubos de concreto de vários diâmetros enfileirados no pátio iluminado da Central do Concreto em Ivoti, do Ø150 cm ao Ø20 cm em ordem decrescente — todos os diâmetros em pronta entrega."
+            width={1920}
+            height={1440}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Diâmetros do tubo de concreto
@@ -645,7 +652,12 @@ export default function DiametrosPage() {
                 macho-fêmea.
               </p>
 
-              {/* FOTO_PRODUTO_S4 — foto diurna tubos_pb.jpg */}
+              <Image
+                src="/cluster-drenagem/tubo-concreto-armado-central-ivoti.webp"
+                alt="Tubos de concreto armado em fila com caminhão munck vermelho ao fundo, pátio da Central do Concreto em Ivoti durante operação diurna."
+                width={1920}
+                height={1440}
+              />
 
               <p>
                 Os tubos da Central atendem desde drenagem residencial até obras

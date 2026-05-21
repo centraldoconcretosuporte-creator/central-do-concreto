@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -149,7 +150,13 @@ export default function AplicacoesPage() {
             <span className="text-white font-medium">Aplicações</span>
           </nav>
 
-          {/* FOTO_HERO_S5 — drenagem_3.jpeg — obra real: dois tubos entrando em caixa de passagem */}
+          <Image
+            src="/cluster-drenagem/aplicacao-tubo-concreto-drenagem-pluvial.webp"
+            alt="Caixa de passagem de concreto conectada a dois tubos instalados em vala de drenagem pluvial em obra real — aplicação típica do tubo de concreto."
+            width={817}
+            height={613}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Aplicações do tubo de concreto
@@ -882,7 +889,12 @@ export default function AplicacoesPage() {
                 vicinal, drenagem de pátio e fossa séptica.
               </p>
 
-              {/* FOTO_OPERACAO_S5 — logistica_rapida.jpg — equipe Central preparando caminhão de entrega */}
+              <Image
+                src="/cluster-drenagem/entrega-tubo-concreto-central-ivoti.webp"
+                alt="Colaborador da Central do Concreto com uniforme da empresa preparando o caminhão munck para entrega de tubos de concreto em Ivoti."
+                width={1920}
+                height={1440}
+              />
 
               <p>
                 Atendemos Ivoti e cidades em raio de aproximadamente 50 km:

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 
@@ -154,7 +155,13 @@ export default function TuboDrenoPage() {
             <span className="text-white font-medium">Tubo dreno</span>
           </nav>
 
-          {/* FOTO_TOPO_S3 — foto real de tubo dreno perfurado; entra em sessão futura, ver D4 do checkpoint de 20/05/2026 */}
+          <Image
+            src="/cluster-drenagem/central-concreto-patio-tubo-dreno.webp"
+            alt="Picape da Central do Concreto com pilha de tubos de concreto ao fundo no pátio em Ivoti — catálogo completo incluindo tubo dreno."
+            width={1920}
+            height={1440}
+            priority
+          />
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Tubo dreno de concreto
