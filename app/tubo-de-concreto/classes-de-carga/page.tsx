@@ -54,18 +54,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: f.a,
-        },
-      })),
-    },
-    {
       "@type": "BreadcrumbList",
+      "@id": `${CANONICAL_URL}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -86,6 +76,18 @@ const jsonLd = {
           item: CANONICAL_URL,
         },
       ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${CANONICAL_URL}#faq`,
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: f.a,
+        },
+      })),
     },
   ],
 };
@@ -319,31 +321,31 @@ export default function ClassesDeCargaPage() {
               <table className="w-full text-sm md:text-base border border-cc-gray-200 rounded-lg overflow-hidden">
                 <thead className="bg-cc-green text-white">
                   <tr>
-                    <th className="text-left font-semibold px-4 py-3">Classe</th>
-                    <th className="text-left font-semibold px-4 py-3">
+                    <th scope="col" className="text-left font-semibold px-4 py-3">Classe</th>
+                    <th scope="col" className="text-left font-semibold px-4 py-3">
                       Carga mínima de fissura (DN 300)
                     </th>
-                    <th className="text-left font-semibold px-4 py-3">Uso típico</th>
+                    <th scope="col" className="text-left font-semibold px-4 py-3">Uso típico</th>
                   </tr>
                 </thead>
                 <tbody className="text-cc-gray-700">
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">PA1</td>
+                    <th scope="row" className="px-4 py-3 font-medium text-left">PA1</th>
                     <td className="px-4 py-3">12 kN/m</td>
                     <td className="px-4 py-3">Tráfego leve residencial</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
-                    <td className="px-4 py-3 font-medium">PA2</td>
+                    <th scope="row" className="px-4 py-3 font-medium text-left">PA2</th>
                     <td className="px-4 py-3">18 kN/m</td>
                     <td className="px-4 py-3">Avenida urbana</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">PA3</td>
+                    <th scope="row" className="px-4 py-3 font-medium text-left">PA3</th>
                     <td className="px-4 py-3">27 kN/m</td>
                     <td className="px-4 py-3">Rodovia e tráfego pesado</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
-                    <td className="px-4 py-3 font-medium">PA4</td>
+                    <th scope="row" className="px-4 py-3 font-medium text-left">PA4</th>
                     <td className="px-4 py-3">36 kN/m</td>
                     <td className="px-4 py-3">Zona industrial e rodovia federal</td>
                   </tr>
@@ -498,7 +500,7 @@ export default function ClassesDeCargaPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
@@ -554,6 +556,11 @@ export default function ClassesDeCargaPage() {
           >
             Falar no WhatsApp · (51) 99669-1757
           </a>
+          <p className="mt-6 text-sm text-white/80">
+            Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
+            <br />
+            Atendimento: Ivoti e cidades em raio de 50 km
+          </p>
         </div>
       </section>
     </>

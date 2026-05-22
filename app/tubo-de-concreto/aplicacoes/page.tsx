@@ -969,7 +969,7 @@ export default function AplicacoesPage() {
             Falar no WhatsApp · (51) 99669-1757
           </a>
           <p className="mt-6 text-sm text-white/80">
-            Endereço: Av. Bom Jardim, 149 — Loja 04 — Vista Alegre, Ivoti-RS
+            Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />
             Atendimento: Ivoti e cidades em raio de 50 km
           </p>

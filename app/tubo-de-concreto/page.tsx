@@ -52,18 +52,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: f.a,
-        },
-      })),
-    },
-    {
       "@type": "BreadcrumbList",
+      "@id": `${CANONICAL_URL}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -78,6 +68,18 @@ const jsonLd = {
           item: CANONICAL_URL,
         },
       ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${CANONICAL_URL}#faq`,
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: f.a,
+        },
+      })),
     },
   ],
 };
@@ -447,7 +449,7 @@ export default function TuboDeConcretoPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
@@ -500,6 +502,11 @@ export default function TuboDeConcretoPage() {
           >
             Falar no WhatsApp · (51) 99669-1757
           </a>
+          <p className="mt-6 text-sm text-white/80">
+            Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
+            <br />
+            Atendimento: Ivoti e cidades em raio de 50 km
+          </p>
         </div>
       </section>
     </>

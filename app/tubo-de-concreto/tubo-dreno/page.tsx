@@ -77,34 +77,8 @@ const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
     {
-      "@type": "FAQPage",
-      mainEntity: faqs.map((f) => ({
-        "@type": "Question",
-        name: f.q,
-        acceptedAnswer: {
-          "@type": "Answer",
-          text: f.a,
-        },
-      })),
-    },
-    {
-      "@type": "HowTo",
-      name: "Como instalar um tubo dreno de concreto",
-      description:
-        "Instalação de tubo dreno de concreto em cinco passos, da abertura da vala à compactação final.",
-      supply: [
-        { "@type": "HowToSupply", name: "Tubo dreno de concreto" },
-        { "@type": "HowToSupply", name: "Brita 1 ou brita 2" },
-        { "@type": "HowToSupply", name: "Manta geotêxtil" },
-      ],
-      step: howToSteps.map((s) => ({
-        "@type": "HowToStep",
-        name: s.name,
-        text: s.text,
-      })),
-    },
-    {
       "@type": "BreadcrumbList",
+      "@id": `${CANONICAL_URL}#breadcrumb`,
       itemListElement: [
         {
           "@type": "ListItem",
@@ -125,6 +99,35 @@ const jsonLd = {
           item: CANONICAL_URL,
         },
       ],
+    },
+    {
+      "@type": "FAQPage",
+      "@id": `${CANONICAL_URL}#faq`,
+      mainEntity: faqs.map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: f.a,
+        },
+      })),
+    },
+    {
+      "@type": "HowTo",
+      "@id": `${CANONICAL_URL}#howto`,
+      name: "Como instalar um tubo dreno de concreto",
+      description:
+        "Instalação de tubo dreno de concreto em cinco passos, da abertura da vala à compactação final.",
+      supply: [
+        { "@type": "HowToSupply", name: "Tubo dreno de concreto" },
+        { "@type": "HowToSupply", name: "Brita 1 ou brita 2" },
+        { "@type": "HowToSupply", name: "Manta geotêxtil" },
+      ],
+      step: howToSteps.map((s) => ({
+        "@type": "HowToStep",
+        name: s.name,
+        text: s.text,
+      })),
     },
   ],
 };
@@ -434,7 +437,10 @@ export default function TuboDrenoPage() {
               </p>
             </div>
 
-            <div className="mt-6">
+            <figure
+              className="mt-8 max-w-3xl mx-auto"
+              aria-labelledby="vala-title"
+            >
               <svg
                 width="100%"
                 viewBox="0 0 680 420"
@@ -657,7 +663,10 @@ export default function TuboDrenoPage() {
                   Inclinação 1 a 2% no sentido do escoamento
                 </text>
               </svg>
-            </div>
+              <figcaption className="text-sm text-cc-gray-700 mt-2 text-center">
+                Corte transversal de vala de drenagem com tubo dreno de concreto envolto em geotêxtil e brita.
+              </figcaption>
+            </figure>
 
             <div className="mt-6 space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
@@ -824,7 +833,7 @@ export default function TuboDrenoPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
@@ -877,6 +886,11 @@ export default function TuboDrenoPage() {
           >
             Falar no WhatsApp · (51) 99669-1757
           </a>
+          <p className="mt-6 text-sm text-white/80">
+            Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
+            <br />
+            Atendimento: Ivoti e cidades em raio de 50 km
+          </p>
         </div>
       </section>
     </>
