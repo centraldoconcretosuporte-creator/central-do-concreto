@@ -172,7 +172,7 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-green/70" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/70" aria-hidden="true" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <nav
@@ -227,15 +227,15 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
       </section>
 
       {/* POR QUÊ */}
-      <section className="py-12 sm:py-16 bg-cc-cream">
+      <section className="py-12 sm:py-16 bg-cc-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center">
             Por que pergolado de concreto da Central
           </h2>
           <div className="grid md:grid-cols-3 gap-6">
             {diferenciadores.map((d) => (
               <div key={d.title} className="bg-white border border-cc-gray-200 rounded-lg p-6">
-                <h3 className="text-lg font-bold text-cc-green mb-2">{d.title}</h3>
+                <h3 className="text-lg font-bold text-cc-black mb-2">{d.title}</h3>
                 <p className="text-base text-cc-gray-600 leading-relaxed">{d.desc}</p>
               </div>
             ))}
@@ -246,14 +246,14 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
       {/* TIPOS */}
       <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center">
             Tipos de pergolado
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 max-w-5xl mx-auto">
             {tipos.map((t) => (
               <div
                 key={t.title}
-                className="group bg-white rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors"
+                className="group bg-white rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors"
               >
                 <div className="relative aspect-[4/3]">
                   <Image
@@ -265,10 +265,10 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
                   />
                 </div>
                 <div className="p-5">
-                  <p className="text-xs font-medium tracking-widest text-cc-coral uppercase mb-2">
+                  <p className="text-xs font-medium tracking-widest text-cc-orange uppercase mb-2">
                     {t.eyebrow}
                   </p>
-                  <h3 className="text-lg font-medium text-cc-green mb-2">{t.title}</h3>
+                  <h3 className="text-lg font-medium text-cc-black mb-2">{t.title}</h3>
                   <p className="text-sm text-cc-gray-600 leading-relaxed">{t.desc}</p>
                 </div>
               </div>
@@ -278,26 +278,26 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
       </section>
 
       {/* COMO CHEGAMOS */}
-      <section className="py-16 md:py-24 bg-cc-cream">
+      <section className="py-16 md:py-24 bg-cc-gray-100">
         <div className="mx-auto max-w-6xl px-4">
           <Eyebrow className="mb-3">Cobertura {c.nome}</Eyebrow>
-          <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-8">
+          <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-8">
             Como nós chegamos até {c.nome}
           </h2>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-10">
             <div className="bg-white rounded-xl p-6 border border-cc-gray-200">
-              <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">{c.distanciaKm}</p>
+              <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">{c.distanciaKm}</p>
               <p className="text-sm text-cc-gray-600">de Ivoti até {c.nome}</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-cc-gray-200">
-              <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+              <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">
                 {c.tempoEstimado}
               </p>
               <p className="text-sm text-cc-gray-600">de viagem por estrada</p>
             </div>
             <div className="bg-white rounded-xl p-6 border border-cc-gray-200">
-              <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+              <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">
                 Saímos toda semana
               </p>
               <p className="text-sm text-cc-gray-600">prazo conforme projeto</p>
@@ -324,7 +324,7 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
       {/* GRUPO */}
       <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-cc-green mb-3 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-cc-black mb-3 text-center">
             Pacote completo · Grupo Ivoti
           </h2>
           <p className="text-base text-cc-gray-600 text-center max-w-2xl mx-auto mb-10 leading-relaxed">
@@ -337,9 +337,9 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
                 href={g.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-cc-cream border border-cc-gray-200 rounded-lg p-6 hover:border-cc-green transition-colors"
+                className="block bg-cc-gray-100 border border-cc-gray-200 rounded-lg p-6 hover:border-cc-black transition-colors"
               >
-                <h3 className="text-lg font-bold text-cc-green mb-2">{g.title} →</h3>
+                <h3 className="text-lg font-bold text-cc-black mb-2">{g.title} →</h3>
                 <p className="text-base text-cc-gray-600 leading-relaxed">{g.desc}</p>
               </a>
             ))}
@@ -348,9 +348,9 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
       </section>
 
       {/* FAQ */}
-      <section className="py-12 sm:py-16 bg-cc-cream">
+      <section className="py-12 sm:py-16 bg-cc-gray-100">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center">
+          <h2 className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center">
             Perguntas frequentes
           </h2>
           <div className="space-y-8">
@@ -363,10 +363,10 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
                       key={p.q}
                       className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
                     >
-                      <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                      <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                         <span>{p.q}</span>
                         <span
-                          className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                          className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                           aria-hidden="true"
                         >
                           +
@@ -410,7 +410,7 @@ function CidadeSerraView({ c }: { c: Cidade }) {
   return (
     <>
       {/* HERO · placeholder genérica · conteúdo único vem em rodada futura */}
-      <section className="bg-cc-green py-20 md:py-28 text-center">
+      <section className="bg-cc-black py-20 md:py-28 text-center">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -445,10 +445,10 @@ function CidadeSerraView({ c }: { c: Cidade }) {
       </section>
 
       {/* CTA · explorar produtos */}
-      <section className="py-16 md:py-24 bg-cc-cream text-center">
+      <section className="py-16 md:py-24 bg-cc-gray-100 text-center">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-3">Catálogo</Eyebrow>
-          <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-6">
+          <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-6">
             Conheça nossos pré-moldados
           </h2>
           <p className="text-base text-cc-gray-600 leading-relaxed mb-8">

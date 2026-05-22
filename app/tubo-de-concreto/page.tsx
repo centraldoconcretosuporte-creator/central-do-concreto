@@ -93,7 +93,7 @@ export default function TuboDeConcretoPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -139,7 +139,7 @@ export default function TuboDeConcretoPage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -156,7 +156,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="o-que-e">
             <h2
               id="o-que-e"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é um tubo de concreto?
             </h2>
@@ -185,7 +185,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="tipos-encaixe">
             <h2
               id="tipos-encaixe"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Quais são os tipos de encaixe do tubo de concreto?
             </h2>
@@ -216,7 +216,7 @@ export default function TuboDeConcretoPage() {
                 A página{" "}
                 <Link
                   href="/tubo-de-concreto/tipos-de-encaixe"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Tipos de encaixe do tubo de concreto
                 </Link>{" "}
@@ -229,7 +229,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="classes-carga">
             <h2
               id="classes-carga"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que são as classes de carga PA1 e PA2?
             </h2>
@@ -254,7 +254,7 @@ export default function TuboDeConcretoPage() {
                 A página{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Classes de carga do tubo de concreto
                 </Link>{" "}
@@ -267,7 +267,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="tubo-dreno">
             <h2
               id="tubo-dreno"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é tubo dreno?
             </h2>
@@ -292,7 +292,7 @@ export default function TuboDeConcretoPage() {
                 A página{" "}
                 <Link
                   href="/tubo-de-concreto/tubo-dreno"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Tubo dreno
                 </Link>{" "}
@@ -305,7 +305,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="diametros">
             <h2
               id="diametros"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Quais diâmetros e medidas estão disponíveis?
             </h2>
@@ -329,7 +329,7 @@ export default function TuboDeConcretoPage() {
                 A página{" "}
                 <Link
                   href="/tubo-de-concreto/diametros"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Diâmetros e medidas do tubo de concreto
                 </Link>{" "}
@@ -342,7 +342,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="aplicacoes">
             <h2
               id="aplicacoes"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Onde o tubo de concreto é usado?
             </h2>
@@ -372,7 +372,7 @@ export default function TuboDeConcretoPage() {
                 A página{" "}
                 <Link
                   href="/tubo-de-concreto/aplicacoes"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Aplicações do tubo de concreto
                 </Link>{" "}
@@ -385,7 +385,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="como-escolher">
             <h2
               id="como-escolher"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como escolher o tubo de concreto certo?
             </h2>
@@ -414,7 +414,7 @@ export default function TuboDeConcretoPage() {
           <section aria-labelledby="ivoti-regiao">
             <h2
               id="ivoti-regiao"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tubo de concreto em Ivoti e região
             </h2>
@@ -436,7 +436,7 @@ export default function TuboDeConcretoPage() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   (51) 99669-1757
                 </a>
@@ -449,12 +449,12 @@ export default function TuboDeConcretoPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-gray-100 cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes sobre tubo de concreto
           </h2>
@@ -464,12 +464,12 @@ export default function TuboDeConcretoPage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -485,7 +485,7 @@ export default function TuboDeConcretoPage() {
       {/* VIDEO_PILAR: vídeo da página-pilar entra perto da publicação, em outra tarefa */}
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Precisa de tubo de concreto para a sua obra?

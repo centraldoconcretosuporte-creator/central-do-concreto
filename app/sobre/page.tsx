@@ -40,7 +40,7 @@ export default function SobrePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-green/75" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/75" aria-hidden="true" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center py-16">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
             Sobre a Central do Concreto
@@ -65,7 +65,7 @@ export default function SobrePage() {
           </div>
           <div>
             <Eyebrow className="mb-4">Nossa história</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-6 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-6 leading-tight">
               Direto da fábrica · sem atravessador
             </h2>
             <p className="text-base text-cc-gray-600 leading-relaxed mb-4">
@@ -80,16 +80,16 @@ export default function SobrePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-cc-cream">
+      <section className="py-16 md:py-24 bg-cc-gray-100">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
             <Eyebrow className="mb-4 justify-center">Como trabalhamos</Eyebrow>
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-green">Três pilares · sempre</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black">Três pilares · sempre</h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {pilares.map((p) => (
               <div key={p.titulo} className="bg-white border border-cc-gray-200 rounded-xl p-6">
-                <h3 className="text-lg font-medium text-cc-green mb-3">{p.titulo}</h3>
+                <h3 className="text-lg font-medium text-cc-black mb-3">{p.titulo}</h3>
                 <p className="text-sm text-cc-gray-600 leading-relaxed">{p.desc}</p>
               </div>
             ))}
@@ -97,7 +97,7 @@ export default function SobrePage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-cc-green text-center">
+      <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Quer conversar?</h2>
           <p className="text-base text-white/85 mb-10">Falamos pelo WhatsApp · resposta rápida.</p>

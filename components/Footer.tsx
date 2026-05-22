@@ -23,7 +23,7 @@ const grupo = [
 
 export default function Footer() {
   return (
-    <footer className="bg-cc-green text-white">
+    <footer className="bg-cc-black text-white">
       <div className="mx-auto max-w-6xl px-4 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
@@ -45,7 +45,7 @@ export default function Footer() {
                 href="https://wa.me/5551996691757"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-cc-coral transition-colors"
+                className="hover:text-cc-orange transition-colors"
               >
                 (51) 99669-1757
               </a>
@@ -53,7 +53,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-medium tracking-widest text-cc-coral uppercase mb-4">
+            <p className="text-xs font-medium tracking-widest text-cc-orange uppercase mb-4">
               Navegação
             </p>
             <ul className="space-y-2">
@@ -71,7 +71,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <p className="text-xs font-medium tracking-widest text-cc-coral uppercase mb-4">
+            <p className="text-xs font-medium tracking-widest text-cc-orange uppercase mb-4">
               Nosso grupo
             </p>
             <ul className="space-y-2">

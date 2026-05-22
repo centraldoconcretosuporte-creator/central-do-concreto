@@ -101,7 +101,7 @@ export default function DiametrosPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -137,7 +137,7 @@ export default function DiametrosPage() {
               pluvial de grande porte. Esta página reúne a tabela completa da{" "}
               <Link
                 href="/tubo-de-concreto"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 NBR 8890
               </Link>
@@ -150,7 +150,7 @@ export default function DiametrosPage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -167,7 +167,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="diametros-disponiveis">
             <h2
               id="diametros-disponiveis"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Quais são os diâmetros disponíveis de tubo de concreto?
             </h2>
@@ -201,7 +201,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="notacao-dn">
             <h2
               id="notacao-dn"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               DN, milímetro ou centímetro — entendendo a notação
             </h2>
@@ -231,7 +231,7 @@ export default function DiametrosPage() {
                 <caption className="sr-only">
                   Equivalência entre centímetro, diâmetro nominal e milímetro
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Diâmetro em cm
@@ -252,7 +252,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">DN 200</td>
                     <td className="px-4 py-3">200 mm</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø30 cm
                     </th>
@@ -266,7 +266,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">DN 400</td>
                     <td className="px-4 py-3">400 mm</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø50 cm
                     </th>
@@ -280,7 +280,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">DN 600</td>
                     <td className="px-4 py-3">600 mm</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø80 cm
                     </th>
@@ -294,7 +294,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">DN 1000</td>
                     <td className="px-4 py-3">1000 mm</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø120 cm
                     </th>
@@ -317,7 +317,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="tabela-nbr-8890">
             <h2
               id="tabela-nbr-8890"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tabela NBR 8890 — diâmetro, classe e carga
             </h2>
@@ -332,7 +332,7 @@ export default function DiametrosPage() {
                 PA1 a PA4 — definida pela ABNT{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   NBR 8890
                 </Link>
@@ -347,7 +347,7 @@ export default function DiametrosPage() {
                   Carga mínima isenta de fissura para tubos armados de água
                   pluvial, em kN/m — NBR 8890
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Diâmetro Nominal
@@ -376,7 +376,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">27</td>
                     <td className="px-4 py-3">36</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 400 (Ø40 cm)
                     </th>
@@ -394,7 +394,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">45</td>
                     <td className="px-4 py-3">60</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 600 (Ø60 cm)
                     </th>
@@ -412,7 +412,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">63</td>
                     <td className="px-4 py-3">84</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 800 (Ø80 cm)
                     </th>
@@ -430,7 +430,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">81</td>
                     <td className="px-4 py-3">108</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 1000 (Ø100 cm)
                     </th>
@@ -448,7 +448,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">99</td>
                     <td className="px-4 py-3">132</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 1200 (Ø120 cm)
                     </th>
@@ -466,7 +466,7 @@ export default function DiametrosPage() {
                     <td className="px-4 py-3">135</td>
                     <td className="px-4 py-3">180</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       DN 1750 (Ø175 cm)
                     </th>
@@ -508,7 +508,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="como-escolher">
             <h2
               id="como-escolher"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como escolher o diâmetro certo para a sua obra?
             </h2>
@@ -532,28 +532,28 @@ export default function DiametrosPage() {
 
             <dl className="mt-6 space-y-5 text-base text-cc-gray-700 leading-relaxed">
               <div>
-                <dt className="font-semibold text-cc-green">Ø20 e Ø30 cm</dt>
+                <dt className="font-semibold text-cc-black">Ø20 e Ø30 cm</dt>
                 <dd className="mt-1">
                   Drenagem residencial, calçada, jardim, ligação de poço de
                   inspeção pequeno.
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-cc-green">Ø40 e Ø50 cm</dt>
+                <dt className="font-semibold text-cc-black">Ø40 e Ø50 cm</dt>
                 <dd className="mt-1">
                   Bueiro de via urbana, drenagem de pátio, ligação predial,
                   drenagem de muro de arrimo.
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-cc-green">Ø60 e Ø80 cm</dt>
+                <dt className="font-semibold text-cc-black">Ø60 e Ø80 cm</dt>
                 <dd className="mt-1">
                   Galeria de bairro, travessia de rua, drenagem de loteamento,
                   sistema viário urbano.
                 </dd>
               </div>
               <div>
-                <dt className="font-semibold text-cc-green">
+                <dt className="font-semibold text-cc-black">
                   Ø100, Ø120 e Ø150 cm
                 </dt>
                 <dd className="mt-1">
@@ -570,7 +570,7 @@ export default function DiametrosPage() {
                 engenheiro responsável. Para{" "}
                 <Link
                   href="/tubo-de-concreto/tubo-dreno"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   drenagem profunda de talude ou muro de arrimo
                 </Link>{" "}
@@ -584,7 +584,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="comprimento-util">
             <h2
               id="comprimento-util"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Comprimento útil de cada diâmetro
             </h2>
@@ -607,7 +607,7 @@ export default function DiametrosPage() {
                 <caption className="sr-only">
                   Comprimento útil padrão dos tubos de concreto da Central
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Faixa de diâmetro
@@ -642,7 +642,7 @@ export default function DiametrosPage() {
           <section aria-labelledby="diametros-central">
             <h2
               id="diametros-central"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Diâmetros disponíveis na Central do Concreto
             </h2>
@@ -676,7 +676,7 @@ export default function DiametrosPage() {
                 entre concreto simples e armado, veja as{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   classes de carga PA1 a PA4
                 </Link>
@@ -688,12 +688,12 @@ export default function DiametrosPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-gray-100 cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes
           </h2>
@@ -703,12 +703,12 @@ export default function DiametrosPage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -726,7 +726,7 @@ export default function DiametrosPage() {
       {/* VIDEO_S4 — marcador para vídeo no template do projeto (escopo futuro) */}
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Peça seu orçamento

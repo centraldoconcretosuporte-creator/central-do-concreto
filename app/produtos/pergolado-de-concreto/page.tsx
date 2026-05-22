@@ -159,7 +159,7 @@ export default function PergoladoDeConcretoPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-green/70" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/70" aria-hidden="true" />
 
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-16 md:py-24 text-center">
           <nav aria-label="Breadcrumb" className="mb-8 flex items-center justify-center gap-2 text-sm text-white/90">
@@ -206,13 +206,13 @@ export default function PergoladoDeConcretoPage() {
 
       {/* 03 POR QUÊ */}
       <section
-        className="py-12 sm:py-16 bg-cc-cream"
+        className="py-12 sm:py-16 bg-cc-gray-100"
         aria-labelledby="diferenciadores-title"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="diferenciadores-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center"
           >
             Por que pergolado de concreto da Central
           </h2>
@@ -222,7 +222,7 @@ export default function PergoladoDeConcretoPage() {
                 key={d.title}
                 className="bg-white border border-cc-gray-200 rounded-lg p-6"
               >
-                <h3 className="text-lg font-bold text-cc-green mb-2">
+                <h3 className="text-lg font-bold text-cc-black mb-2">
                   {d.title}
                 </h3>
                 <p className="text-base text-cc-gray-600 leading-relaxed">
@@ -242,7 +242,7 @@ export default function PergoladoDeConcretoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="tipos-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center"
           >
             Tipos de pergolado
           </h2>
@@ -250,7 +250,7 @@ export default function PergoladoDeConcretoPage() {
             {tipos.map((t) => (
               <div
                 key={t.title}
-                className="group bg-white rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors"
+                className="group bg-white rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors"
               >
                 <div className="relative aspect-[4/3]">
                   <Image
@@ -262,10 +262,10 @@ export default function PergoladoDeConcretoPage() {
                   />
                 </div>
                 <div className="p-5">
-                  <p className="text-xs font-medium tracking-widest text-cc-coral uppercase mb-2">
+                  <p className="text-xs font-medium tracking-widest text-cc-orange uppercase mb-2">
                     {t.eyebrow}
                   </p>
-                  <h3 className="text-lg font-medium text-cc-green mb-2">
+                  <h3 className="text-lg font-medium text-cc-black mb-2">
                     {t.title}
                   </h3>
                   <p className="text-sm text-cc-gray-600 leading-relaxed">
@@ -280,13 +280,13 @@ export default function PergoladoDeConcretoPage() {
 
       {/* 05 COMBINE · Mosaico assimétrico */}
       <section
-        className="py-12 sm:py-16 bg-cc-cream"
+        className="py-12 sm:py-16 bg-cc-gray-100"
         aria-labelledby="combine-title"
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="combine-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-green mb-3 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-3 text-center"
           >
             Combine seu pergolado
           </h2>
@@ -298,7 +298,7 @@ export default function PergoladoDeConcretoPage() {
             {/* Card grande · Piso Atérmico */}
             <a
               href="/produtos/piso-atermico"
-              className="md:col-span-2 md:row-span-3 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[300px]"
+              className="md:col-span-2 md:row-span-3 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[300px]"
             >
               <Image
                 src="/produtos/combine/piso-atermico.webp"
@@ -321,7 +321,7 @@ export default function PergoladoDeConcretoPage() {
             {/* Card pequeno 1 · Cobogó */}
             <a
               href="/produtos/cobogos"
-              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[140px]"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[140px]"
             >
               <Image
                 src="/produtos/combine/cobogo.webp"
@@ -342,7 +342,7 @@ export default function PergoladoDeConcretoPage() {
             {/* Card pequeno 2 · Muro pré-moldado */}
             <a
               href="/produtos/muros-e-gradis"
-              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[140px]"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[140px]"
             >
               <Image
                 src="/produtos/combine/muro.webp"
@@ -364,7 +364,7 @@ export default function PergoladoDeConcretoPage() {
             {/* TODO: avaliar foto definitiva de revestimento (categoria não está totalmente fechada no banco CC) */}
             <a
               href="/produtos/revestimentos"
-              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[140px]"
+              className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[140px]"
             >
               <Image
                 src="/produtos/combine/revestimentos.webp"
@@ -393,7 +393,7 @@ export default function PergoladoDeConcretoPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="grupo-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-green mb-3 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-3 text-center"
           >
             Pacote completo · Grupo Ivoti
           </h2>
@@ -407,9 +407,9 @@ export default function PergoladoDeConcretoPage() {
                 href={g.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block bg-cc-cream border border-cc-gray-200 rounded-lg p-6 hover:border-cc-green transition-colors"
+                className="block bg-cc-gray-100 border border-cc-gray-200 rounded-lg p-6 hover:border-cc-black transition-colors"
               >
-                <h3 className="text-lg font-bold text-cc-green mb-2">
+                <h3 className="text-lg font-bold text-cc-black mb-2">
                   {g.title} →
                 </h3>
                 <p className="text-base text-cc-gray-600 leading-relaxed">
@@ -423,13 +423,13 @@ export default function PergoladoDeConcretoPage() {
 
       {/* 07 FAQ */}
       <section
-        className="py-12 sm:py-16 bg-cc-cream"
+        className="py-12 sm:py-16 bg-cc-gray-100"
         aria-labelledby="faq-title"
       >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2
             id="faq-title"
-            className="text-2xl sm:text-3xl font-bold text-cc-green mb-10 text-center"
+            className="text-2xl sm:text-3xl font-bold text-cc-black mb-10 text-center"
           >
             Perguntas frequentes
           </h2>
@@ -443,10 +443,10 @@ export default function PergoladoDeConcretoPage() {
                       key={p.q}
                       className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
                     >
-                      <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                      <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                         <span>{p.q}</span>
                         <span
-                          className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                          className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                           aria-hidden="true"
                         >
                           +
@@ -487,7 +487,7 @@ export default function PergoladoDeConcretoPage() {
               <Eyebrow className="mb-3">Cobertura exclusiva</Eyebrow>
               <h2
                 id="cobertura-title"
-                className="text-3xl md:text-4xl font-medium text-cc-green mb-4"
+                className="text-3xl md:text-4xl font-medium text-cc-black mb-4"
               >
                 Conhecemos o Litoral Norte e Médio
               </h2>
@@ -500,7 +500,7 @@ export default function PergoladoDeConcretoPage() {
                 {cidades.map((cidade) => (
                   <span
                     key={cidade}
-                    className="px-4 py-1.5 bg-cc-cream border border-cc-gray-200 rounded-full text-sm text-cc-gray-700"
+                    className="px-4 py-1.5 bg-cc-gray-100 border border-cc-gray-200 rounded-full text-sm text-cc-gray-700"
                   >
                     {cidade}
                   </span>
@@ -511,29 +511,29 @@ export default function PergoladoDeConcretoPage() {
 
           {/* 8.2 — Como nós chegamos até você (3 métricas) */}
           <div className="mb-6">
-            <h3 className="text-2xl md:text-3xl font-medium text-cc-green mb-8">
+            <h3 className="text-2xl md:text-3xl font-medium text-cc-black mb-8">
               Como nós chegamos até você
             </h3>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-6">
-              <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
-                <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+              <div className="bg-cc-gray-100 rounded-xl p-6 border border-cc-gray-200">
+                <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">
                   140 a 210 km
                 </p>
                 <p className="text-sm text-cc-gray-600">
                   de Ivoti até o Litoral
                 </p>
               </div>
-              <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
-                <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+              <div className="bg-cc-gray-100 rounded-xl p-6 border border-cc-gray-200">
+                <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">
                   1h45 a 2h45
                 </p>
                 <p className="text-sm text-cc-gray-600">
                   de viagem por estrada
                 </p>
               </div>
-              <div className="bg-cc-cream rounded-xl p-6 border border-cc-gray-200">
-                <p className="text-3xl md:text-4xl font-medium text-cc-green mb-1">
+              <div className="bg-cc-gray-100 rounded-xl p-6 border border-cc-gray-200">
+                <p className="text-3xl md:text-4xl font-medium text-cc-black mb-1">
                   Saímos toda semana
                 </p>
                 <p className="text-sm text-cc-gray-600">
@@ -565,8 +565,8 @@ export default function PergoladoDeConcretoPage() {
               </div>
             </div>
 
-            <div className="bg-cc-cream rounded-xl p-6 md:p-8 border border-cc-gray-200 flex flex-col justify-center">
-              <h4 className="text-xl font-medium text-cc-green mb-3">
+            <div className="bg-cc-gray-100 rounded-xl p-6 md:p-8 border border-cc-gray-200 flex flex-col justify-center">
+              <h4 className="text-xl font-medium text-cc-black mb-3">
                 Veja toda nossa área de entrega
               </h4>
               <p className="text-sm md:text-base text-cc-gray-600 mb-6 leading-relaxed">
@@ -587,7 +587,7 @@ export default function PergoladoDeConcretoPage() {
           {/* 8.4 — Grid de cidades em pílulas */}
           <div>
             <Eyebrow className="mb-3">Cidades atendidas</Eyebrow>
-            <h3 className="text-2xl md:text-3xl font-medium text-cc-green mb-3">
+            <h3 className="text-2xl md:text-3xl font-medium text-cc-black mb-3">
               Entregas no Litoral Norte e Médio
             </h3>
             <p className="text-base text-cc-gray-600 leading-relaxed max-w-3xl mb-8">
@@ -598,7 +598,7 @@ export default function PergoladoDeConcretoPage() {
               {cidades.map((cidade) => (
                 <div
                   key={cidade}
-                  className="bg-cc-cream border border-cc-gray-200 rounded-lg py-4 px-3 text-center hover:border-cc-green transition-colors"
+                  className="bg-cc-gray-100 border border-cc-gray-200 rounded-lg py-4 px-3 text-center hover:border-cc-black transition-colors"
                 >
                   <span className="text-sm font-medium text-cc-gray-700 uppercase tracking-wide">
                     {cidade}

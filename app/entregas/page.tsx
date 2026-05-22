@@ -70,7 +70,7 @@ const regioes = [
 export default function EntregasPage() {
   return (
     <>
-      <section className="bg-cc-green py-20 md:py-28 text-center">
+      <section className="bg-cc-black py-20 md:py-28 text-center">
         <div className="mx-auto max-w-3xl px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
             Onde atendemos
@@ -85,16 +85,16 @@ export default function EntregasPage() {
         <div className="mx-auto max-w-6xl px-4 space-y-12">
           {regioes.map((r) => (
             <div key={r.nome}>
-              <Eyebrow className={`mb-3 ${r.cor === "coral" ? "text-cc-coral" : ""}`}>
+              <Eyebrow className={`mb-3 ${r.cor === "coral" ? "text-cc-orange" : ""}`}>
                 {r.nome}
               </Eyebrow>
-              <h2 className="text-2xl md:text-3xl font-medium text-cc-green mb-3">{r.nome}</h2>
+              <h2 className="text-2xl md:text-3xl font-medium text-cc-black mb-3">{r.nome}</h2>
               <p className="text-base text-cc-gray-600 mb-6">{r.descricao}</p>
               <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-3">
                 {r.cidades.map((cidade) => (
                   <div
                     key={cidade}
-                    className="bg-cc-cream border border-cc-gray-200 rounded-lg py-3 px-3 text-center"
+                    className="bg-cc-gray-100 border border-cc-gray-200 rounded-lg py-3 px-3 text-center"
                   >
                     <span className="text-sm font-medium text-cc-gray-600">{cidade}</span>
                   </div>
@@ -105,7 +105,7 @@ export default function EntregasPage() {
         </div>
       </section>
 
-      <section className="py-16 md:py-24 bg-cc-green text-center">
+      <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">
             Sua cidade não aparece?

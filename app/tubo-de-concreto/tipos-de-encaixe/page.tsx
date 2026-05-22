@@ -100,7 +100,7 @@ export default function TiposDeEncaixePage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -148,7 +148,7 @@ export default function TiposDeEncaixePage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -165,7 +165,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="encaixe-pb">
             <h2
               id="encaixe-pb"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é o encaixe ponta e bolsa (PB)?
             </h2>
@@ -190,7 +190,7 @@ export default function TiposDeEncaixePage() {
                 esgoto sanitário, e o formato padrão da linha de{" "}
                 <Link
                   href="/tubo-de-concreto"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   tubo de concreto
                 </Link>{" "}
@@ -209,7 +209,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="encaixe-mf">
             <h2
               id="encaixe-mf"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é o encaixe macho e fêmea (MF)?
             </h2>
@@ -244,7 +244,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="pb-vs-mf">
             <h2
               id="pb-vs-mf"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Ponta e bolsa ou macho e fêmea: qual a diferença?
             </h2>
@@ -260,7 +260,7 @@ export default function TiposDeEncaixePage() {
 
             <div className="mt-6 overflow-x-auto">
               <table className="w-full text-sm md:text-base border border-cc-gray-200 rounded-lg overflow-hidden">
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th className="text-left font-semibold px-4 py-3">Critério</th>
                     <th className="text-left font-semibold px-4 py-3">Ponta e bolsa (PB)</th>
@@ -273,7 +273,7 @@ export default function TiposDeEncaixePage() {
                     <td className="px-4 py-3">DN 200</td>
                     <td className="px-4 py-3">DN 500</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">Parede no encaixe</td>
                     <td className="px-4 py-3">Aumento de concreto na bolsa</td>
                     <td className="px-4 py-3">Redução a meia espessura</td>
@@ -283,7 +283,7 @@ export default function TiposDeEncaixePage() {
                     <td className="px-4 py-3">Compatível</td>
                     <td className="px-4 py-3">Compatível</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">Junta elástica</td>
                     <td className="px-4 py-3">Compatível (anel de borracha)</td>
                     <td className="px-4 py-3">Não compatível na prática</td>
@@ -293,7 +293,7 @@ export default function TiposDeEncaixePage() {
                     <td className="px-4 py-3">Permitido</td>
                     <td className="px-4 py-3">Não permitido</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">Uso típico</td>
                     <td className="px-4 py-3">Toda a linha de drenagem</td>
                     <td className="px-4 py-3">Diâmetros grandes (DN ≥ 500)</td>
@@ -307,7 +307,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="junta-rigida-elastica">
             <h2
               id="junta-rigida-elastica"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Junta rígida ou junta elástica: o que muda?
             </h2>
@@ -339,7 +339,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="encaixe-por-obra">
             <h2
               id="encaixe-por-obra"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Qual encaixe usar em cada tipo de obra?
             </h2>
@@ -349,7 +349,7 @@ export default function TiposDeEncaixePage() {
                 transportar e o nível de estanqueidade exigido — combinação que muda conforme as{" "}
                 <Link
                   href="/tubo-de-concreto/aplicacoes"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   aplicações do tubo de concreto
                 </Link>{" "}
@@ -361,7 +361,7 @@ export default function TiposDeEncaixePage() {
 
             <div className="mt-6 overflow-x-auto">
               <table className="w-full text-sm md:text-base border border-cc-gray-200 rounded-lg overflow-hidden">
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th className="text-left font-semibold px-4 py-3">Tipo de obra</th>
                     <th className="text-left font-semibold px-4 py-3">Encaixe</th>
@@ -374,7 +374,7 @@ export default function TiposDeEncaixePage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">Rígida</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">Drenagem urbana, ruas e avenidas</td>
                     <td className="px-4 py-3">PB ou MF (se DN ≥ 500)</td>
                     <td className="px-4 py-3">Rígida</td>
@@ -384,7 +384,7 @@ export default function TiposDeEncaixePage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">Elástica (obrigatória)</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">
                       Galeria pluvial e bueiro grande (DN ≥ 1000)
                     </td>
@@ -409,7 +409,7 @@ export default function TiposDeEncaixePage() {
                 Para a maioria dos projetos com{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   classe de resistência
                 </Link>{" "}
@@ -422,7 +422,7 @@ export default function TiposDeEncaixePage() {
           <section aria-labelledby="encaixes-central">
             <h2
               id="encaixes-central"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tipos de encaixe disponíveis na Central do Concreto
             </h2>
@@ -445,7 +445,7 @@ export default function TiposDeEncaixePage() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   (51) 99669-1757
                 </a>{" "}
@@ -463,12 +463,12 @@ export default function TiposDeEncaixePage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-gray-100 cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes sobre encaixes
           </h2>
@@ -478,12 +478,12 @@ export default function TiposDeEncaixePage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -498,7 +498,7 @@ export default function TiposDeEncaixePage() {
                       Veja a página de{" "}
                       <Link
                         href="/tubo-de-concreto/classes-de-carga"
-                        className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                        className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                       >
                         classes de carga
                       </Link>{" "}
@@ -517,7 +517,7 @@ export default function TiposDeEncaixePage() {
       {/* VIDEO_S1: vídeo curto da Central mostrando encaixe real de PB em obra, narração por IA, padrão do projeto (logo no topo, WhatsApp queimado a partir de 15s, trecho de entrega em 60-70%) */}
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Peça seu orçamento de tubos na Central

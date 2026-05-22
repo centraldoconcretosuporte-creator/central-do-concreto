@@ -23,7 +23,7 @@ export default function ContatoPage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-green/75" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/75" aria-hidden="true" />
         <div className="relative z-10 max-w-3xl mx-auto px-6 text-center py-12">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-3">
             Fale com a Central
@@ -41,18 +41,18 @@ export default function ContatoPage() {
               href="https://wa.me/5551996691757"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-cc-cream border border-cc-gray-200 hover:border-cc-green rounded-xl p-6 transition-colors"
+              className="group bg-cc-gray-100 border border-cc-gray-200 hover:border-cc-black rounded-xl p-6 transition-colors"
             >
               <Eyebrow className="mb-3">WhatsApp</Eyebrow>
-              <p className="text-2xl font-medium text-cc-green mb-2 group-hover:text-cc-whatsapp transition-colors">
+              <p className="text-2xl font-medium text-cc-black mb-2 group-hover:text-cc-whatsapp transition-colors">
                 (51) 99669-1757
               </p>
               <p className="text-sm text-cc-gray-600">Resposta rápida · clique pra abrir conversa</p>
             </a>
 
-            <div className="bg-cc-cream border border-cc-gray-200 rounded-xl p-6">
+            <div className="bg-cc-gray-100 border border-cc-gray-200 rounded-xl p-6">
               <Eyebrow className="mb-3">Endereço</Eyebrow>
-              <p className="text-base font-medium text-cc-green leading-relaxed mb-2">
+              <p className="text-base font-medium text-cc-black leading-relaxed mb-2">
                 Av. Bom Jardim, 149 · Loja 04
                 <br />
                 Vista Alegre · Ivoti-RS
@@ -63,15 +63,15 @@ export default function ContatoPage() {
                 href="https://maps.google.com/?q=Av.+Bom+Jardim,+149,+Ivoti-RS"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-sm text-cc-coral hover:underline"
+                className="text-sm text-cc-orange hover:underline"
               >
                 Abrir no Google Maps →
               </a>
             </div>
 
-            <div className="bg-cc-cream border border-cc-gray-200 rounded-xl p-6">
+            <div className="bg-cc-gray-100 border border-cc-gray-200 rounded-xl p-6">
               <Eyebrow className="mb-3">Horário</Eyebrow>
-              <p className="text-base text-cc-green leading-relaxed">
+              <p className="text-base text-cc-black leading-relaxed">
                 Segunda a Sexta · 8h às 18h
                 <br />
                 Sábado · 8h às 12h
@@ -84,10 +84,10 @@ export default function ContatoPage() {
               href="https://instagram.com/centraldoconcretors"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-cc-cream border border-cc-gray-200 hover:border-cc-green rounded-xl p-6 transition-colors"
+              className="group bg-cc-gray-100 border border-cc-gray-200 hover:border-cc-black rounded-xl p-6 transition-colors"
             >
               <Eyebrow className="mb-3">Instagram</Eyebrow>
-              <p className="text-2xl font-medium text-cc-green mb-2 group-hover:text-cc-coral transition-colors">
+              <p className="text-2xl font-medium text-cc-black mb-2 group-hover:text-cc-orange transition-colors">
                 @centraldoconcretors
               </p>
               <p className="text-sm text-cc-gray-600">Veja obras prontas e novidades</p>

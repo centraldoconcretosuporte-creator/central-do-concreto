@@ -101,7 +101,7 @@ export default function ClassesDeCargaPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -152,7 +152,7 @@ export default function ClassesDeCargaPage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -169,7 +169,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="o-que-e-classe">
             <h2
               id="o-que-e-classe"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é a classe de resistência de um tubo de concreto?
             </h2>
@@ -193,7 +193,7 @@ export default function ClassesDeCargaPage() {
                 do{" "}
                 <Link
                   href="/tubo-de-concreto"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   tubo de concreto
                 </Link>{" "}
@@ -206,7 +206,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="nbr-8890-classifica">
             <h2
               id="nbr-8890-classifica"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como a NBR 8890 classifica os tubos?
             </h2>
@@ -237,7 +237,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="simples-ou-armado">
             <h2
               id="simples-ou-armado"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tubo simples ou tubo armado: quando usar cada um?
             </h2>
@@ -269,7 +269,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="pa1-pa2-pa3-pa4">
             <h2
               id="pa1-pa2-pa3-pa4"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Qual a diferença entre PA1, PA2, PA3 e PA4?
             </h2>
@@ -304,7 +304,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="tabela-diametro-classe-carga">
             <h2
               id="tabela-diametro-classe-carga"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Qual a tabela de diâmetro, classe e carga?
             </h2>
@@ -319,7 +319,7 @@ export default function ClassesDeCargaPage() {
 
             <div className="mt-6 overflow-x-auto">
               <table className="w-full text-sm md:text-base border border-cc-gray-200 rounded-lg overflow-hidden">
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">Classe</th>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
@@ -334,7 +334,7 @@ export default function ClassesDeCargaPage() {
                     <td className="px-4 py-3">12 kN/m</td>
                     <td className="px-4 py-3">Tráfego leve residencial</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">PA2</th>
                     <td className="px-4 py-3">18 kN/m</td>
                     <td className="px-4 py-3">Avenida urbana</td>
@@ -344,7 +344,7 @@ export default function ClassesDeCargaPage() {
                     <td className="px-4 py-3">27 kN/m</td>
                     <td className="px-4 py-3">Rodovia e tráfego pesado</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">PA4</th>
                     <td className="px-4 py-3">36 kN/m</td>
                     <td className="px-4 py-3">Zona industrial e rodovia federal</td>
@@ -376,7 +376,7 @@ export default function ClassesDeCargaPage() {
                 conforme o{" "}
                 <Link
                   href="/tubo-de-concreto/diametros"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   diâmetro escolhido
                 </Link>
@@ -389,7 +389,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="ca-1-ca-2-ca-3">
             <h2
               id="ca-1-ca-2-ca-3"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Você procurou por CA-1, CA-2 ou CA-3?
             </h2>
@@ -420,7 +420,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="escolher-classe-certa">
             <h2
               id="escolher-classe-certa"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como escolher a classe certa para a sua obra?
             </h2>
@@ -442,7 +442,7 @@ export default function ClassesDeCargaPage() {
                 A classe não é a única decisão técnica do tubo. Junto com ela vem o{" "}
                 <Link
                   href="/tubo-de-concreto/tipos-de-encaixe"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   tipo de encaixe
                 </Link>{" "}
@@ -457,7 +457,7 @@ export default function ClassesDeCargaPage() {
           <section aria-labelledby="classes-central">
             <h2
               id="classes-central"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Classes de carga disponíveis na Central do Concreto
             </h2>
@@ -481,7 +481,7 @@ export default function ClassesDeCargaPage() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   (51) 99669-1757
                 </a>
@@ -500,12 +500,12 @@ export default function ClassesDeCargaPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-gray-100 cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes sobre classes de carga
           </h2>
@@ -515,12 +515,12 @@ export default function ClassesDeCargaPage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -536,7 +536,7 @@ export default function ClassesDeCargaPage() {
       {/* VIDEO_S2: vídeo curto da Central explicando as classes em obra — quadro mostrando a marcação PA1 ou PA2 no próprio tubo, narração por IA, padrão do projeto (logo no topo, WhatsApp queimado a partir de 15s, trecho de entrega em 60–70%) */}
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Peça seu orçamento de tubos na Central

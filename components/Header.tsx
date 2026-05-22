@@ -55,8 +55,8 @@ export default function Header() {
             href="/"
             className={`text-sm transition-colors font-medium ${
               isActiveLink(pathname, "/")
-                ? "text-cc-coral"
-                : "text-cc-black hover:text-cc-coral"
+                ? "text-cc-orange"
+                : "text-cc-black hover:text-cc-orange"
             }`}
             aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
           >
@@ -67,8 +67,8 @@ export default function Header() {
             <button
               className={`text-sm font-medium flex items-center gap-1 transition-colors ${
                 produtosActive
-                  ? "text-cc-coral"
-                  : "text-cc-black hover:text-cc-coral"
+                  ? "text-cc-orange"
+                  : "text-cc-black hover:text-cc-orange"
               }`}
               aria-haspopup="menu"
             >
@@ -93,7 +93,7 @@ export default function Header() {
                   <Link
                     href={p.href}
                     role="menuitem"
-                    className="block px-4 py-2 text-sm text-cc-gray-600 hover:bg-cc-cream hover:text-cc-coral transition-colors"
+                    className="block px-4 py-2 text-sm text-cc-gray-600 hover:bg-cc-gray-100 hover:text-cc-orange transition-colors"
                   >
                     {p.label}
                   </Link>
@@ -109,7 +109,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm transition-colors font-medium ${
-                  active ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
+                  active ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
                 }`}
                 aria-current={active ? "page" : undefined}
               >
@@ -174,8 +174,8 @@ export default function Header() {
                 href="/"
                 className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
                   isActiveLink(pathname, "/")
-                    ? "text-cc-coral"
-                    : "text-cc-black hover:text-cc-coral"
+                    ? "text-cc-orange"
+                    : "text-cc-black hover:text-cc-orange"
                 }`}
                 aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
                 onClick={() => setMenuOpen(false)}
@@ -188,7 +188,7 @@ export default function Header() {
               <button
                 onClick={() => setProdutosOpenMobile(!produtosOpenMobile)}
                 className={`w-full flex items-center justify-between py-3 px-2 text-base font-medium transition-colors ${
-                  produtosActive ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
+                  produtosActive ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
                 }`}
                 aria-expanded={produtosOpenMobile}
               >
@@ -210,7 +210,7 @@ export default function Header() {
                     <li key={p.href}>
                       <Link
                         href={p.href}
-                        className="block py-2 px-2 text-sm text-cc-gray-600 hover:text-cc-coral transition-colors"
+                        className="block py-2 px-2 text-sm text-cc-gray-600 hover:text-cc-orange transition-colors"
                         onClick={() => setMenuOpen(false)}
                       >
                         {p.label}
@@ -228,7 +228,7 @@ export default function Header() {
                   <Link
                     href={item.href}
                     className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
-                      active ? "text-cc-coral" : "text-cc-black hover:text-cc-coral"
+                      active ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
                     }`}
                     aria-current={active ? "page" : undefined}
                     onClick={() => setMenuOpen(false)}

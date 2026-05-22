@@ -73,7 +73,7 @@ const produtos = [
 export default function ProdutosPage() {
   return (
     <>
-      <section className="bg-cc-green py-20 md:py-28 text-center">
+      <section className="bg-cc-black py-20 md:py-28 text-center">
         <div className="mx-auto max-w-3xl px-4">
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-4">
             Todos os produtos
@@ -91,7 +91,7 @@ export default function ProdutosPage() {
               <Link
                 key={p.titulo}
                 href={p.href}
-                className={`group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors ${
+                className={`group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors ${
                   p.destaque ? "lg:col-span-2 min-h-[300px]" : "min-h-[220px]"
                 }`}
               >

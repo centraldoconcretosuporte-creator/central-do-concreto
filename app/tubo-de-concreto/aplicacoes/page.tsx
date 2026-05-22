@@ -133,7 +133,7 @@ export default function AplicacoesPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -176,7 +176,7 @@ export default function AplicacoesPage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -193,7 +193,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="para-que-serve">
             <h2
               id="para-que-serve"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Para que serve o tubo de concreto?
             </h2>
@@ -217,7 +217,7 @@ export default function AplicacoesPage() {
                 A faixa de uso vai do{" "}
                 <Link
                   href="/tubo-de-concreto/diametros"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   Ø20 cm
                 </Link>{" "}
@@ -235,7 +235,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="aplicacoes-propriedade">
             <h2
               id="aplicacoes-propriedade"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Aplicações em propriedade — entrada, bueiro de acesso, drenagem
               de muro
@@ -266,7 +266,7 @@ export default function AplicacoesPage() {
                 Ø20 ao Ø60 cm conforme a altura do muro. Esta aplicação tem{" "}
                 <Link
                   href="/tubo-de-concreto/tubo-dreno"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   página dedicada
                 </Link>
@@ -287,7 +287,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="aplicacoes-loteamento">
             <h2
               id="aplicacoes-loteamento"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Aplicações em loteamento e via local — galeria de rua, ramal de
               esgoto
@@ -340,7 +340,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="aplicacoes-urbana">
             <h2
               id="aplicacoes-urbana"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Aplicações em infraestrutura urbana — galeria principal,
               travessia de córrego
@@ -388,7 +388,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="esgoto-sanitario">
             <h2
               id="esgoto-sanitario"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Esgoto sanitário — quando o tubo é a peça obrigatória
             </h2>
@@ -433,7 +433,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="fossa-septica">
             <h2
               id="fossa-septica"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Fossa séptica, filtro anaeróbio e sumidouro
             </h2>
@@ -484,7 +484,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="como-escolher">
             <h2
               id="como-escolher"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como saber qual tubo cada aplicação pede?
             </h2>
@@ -505,7 +505,7 @@ export default function AplicacoesPage() {
                 a{" "}
                 <Link
                   href="/tubo-de-concreto/diametros"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   página de diâmetros
                 </Link>{" "}
@@ -520,7 +520,7 @@ export default function AplicacoesPage() {
                 industrial pesada. A{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   página de classes
                 </Link>{" "}
@@ -533,7 +533,7 @@ export default function AplicacoesPage() {
                 A diferença está na{" "}
                 <Link
                   href="/tubo-de-concreto/tipos-de-encaixe"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   página de encaixes
                 </Link>
@@ -552,7 +552,7 @@ export default function AplicacoesPage() {
                   Referência rápida — aplicação, diâmetro, classe, encaixe e
                   junta
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Aplicação
@@ -581,7 +581,7 @@ export default function AplicacoesPage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">JR</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Bueiro de acesso (estrada vicinal)
                     </th>
@@ -599,7 +599,7 @@ export default function AplicacoesPage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">JR</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Galeria de loteamento
                     </th>
@@ -617,7 +617,7 @@ export default function AplicacoesPage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">JR</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Travessia de córrego urbano
                     </th>
@@ -635,7 +635,7 @@ export default function AplicacoesPage() {
                     <td className="px-4 py-3">PB</td>
                     <td className="px-4 py-3">JE (não disponível na Central)</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Fossa séptica, filtro, sumidouro
                     </th>
@@ -870,7 +870,7 @@ export default function AplicacoesPage() {
           <section aria-labelledby="aplicacoes-central">
             <h2
               id="aplicacoes-central"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Aplicações atendidas pela Central do Concreto
             </h2>
@@ -912,14 +912,14 @@ export default function AplicacoesPage() {
 
       {/* FAQ */}
       <section
-        className="py-16 md:py-20 bg-cc-cream cc-faq"
+        className="py-16 md:py-20 bg-cc-gray-100 cc-faq"
         aria-labelledby="faq-title"
       >
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes
           </h2>
@@ -929,12 +929,12 @@ export default function AplicacoesPage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -950,7 +950,7 @@ export default function AplicacoesPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
             Peça seu orçamento

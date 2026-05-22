@@ -94,7 +94,7 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-green/70" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/70" aria-hidden="true" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Pergolados, tubos e pré-moldados de concreto
@@ -133,7 +133,7 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-3">Nossos produtos</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Nossos produtos</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
               Pergolado pro Litoral Norte · tubo e fossa pra obra B2B · muro e pisante pro residencial. Tudo saindo da forma em Ivoti.
             </p>
@@ -147,7 +147,7 @@ export default function HomePage() {
                   <Link
                     key={p.titulo}
                     href={p.href}
-                    className="group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[260px]"
+                    className="group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[260px]"
                   >
                     <Image
                       src={p.foto}
@@ -177,7 +177,7 @@ export default function HomePage() {
                   <Link
                     key={p.titulo}
                     href={p.href}
-                    className="group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-green transition-colors min-h-[150px]"
+                    className="group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[150px]"
                   >
                     <Image
                       src={p.foto}
@@ -199,10 +199,10 @@ export default function HomePage() {
       </section>
 
       {/* O QUE VOCÊ QUER FAZER */}
-      <section className="py-16 md:py-24 bg-cc-cream">
+      <section className="py-16 md:py-24 bg-cc-gray-100">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-green mb-3">
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">
               O que você quer fazer?
             </h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
@@ -214,10 +214,10 @@ export default function HomePage() {
               <Link
                 key={obj.titulo}
                 href={obj.href}
-                className="group bg-white border border-cc-gray-200 hover:border-cc-green rounded-xl p-6 md:p-8 text-center transition-colors"
+                className="group bg-white border border-cc-gray-200 hover:border-cc-black rounded-xl p-6 md:p-8 text-center transition-colors"
               >
                 <svg
-                  className="w-10 h-10 mx-auto mb-4 text-cc-green"
+                  className="w-10 h-10 mx-auto mb-4 text-cc-black"
                   fill="none"
                   stroke="currentColor"
                   strokeWidth="1.5"
@@ -245,7 +245,7 @@ export default function HomePage() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M3 12l9-9 9 9M5 10v10h14V10" />
                   )}
                 </svg>
-                <h3 className="text-base font-medium text-cc-green">{obj.titulo}</h3>
+                <h3 className="text-base font-medium text-cc-black">{obj.titulo}</h3>
               </Link>
             ))}
           </div>
@@ -253,7 +253,7 @@ export default function HomePage() {
       </section>
 
       {/* SOBRE O GRUPO */}
-      <section className="py-16 md:py-24 bg-cc-green relative overflow-hidden">
+      <section className="py-16 md:py-24 bg-cc-black relative overflow-hidden">
         <div className="mx-auto max-w-6xl px-4 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
           {/* Coluna esquerda · texto + CTA */}
@@ -284,7 +284,7 @@ export default function HomePage() {
                 <h3 className="text-lg font-medium text-white">
                   {GRUPO_IVOTI_CANON.empresas.centralDoConcreto.nome}
                 </h3>
-                <span className="text-[11px] text-cc-coral font-medium tracking-widest uppercase whitespace-nowrap">
+                <span className="text-[11px] text-cc-orange font-medium tracking-widest uppercase whitespace-nowrap">
                   Você está aqui
                 </span>
               </div>
@@ -328,13 +328,13 @@ export default function HomePage() {
       </section>
 
       {/* === ONDE ATENDEMOS · simplificada · onda 2 === */}
-      <section className="py-16 md:py-24 bg-cc-green/95">
+      <section className="py-16 md:py-24 bg-cc-black/95">
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Onde atendemos</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-3 max-w-2xl mx-auto">
             Saímos da fábrica em Ivoti pra Vale do Rio dos Sinos, Serra Gaúcha e Litoral Norte · com equipe própria de instalação.
           </p>
-          <p className="text-sm md:text-base text-cc-coral leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-cc-orange leading-relaxed mb-10 max-w-2xl mx-auto">
             Pergolado é cobertura exclusiva do Litoral Norte · de Imbé a Torres.
           </p>
           <Link
@@ -347,7 +347,7 @@ export default function HomePage() {
       </section>
 
       {/* FALA COM A GENTE */}
-      <section className="py-16 md:py-24 bg-cc-green text-center">
+      <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Fala com a gente agora</h2>
           <p className="text-base text-white/85 mb-10">

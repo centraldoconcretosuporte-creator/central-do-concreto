@@ -141,7 +141,7 @@ export default function TuboDrenoPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-green py-16 md:py-24">
+      <section className="bg-cc-black py-16 md:py-24">
         <div className="mx-auto max-w-3xl px-4">
           <nav
             aria-label="Breadcrumb"
@@ -190,7 +190,7 @@ export default function TuboDrenoPage() {
                 href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline decoration-cc-coral underline-offset-4 hover:text-white"
+                className="underline decoration-cc-orange underline-offset-4 hover:text-white"
               >
                 (51) 99669-1757
               </a>
@@ -207,7 +207,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="o-que-e-tubo-dreno">
             <h2
               id="o-que-e-tubo-dreno"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               O que é o tubo dreno de concreto?
             </h2>
@@ -218,7 +218,7 @@ export default function TuboDrenoPage() {
                 ponto de escoamento. Ele se diferencia do{" "}
                 <Link
                   href="/tubo-de-concreto"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   tubo de concreto comum
                 </Link>
@@ -241,7 +241,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="para-que-serve">
             <h2
               id="para-que-serve"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Para que serve um tubo dreno?
             </h2>
@@ -267,7 +267,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="onde-se-usa">
             <h2
               id="onde-se-usa"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Onde se usa o tubo dreno de concreto?
             </h2>
@@ -278,7 +278,7 @@ export default function TuboDrenoPage() {
                 sentido que o tubo de PEAD. Quatro{" "}
                 <Link
                   href="/tubo-de-concreto/aplicacoes"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   aplicações do tubo de concreto
                 </Link>{" "}
@@ -290,7 +290,7 @@ export default function TuboDrenoPage() {
                 Ø30 a Ø50 cm conforme a{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   classe de carga adequada
                 </Link>{" "}
@@ -319,7 +319,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="concreto-vs-pead">
             <h2
               id="concreto-vs-pead"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tubo dreno de concreto e tubo dreno de PEAD — quando escolher cada um?
             </h2>
@@ -337,7 +337,7 @@ export default function TuboDrenoPage() {
                 <caption className="sr-only">
                   Comparação técnica entre tubo dreno de concreto e tubo dreno de PEAD
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Característica
@@ -358,7 +358,7 @@ export default function TuboDrenoPage() {
                     <td className="px-4 py-3">Ø20 a Ø60 cm (200 a 600 mm)</td>
                     <td className="px-4 py-3">DN 50 a DN 230 (50 a 230 mm)</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Forma de venda
                     </th>
@@ -372,7 +372,7 @@ export default function TuboDrenoPage() {
                     <td className="px-4 py-3">Rígido — suporta o peso do solo</td>
                     <td className="px-4 py-3">Flexível — acompanha curvas e desníveis</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Vida útil esperada
                     </th>
@@ -386,7 +386,7 @@ export default function TuboDrenoPage() {
                     <td className="px-4 py-3">Alto — exige equipamento para movimentar</td>
                     <td className="px-4 py-3">Baixo — instalação manual em rolo</td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Norma aplicável
                     </th>
@@ -423,7 +423,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="como-se-instala">
             <h2
               id="como-se-instala"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Como se instala um tubo dreno?
             </h2>
@@ -686,7 +686,7 @@ export default function TuboDrenoPage() {
                 os tubos se conectam pelo mesmo{" "}
                 <Link
                   href="/tubo-de-concreto/tipos-de-encaixe"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   encaixe ponta e bolsa ou macho e fêmea
                 </Link>{" "}
@@ -716,7 +716,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="diametros-tubo-dreno">
             <h2
               id="diametros-tubo-dreno"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Diâmetros do tubo dreno de concreto
             </h2>
@@ -733,7 +733,7 @@ export default function TuboDrenoPage() {
                   Diâmetros do tubo dreno de concreto disponíveis na Central e aplicação típica de
                   cada um
                 </caption>
-                <thead className="bg-cc-green text-white">
+                <thead className="bg-cc-black text-white">
                   <tr>
                     <th scope="col" className="text-left font-semibold px-4 py-3">
                       Diâmetro nominal
@@ -752,7 +752,7 @@ export default function TuboDrenoPage() {
                       Drenagem residencial, muro de arrimo pequeno até 1,5 metro de altura
                     </td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø30 cm
                     </th>
@@ -768,7 +768,7 @@ export default function TuboDrenoPage() {
                       Muro de arrimo de altura significativa, drenagem agrícola de grande escala
                     </td>
                   </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-cream/40">
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <th scope="row" className="px-4 py-3 font-medium text-left">
                       Ø50 cm
                     </th>
@@ -802,7 +802,7 @@ export default function TuboDrenoPage() {
           <section aria-labelledby="tubo-dreno-central">
             <h2
               id="tubo-dreno-central"
-              className="text-2xl md:text-3xl font-bold text-cc-green mb-5 leading-tight"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
               Tubo dreno disponível na Central do Concreto
             </h2>
@@ -821,7 +821,7 @@ export default function TuboDrenoPage() {
                   href={WHATSAPP_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-cc-coral underline underline-offset-4 hover:text-cc-green"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   (51) 99669-1757
                 </a>
@@ -833,12 +833,12 @@ export default function TuboDrenoPage() {
       </article>
 
       {/* FAQ */}
-      <section className="py-16 md:py-20 bg-cc-cream cc-faq" aria-labelledby="faq-title">
+      <section className="py-16 md:py-20 bg-cc-gray-100 cc-faq" aria-labelledby="faq-title">
         <div className="mx-auto max-w-3xl px-4">
           <Eyebrow className="mb-4 justify-center">FAQ</Eyebrow>
           <h2
             id="faq-title"
-            className="text-2xl md:text-3xl font-bold text-cc-green mb-10 text-center leading-tight"
+            className="text-2xl md:text-3xl font-bold text-cc-black mb-10 text-center leading-tight"
           >
             Perguntas frequentes sobre tubo dreno
           </h2>
@@ -848,12 +848,12 @@ export default function TuboDrenoPage() {
                 key={f.q}
                 className="group bg-white border border-cc-gray-200 rounded-lg px-5 py-4"
               >
-                <summary className="text-base font-semibold text-cc-green cursor-pointer list-none flex items-start justify-between gap-4">
+                <summary className="text-base font-semibold text-cc-black cursor-pointer list-none flex items-start justify-between gap-4">
                   <span>
                     <h3 className="inline">{f.q}</h3>
                   </span>
                   <span
-                    className="text-cc-coral text-xl group-open:rotate-45 transition-transform shrink-0"
+                    className="text-cc-orange text-xl group-open:rotate-45 transition-transform shrink-0"
                     aria-hidden="true"
                   >
                     +
@@ -869,7 +869,7 @@ export default function TuboDrenoPage() {
       {/* VIDEO_S3 — vídeo de instalação no template do projeto; entra quando houver obra para gravar */}
 
       {/* CTA FINAL */}
-      <section className="bg-cc-green py-14 md:py-16">
+      <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">Peça seu orçamento</h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
