@@ -40,14 +40,29 @@ export default function Header() {
     pathname.startsWith("/produtos") || pathname.startsWith("/pre-moldados");
 
   return (
-    <header className="sticky top-0 z-40 bg-white border-b border-cc-gray-200">
+    <header className="sticky top-0 z-40 bg-cc-black text-white border-b border-cc-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-4">
         <Link
           href="/"
-          className="text-base sm:text-xl md:text-2xl font-bold text-cc-black tracking-tight whitespace-nowrap"
-          aria-label="Central do Concreto - Início"
+          className="flex items-center gap-3"
+          aria-label="Central do Concreto · página inicial"
         >
-          CENTRAL DO CONCRETO
+          {/* Símbolo · sempre visível */}
+          <img
+            src="/cc-simbolo.png"
+            alt=""
+            aria-hidden="true"
+            className="h-9 md:h-10 w-auto"
+          />
+          {/* Texto · só no desktop */}
+          <div className="hidden md:flex md:flex-col md:leading-tight">
+            <span className="text-white font-bold text-base tracking-tight">
+              CENTRAL DO CONCRETO
+            </span>
+            <span className="text-cc-gray-400 text-xs">
+              Direto da fábrica · Ivoti-RS
+            </span>
+          </div>
         </Link>
 
         <nav className="hidden lg:flex items-center gap-8" aria-label="Menu principal">
@@ -56,7 +71,7 @@ export default function Header() {
             className={`text-sm transition-colors font-medium ${
               isActiveLink(pathname, "/")
                 ? "text-cc-orange"
-                : "text-cc-black hover:text-cc-orange"
+                : "text-white hover:text-cc-orange"
             }`}
             aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
           >
@@ -68,7 +83,7 @@ export default function Header() {
               className={`text-sm font-medium flex items-center gap-1 transition-colors ${
                 produtosActive
                   ? "text-cc-orange"
-                  : "text-cc-black hover:text-cc-orange"
+                  : "text-white hover:text-cc-orange"
               }`}
               aria-haspopup="menu"
             >
@@ -85,7 +100,7 @@ export default function Header() {
               </svg>
             </button>
             <ul
-              className="absolute left-0 top-full w-64 bg-white border border-cc-gray-200 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all py-2 z-50"
+              className="absolute left-0 top-full w-64 bg-cc-gray-800 border border-cc-gray-700 rounded-xl shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible group-focus-within:opacity-100 group-focus-within:visible transition-all py-2 z-50"
               role="menu"
             >
               {produtosLinks.map((p) => (
@@ -93,7 +108,7 @@ export default function Header() {
                   <Link
                     href={p.href}
                     role="menuitem"
-                    className="block px-4 py-2 text-sm text-cc-gray-600 hover:bg-cc-gray-100 hover:text-cc-orange transition-colors"
+                    className="block px-4 py-2 text-sm text-white hover:bg-cc-gray-700 hover:text-cc-orange transition-colors"
                   >
                     {p.label}
                   </Link>
@@ -109,7 +124,7 @@ export default function Header() {
                 key={item.href}
                 href={item.href}
                 className={`text-sm transition-colors font-medium ${
-                  active ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
+                  active ? "text-cc-orange" : "text-white hover:text-cc-orange"
                 }`}
                 aria-current={active ? "page" : undefined}
               >
@@ -133,7 +148,7 @@ export default function Header() {
         </a>
 
         <button
-          className="lg:hidden p-2 text-cc-black"
+          className="lg:hidden p-2 text-white"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label={menuOpen ? "Fechar menu" : "Abrir menu"}
           aria-expanded={menuOpen}
@@ -165,17 +180,17 @@ export default function Header() {
       {menuOpen && (
         <nav
           id="mobile-menu"
-          className="lg:hidden border-t border-cc-gray-200 px-4 py-4 bg-white"
+          className="lg:hidden border-t border-cc-gray-800 px-4 py-4 bg-cc-black"
           aria-label="Menu mobile"
         >
           <ul className="flex flex-col gap-1">
             <li>
               <Link
                 href="/"
-                className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
+                className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-800 transition-colors ${
                   isActiveLink(pathname, "/")
                     ? "text-cc-orange"
-                    : "text-cc-black hover:text-cc-orange"
+                    : "text-white hover:text-cc-orange"
                 }`}
                 aria-current={isActiveLink(pathname, "/") ? "page" : undefined}
                 onClick={() => setMenuOpen(false)}
@@ -184,11 +199,11 @@ export default function Header() {
               </Link>
             </li>
 
-            <li className="border-b border-cc-gray-100">
+            <li className="border-b border-cc-gray-800">
               <button
                 onClick={() => setProdutosOpenMobile(!produtosOpenMobile)}
                 className={`w-full flex items-center justify-between py-3 px-2 text-base font-medium transition-colors ${
-                  produtosActive ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
+                  produtosActive ? "text-cc-orange" : "text-white hover:text-cc-orange"
                 }`}
                 aria-expanded={produtosOpenMobile}
               >
@@ -210,7 +225,7 @@ export default function Header() {
                     <li key={p.href}>
                       <Link
                         href={p.href}
-                        className="block py-2 px-2 text-sm text-cc-gray-600 hover:text-cc-orange transition-colors"
+                        className="block py-2 px-2 text-sm text-white hover:text-cc-orange transition-colors"
                         onClick={() => setMenuOpen(false)}
                       >
                         {p.label}
@@ -227,8 +242,8 @@ export default function Header() {
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-100 transition-colors ${
-                      active ? "text-cc-orange" : "text-cc-black hover:text-cc-orange"
+                    className={`block py-3 px-2 text-base font-medium border-b border-cc-gray-800 transition-colors ${
+                      active ? "text-cc-orange" : "text-white hover:text-cc-orange"
                     }`}
                     aria-current={active ? "page" : undefined}
                     onClick={() => setMenuOpen(false)}
