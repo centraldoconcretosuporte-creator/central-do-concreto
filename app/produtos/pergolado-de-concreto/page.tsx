@@ -199,7 +199,7 @@ export default function PergoladoDeConcretoPage() {
             <svg className="w-4 h-4 text-cc-orange flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
               <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
             </svg>
-            Av. Bom Jardim, 149 · Loja 04 · Ivoti-RS · Atendemos Litoral Norte e Médio
+            Av. Bom Jardim, 149 · Loja 02 · Ivoti-RS · Atendemos Litoral Norte e Médio
           </p>
         </div>
       </section>
@@ -643,7 +643,7 @@ export default function PergoladoDeConcretoPage() {
             Falar no WhatsApp: (51) 99669-1757
           </a>
           <p className="text-sm opacity-90">
-            Av. Bom Jardim, 149 · Loja 04 · Vista Alegre · Ivoti-RS
+            Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
           </p>
         </div>
       </section>

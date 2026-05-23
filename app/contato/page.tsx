@@ -53,7 +53,7 @@ export default function ContatoPage() {
             <div className="bg-cc-gray-100 border border-cc-gray-200 rounded-xl p-6">
               <Eyebrow className="mb-3">Endereço</Eyebrow>
               <p className="text-base font-medium text-cc-black leading-relaxed mb-2">
-                Av. Bom Jardim, 149 · Loja 04
+                Av. Bom Jardim, 149 · Loja 02
                 <br />
                 Vista Alegre · Ivoti-RS
                 <br />

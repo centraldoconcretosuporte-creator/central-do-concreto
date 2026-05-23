@@ -29,7 +29,7 @@ export default function Footer() {
           <div>
             <p className="text-base font-bold tracking-tight mb-4">CENTRAL DO CONCRETO</p>
             <p className="text-sm text-white/80 leading-relaxed mb-3">
-              Av. Bom Jardim, 149 · Loja 04
+              Av. Bom Jardim, 149 · Loja 02
               <br />
               Vista Alegre · Ivoti-RS
               <br />

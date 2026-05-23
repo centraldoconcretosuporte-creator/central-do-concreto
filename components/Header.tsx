@@ -52,7 +52,7 @@ export default function Header() {
             src="/cc-simbolo.png"
             alt=""
             aria-hidden="true"
-            className="h-9 md:h-10 w-auto"
+            className="h-9 md:h-10 w-auto object-contain"
           />
           {/* Texto · só no desktop */}
           <div className="hidden md:flex md:flex-col md:leading-tight">

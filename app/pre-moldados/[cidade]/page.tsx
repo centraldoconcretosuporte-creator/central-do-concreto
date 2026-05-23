@@ -398,7 +398,7 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
             Falar no WhatsApp · (51) 99669-1757
           </a>
           <p className="text-sm opacity-90">
-            Av. Bom Jardim, 149 · Loja 04 · Vista Alegre · Ivoti-RS
+            Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
           </p>
         </div>
       </section>
@@ -481,7 +481,7 @@ function CidadeSerraView({ c }: { c: Cidade }) {
             Falar no WhatsApp · (51) 99669-1757
           </a>
           <p className="text-sm opacity-90">
-            Av. Bom Jardim, 149 · Loja 04 · Vista Alegre · Ivoti-RS
+            Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
           </p>
         </div>
       </section>
