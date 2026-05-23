@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: "Central do Concreto · Pergolados, tubos e pré-moldados em Ivoti-RS",
   description:
-    "Fabricante de artefatos de concreto direto da fábrica em Ivoti. Pergolados pro Litoral Norte, tubos de drenagem, fossa séptica, muros e pisantes. Equipe própria de instalação.",
+    "Fabricante de artefatos de concreto direto da fábrica em Ivoti. Tubos de drenagem, caixas de passagem, fossa séptica, muros, pisantes e pergolados. Equipe própria de instalação · atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte.",
   openGraph: {
     title: "Central do Concreto · Pergolados, tubos e pré-moldados em Ivoti-RS",
     description:
@@ -30,7 +30,7 @@ const produtosDestaque = [
   {
     titulo: "Pergolados de Concreto",
     descricao:
-      "Pré-moldado pra Litoral Norte · estrutura reforçada pra vento e maresia. Ganchos pra rede, tomada e iluminação embutidos.",
+      "Pré-moldado de concreto sob medida · estrutura reforçada. Ganchos pra rede, tomada e iluminação embutidos.",
     badge: "Mais procurado",
     href: "/produtos/pergolado-de-concreto",
     foto: "/home/produtos/pergolados.webp",
@@ -75,7 +75,7 @@ const produtosDestaque = [
 ];
 
 const objetivos = [
-  { titulo: "Cobrir a piscina", icone: "umbrella", href: "/produtos/pergolado-de-concreto" },
+  { titulo: "Área externa e jardim", icone: "flower", href: "/produtos/piso-atermico" },
   { titulo: "Drenar terreno", icone: "drop", href: "/produtos/tubos" },
   { titulo: "Construir muro", icone: "wall", href: "/produtos/muros-e-gradis" },
   { titulo: "Saneamento rural", icone: "home", href: "/produtos/fossa-e-filtro" },
@@ -100,7 +100,7 @@ export default function HomePage() {
             Pergolados, tubos e pré-moldados de concreto
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Fábrica em Ivoti · pré-moldados saindo direto da forma. Saímos toda semana pra Serra Gaúcha, pro Vale dos Sinos e pro Litoral Norte com equipe própria de instalação.
+            Fábrica em Ivoti · pré-moldados saindo direto da forma. Atendemos a Serra Gaúcha com equipe própria de instalação · também entregamos no Vale dos Sinos e no Litoral Norte.
           </p>
           <div className="flex justify-center mb-8">
             <a
@@ -135,7 +135,7 @@ export default function HomePage() {
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Nossos produtos</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Pergolado pro Litoral Norte · tubo e fossa pra obra B2B · muro e pisante pro residencial. Tudo saindo da forma em Ivoti.
+              Tubos, caixas de passagem e sistemas de drenagem · muros, pavimentação e pergolados de concreto. Tudo saindo da forma em Ivoti.
             </p>
           </div>
 
@@ -226,6 +226,13 @@ export default function HomePage() {
                 >
                   {obj.icone === "umbrella" && (
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m-9-9a9 9 0 0 1 18 0H3z" />
+                  )}
+                  {obj.icone === "flower" && (
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M12 9a3 3 0 1 0 0 6 3 3 0 0 0 0-6zm0-6a3 3 0 0 1 3 3c0 1.66-3 3-3 3s-3-1.34-3-3a3 3 0 0 1 3-3zm0 18a3 3 0 0 0 3-3c0-1.66-3-3-3-3s-3 1.34-3 3a3 3 0 0 0 3 3zM3 12a3 3 0 0 1 3-3c1.66 0 3 3 3 3s-1.34 3-3 3a3 3 0 0 1-3-3zm18 0a3 3 0 0 0-3-3c-1.66 0-3 3-3 3s1.34 3 3 3a3 3 0 0 0 3-3z"
+                    />
                   )}
                   {obj.icone === "drop" && (
                     <path
@@ -332,9 +339,9 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Onde atendemos</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-3 max-w-2xl mx-auto">
-            Saímos da fábrica em Ivoti pra Vale do Rio dos Sinos, Serra Gaúcha e Litoral Norte · com equipe própria de instalação.
+            Saímos da fábrica em Ivoti pra Serra Gaúcha · com equipe própria de instalação. Também atendemos o Vale dos Sinos e o Litoral Norte.
           </p>
-          <p className="text-sm md:text-base text-cc-orange leading-relaxed mb-10 max-w-2xl mx-auto">
+          <p className="text-sm md:text-base text-white/70 leading-relaxed mb-10 max-w-2xl mx-auto">
             Pergolado é cobertura exclusiva do Litoral Norte · de Imbé a Torres.
           </p>
           <Link

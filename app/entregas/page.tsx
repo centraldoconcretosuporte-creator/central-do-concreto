@@ -7,13 +7,13 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 export const metadata: Metadata = {
   title: "Entregas · Central do Concreto · Onde atendemos",
   description:
-    "Cobertura completa da Central do Concreto · Serra Gaúcha · Vale do Rio dos Sinos · Litoral Norte. Fábrica em Ivoti-RS.",
+    "Cobertura completa da Central do Concreto · Serra Gaúcha · Vale dos Sinos · Litoral Norte. Fábrica em Ivoti-RS.",
   alternates: { canonical: `${SITE_URL}/entregas` },
 };
 
 const regioes = [
   {
-    nome: "Vale do Rio dos Sinos",
+    nome: "Vale dos Sinos",
     descricao: "Onde a fábrica está. Entregas mais rápidas.",
     cidades: [
       "Ivoti (retirada)",
