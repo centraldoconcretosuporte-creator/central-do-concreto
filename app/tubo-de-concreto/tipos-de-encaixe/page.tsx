@@ -142,8 +142,9 @@ export default function TiposDeEncaixePage() {
               para esgoto sanitário e o limite de DN 500 que o MF precisa respeitar.
             </p>
             <p>
-              A Central do Concreto fornece toda a linha de tubo PB com junta rígida ou elástica e
-              tubo MF sob consulta. Para orçamento, fale com a equipe pelo WhatsApp{" "}
+              A Central do Concreto fornece tubo macho e fêmea (DN 200 a DN 1000), tubo ponta e
+              bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN 200 a DN 1500), com
+              junta rígida. Para orçamento, fale com a equipe pelo WhatsApp{" "}
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -394,14 +395,8 @@ export default function TiposDeEncaixePage() {
               <p>
                 Quando os dois encaixes são permitidos, a escolha costuma considerar logística e
                 custo. Tubos PB têm peso e volume maiores que o MF de mesmo diâmetro, pela bolsa.
-                Para a maioria dos projetos com{" "}
-                <Link
-                  href="/tubo-de-concreto/classes-de-carga"
-                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
-                >
-                  classe de resistência
-                </Link>{" "}
-                bem definida, o PB é a escolha padrão — a página de{" "}
+                Por isso, em drenagem pluvial sem exigência específica, o macho e fêmea costuma
+                ser a escolha de menor logística — a página de{" "}
                 <Link
                   href="/tubo-de-concreto/aplicacoes"
                   className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
@@ -423,10 +418,9 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A Central do Concreto fornece tubos com encaixe ponta e bolsa em toda a linha de
-                drenagem — do DN 20 ao DN 150 cm — com junta rígida ou junta elástica, conforme a
-                exigência da obra. Tubos com encaixe macho e fêmea são fornecidos sob consulta, a
-                partir de DN 500.
+                A Central do Concreto fornece tubo macho e fêmea (DN 200 a DN 1000), tubo ponta e
+                bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN 200 a DN 1500), com
+                junta rígida em todas as opções.
               </p>
               <p>
                 Além do fornecimento, a Central instala o tubo: preparo da vala, alinhamento dos
@@ -435,7 +429,7 @@ export default function TiposDeEncaixePage() {
               </p>
               <p>
                 Para obras maiores ou com especificação técnica detalhada — diâmetro, classe,
-                encaixe, tipo de junta —, o orçamento sai pelo WhatsApp{" "}
+                encaixe —, o orçamento sai pelo WhatsApp{" "}
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
@@ -518,10 +512,10 @@ export default function TiposDeEncaixePage() {
             Peça seu orçamento de tubos na Central
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-            A Central do Concreto atende obras em Ivoti e região com toda a linha de tubo de
-            concreto — PB do DN 20 ao DN 150, MF sob consulta — em classes PA1 e PA2, com junta
-            rígida ou elástica. Fale pelo WhatsApp para receber orçamento, prazo de entrega e, se
-            a obra precisar, agendar a instalação.
+            A Central do Concreto atende obras em Ivoti e região com tubo macho e fêmea (DN 200 a
+            DN 1000), tubo ponta e bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN
+            200 a DN 1500), com junta rígida. Fale pelo WhatsApp para receber orçamento, prazo de
+            entrega e, se a obra precisar, agendar a instalação.
           </p>
           <a
             href={WHATSAPP_URL}
