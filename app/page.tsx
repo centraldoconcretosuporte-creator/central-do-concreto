@@ -406,7 +406,7 @@ export default function HomePage() {
       {/* FALA COM A GENTE */}
       <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Manda foto da obra · orçamento em um dia útil</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Mande foto de sua obra · orçamento em um dia útil</h2>
           <p className="text-base text-white/85 mb-10">
             Foto ou medidas pelo WhatsApp e o André responde com orçamento em 1 dia útil. Atendimento direto, sem intermediário, sem formulário.
           </p>
