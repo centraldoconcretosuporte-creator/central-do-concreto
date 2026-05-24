@@ -250,10 +250,8 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A diferença está em três pontos: o formato do encaixe, a espessura da parede no
-                encaixe e o diâmetro mínimo permitido. O PB ganha espessura na bolsa e é permitido
-                a partir de DN 200. O MF perde espessura no entalhe e só é permitido a partir de
-                DN 500.
+                O PB ganha espessura de concreto na bolsa; o MF perde espessura no entalhe — por
+                isso o PB é permitido a partir de DN 200 e o MF só a partir de DN 500.
               </p>
             </div>
             {/* SVG_PB_MF: corte longitudinal lado a lado, PB à esquerda mostrando aumento de espessura na bolsa, MF à direita mostrando entalhe a meia espessura, legenda apontando cada parte */}
@@ -313,10 +311,9 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A junta rígida (JR) é feita com argamassa de cimento e areia aplicada no encaixe
-                depois da montagem dos tubos. A junta elástica (JE) usa um anel de borracha
-                colocado na região do encaixe, vedando por compressão — é o sistema mais estanque
-                e o único permitido para esgoto sanitário.
+                A junta rígida veda com argamassa de cimento aplicada depois da montagem; a junta
+                elástica veda com anel de borracha por compressão — a elástica é mais estanque e
+                obrigatória para esgoto sanitário.
               </p>
               <p>
                 A NBR 8890 só permite junta elástica em tubos com encaixe ponta e bolsa. O motivo
@@ -345,17 +342,8 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                O encaixe correto depende de três fatores: o diâmetro do tubo, o que ele vai
-                transportar e o nível de estanqueidade exigido — combinação que muda conforme as{" "}
-                <Link
-                  href="/tubo-de-concreto/aplicacoes"
-                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
-                >
-                  aplicações do tubo de concreto
-                </Link>{" "}
-                na obra. Tubos de até DN 500 só podem ser PB. Tubos para esgoto sanitário precisam
-                obrigatoriamente de PB com junta elástica. Tubos para drenagem pluvial em diâmetros
-                DN 500 ou maiores podem ser PB ou MF, conforme o projeto.
+                Em tubos até DN 500, sempre PB; em esgoto sanitário, sempre PB com junta elástica;
+                em DN 500 ou mais para drenagem pluvial, PB ou MF conforme projeto.
               </p>
             </div>
 
@@ -413,7 +401,14 @@ export default function TiposDeEncaixePage() {
                 >
                   classe de resistência
                 </Link>{" "}
-                bem definida, o PB é a escolha padrão.
+                bem definida, o PB é a escolha padrão — a página de{" "}
+                <Link
+                  href="/tubo-de-concreto/aplicacoes"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  aplicações do tubo de concreto
+                </Link>{" "}
+                detalha os casos típicos por tipo de obra.
               </p>
             </div>
           </section>
