@@ -8,11 +8,11 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Central do Concreto · Pergolados, tubos e pré-moldados em Ivoti-RS",
+  title: "Central do Concreto · Pré-moldados de concreto em Ivoti-RS",
   description:
     "Fabricante de artefatos de concreto direto da fábrica em Ivoti. Tubos de drenagem, caixas de passagem, fossa séptica, muros, pisantes e pergolados. Equipe própria de instalação · atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte.",
   openGraph: {
-    title: "Central do Concreto · Pergolados, tubos e pré-moldados em Ivoti-RS",
+    title: "Central do Concreto · Pré-moldados de concreto em Ivoti-RS",
     description:
       "Direto da fábrica, com normas técnicas e equipe própria de instalação. Atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte.",
     type: "website",
@@ -30,7 +30,7 @@ const produtosDestaque = [
   {
     titulo: "Tubos e Caixas",
     descricao:
-      "Tubo de drenagem, esgoto e água pluvial. Caixa de passagem e inspeção. Pra construtora e prefeitura.",
+      "Tubo de concreto armado para drenagem, esgoto e águas pluviais, em classes PA-1 a PA-4. Caixa de passagem e inspeção pré-moldada. Para construtora, prefeitura e obra rural.",
     badge: "Mais procurado",
     href: "/produtos/tubos",
     foto: "/home/produtos/tubos.webp",
@@ -39,7 +39,7 @@ const produtosDestaque = [
   {
     titulo: "Pergolados de Concreto",
     descricao:
-      "Pré-moldado de concreto sob medida · estrutura reforçada. Ganchos pra rede, tomada e iluminação embutidos.",
+      "Pergolado pré-moldado em concreto armado sob medida, com gancho de rede, tomada e iluminação já embutidos na peça. Estrutura única, sem solda, sem manutenção.",
     badge: null,
     href: "/produtos/pergolado-de-concreto",
     foto: "/home/produtos/pergolados.webp",
@@ -48,7 +48,7 @@ const produtosDestaque = [
   {
     titulo: "Muros e Gradis",
     descricao:
-      "Placa + pilar instalados em 1 dia. Modelo decorativo vazado também disponível pra fechar o terreno todo.",
+      "Muro de placa e pilar de concreto, instalado em um dia por equipe própria. Modelo decorativo vazado disponível pra fechar o terreno inteiro com estilo.",
     badge: null,
     href: "/produtos/muros-e-gradis",
     foto: "/home/produtos/muros.webp",
@@ -57,7 +57,7 @@ const produtosDestaque = [
   {
     titulo: "Piso Atérmico",
     descricao:
-      "Placa 49×49cm antiderrapante. Não esquenta no sol · pé descalço sai da piscina sem queimar. Três cores: branco, marfim e cinza.",
+      "Piso de borda de piscina que não esquenta no sol — pé descalço sai da água sem queimar. Placa 49×49cm antiderrapante, três cores: branco, marfim e cinza.",
     badge: "Não esquenta no sol",
     href: "/produtos/piso-atermico",
     foto: "/home/produtos/piso-atermico.webp",
@@ -66,7 +66,7 @@ const produtosDestaque = [
   {
     titulo: "Fossa e Filtro",
     descricao:
-      "Fossa séptica + filtro anaeróbio · saneamento rural ou área sem rede de esgoto. Sistema completo, instalação inclusa.",
+      "Sistema de saneamento completo para imóvel sem rede de esgoto — fossa séptica + filtro anaeróbio pré-moldados, com instalação inclusa. Atende propriedade rural e bairros sem coleta pública.",
     badge: null,
     href: "/produtos/fossa-e-filtro",
     foto: "/home/produtos/fossa.webp",
@@ -76,7 +76,7 @@ const produtosDestaque = [
 
 const objetivos = [
   { titulo: "Área externa e jardim", icone: "flower", href: "/produtos/piso-atermico" },
-  { titulo: "Drenar terreno", icone: "drop", href: "/produtos/tubos" },
+  { titulo: "Drenar o terreno", icone: "drop", href: "/produtos/tubos" },
   { titulo: "Construir muro", icone: "wall", href: "/produtos/muros-e-gradis" },
   { titulo: "Saneamento rural", icone: "home", href: "/produtos/fossa-e-filtro" },
 ];
@@ -113,13 +113,13 @@ export default function HomePage() {
           sizes="100vw"
           className="object-cover"
         />
-        <div className="absolute inset-0 bg-cc-black/70" aria-hidden="true" />
+        <div className="absolute inset-0 bg-cc-black/35" aria-hidden="true" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Pergolados, tubos e pré-moldados de concreto
+            Pré-moldados de concreto fabricados em Ivoti, com entrega e instalação na Serra Gaúcha
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Fábrica em Ivoti · pré-moldados saindo direto da forma. Atendemos a Serra Gaúcha com equipe própria de instalação · também entregamos no Vale dos Sinos e no Litoral Norte.
+            Tubo, pergolado, muro, piso atérmico e fossa séptica saindo direto da forma. Equipe própria de instalação na Serra · também entregamos no Vale dos Sinos e no Litoral Norte.
           </p>
           <div className="flex justify-center mb-8">
             <a
@@ -152,14 +152,14 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Nossos produtos</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Drenagem, pergolado, muro, piso e fossa · cinco famílias da fábrica</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Tubos, caixas de passagem e sistemas de drenagem · muros, pavimentação e pergolados de concreto. Tudo saindo da forma em Ivoti.
+              Tudo pré-moldado em concreto, saindo direto da forma em Ivoti. Tubo e caixa de passagem para drenagem de obra; pergolado pra área externa residencial; muro de placa e pilar pra fechamento; piso atérmico de borda de piscina; e fossa séptica pra imóvel sem rede de esgoto.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="grid grid-rows-2 gap-4">
+            <div className="grid auto-rows-fr gap-4">
               {produtosDestaque
                 .filter((p) => p.grande)
                 .map((p) => (
@@ -189,7 +189,7 @@ export default function HomePage() {
                 ))}
             </div>
 
-            <div className="grid grid-rows-3 gap-4">
+            <div className="grid auto-rows-fr gap-4">
               {produtosDestaque
                 .filter((p) => !p.grande)
                 .map((p) => (
@@ -222,10 +222,10 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">
-              O que você quer fazer?
+              O que você quer resolver?
             </h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Conta o que você quer resolver · indicamos o produto.
+              Quatro caminhos rápidos pelo que você precisa fazer. Toca no que se aplica e vai direto pro produto certo.
             </p>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -243,9 +243,6 @@ export default function HomePage() {
                   viewBox="0 0 24 24"
                   aria-hidden="true"
                 >
-                  {obj.icone === "umbrella" && (
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 3v18m-9-9a9 9 0 0 1 18 0H3z" />
-                  )}
                   {obj.icone === "flower" && (
                     <path
                       strokeLinecap="round"
@@ -281,9 +278,9 @@ export default function HomePage() {
       {/* === LOGÍSTICA E ENTREGA · Push 5 · era "Onde atendemos" === */}
       <section className="py-16 md:py-24 bg-cc-black/95">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Logística e entrega</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Saímos da fábrica em Ivoti pra Serra Gaúcha · com equipe própria de instalação. Também atendemos o Vale dos Sinos e o Litoral Norte.
+            Frete próprio até Caxias e equipe própria de instalação na Serra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
           </p>
 
           <p className="text-sm md:text-base text-white/75 mb-6 max-w-2xl mx-auto">
@@ -394,9 +391,9 @@ export default function HomePage() {
       {/* FALA COM A GENTE */}
       <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Fala com a gente agora</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Manda foto da obra · orçamento em um dia útil</h2>
           <p className="text-base text-white/85 mb-10">
-            Manda foto da obra ou as medidas pelo WhatsApp · respondo com orçamento em 1 dia útil. Quem fala com você é o André, da Central.
+            Foto ou medidas pelo WhatsApp e o André responde com orçamento em 1 dia útil. Atendimento direto, sem intermediário, sem formulário.
           </p>
           <a
             href={WHATSAPP_URL}
