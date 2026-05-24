@@ -33,7 +33,8 @@ const produtosDestaque = [
       "Tubo de concreto armado para drenagem, esgoto e águas pluviais, em classes PA-1 a PA-4. Caixa de passagem e inspeção pré-moldada. Para construtora, prefeitura e obra rural.",
     badge: "Mais procurado",
     href: "/produtos/tubos",
-    foto: "/home/produtos/tubos.webp",
+    foto: "/home/produtos/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.jpg",
+    alt: "Fileira de tubos de concreto da Central em diâmetros variados, vista em perspectiva no pátio em Ivoti-RS",
     grande: true,
   },
   {
@@ -43,6 +44,7 @@ const produtosDestaque = [
     badge: null,
     href: "/produtos/pergolado-de-concreto",
     foto: "/home/produtos/pergolados.webp",
+    alt: "Pergolado pré-moldado em concreto armado fabricado pela Central do Concreto em Ivoti",
     grande: true,
   },
   {
@@ -51,7 +53,8 @@ const produtosDestaque = [
       "Muro de placa e pilar de concreto, instalado em um dia por equipe própria. Modelo decorativo vazado disponível pra fechar o terreno inteiro com estilo.",
     badge: null,
     href: "/produtos/muros-e-gradis",
-    foto: "/home/produtos/muros.webp",
+    foto: "/home/produtos/muro-pre-moldado-placas-lisas-pilaretes-005-central-concreto-ivoti.jpg",
+    alt: "Muro pré-moldado de placas lisas com pilaretes fabricado pela Central do Concreto em Ivoti",
     grande: false,
   },
   {
@@ -61,6 +64,7 @@ const produtosDestaque = [
     badge: "Não esquenta no sol",
     href: "/produtos/piso-atermico",
     foto: "/home/produtos/piso-atermico.webp",
+    alt: "Piso atérmico antiderrapante de borda de piscina pré-moldado pela Central do Concreto em Ivoti",
     grande: false,
   },
   {
@@ -70,6 +74,7 @@ const produtosDestaque = [
     badge: null,
     href: "/produtos/fossa-e-filtro",
     foto: "/home/produtos/fossa.webp",
+    alt: "Fossa séptica e filtro anaeróbio pré-moldados pela Central do Concreto em Ivoti",
     grande: false,
   },
 ];
@@ -106,8 +111,8 @@ export default function HomePage() {
       {/* HERO */}
       <section className="relative w-full min-h-[560px] md:min-h-[640px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/home/hero-fabrica.webp"
-          alt="Fábrica da Central do Concreto em Ivoti-RS"
+          src="/home/fachada-noturna-showroom-cc-iluminacao-azul-051-central-concreto-ivoti.jpg"
+          alt="Showroom noturno da Central do Concreto em Ivoti com pátio iluminado e produtos pré-moldados em exposição"
           fill
           priority
           sizes="100vw"
@@ -170,7 +175,7 @@ export default function HomePage() {
                   >
                     <Image
                       src={p.foto}
-                      alt={p.titulo}
+                      alt={p.alt}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -200,7 +205,7 @@ export default function HomePage() {
                   >
                     <Image
                       src={p.foto}
-                      alt={p.titulo}
+                      alt={p.alt}
                       fill
                       className="object-cover group-hover:scale-105 transition-transform duration-500"
                       sizes="(max-width: 768px) 100vw, 50vw"
@@ -282,6 +287,16 @@ export default function HomePage() {
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
             Frete próprio até Caxias e equipe própria de instalação na Serra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
           </p>
+
+          <div className="relative aspect-[16/9] max-w-3xl mx-auto mb-6 rounded-lg overflow-hidden">
+            <Image
+              src="/home/entrega-caminhao-munck-paletes-pre-moldados-obra-residencial-007-central-concreto-ivoti.jpg"
+              alt="Caminhão Munck da Central do Concreto descarregando paletes de pré-moldados em obra residencial"
+              fill
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
 
           <p className="text-sm md:text-base text-white/75 mb-6 max-w-2xl mx-auto">
             Toque na sua cidade pra falar pelo WhatsApp:
