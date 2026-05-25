@@ -428,8 +428,14 @@ export default function TiposDeEncaixePage() {
                 região, num raio de cerca de 50 km, com entrega programada.
               </p>
               <p>
-                Para obras maiores ou com especificação técnica detalhada — diâmetro, classe,
-                encaixe —, o orçamento sai pelo WhatsApp{" "}
+                Para obras maiores ou com especificação técnica detalhada — diâmetro,{" "}
+                <Link
+                  href="/tubo-de-concreto/classes-de-carga"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  classe
+                </Link>
+                , encaixe —, o orçamento sai pelo WhatsApp{" "}
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
