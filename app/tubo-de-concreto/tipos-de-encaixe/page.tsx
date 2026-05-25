@@ -117,13 +117,16 @@ export default function TiposDeEncaixePage() {
             <span className="text-white font-medium">Tipos de encaixe</span>
           </nav>
 
-          <Image
-            src="/images/tubo-de-concreto/tubo-concreto-encaixe-mf-diametros.webp"
-            alt="Tubos de concreto com encaixe macho e fêmea em diâmetros variados na Central do Concreto"
-            width={1600}
-            height={900}
-            priority
-          />
+          <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-6">
+            <Image
+              src="/images/tubo-de-concreto/tubos-concreto-deposito-camionete-marca-central-concreto-035-central-concreto-ivoti.webp"
+              alt="Pilha de tubos de concreto ponta e bolsa e macho e fêmea no depósito da Central do Concreto · Ivoti RS"
+              fill
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+              className="object-cover"
+            />
+          </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Tipos de encaixe de tubo de concreto
@@ -166,6 +169,13 @@ export default function TiposDeEncaixePage() {
             >
               O que é o encaixe ponta e bolsa (PB)?
             </h2>
+            <Image
+              src="/images/tubo-de-concreto/tubos-concreto-fileira-frontal-decrescente-bairro-residencial-030-central-concreto-ivoti.webp"
+              alt="Fileira de tubos de concreto ponta e bolsa em ordem decrescente de diâmetro em bairro residencial · Central do Concreto · Ivoti RS"
+              width={1600}
+              height={1200}
+              className="w-full h-auto rounded-lg mb-6"
+            />
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O encaixe ponta e bolsa tem uma ponta lisa em uma extremidade do tubo e uma bolsa
@@ -193,12 +203,6 @@ export default function TiposDeEncaixePage() {
                 .
               </p>
             </div>
-            <Image
-              src="/images/tubo-de-concreto/tubo-concreto-ponta-bolsa.webp"
-              alt="Tubo de concreto com encaixe ponta e bolsa pronto para drenagem"
-              width={1600}
-              height={1200}
-            />
           </section>
 
           {/* H2 2 — O que é o encaixe macho e fêmea (MF)? */}
@@ -209,6 +213,13 @@ export default function TiposDeEncaixePage() {
             >
               O que é o encaixe macho e fêmea (MF)?
             </h2>
+            <Image
+              src="/images/tubo-de-concreto/tubos-concreto-pre-entrega-estoque-008-central-concreto-ivoti.webp"
+              alt="Tubos de concreto com encaixe macho e fêmea prontos para entrega no estoque · Central do Concreto · Ivoti RS"
+              width={1600}
+              height={1200}
+              className="w-full h-auto rounded-lg mb-6"
+            />
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O encaixe macho e fêmea tem uma ponta saliente em uma extremidade do tubo (o macho)
@@ -237,12 +248,6 @@ export default function TiposDeEncaixePage() {
                 .
               </p>
             </div>
-            <Image
-              src="/images/tubo-de-concreto/tubo-concreto-macho-femea.webp"
-              alt="Tubo de concreto com encaixe macho e fêmea para junta elástica"
-              width={1600}
-              height={1200}
-            />
           </section>
 
           {/* H2 3 — Ponta e bolsa ou macho e fêmea: qual a diferença? */}
@@ -253,6 +258,22 @@ export default function TiposDeEncaixePage() {
             >
               Ponta e bolsa ou macho e fêmea: qual a diferença?
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <Image
+                src="/images/tubo-de-concreto/tubo-dn400-pa1.webp"
+                alt="Ficha técnica · tubo de concreto DN 400 PA-1 ponta e bolsa · norma ABNT NBR 8890:2020"
+                width={2100}
+                height={1600}
+                className="w-full h-auto rounded-lg border border-zinc-200"
+              />
+              <Image
+                src="/images/tubo-de-concreto/tubo-dn600-pa1-mf.webp"
+                alt="Ficha técnica · tubo de concreto DN 600 PA-1 macho e fêmea · norma ABNT NBR 8890:2020"
+                width={2100}
+                height={1600}
+                className="w-full h-auto rounded-lg border border-zinc-200"
+              />
+            </div>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 A diferença entre PB e MF está na espessura do encaixe e no peso do tubo. O PB
@@ -348,6 +369,22 @@ export default function TiposDeEncaixePage() {
             >
               Qual encaixe usar em cada tipo de obra?
             </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
+              <Image
+                src="/images/tubo-de-concreto/escavadeira-aplicando-tubos-concreto-obra-drenagem-real-048-central-concreto-ivoti.webp"
+                alt="Escavadeira Yanmar aplicando tubo de concreto em obra de drenagem pluvial · Central do Concreto · Ivoti RS"
+                width={1600}
+                height={900}
+                className="w-full h-auto rounded-lg"
+              />
+              <Image
+                src="/images/tubo-de-concreto/tubos-concreto-encaixados-caixa-passagem-drenagem-pluvial-011-central-concreto-ivoti.webp"
+                alt="Tubos de concreto encaixados em caixa de passagem em obra de drenagem pluvial · Central do Concreto · Ivoti RS"
+                width={817}
+                height={613}
+                className="w-full h-auto rounded-lg"
+              />
+            </div>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 Pra cada tipo de obra de drenagem pluvial, há um encaixe que combina melhor · a
@@ -419,6 +456,13 @@ export default function TiposDeEncaixePage() {
             >
               Tipos de encaixe disponíveis na Central do Concreto
             </h2>
+            <Image
+              src="/images/tubo-de-concreto/diametros-variados-tubo-concreto-pronta-entrega-showroom-noturno-018-central-concreto-ivoti.webp"
+              alt="Tubos de concreto em diâmetros variados expostos em showroom noturno destacando a pronta entrega · Central do Concreto · Ivoti RS"
+              width={1920}
+              height={1440}
+              className="w-full h-auto rounded-lg mb-6"
+            />
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 A Central fornece mais de 25 medidas e modelos de tubo de concreto, todos com junta
@@ -451,12 +495,6 @@ export default function TiposDeEncaixePage() {
                 técnica gratuita pelo mesmo número.
               </p>
             </div>
-            <Image
-              src="/images/tubo-de-concreto/tubo-concreto-deposito-encaixes.webp"
-              alt="Depósito de tubos de concreto com diferentes encaixes na Central do Concreto, Ivoti RS"
-              width={1600}
-              height={1200}
-            />
           </section>
         </div>
       </article>
