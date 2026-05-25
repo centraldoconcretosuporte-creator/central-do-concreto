@@ -9,7 +9,7 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 const PAGE_TITLE = "Tubo de concreto: ponta e bolsa ou macho e fêmea? | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Ponta e bolsa (PB) ou macho e fêmea (MF)? Veja a diferença entre os encaixes do tubo de concreto, com quando usar cada um pela NBR 8890.";
+  "Ponta e bolsa (PB) ou macho e fêmea (MF)? Veja a diferença entre os encaixes do tubo de concreto pela NBR 8890 e qual usar em drenagem pluvial.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -29,23 +29,23 @@ export const metadata: Metadata = {
 const faqs = [
   {
     q: "Qual a diferença entre encaixe PB e MF?",
-    a: "O PB tem bolsa alargada com aumento de concreto na espessura do encaixe; o MF tem entalhe a meia espessura. Pela NBR 8890, o PB é permitido a partir de DN 200 e o MF apenas a partir de DN 500. Só o PB aceita junta elástica na prática.",
+    a: "O PB tem bolsa alargada com concreto adicional no encaixe. O MF tem entalhe a meia espessura da parede do tubo. Em peso, o MF é mais leve por não ter bolsa, o que favorece logística e velocidade de assentamento. Os dois são vedados com junta rígida nas linhas da Central.",
   },
   {
     q: "Posso usar tubo macho e fêmea em qualquer diâmetro?",
-    a: "Não. A NBR 8890 só permite a fabricação de tubos com encaixe macho e fêmea em diâmetros DN 500 ou maiores. Abaixo disso, o entalhe a meia espessura deixaria a parede do encaixe frágil demais. Para diâmetros menores, a única opção é o ponta e bolsa.",
+    a: "Sim · na faixa que a Central produz, 7 diâmetros do DN 200 ao DN 1000. Em diâmetros maiores que isso (DN 1200 e DN 1500), a oferta da Central é estrutural armado PA-1 ou PA-2, fora da linha simples.",
   },
   {
-    q: "Qual encaixe é obrigatório para esgoto sanitário?",
-    a: "Tubos para esgoto sanitário precisam obrigatoriamente ser do tipo ponta e bolsa com junta elástica e cimento resistente a sulfatos (cimento RS), conforme a NBR 8890. O encaixe macho e fêmea não é permitido para esgoto, porque não acomoda junta elástica em condições de vedação confiável.",
+    q: "O tubo de concreto é o mesmo que manilha?",
+    a: "Sim · manilha é o nome popular do tubo de concreto · termo do balcão usado em drenagem residencial e calçada. Na norma (NBR 8890) e no mercado técnico, o nome correto é tubo de concreto · a Central atende pelos dois.",
   },
   {
-    q: "Preciso de junta elástica em rede de água pluvial?",
-    a: "Não é obrigatório. Em rede pluvial sem risco de contaminação por esgoto, a junta rígida atende. A junta elástica é obrigatória só em esgoto sanitário e em redes pluviais com contaminação comprovada por esgoto sanitário ou efluente industrial.",
+    q: "Os tubos da Central seguem a NBR 8890?",
+    a: "Sim · toda a linha de drenagem pluvial da Central é fabricada conforme a ABNT NBR 8890:2020, que normatiza dimensões, classes de resistência e ensaios de aceitação dos tubos de concreto.",
   },
   {
     q: "O tubo ponta e bolsa é mais resistente que o macho e fêmea?",
-    a: "O encaixe do PB é mais resistente que o do MF, porque acrescenta espessura de concreto na bolsa em vez de reduzir. Mas a resistência total do tubo depende da classe (PA1, PA2, PA3 ou PA4 pela NBR 8890), não só do encaixe. Veja a página de classes de carga para escolher a classe certa.",
+    a: "O encaixe do PB é mais resistente que o do MF · a bolsa ganha concreto adicional, o entalhe do MF reduz parede. Mas a resistência total do tubo depende da classe (PA-1 ou PA-2 nas linhas armadas da Central, pela NBR 8890), não só do encaixe. Pra escolher a classe certa, ver a página de classes de carga.",
   },
 ];
 
@@ -131,20 +131,16 @@ export default function TiposDeEncaixePage() {
 
           <div className="space-y-5 text-base md:text-lg text-white/90 leading-relaxed">
             <p>
-              O tubo de concreto tem dois tipos de encaixe normalizados pela NBR 8890: ponta e
-              bolsa (PB) e macho e fêmea (MF). Cada um tem geometria, uso e limitações próprias —
-              e a escolha entre eles muda conforme o diâmetro da peça, o que vai ser transportado e
-              o nível de estanqueidade exigido pela obra.
+              Ponta e bolsa (PB) e macho e fêmea (MF) são os encaixes do tubo de concreto pela NBR
+              8890. Na Central, MF cobre DN 200 a 1000 (7 diâmetros), PB vem em DN 200, 500 e 600, e
+              o estrutural armado (PA-1 e PA-2) vai de DN 200 a 1500 — todos com junta rígida.
             </p>
             <p>
-              Esta página explica como cada encaixe funciona, quando cada um pode ser usado e qual
-              é a regra prática de escolha — incluindo a obrigatoriedade do PB com junta elástica
-              para esgoto sanitário e o limite de DN 500 que o MF precisa respeitar.
+              A escolha entre PB e MF considera diâmetro disponível, peso e logística do transporte
+              e o tipo de obra de drenagem pluvial.
             </p>
             <p>
-              A Central do Concreto fornece tubo macho e fêmea (DN 200 a DN 1000), tubo ponta e
-              bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN 200 a DN 1500), com
-              junta rígida. Para orçamento, fale com a equipe pelo WhatsApp{" "}
+              Orçamento e prazo de entrega pelo WhatsApp{" "}
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -172,30 +168,29 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                O encaixe ponta e bolsa é o formato mais comum do tubo de concreto: uma
-                extremidade é a ponta, lisa e com diâmetro menor, e a outra é a bolsa, alargada,
-                com aumento de espessura de concreto. A ponta de um tubo se encaixa dentro da
-                bolsa do próximo, formando a junta.
+                O encaixe ponta e bolsa tem uma ponta lisa em uma extremidade do tubo e uma bolsa
+                alargada na outra. A ponta de um tubo entra na bolsa do seguinte e a junta é vedada
+                com argamassa.
               </p>
               <p>
-                Esse aumento de espessura na bolsa é a principal vantagem técnica do PB. Em vez de
-                reduzir a parede no encaixe — como acontece no macho e fêmea —, o PB acrescenta
-                concreto, tornando a região da junta mais resistente. Por isso, a NBR 8890 permite
-                a fabricação de tubos PB a partir de DN 200, cobrindo toda a linha de drenagem
-                residencial e urbana.
+                A bolsa carrega mais concreto que o resto do tubo. É aí que o PB se diferencia do
+                macho e fêmea · enquanto o MF reduz parede no encaixe, o PB acrescenta. A junta fica
+                mais robusta, e a NBR 8890 libera a fabricação a partir de DN 200.
               </p>
               <p>
-                No mercado de pré-moldados, o tubo de concreto também é chamado de manilha. O
-                encaixe ponta e bolsa aceita tanto junta rígida — vedada com argamassa — quanto
-                junta elástica — vedada com anel de borracha. É o único encaixe permitido para
-                esgoto sanitário, e o formato padrão da linha de{" "}
-                <Link
-                  href="/tubo-de-concreto"
+                O PB cobre toda a faixa que a Central produz · do DN 200 ao DN 1500 · em tubo
+                simples (PS-1) ou armado (PA-1 e PA-2), com junta rígida em todas as opções. São
+                mais de 20 modelos no catálogo · no balcão, também é chamado de manilha. Em dúvida
+                sobre qual modelo serve · consulta técnica gratuita pelo WhatsApp{" "}
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
-                  tubo de concreto
-                </Link>{" "}
-                da Central.
+                  (51) 99669-1757
+                </a>
+                .
               </p>
             </div>
             <Image
@@ -216,21 +211,30 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                O encaixe macho e fêmea tem uma extremidade saliente — o macho — que se encaixa em
-                uma extremidade recortada — a fêmea. Diferente do ponta e bolsa, o MF não aumenta
-                a espessura de concreto no encaixe: o entalhe é feito a meia espessura da parede
-                do tubo.
+                O encaixe macho e fêmea tem uma ponta saliente em uma extremidade do tubo (o macho)
+                e um entalhe rebaixado na outra (a fêmea). A ponta entra no entalhe e a junta é
+                vedada com argamassa.
               </p>
               <p>
-                Por essa redução de parede na região do encaixe, a NBR 8890 permite a fabricação
-                de tubos MF apenas a partir de DN 500. Em diâmetros menores, a parede do encaixe
-                ficaria frágil demais — abaixo de DN 500, o único encaixe permitido é o PB.
+                O entalhe é feito a meia espessura da parede do tubo. É aí que o MF se diferencia do
+                PB · enquanto o PB acrescenta concreto na bolsa, o MF reduz parede no encaixe. Por
+                não ter bolsa, o tubo MF é mais leve, o que favorece logística e velocidade de
+                assentamento.
               </p>
               <p>
-                O MF é mais comum em galerias pluviais grandes, bueiros e travessias, onde os
-                diâmetros costumam passar de 1 metro. Aceita junta rígida, vedada com argamassa,
-                ou junta elástica conforme a necessidade de estanqueidade — embora a combinação MF
-                com junta elástica não seja prática usual.
+                Na Central, o MF cobre 7 diâmetros · do DN 200 ao DN 1000 · é a maior gama entre os
+                encaixes da fábrica, com junta rígida em todas as opções. Aparece com mais
+                frequência em drenagem pluvial urbana, galeria de bairro e travessias. Em dúvida
+                sobre qual modelo serve · consulta técnica gratuita pelo WhatsApp{" "}
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  (51) 99669-1757
+                </a>
+                .
               </p>
             </div>
             <Image
@@ -251,8 +255,9 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                O PB ganha espessura de concreto na bolsa; o MF perde espessura no entalhe — por
-                isso o PB é permitido a partir de DN 200 e o MF só a partir de DN 500.
+                A diferença entre PB e MF está na espessura do encaixe e no peso do tubo. O PB
+                ganha concreto na bolsa para uma junta mais robusta. O MF reduz parede no entalhe e
+                fica mais leve.
               </p>
             </div>
             {/* SVG_PB_MF: corte longitudinal lado a lado, PB à esquerda mostrando aumento de espessura na bolsa, MF à direita mostrando entalhe a meia espessura, legenda apontando cada parte */}
@@ -262,43 +267,52 @@ export default function TiposDeEncaixePage() {
                 <thead className="bg-cc-black text-white">
                   <tr>
                     <th className="text-left font-semibold px-4 py-3">Critério</th>
-                    <th className="text-left font-semibold px-4 py-3">Ponta e bolsa (PB)</th>
-                    <th className="text-left font-semibold px-4 py-3">Macho e fêmea (MF)</th>
+                    <th className="text-left font-semibold px-4 py-3">PB</th>
+                    <th className="text-left font-semibold px-4 py-3">MF</th>
                   </tr>
                 </thead>
                 <tbody className="text-cc-gray-700">
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">Diâmetro mínimo (NBR 8890)</td>
-                    <td className="px-4 py-3">DN 200</td>
-                    <td className="px-4 py-3">DN 500</td>
+                    <td className="px-4 py-3 font-medium">Geometria do encaixe</td>
+                    <td className="px-4 py-3">Bolsa alargada, concreto adicional</td>
+                    <td className="px-4 py-3">Entalhe a meia espessura</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
-                    <td className="px-4 py-3 font-medium">Parede no encaixe</td>
-                    <td className="px-4 py-3">Aumento de concreto na bolsa</td>
-                    <td className="px-4 py-3">Redução a meia espessura</td>
+                    <td className="px-4 py-3 font-medium">Peso do tubo</td>
+                    <td className="px-4 py-3">Maior (carrega a bolsa)</td>
+                    <td className="px-4 py-3">Menor (sem bolsa)</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">Junta rígida</td>
-                    <td className="px-4 py-3">Compatível</td>
-                    <td className="px-4 py-3">Compatível</td>
+                    <td className="px-4 py-3 font-medium">Junta</td>
+                    <td className="px-4 py-3">Rígida (argamassa)</td>
+                    <td className="px-4 py-3">Rígida (argamassa)</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
-                    <td className="px-4 py-3 font-medium">Junta elástica</td>
-                    <td className="px-4 py-3">Compatível (anel de borracha)</td>
-                    <td className="px-4 py-3">Não compatível na prática</td>
+                    <td className="px-4 py-3 font-medium">Diâmetros na Central</td>
+                    <td className="px-4 py-3">DN 200 a 1500 (simples e armado)</td>
+                    <td className="px-4 py-3">DN 200 a 1000 (7 modelos)</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">Uso em esgoto sanitário</td>
-                    <td className="px-4 py-3">Permitido</td>
-                    <td className="px-4 py-3">Não permitido</td>
-                  </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
-                    <td className="px-4 py-3 font-medium">Uso típico</td>
-                    <td className="px-4 py-3">Toda a linha de drenagem</td>
-                    <td className="px-4 py-3">Diâmetros grandes (DN ≥ 500)</td>
+                    <td className="px-4 py-3 font-medium">Aplicação típica em pluvial</td>
+                    <td className="px-4 py-3">Residencial e linha estrutural pesada</td>
+                    <td className="px-4 py-3">Drenagem urbana e galeria pluvial</td>
                   </tr>
                 </tbody>
               </table>
+            </div>
+            <div className="mt-6 space-y-4 text-base text-cc-gray-700 leading-relaxed">
+              <p>
+                Em dúvida na hora da escolha · consulta técnica gratuita pelo WhatsApp{" "}
+                <a
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  (51) 99669-1757
+                </a>
+                .
+              </p>
             </div>
           </section>
 
@@ -308,27 +322,20 @@ export default function TiposDeEncaixePage() {
               id="junta-rigida-elastica"
               className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
             >
-              Junta rígida ou junta elástica: o que muda?
+              Por que junta rígida é o padrão na drenagem pluvial
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A junta rígida veda com argamassa de cimento aplicada depois da montagem; a junta
-                elástica veda com anel de borracha por compressão — a elástica é mais estanque e
-                obrigatória para esgoto sanitário.
+                A junta rígida é o padrão na drenagem pluvial porque une custo baixo, execução
+                simples e décadas de uso em redes urbanas. Veda com argamassa de cimento aplicada
+                depois da montagem · é o sistema usado em toda a linha de drenagem da Central · do
+                loteamento à galeria.
               </p>
               <p>
-                A NBR 8890 só permite junta elástica em tubos com encaixe ponta e bolsa. O motivo
-                é construtivo: a bolsa do PB acomoda o anel de borracha em uma sede própria,
-                garantindo compressão estável ao longo do tempo. No encaixe macho e fêmea não há
-                como instalar o anel em condições de vedação confiável — por isso, o MF trabalha,
-                na prática, sempre com junta rígida.
-              </p>
-              <p>
-                Para redes de drenagem de água pluvial limpa, a junta rígida basta. Em qualquer
-                rede onde haja risco de contaminação por esgoto, movimentação significativa do
-                solo ou exigência específica de estanqueidade, a junta elástica é a escolha
-                técnica correta — e, para esgoto, é obrigatória, com tubo PB e cimento resistente
-                a sulfatos (cimento RS).
+                Para drenagem pluvial, redes viárias, galerias, bueiros, travessias e pontilhões, a
+                junta rígida atende com tranquilidade. É o sistema fornecido pela Central em todas
+                as linhas · tubo simples (PS-1 e PS-2), estrutural armado (PA-1 e PA-2), do DN 200
+                ao DN 1500.
               </p>
             </div>
           </section>
@@ -343,8 +350,8 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                Em tubos até DN 500, sempre PB; em esgoto sanitário, sempre PB com junta elástica;
-                em DN 500 ou mais para drenagem pluvial, PB ou MF conforme projeto.
+                Pra cada tipo de obra de drenagem pluvial, há um encaixe que combina melhor · a
+                regra prática considera diâmetro, peso do tubo e logística do transporte até a obra.
               </p>
             </div>
 
@@ -353,57 +360,53 @@ export default function TiposDeEncaixePage() {
                 <thead className="bg-cc-black text-white">
                   <tr>
                     <th className="text-left font-semibold px-4 py-3">Tipo de obra</th>
-                    <th className="text-left font-semibold px-4 py-3">Encaixe</th>
-                    <th className="text-left font-semibold px-4 py-3">Junta</th>
+                    <th className="text-left font-semibold px-4 py-3">Encaixe sugerido</th>
+                    <th className="text-left font-semibold px-4 py-3">Diâmetro típico</th>
                   </tr>
                 </thead>
                 <tbody className="text-cc-gray-700">
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">Drenagem residencial (DN 200–400)</td>
-                    <td className="px-4 py-3">PB</td>
-                    <td className="px-4 py-3">Rígida</td>
-                  </tr>
-                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
-                    <td className="px-4 py-3 font-medium">Drenagem urbana, ruas e avenidas</td>
-                    <td className="px-4 py-3">PB ou MF (se DN ≥ 500)</td>
-                    <td className="px-4 py-3">Rígida</td>
-                  </tr>
-                  <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">Esgoto sanitário</td>
-                    <td className="px-4 py-3">PB</td>
-                    <td className="px-4 py-3">Elástica (obrigatória)</td>
+                    <td className="px-4 py-3 font-medium">Drenagem residencial e calçada</td>
+                    <td className="px-4 py-3">MF (mais leve)</td>
+                    <td className="px-4 py-3">DN 200 a 400</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
                     <td className="px-4 py-3 font-medium">
-                      Galeria pluvial e bueiro grande (DN ≥ 1000)
+                      Bueiro de via urbana e drenagem comercial
                     </td>
-                    <td className="px-4 py-3">PB ou MF</td>
-                    <td className="px-4 py-3">Rígida</td>
+                    <td className="px-4 py-3">MF ou PB</td>
+                    <td className="px-4 py-3">DN 500 a 600</td>
                   </tr>
                   <tr className="border-t border-cc-gray-200">
-                    <td className="px-4 py-3 font-medium">
-                      Rede pluvial com contaminação por esgoto
-                    </td>
-                    <td className="px-4 py-3">PB</td>
-                    <td className="px-4 py-3">Elástica</td>
+                    <td className="px-4 py-3 font-medium">Galeria de bairro e travessia</td>
+                    <td className="px-4 py-3">MF ou PB</td>
+                    <td className="px-4 py-3">DN 600 a 1000</td>
+                  </tr>
+                  <tr className="border-t border-cc-gray-200 bg-cc-gray-100/40">
+                    <td className="px-4 py-3 font-medium">Galeria principal e drenagem pesada</td>
+                    <td className="px-4 py-3">PA-1 ou PA-2 (estrutural armado)</td>
+                    <td className="px-4 py-3">DN 600 a 1500</td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
+            <p className="mt-3 text-sm italic text-cc-gray-700">
+              Em todos os casos · junta rígida vedada com argamassa.
+            </p>
+
             <div className="mt-6 space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                Quando os dois encaixes são permitidos, a escolha costuma considerar logística e
-                custo. Tubos PB têm peso e volume maiores que o MF de mesmo diâmetro, pela bolsa.
-                Por isso, em drenagem pluvial sem exigência específica, o macho e fêmea costuma
-                ser a escolha de menor logística — a página de{" "}
+                Quando MF e PB são opções, o MF costuma ganhar na logística · sem a bolsa o tubo é
+                mais leve, o transporte rende mais por carga e o assentamento na vala fica mais
+                rápido. Pra ver casos típicos por tipo de obra, a página de{" "}
                 <Link
                   href="/tubo-de-concreto/aplicacoes"
                   className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   aplicações do tubo de concreto
                 </Link>{" "}
-                detalha os casos típicos por tipo de obra.
+                detalha cada situação.
               </p>
             </div>
           </section>
@@ -418,24 +421,24 @@ export default function TiposDeEncaixePage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A Central do Concreto fornece tubo macho e fêmea (DN 200 a DN 1000), tubo ponta e
-                bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN 200 a DN 1500), com
-                junta rígida em todas as opções.
+                A Central fornece mais de 25 medidas e modelos de tubo de concreto, todos com junta
+                rígida · tubo macho e fêmea (DN 200 a 1000), tubo ponta e bolsa (DN 200, 500 e 600)
+                e tubo estrutural armado PA-1 e PA-2 (DN 200 a 1500).
               </p>
               <p>
-                Além do fornecimento, a Central instala o tubo: preparo da vala, alinhamento dos
-                tubos, vedação da junta e conferência do nivelamento. O atendimento cobre Ivoti e
-                região, num raio de cerca de 50 km, com entrega programada.
+                Os tubos são fabricados em Ivoti conforme a NBR 8890 e ficam em pronta entrega no
+                estoque. Frota própria atendendo Ivoti, Novo Hamburgo, Estância Velha, Dois Irmãos e
+                demais cidades num raio de 50 km da serra gaúcha.
               </p>
               <p>
-                Para obras maiores ou com especificação técnica detalhada — diâmetro,{" "}
+                Pra obra com especificação técnica (diâmetro,{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
                   className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   classe
                 </Link>
-                , encaixe —, o orçamento sai pelo WhatsApp{" "}
+                , encaixe), manda a ficha pelo WhatsApp{" "}
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
@@ -444,7 +447,8 @@ export default function TiposDeEncaixePage() {
                 >
                   (51) 99669-1757
                 </a>{" "}
-                com base na ficha do projeto.
+                · orçamento volta com base no projeto. Dúvida sobre medida ou modelo · consulta
+                técnica gratuita pelo mesmo número.
               </p>
             </div>
             <Image
@@ -487,17 +491,17 @@ export default function TiposDeEncaixePage() {
                 <p className="text-base text-cc-gray-700 leading-relaxed mt-3">
                   {f.q === "O tubo ponta e bolsa é mais resistente que o macho e fêmea?" ? (
                     <>
-                      O encaixe do PB é mais resistente que o do MF, porque acrescenta espessura
-                      de concreto na bolsa em vez de reduzir. Mas a resistência total do tubo
-                      depende da classe (PA1, PA2, PA3 ou PA4 pela NBR 8890), não só do encaixe.
-                      Veja a página de{" "}
+                      O encaixe do PB é mais resistente que o do MF · a bolsa ganha concreto
+                      adicional, o entalhe do MF reduz parede. Mas a resistência total do tubo
+                      depende da classe (PA-1 ou PA-2 nas linhas armadas da Central, pela NBR
+                      8890), não só do encaixe. Pra escolher a classe certa, ver a página de{" "}
                       <Link
                         href="/tubo-de-concreto/classes-de-carga"
                         className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                       >
                         classes de carga
-                      </Link>{" "}
-                      para escolher a classe certa.
+                      </Link>
+                      .
                     </>
                   ) : (
                     f.a
@@ -515,13 +519,12 @@ export default function TiposDeEncaixePage() {
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Peça seu orçamento de tubos na Central
+            Mande foto ou medidas pelo WhatsApp · orçamento na hora ou em até 1 dia útil
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-            A Central do Concreto atende obras em Ivoti e região com tubo macho e fêmea (DN 200 a
-            DN 1000), tubo ponta e bolsa (DN 200, DN 500 e DN 600) e tubo estrutural armado (DN
-            200 a DN 1500), com junta rígida. Fale pelo WhatsApp para receber orçamento, prazo de
-            entrega e, se a obra precisar, agendar a instalação.
+            Manda foto da obra ou as medidas (diâmetro, classe, quantidade) · fala direto com o
+            André e ele te retorna com orçamento na hora ou em até 1 dia útil. Sem intermediário,
+            sem formulário.
           </p>
           <a
             href={WHATSAPP_URL}
