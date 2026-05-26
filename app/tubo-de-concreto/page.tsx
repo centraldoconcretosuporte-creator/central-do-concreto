@@ -8,7 +8,7 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 const PAGE_TITLE = "Tubo de Concreto: Tipos e Medidas | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Tubo de concreto para drenagem: encaixes, classes de carga, diâmetros do Ø20 ao Ø150 e aplicações. A Central do Concreto fornece e instala em Ivoti e região.";
+  "Tubo de concreto para drenagem: encaixes, classes de carga, diâmetros do Ø20 ao Ø150 e aplicações. A Central do Concreto fornece e entrega em Ivoti e região.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: "A Central do Concreto instala o tubo de concreto?",
-    a: "Sim. A Central do Concreto fornece e instala tubo de concreto em Ivoti e região. O contato é o WhatsApp (51) 99669-1757.",
+    a: "Não. A Central só fornece. Produzimos os tubos em Ivoti e entregamos com caminhão próprio no endereço da obra. A instalação fica com a equipe do cliente, ou com uma empreiteira parceira que a Central pode indicar.",
   },
 ];
 
@@ -133,7 +133,7 @@ export default function TuboDeConcretoPage() {
             </p>
             <p>
               Este guia explica cada um desses pontos e mostra onde o tubo de concreto é aplicado.
-              A Central do Concreto fornece e instala tubo de concreto em Ivoti e região. Se você
+              A Central do Concreto fornece e entrega tubo de concreto em Ivoti e região. Se você
               já sabe o que precisa, fale com a equipe pelo WhatsApp{" "}
               <a
                 href={WHATSAPP_URL}
@@ -401,8 +401,8 @@ export default function TuboDeConcretoPage() {
                 obra e a vedação necessária.
               </p>
               <p>
-                Na dúvida, vale conversar com quem instala tubo de concreto todos os dias. A
-                Central do Concreto fornece e instala drenagem, e a equipe ajuda a dimensionar a
+                Na dúvida, vale conversar com quem trabalha com tubo de concreto todos os dias. A
+                Central do Concreto fornece e entrega drenagem, e a equipe ajuda a dimensionar a
                 linha a partir dos dados da obra: a área a drenar, o tipo de via e o volume de
                 água esperado. Isso evita o subdimensionamento, que causa alagamento, e também o
                 gasto a mais com peça maior do que o necessário.
@@ -420,15 +420,14 @@ export default function TuboDeConcretoPage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                A Central do Concreto fornece e instala tubo de concreto em Ivoti e região, num
-                raio de cerca de 50 quilômetros. O atendimento cobre a entrega do material e,
-                quando a obra exige, a instalação da rede de drenagem.
+                A Central do Concreto fornece e entrega tubo de concreto em Ivoti e região, num
+                raio de cerca de 50 quilômetros. O catálogo do Ø20 ao Ø150 fica em pronta entrega
+                no pátio.
               </p>
               <p>
-                Reunir fornecimento e instalação no mesmo lugar reduz o vai e volta da obra: a
-                peça chega dimensionada para o serviço e a equipe que entrega conhece o produto.
-                Para drenagem pluvial, bueiro, galeria ou tubo dreno, o ponto de partida é
-                entender a obra.
+                A entrega usa caminhão próprio, com a peça saindo direto do pátio para a obra,
+                sem intermediário de frete. Para drenagem pluvial, bueiro, galeria ou tubo dreno,
+                o ponto de partida é entender a obra.
               </p>
               <p>
                 Fale com a equipe da Central do Concreto pelo WhatsApp{" "}

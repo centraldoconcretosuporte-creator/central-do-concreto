@@ -902,8 +902,8 @@ export default function AplicacoesPage() {
                 Presidente Lucena, Bom Princípio, São José do Hortêncio, Campo
                 Bom, Sapiranga, Morro Reuter, Picada Café, Santa Maria do
                 Herval, Nova Petrópolis, Gramado e Canela. Entrega com caminhão
-                próprio. Além do fornecimento, a Central também executa a
-                instalação quando o cliente prefere o serviço completo.
+                próprio. Para quem prefere o serviço completo, a Central
+                indica empreiteira parceira da região.
               </p>
             </div>
           </section>
