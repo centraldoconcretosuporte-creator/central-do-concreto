@@ -671,8 +671,7 @@ export default function DiametrosPage() {
                 A entrega é feita com caminhão próprio da Central.
               </p>
               <p>
-                A Central também instala — pode-se pedir orçamento de
-                fornecimento ou de fornecimento mais instalação. Para decidir
+                Para decidir
                 entre concreto simples e armado, veja as{" "}
                 <Link
                   href="/tubo-de-concreto/classes-de-carga"
