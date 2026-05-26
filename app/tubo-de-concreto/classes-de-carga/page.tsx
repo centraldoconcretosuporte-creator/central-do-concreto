@@ -118,13 +118,16 @@ export default function ClassesDeCargaPage() {
             <span className="text-white font-medium">Classes de carga</span>
           </nav>
 
-          <Image
-            src="/images/tubo-de-concreto/tubo-concreto-classes-carga-tamanhos.webp"
-            alt="Tubos de concreto em diferentes diâmetros e classes de carga conforme NBR 8890"
-            width={1600}
-            height={2133}
-            priority
-          />
+          <div className="relative aspect-[16/9] w-full overflow-hidden rounded-lg">
+            <Image
+              src="/images/tubo-de-concreto/tubos-concreto-deposito-panoramica-pilhas-variadas-ceu-azul-032-central-concreto-ivoti.webp"
+              alt="Vista panorâmica do depósito de tubos de concreto sob céu azul com pilhas variadas em diâmetros e classes — Central do Concreto Ivoti RS"
+              fill
+              className="object-cover"
+              priority
+              sizes="(max-width: 768px) 100vw, 768px"
+            />
+          </div>
 
           <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
             Classes de resistência do tubo de concreto
@@ -264,6 +267,13 @@ export default function ClassesDeCargaPage() {
                 tráfego significativo acima, vai armado.
               </p>
             </div>
+            <Image
+              src="/images/tubo-de-concreto/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.webp"
+              alt="Fileira lateral de tubos de concreto em perspectiva com diâmetros variados em mostruário externo — Central do Concreto Ivoti RS"
+              width={1200}
+              height={1600}
+              className="w-full h-auto rounded-lg mt-6"
+            />
           </section>
 
           {/* H2 4 — Qual a diferença entre PA1, PA2, PA3 e PA4? */}
@@ -491,10 +501,10 @@ export default function ClassesDeCargaPage() {
               </p>
             </div>
             <Image
-              src="/images/tubo-de-concreto/tubo-concreto-pronta-entrega.webp"
-              alt="Tubos de concreto pronta entrega em diferentes classes de carga na Central do Concreto"
-              width={1600}
-              height={1200}
+              src="/images/tubo-de-concreto/tubos-concreto-encaixados-caixa-passagem-drenagem-pluvial-011-central-concreto-ivoti.webp"
+              alt="Tubos de concreto encaixados em caixa de passagem em obra de drenagem pluvial — Central do Concreto Ivoti RS"
+              width={817}
+              height={613}
             />
           </section>
         </div>
@@ -562,6 +572,18 @@ export default function ClassesDeCargaPage() {
             <br />
             Atendimento: Ivoti e cidades em raio de 50 km
           </p>
+        </div>
+      </section>
+
+      <section className="bg-white py-12">
+        <div className="mx-auto max-w-3xl px-4">
+          <Image
+            src="/images/tubo-de-concreto/munck-descarregando-tubos-grande-diametro-jardim-046-central-concreto-ivoti.webp"
+            alt="Munck descarregando tubos de concreto de grande diâmetro em área verde urbana — Central do Concreto Ivoti RS"
+            width={1600}
+            height={1200}
+            className="w-full h-auto rounded-lg"
+          />
         </div>
       </section>
     </>
