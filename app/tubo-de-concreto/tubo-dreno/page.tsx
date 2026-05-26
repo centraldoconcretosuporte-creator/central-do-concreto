@@ -704,11 +704,6 @@ export default function TuboDrenoPage() {
                 escavado e compactação em camadas de até 20 cm — a especificação técnica do
                 DER-SP recomenda grau de compactação mínimo de 95% em relação à energia normal.
               </p>
-              <p>
-                A Central pode fornecer somente o tubo, ou fornecer e instalar o sistema completo
-                na obra — incluindo a brita e a manta geotêxtil quando esses materiais entram no
-                orçamento.
-              </p>
             </div>
           </section>
 
@@ -815,8 +810,7 @@ export default function TuboDrenoPage() {
                 Café, Santa Maria do Herval, Nova Petrópolis, Gramado e Canela.
               </p>
               <p>
-                A linha inclui os cinco diâmetros padrão — Ø20, Ø30, Ø40, Ø50 e Ø60 cm — e a opção
-                de instalação na obra. O orçamento sai pelo WhatsApp{" "}
+                A linha inclui os cinco diâmetros padrão — Ø20, Ø30, Ø40, Ø50 e Ø60 cm. O orçamento sai pelo WhatsApp{" "}
                 <a
                   href={WHATSAPP_URL}
                   target="_blank"
