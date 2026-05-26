@@ -139,15 +139,16 @@ export default function ClassesDeCargaPage() {
               característico de obra.
             </p>
             <p>
-              Esta página explica como a NBR 8890 nomeia e organiza as classes, quando usar tubo
-              simples ou armado, qual a diferença entre PA1, PA2, PA3 e PA4, qual a carga mínima de
-              fissura por diâmetro e como escolher a classe certa para a sua obra — incluindo a
+              Em pluvial, a NBR 8890 organiza 6 classes em dois blocos · PS1 e PS2 simples para
+              cargas leves, PA1 a PA4 armadas para cargas crescentes até rodovia federal. A Central
+              do Concreto fornece exclusivamente a linha pluvial — a leitura abaixo cobre tabela de
+              carga mínima por diâmetro, regra prática de quando usar simples ou armado, e
               equivalência com a nomenclatura antiga CA-1, CA-2, CA-3 e CA-4.
             </p>
             <p>
               A Central do Concreto trabalha as classes PA1 e PA2 em estoque, em toda a linha de
-              drenagem; classes superiores e tubos de esgoto saem sob consulta. Para orçamento,
-              fale com a equipe pelo WhatsApp{" "}
+              drenagem pluvial — do DN 20 ao DN 150 cm; PA3 e PA4 saem sob consulta conforme o
+              volume e o prazo. Para orçamento, fale com a equipe pelo WhatsApp{" "}
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -464,15 +465,15 @@ export default function ClassesDeCargaPage() {
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 A Central do Concreto trabalha as classes PA1 e PA2 em estoque, em toda a linha de
-                drenagem — do DN 20 ao DN 150 cm. Classes superiores (PA3 e PA4) e tubos para
-                esgoto sanitário (EA2, EA3, EA4) são fornecidos sob consulta, conforme o volume e
-                o prazo da obra.
+                drenagem pluvial — do DN 20 ao DN 150 cm. PA3 e PA4 são fornecidas sob consulta,
+                conforme o volume e o prazo da obra.
               </p>
               <p>
-                Além do fornecimento, a Central instala: nivelamento da vala, alinhamento dos
-                tubos, vedação da junta e conferência da declividade. O atendimento cobre Ivoti e
-                região, num raio de cerca de 50 km, com entrega programada conforme o cronograma
-                da obra.
+                Além do fornecimento, a equipe técnica orienta a especificação correta — classe,
+                diâmetro, encaixe e junta — e indica boas práticas de assentamento na vala
+                (nivelamento, alinhamento, vedação rígida, declividade) para o construtor seguir.
+                O atendimento cobre Ivoti e região, num raio de cerca de 50 km, com entrega
+                programada conforme o cronograma da obra.
               </p>
               <p>
                 Para projetos com classe definida em memorial — PA2 DN 600 PB JR, por exemplo —, o
@@ -542,11 +543,11 @@ export default function ClassesDeCargaPage() {
             Peça seu orçamento de tubos na Central
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-            A Central do Concreto atende obras em Ivoti e região com tubo de concreto em classes
-            PA1 e PA2 em estoque, além de PA3, PA4 e a linha de esgoto sanitário (EA) sob consulta
-            — do DN 20 ao DN 150 cm. Fale pelo WhatsApp para receber orçamento, prazo de entrega
-            e, se a obra precisar, agendar a instalação. Se o seu projeto traz a especificação no
-            padrão PA2 DN 600 PB JR, o orçamento sai imediato.
+            A Central do Concreto atende obras em Ivoti e região com tubo de concreto pluvial nas
+            classes PA1 e PA2 em estoque, além de PA3 e PA4 sob consulta — do DN 20 ao DN 150 cm.
+            Mande foto da obra ou o memorial pelo WhatsApp · orçamento na hora ou em até 1 dia
+            útil. Se o seu projeto já traz a especificação no padrão PA2 DN 600 PB JR, o orçamento
+            sai imediato.
           </p>
           <a
             href={WHATSAPP_URL}
