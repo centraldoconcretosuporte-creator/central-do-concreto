@@ -46,7 +46,7 @@ const faqs = [
   },
   {
     q: "Vocês instalam ou só fornecem?",
-    a: "As duas opções. A Central pode fornecer só os tubos para a sua equipe instalar, ou fornecer e instalar — peça o orçamento com instalação para receber o serviço completo.",
+    a: "A Central só fornece. Fabricamos e entregamos os tubos no endereço da obra com caminhão próprio · a instalação fica com a equipe do cliente, ou com uma empreiteira parceira que a Central pode indicar.",
   },
 ];
 
