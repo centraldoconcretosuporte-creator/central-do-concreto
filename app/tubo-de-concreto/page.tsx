@@ -107,8 +107,8 @@ export default function TuboDeConcretoPage() {
           </nav>
 
           <Image
-            src="/images/tubo-de-concreto/tubo-concreto-estoque-ivoti.webp"
-            alt="Estoque de tubos de concreto para pronta entrega na Central do Concreto em Ivoti, RS"
+            src="/images/tubo-de-concreto/tubos-fileira-lateral-mostruario-central-concreto-ivoti.webp"
+            alt="Fileira de tubos de concreto no mostruário externo da Central do Concreto em Ivoti, RS"
             width={960}
             height={1280}
             priority
@@ -160,6 +160,18 @@ export default function TuboDeConcretoPage() {
             >
               O que é um tubo de concreto?
             </h2>
+            <figure className="my-6 text-center">
+              <img
+                src="/images/tubo-de-concreto/tubo-dn400-pa1.svg"
+                alt="Ficha técnica tubo de concreto DN400 PA-1 — corte longitudinal e vista frontal com especificações NBR 8890"
+                className="w-full max-w-2xl mx-auto"
+                width={800}
+                height={600}
+              />
+              <figcaption className="text-sm text-cc-gray-500 mt-2">
+                Ficha técnica · Tubo DN400 PA-1 conforme NBR 8890
+              </figcaption>
+            </figure>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O tubo de concreto é uma peça cilíndrica pré-moldada, feita de concreto, usada
@@ -190,8 +202,8 @@ export default function TuboDeConcretoPage() {
               Quais são os tipos de encaixe do tubo de concreto?
             </h2>
             <Image
-              src="/images/tubo-de-concreto/tubo-concreto-encaixe-detalhe.webp"
-              alt="Detalhe do encaixe ponta e bolsa em tubo de concreto"
+              src="/images/tubo-de-concreto/tubo-concreto-estoque-ivoti.webp"
+              alt="Estoque de tubos de concreto armado em pronta entrega na Central do Concreto em Ivoti, RS"
               width={1600}
               height={1200}
             />
@@ -421,7 +433,7 @@ export default function TuboDeConcretoPage() {
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 A Central do Concreto fornece e entrega tubo de concreto em Ivoti e região, num
-                raio de cerca de 50 quilômetros. O catálogo do Ø20 ao Ø150 fica em pronta entrega
+                raio de cerca de 120 km. O catálogo do Ø20 ao Ø150 fica em pronta entrega
                 no pátio.
               </p>
               <p>
@@ -442,6 +454,50 @@ export default function TuboDeConcretoPage() {
                 . Descreva a obra — o que precisa drenar, o tipo de via e a região — e a equipe
                 orienta sobre encaixe, classe e diâmetro, e prepara o orçamento.
               </p>
+            <div className="mt-8">
+              <p className="text-sm text-cc-gray-500 mb-3 text-center">
+                Toque na sua cidade pra falar pelo WhatsApp:
+              </p>
+              <div className="flex flex-wrap gap-2 justify-center">
+                {[
+                  "Ivoti",
+                  "Dois Irmãos",
+                  "Estância Velha",
+                  "Bom Princípio",
+                  "Lindolfo Collor",
+                  "São José do Hortêncio",
+                  "Presidente Lucena",
+                  "Novo Hamburgo",
+                  "Campo Bom",
+                  "Sapiranga",
+                  "Picada Café",
+                  "Morro Reuter",
+                  "Santa Maria do Herval",
+                  "Nova Petrópolis",
+                  "Canela",
+                  "Gramado",
+                ].map((cidade) => (
+                  <a
+                    key={cidade}
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 border border-cc-gray-300 rounded-full px-4 py-1.5 text-sm text-cc-gray-700 hover:border-cc-orange hover:text-cc-orange transition-colors"
+                  >
+                    {cidade}
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                  </a>
+                ))}
+              </div>
+            </div>
             </div>
           </section>
         </div>
@@ -504,7 +560,7 @@ export default function TuboDeConcretoPage() {
           <p className="mt-6 text-sm text-white/80">
             Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />
-            Atendimento: Ivoti e cidades em raio de 50 km
+            Atendimento: Ivoti e cidades em raio de 120 km
           </p>
         </div>
       </section>
