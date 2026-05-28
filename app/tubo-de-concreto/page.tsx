@@ -93,76 +93,39 @@ export default function TuboDeConcretoPage() {
       />
 
       {/* HERO */}
-      <section className="bg-cc-black py-16 md:py-24">
-        <div className="mx-auto max-w-3xl px-4">
-          <nav
-            aria-label="Breadcrumb"
-            className="mb-6 flex items-center justify-center gap-2 text-sm text-white/85"
-          >
-            <Link href="/" className="hover:text-white">
-              Início
-            </Link>
-            <span aria-hidden="true">›</span>
-            <span className="text-white font-medium">Tubo de concreto</span>
-          </nav>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-white leading-tight mb-6 text-center">
+      <section className="relative w-full min-h-[560px] md:min-h-[640px] flex items-center justify-center overflow-hidden">
+        <Image
+          src="/images/tubo-de-concreto/showroom-cc-vista-lateral-noturna-luar-052-central-concreto-ivoti.webp"
+          alt="Vista lateral noturna do showroom da Central do Concreto em Ivoti, com pátio iluminado pelo luar e tubos de concreto em exposição"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-cc-black/35" aria-hidden="true" />
+        <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
             Tubo de concreto
           </h1>
-
-          <p className="mt-3 mb-5 flex flex-wrap justify-center gap-x-5 gap-y-1 text-sm text-white/70">
-            <span>✓ Pronta entrega</span>
-            <span>✓ Caminhão próprio</span>
-            <span>✓ Ivoti e 15 cidades no RS</span>
+          <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
+            Tubo de concreto para drenagem de águas pluviais, bueiros e galerias. A Central do Concreto fornece e entrega em Ivoti, Serra Gaúcha e Vale dos Sinos.
           </p>
-
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-8 flex w-full items-center justify-center gap-3 rounded-2xl bg-green-500 px-6 py-4 text-lg font-bold text-white transition-colors hover:bg-green-600"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              className="h-6 w-6 shrink-0"
-              aria-hidden="true"
+          <div className="flex justify-center mb-8">
+            <a
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
             >
-              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
-            </svg>
-            Pedir orçamento pelo WhatsApp
-          </a>
-
-          <div className="my-6 w-full overflow-hidden rounded-lg max-h-72 md:max-h-none">
-            <Image
-              src="/images/tubo-de-concreto/tubos-fileira-lateral-mostruario-central-concreto-ivoti.webp"
-              alt="Fileira de tubos de concreto no mostruário externo da Central do Concreto em Ivoti, RS"
-              width={960}
-              height={1280}
-              priority
-              className="w-full object-cover"
-            />
+              <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+              Orçamento agilizado pelo WhatsApp
+            </a>
           </div>
-
-          <div className="space-y-5 text-base md:text-lg text-white/90 leading-relaxed">
-            <p>
-              O tubo de concreto é a peça pré-moldada usada para conduzir água em sistemas de
-              drenagem, também conhecido como manilha. Ele recolhe e transporta a água da chuva e
-              do solo em ruas, loteamentos, estradas e obras, encaminhando o volume para bueiros,
-              galerias e o destino final.
-            </p>
-            <p>
-              Existe mais de um tipo de tubo de concreto, e a escolha certa depende de três
-              fatores: o encaixe entre as peças, a classe de carga que o tubo aguenta e o diâmetro
-              necessário para a vazão de água. Errar em qualquer um deles compromete a drenagem ou
-              encarece a obra sem necessidade.
-            </p>
-            <p>
-              Este guia explica cada um desses pontos e mostra onde o tubo de concreto é aplicado.
-              A Central do Concreto fornece e entrega tubo de concreto em Ivoti e região.
-            </p>
-          </div>
+          <p className="text-sm text-white/85">
+            ✓ Pronta entrega · ✓ Caminhão próprio · ✓ Ivoti e 15 cidades no RS
+          </p>
         </div>
       </section>
 
