@@ -17,7 +17,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/produtos`, lastModified: now, changeFrequency: "yearly", priority: 0.9 },
     { url: `${SITE_URL}/produtos/pergolado-de-concreto`, lastModified: now, changeFrequency: "yearly", priority: 0.9 },
     { url: `${SITE_URL}/produtos/piso-atermico`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
-    { url: `${SITE_URL}/produtos/tubos`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${SITE_URL}/produtos/caixas-de-passagem`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${SITE_URL}/produtos/muros-e-gradis`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${SITE_URL}/produtos/postes-e-meio-fio`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },

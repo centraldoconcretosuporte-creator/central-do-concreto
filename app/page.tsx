@@ -32,7 +32,7 @@ const produtosDestaque = [
     descricao:
       "Tubo de concreto armado para drenagem, esgoto e águas pluviais, em classes PA-1 a PA-4. Caixa de passagem e inspeção pré-moldada. Para construtora, prefeitura e obra rural.",
     badge: "Mais procurado",
-    href: "/produtos/tubos",
+    href: "/tubo-de-concreto",
     foto: "/home/produtos/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.jpg",
     alt: "Fileira de tubos de concreto da Central em diâmetros variados, vista em perspectiva no pátio em Ivoti-RS",
     grande: true,
@@ -81,7 +81,7 @@ const produtosDestaque = [
 
 const objetivos = [
   { titulo: "Área externa e jardim", icone: "flower", href: "/produtos/piso-atermico" },
-  { titulo: "Drenar o terreno", icone: "drop", href: "/produtos/tubos" },
+  { titulo: "Drenar o terreno", icone: "drop", href: "/tubo-de-concreto" },
   { titulo: "Construir muro", icone: "wall", href: "/produtos/muros-e-gradis" },
   { titulo: "Saneamento rural", icone: "home", href: "/produtos/fossa-e-filtro" },
 ];

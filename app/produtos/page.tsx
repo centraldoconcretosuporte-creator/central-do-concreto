@@ -29,7 +29,7 @@ const produtos = [
   {
     titulo: "Tubos de Concreto",
     desc: "Drenagem · esgoto · água pluvial",
-    href: "/produtos/tubos",
+    href: "/tubo-de-concreto",
     foto: "/home/produtos/tubos.webp",
   },
   {
