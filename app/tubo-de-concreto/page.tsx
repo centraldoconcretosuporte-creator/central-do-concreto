@@ -100,7 +100,7 @@ export default function TuboDeConcretoPage() {
           fill
           priority
           sizes="100vw"
-          className="object-cover"
+          className="object-cover [object-position:50%_70%]"
         />
         <div className="absolute inset-0 bg-cc-black/35" aria-hidden="true" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
