@@ -19,7 +19,8 @@ const REDIRECTS_SITE_ANTIGO: Array<{ source: string; destination: string }> = [
   { source: "/fossa-e-filtro", destination: "/produtos/fossa-e-filtro" },
   { source: "/pavs", destination: "/produtos/pavs" },
   { source: "/caixaspassagem", destination: "/produtos/caixas-de-passagem" },
-  { source: "/tubos", destination: "/produtos/tubos" },
+  { source: "/tubos", destination: "/tubo-de-concreto" },
+  { source: "/produtos/tubos", destination: "/tubo-de-concreto" },
   { source: "/muros-e-gradis", destination: "/produtos/muros-e-gradis" },
   { source: "/postes", destination: "/produtos/postes-e-meio-fio" },
   {
