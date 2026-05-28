@@ -95,7 +95,7 @@ export default function TuboDeConcretoPage() {
       {/* HERO */}
       <section className="relative w-full min-h-[560px] md:min-h-[640px] flex items-center justify-center overflow-hidden">
         <Image
-          src="/images/tubo-de-concreto/showroom-cc-vista-lateral-noturna-luar-052-central-concreto-ivoti.webp"
+          src="/home/fachada-noturna-showroom-cc-iluminacao-azul-051-central-concreto-ivoti.jpg"
           alt="Vista lateral noturna do showroom da Central do Concreto em Ivoti, com pátio iluminado pelo luar e tubos de concreto em exposição"
           fill
           priority
