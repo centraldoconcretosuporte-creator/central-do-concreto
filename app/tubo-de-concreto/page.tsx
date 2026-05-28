@@ -183,30 +183,30 @@ export default function TuboDeConcretoPage() {
             </h2>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
-                O tubo de concreto tem dois tipos de encaixe principais: ponta e bolsa (PB) e
-                macho e fêmea (C2). O encaixe é a forma como uma peça se conecta à seguinte ao
-                longo da linha de drenagem.
+                O tubo de concreto tem dois tipos de encaixe: ponta e bolsa (PB) e macho e fêmea
+                (C2). O encaixe é o sistema que une uma peça à seguinte ao longo da linha de
+                drenagem.
               </p>
               <p>
-                No encaixe ponta e bolsa, uma extremidade do tubo é mais larga, a bolsa, e recebe
-                a ponta do tubo seguinte, encaixando uma peça na outra. No encaixe macho e fêmea,
-                as bordas têm um ressalto que se acopla, deixando a junta mais alinhada entre os
-                tubos.
+                No ponta e bolsa, uma extremidade do tubo é alargada — a bolsa — e recebe a ponta
+                do tubo seguinte. No macho e fêmea, as bordas têm um ressalto que se acopla,
+                resultando em junta mais alinhada entre as peças.
               </p>
               <p>
-                A escolha entre os dois afeta a vedação da linha, a facilidade de montagem e o
-                tipo de obra. Para drenagem pluvial comum, o ponta e bolsa costuma resolver; obras
-                que exigem juntas mais precisas tendem ao macho e fêmea.
+                Para drenagem pluvial comum, o ponta e bolsa resolve. Quando a obra exige maior
+                precisão de alinhamento ou vedação, o macho e fêmea é o indicado.
               </p>
             </div>
-            <Image
-              src="/images/tubo-de-concreto/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.webp"
-              alt="Fileira de tubos de concreto em perspectiva lateral mostrando diâmetros variados — Central do Concreto Ivoti"
-              width={1600}
-              height={1200}
-            />
+            <div className="relative w-full overflow-hidden" style={{ aspectRatio: '16/5' }}>
+              <Image
+                src="/images/tubo-de-concreto/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.webp"
+                alt="Fileira de tubos de concreto em perspectiva lateral mostrando diâmetros variados — Central do Concreto Ivoti"
+                fill
+                className="object-cover object-center"
+              />
+            </div>
             <div className="mt-8 text-center">
-              <p className="text-lg font-semibold text-cc-black mb-4">Qual tipo de encaixe você precisa?</p>
+              <p className="text-lg font-semibold text-cc-black mb-4 text-center">Qual tipo de encaixe você precisa?</p>
               <a
                 href={WHATSAPP_URL}
                 target="_blank"
@@ -217,7 +217,7 @@ export default function TuboDeConcretoPage() {
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.117 1.527 5.845L.057 23.998l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.359-.214-3.742.981 1.001-3.648-.234-.374A9.818 9.818 0 012.182 12C2.182 6.577 6.577 2.182 12 2.182S21.818 6.577 21.818 12 17.423 21.818 12 21.818z"/>
                 </svg>
-                Falar com a equipe pelo WhatsApp
+                Quer saber qual encaixe usar? Fale pelo WhatsApp
               </a>
             </div>
           </section>
