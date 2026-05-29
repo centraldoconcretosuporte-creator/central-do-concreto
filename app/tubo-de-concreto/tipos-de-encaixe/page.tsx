@@ -513,7 +513,7 @@ export default function TiposDeEncaixePage() {
               <p>
                 Os tubos são fabricados em Ivoti conforme a NBR 8890 e ficam em pronta entrega no
                 estoque. Frota própria atendendo Ivoti, Novo Hamburgo, Estância Velha, Dois Irmãos e
-                demais cidades num raio de 50 km da serra gaúcha.
+                demais cidades num raio de 120 km da serra gaúcha.
               </p>
               <p>
                 Pra obra com especificação técnica (diâmetro,{" "}
@@ -636,12 +636,11 @@ export default function TiposDeEncaixePage() {
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Mande foto ou medidas pelo WhatsApp · orçamento na hora ou em até 1 dia útil
+            Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
-            Manda foto da obra ou as medidas (diâmetro, classe, quantidade) · fala direto com o
-            André e ele te retorna com orçamento na hora ou em até 1 dia útil. Sem intermediário,
-            sem formulário.
+            Mande foto da obra ou as medidas (diâmetro, classe, quantidade) · atendimento agilizado
+            direto pelo WhatsApp, sem intermediário e sem formulário.
           </p>
           <a
             href={WHATSAPP_URL}
@@ -654,7 +653,7 @@ export default function TiposDeEncaixePage() {
           <p className="mt-6 text-sm text-white/80">
             Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />
-            Atendimento: Ivoti e cidades em raio de 50 km
+            Atendimento: Ivoti e cidades em raio de 120 km
           </p>
         </div>
       </section>
