@@ -556,8 +556,7 @@ export default function ClassesDeCargaPage() {
             A Central do Concreto atende obras em Ivoti e região com tubo de concreto pluvial nas
             classes PA1 e PA2 em estoque, além de PA3 e PA4 sob consulta — do DN 20 ao DN 150 cm.
             Mande foto da obra ou as medidas (diâmetro, classe, quantidade) · atendimento
-            agilizado direto pelo WhatsApp, sem intermediário e sem formulário. Se o seu projeto já traz a especificação no padrão PA2 DN 600 PB JR, o orçamento
-            sai imediato.
+            agilizado direto pelo WhatsApp, sem intermediário e sem formulário.
           </p>
           <a
             href={WHATSAPP_URL}
