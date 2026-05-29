@@ -294,7 +294,7 @@ export default function TuboDrenoPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
               >
-                Falar no WhatsApp
+                Acertar o diâmetro
               </a>
             </div>
           </section>
@@ -465,7 +465,7 @@ export default function TuboDrenoPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
               >
-                Falar no WhatsApp
+                Mandar as medidas
               </a>
             </div>
           </section>
@@ -854,7 +854,7 @@ export default function TuboDrenoPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
               >
-                Falar no WhatsApp
+                Pedir o orçamento
               </a>
             </div>
           </section>
