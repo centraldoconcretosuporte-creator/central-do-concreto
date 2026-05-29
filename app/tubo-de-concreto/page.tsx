@@ -487,7 +487,9 @@ export default function TuboDeConcretoPage() {
             ].map((cidade) => (
               <a
                 key={cidade}
-                href={WHATSAPP_URL}
+                href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+                  `Olá! Quero falar sobre tubos de concreto com entrega em ${cidade}.`,
+                )}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1.5 border border-cc-gray-300 rounded-full px-4 py-1.5 text-sm text-white hover:border-cc-orange hover:text-cc-orange transition-colors"
