@@ -159,8 +159,8 @@ export default function TuboDrenoPage() {
           </nav>
 
           <Image
-            src="/cluster-drenagem/central-concreto-patio-tubo-dreno.webp"
-            alt="Picape da Central do Concreto com pilha de tubos de concreto ao fundo no pátio em Ivoti — catálogo completo incluindo tubo dreno."
+            src="/cluster-drenagem/tubo-dreno-hero-panoramica.webp"
+            alt="Vista panorâmica do depósito da Central do Concreto em Ivoti, com pilhas variadas de tubos de concreto sob céu azul."
             width={1920}
             height={1440}
             priority
@@ -865,12 +865,13 @@ export default function TuboDrenoPage() {
       {/* CTA FINAL */}
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Peça seu orçamento</h2>
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário</h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
             A Central do Concreto entrega tubo dreno de concreto em Ivoti e nas cidades da Serra
-            Gaúcha num raio de cerca de 120 km. O orçamento sai pelo WhatsApp, normalmente no mesmo
-            dia, com a quantidade conferida pela metragem da obra e o frete calculado pelo endereço
-            de entrega.
+            Gaúcha num raio de cerca de 120 km. Mande foto da obra ou as medidas (diâmetro, classe,
+            quantidade) · atendimento agilizado direto pelo WhatsApp, sem intermediário e sem
+            formulário. A quantidade é conferida pela metragem da obra e o frete calculado pelo
+            endereço de entrega.
           </p>
           <a
             href={WHATSAPP_URL}
