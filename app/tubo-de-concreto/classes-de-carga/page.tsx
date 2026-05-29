@@ -6,6 +6,8 @@ import { Eyebrow } from "@/components/Eyebrow";
 const CANONICAL_URL =
   "https://centraldoconcretoentrega.com.br/tubo-de-concreto/classes-de-carga";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
+const WHATSAPP_CTA_MESSAGE = "Olá, quero falar sobre tubos de concreto.";
+const WHATSAPP_CTA_URL = `${WHATSAPP_URL}?text=${encodeURIComponent(WHATSAPP_CTA_MESSAGE)}`;
 
 const PAGE_TITLE =
   "Classes de carga do tubo de concreto: PA1, PA2, PA3 e PA4 explicadas | Central do Concreto";
@@ -300,7 +302,7 @@ export default function ClassesDeCargaPage() {
                 Mande o DN e o tráfego acima · a Central indica se vai simples ou armado.
               </p>
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_CTA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
@@ -435,7 +437,7 @@ export default function ClassesDeCargaPage() {
                 Mande o DN da obra · a Central envia a tabela completa do diâmetro com cargas por classe.
               </p>
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_CTA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
@@ -518,7 +520,7 @@ export default function ClassesDeCargaPage() {
                 Mande tráfego, profundidade e tipo de solo · a equipe técnica fecha a classe pra sua obra.
               </p>
               <a
-                href={WHATSAPP_URL}
+                href={WHATSAPP_CTA_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
