@@ -217,13 +217,15 @@ export default function TiposDeEncaixePage() {
             >
               O que é o encaixe macho e fêmea (MF)?
             </h2>
-            <Image
-              src="/images/tubo-de-concreto/tubos-concreto-pre-entrega-estoque-008-central-concreto-ivoti.webp"
-              alt="Tubos de concreto com encaixe macho e fêmea prontos para entrega no estoque · Central do Concreto · Ivoti RS"
-              width={1600}
-              height={1200}
-              className="w-full h-auto rounded-lg mb-6"
-            />
+            <div className="relative aspect-[3/2] rounded-lg overflow-hidden mb-6">
+              <Image
+                src="/images/tubo-de-concreto/tubos-concreto-pre-entrega-estoque-008-central-concreto-ivoti.webp"
+                alt="Tubos de concreto com encaixe macho e fêmea prontos para entrega no estoque · Central do Concreto · Ivoti RS"
+                width={1600}
+                height={1200}
+                className="w-full h-full object-cover object-[center_35%]"
+              />
+            </div>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O encaixe macho e fêmea tem uma ponta saliente em uma extremidade do tubo (o macho)
