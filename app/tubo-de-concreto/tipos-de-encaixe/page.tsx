@@ -540,16 +540,8 @@ export default function TiposDeEncaixePage() {
         </div>
       </article>
 
-      {/* CITY PILLS · tarja full-bleed com imagem de fundo + overlay escuro · padrão home (LOGÍSTICA E ENTREGA) */}
-      <section className="relative py-16 md:py-24 overflow-hidden">
-        <Image
-          src="/home/entrega-caminhao-munck-paletes-pre-moldados-obra-residencial-007-central-concreto-ivoti.jpg"
-          alt="Caminhão Munck da Central do Concreto descarregando paletes de pré-moldados em obra residencial"
-          fill
-          sizes="100vw"
-          className="object-cover"
-        />
-        <div className="absolute inset-0 bg-cc-black/80" aria-hidden="true" />
+      {/* CITY PILLS · tarja full-bleed com fundo escuro sólido · padrão home (LOGÍSTICA E ENTREGA) */}
+      <section className="bg-cc-black/95 py-16 md:py-24">
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
