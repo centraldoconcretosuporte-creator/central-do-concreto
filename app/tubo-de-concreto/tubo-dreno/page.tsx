@@ -804,7 +804,7 @@ export default function TuboDrenoPage() {
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 A Central do Concreto fornece tubo dreno de concreto perfurado em Ivoti e região
-                da Serra Gaúcha, num raio de cerca de 50 km da loja. As cidades atendidas incluem
+                da Serra Gaúcha, num raio de cerca de 120 km da loja. As cidades atendidas incluem
                 Novo Hamburgo, Estância Velha, Dois Irmãos, Lindolfo Collor, Presidente Lucena,
                 Bom Princípio, São José do Hortêncio, Campo Bom, Sapiranga, Morro Reuter, Picada
                 Café, Santa Maria do Herval, Nova Petrópolis, Gramado e Canela.
@@ -868,7 +868,7 @@ export default function TuboDrenoPage() {
           <h2 className="text-2xl md:text-3xl font-bold mb-3">Peça seu orçamento</h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
             A Central do Concreto entrega tubo dreno de concreto em Ivoti e nas cidades da Serra
-            Gaúcha num raio de cerca de 50 km. O orçamento sai pelo WhatsApp, normalmente no mesmo
+            Gaúcha num raio de cerca de 120 km. O orçamento sai pelo WhatsApp, normalmente no mesmo
             dia, com a quantidade conferida pela metragem da obra e o frete calculado pelo endereço
             de entrega.
           </p>
@@ -883,7 +883,7 @@ export default function TuboDrenoPage() {
           <p className="mt-6 text-sm text-white/80">
             Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />
-            Atendimento: Ivoti e cidades em raio de 50 km
+            Atendimento: Ivoti e cidades em raio de 120 km
           </p>
         </div>
       </section>
