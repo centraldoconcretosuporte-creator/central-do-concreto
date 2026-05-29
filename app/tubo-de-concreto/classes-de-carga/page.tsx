@@ -482,7 +482,7 @@ export default function ClassesDeCargaPage() {
                 Além do fornecimento, a equipe técnica orienta a especificação correta — classe,
                 diâmetro, encaixe e junta — e indica boas práticas de assentamento na vala
                 (nivelamento, alinhamento, vedação rígida, declividade) para o construtor seguir.
-                O atendimento cobre Ivoti e região, num raio de cerca de 50 km, com entrega
+                O atendimento cobre Ivoti e região, num raio de cerca de 120 km, com entrega
                 programada conforme o cronograma da obra.
               </p>
               <p>
@@ -550,13 +550,13 @@ export default function ClassesDeCargaPage() {
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
           <h2 className="text-2xl md:text-3xl font-bold mb-3">
-            Peça seu orçamento de tubos na Central
+            Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
             A Central do Concreto atende obras em Ivoti e região com tubo de concreto pluvial nas
             classes PA1 e PA2 em estoque, além de PA3 e PA4 sob consulta — do DN 20 ao DN 150 cm.
-            Mande foto da obra ou o memorial pelo WhatsApp · orçamento na hora ou em até 1 dia
-            útil. Se o seu projeto já traz a especificação no padrão PA2 DN 600 PB JR, o orçamento
+            Mande foto da obra ou as medidas (diâmetro, classe, quantidade) · atendimento
+            agilizado direto pelo WhatsApp, sem intermediário e sem formulário. Se o seu projeto já traz a especificação no padrão PA2 DN 600 PB JR, o orçamento
             sai imediato.
           </p>
           <a
@@ -570,7 +570,7 @@ export default function ClassesDeCargaPage() {
           <p className="mt-6 text-sm text-white/80">
             Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />
-            Atendimento: Ivoti e cidades em raio de 50 km
+            Atendimento: Ivoti e cidades em raio de 120 km
           </p>
         </div>
       </section>
