@@ -293,6 +293,21 @@ export default function ClassesDeCargaPage() {
               height={1600}
               className="w-full h-auto rounded-lg mt-6"
             />
+
+            {/* CTA S2 — ski ramp: fecha a seção simples ou armado */}
+            <div className="mt-10 text-center">
+              <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+                Mande o DN e o tráfego acima · a Central indica se vai simples ou armado.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+              >
+                Confirmar simples ou armado · WhatsApp
+              </a>
+            </div>
           </section>
 
           {/* H2 4 — Qual a diferença entre PA1, PA2, PA3 e PA4? */}
@@ -413,6 +428,21 @@ export default function ClassesDeCargaPage() {
                 .
               </p>
             </div>
+
+            {/* CTA S2 — ski ramp: fecha a seção da tabela de carga */}
+            <div className="mt-10 text-center">
+              <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+                Mande o DN da obra · a Central envia a tabela completa do diâmetro com cargas por classe.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+              >
+                Receber a tabela do DN · WhatsApp
+              </a>
+            </div>
           </section>
 
           {/* H2 6 — Você procurou por CA-1, CA-2 ou CA-3? */}
@@ -480,6 +510,21 @@ export default function ClassesDeCargaPage() {
                 de junta (rígida ou elástica). A classe trata da carga; o encaixe trata da
                 vedação.
               </p>
+            </div>
+
+            {/* CTA S2 — ski ramp: fecha a seção de escolha de classe */}
+            <div className="mt-10 text-center">
+              <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+                Mande tráfego, profundidade e tipo de solo · a equipe técnica fecha a classe pra sua obra.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+              >
+                Fechar a classe da obra · WhatsApp
+              </a>
             </div>
           </section>
 
