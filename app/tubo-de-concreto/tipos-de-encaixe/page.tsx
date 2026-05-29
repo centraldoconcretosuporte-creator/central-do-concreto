@@ -194,16 +194,18 @@ export default function TiposDeEncaixePage() {
                 simples (PS-1) ou armado (PA-1 e PA-2), com junta rígida em todas as opções. São
                 mais de 20 modelos no catálogo · no balcão, também é chamado de manilha.
               </p>
-              <a
-                href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-                  "Olá! Quero saber qual encaixe de tubo de concreto serve pra minha obra.",
-                )}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
-              >
-                Descobrir o encaixe certo · WhatsApp
-              </a>
+              <div className="text-center">
+                <a
+                  href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+                    "Olá! Quero saber qual encaixe de tubo de concreto serve pra minha obra.",
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+                >
+                  Descobrir o encaixe certo · WhatsApp
+                </a>
+              </div>
             </div>
           </section>
 
