@@ -452,6 +452,22 @@ export default function TiposDeEncaixePage() {
                 detalha cada situação.
               </p>
             </div>
+
+            {/* CTA S1 — ski ramp: fecha a seção de escolha de encaixe */}
+            <div className="mt-10 text-center">
+              <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+                Mande o diâmetro e o tipo da obra · a Central indica o encaixe certo e o
+                orçamento.
+              </p>
+              <a
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+              >
+                Confirmar o encaixe da sua obra no WhatsApp
+              </a>
+            </div>
           </section>
 
           {/* H2 6 — Tipos de encaixe disponíveis na Central do Concreto */}
