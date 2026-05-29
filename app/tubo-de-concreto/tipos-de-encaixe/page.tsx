@@ -169,13 +169,15 @@ export default function TiposDeEncaixePage() {
             >
               O que é o encaixe ponta e bolsa (PB)?
             </h2>
-            <Image
-              src="/images/tubo-de-concreto/tubos-concreto-fileira-frontal-decrescente-bairro-residencial-030-central-concreto-ivoti.webp"
-              alt="Fileira de tubos de concreto ponta e bolsa em ordem decrescente de diâmetro em bairro residencial · Central do Concreto · Ivoti RS"
-              width={1600}
-              height={1200}
-              className="w-full h-auto rounded-lg mb-6"
-            />
+            <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-6">
+              <Image
+                src="/images/tubo-de-concreto/tubos-concreto-fileira-frontal-decrescente-bairro-residencial-030-central-concreto-ivoti.webp"
+                alt="Fileira de tubos de concreto ponta e bolsa em ordem decrescente de diâmetro em bairro residencial · Central do Concreto · Ivoti RS"
+                width={1600}
+                height={1200}
+                className="w-full h-full object-cover object-[center_40%]"
+              />
+            </div>
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 O encaixe ponta e bolsa tem uma ponta lisa em uma extremidade do tubo e uma bolsa
@@ -190,18 +192,18 @@ export default function TiposDeEncaixePage() {
               <p>
                 O PB cobre toda a faixa que a Central produz · do DN 200 ao DN 1500 · em tubo
                 simples (PS-1) ou armado (PA-1 e PA-2), com junta rígida em todas as opções. São
-                mais de 20 modelos no catálogo · no balcão, também é chamado de manilha. Em dúvida
-                sobre qual modelo serve · consulta técnica gratuita pelo WhatsApp{" "}
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
-                >
-                  (51) 99669-1757
-                </a>
-                .
+                mais de 20 modelos no catálogo · no balcão, também é chamado de manilha.
               </p>
+              <a
+                href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+                  "Olá! Quero saber qual encaixe de tubo de concreto serve pra minha obra.",
+                )}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+              >
+                Descobrir o encaixe certo · WhatsApp
+              </a>
             </div>
           </section>
 
