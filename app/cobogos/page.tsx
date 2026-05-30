@@ -329,7 +329,7 @@ export default function CobogosPage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-cc-black/55" />
+        <div className="absolute inset-0 bg-cc-black/35" />
         <div className="relative z-10 container mx-auto px-4 text-center text-white max-w-3xl">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Cobogós de Concreto
@@ -347,7 +347,7 @@ export default function CobogosPage() {
             href={ctaUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-cc-orange hover:bg-cc-orange/90 text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
           >
             <svg
               className="w-6 h-6"
@@ -375,10 +375,11 @@ export default function CobogosPage() {
           O que é cobogó de concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          Cobogó de concreto é um bloco vazado pré-moldado nascido em Recife
-          em 1929. O nome vem dos sobrenomes de três engenheiros que
-          patentearam a peça: Coimbra, Boeckmann e Góis. A função sempre foi
-          a mesma: vedar o vão sem cortar a brisa nem a luz.
+          Cobogó de concreto é elemento vazado pré-moldado que substitui parede
+          sólida em fachadas, muros e divisórias deixando passar luz e ar. A peça
+          nasceu em Recife em 1929 e leva no nome a junção dos sobrenomes Coimbra,
+          Boeckmann e Góis · três engenheiros que patentearam a invenção. A função
+          desde então é a mesma: vedar o vão sem cortar a brisa nem a luz.
         </p>
         <p className="text-lg leading-relaxed mb-12">
           A peça é fabricada com mistura de cimento, agregado e água em
@@ -388,13 +389,23 @@ export default function CobogosPage() {
           outros barrar chuva ou criar sombra.
         </p>
 
+        <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
+          <Image
+            src="/cluster-cobogos/cobogo-citadino-dupla-face-concreto-ivoti.webp"
+            alt="Muro construído com cobogós Citadino Dupla Face em concreto pré-moldado, módulos triangulares vazados em série formando ritmo geométrico contínuo, acabamento branco · Central do Concreto Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
+
         <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
           Concreto, cerâmico ou gesso — qual ganha em fachada externa?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          O concreto vence o cerâmico e o gesso em fachada externa em três
-          frentes: resistência mecânica maior, baixa absorção de umidade e
-          durabilidade UV sem perda de cor estrutural.
+          Cobogó de concreto vence cerâmico e gesso em fachada externa por três
+          motivos: maior resistência mecânica, baixa absorção de umidade e
+          durabilidade UV sem perda estrutural.
         </p>
         <p className="text-lg leading-relaxed mb-12">
           O cobogó cerâmico esmaltado tem ótima estética interna mas trinca
@@ -404,14 +415,24 @@ export default function CobogosPage() {
           ano após ano.
         </p>
 
+        <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
+          <Image
+            src="/cluster-cobogos/cobogo-urbano-concreto-ivoti-01.webp"
+            alt="Muro de canto duplo construído com cobogós Urbano em concreto pré-moldado, módulos quadrados subdivididos por diagonal com vazado triangular, ambiente externo com vegetação · Central do Concreto Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
+
         <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
           Para que serve um cobogó hoje?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          Três funções principais: ventilação cruzada constante, luz natural
-          difusa e privacidade sem isolamento total. Cobogós cumprem o papel
-          de muro, divisória ou fachada deixando passar ar e luz sem
-          precisar de janela ou abertura controlada.
+          Cobogó de concreto serve para três funções principais: ventilação
+          cruzada constante, luz natural difusa e privacidade sem isolamento
+          total. A peça cumpre papel de muro, divisória ou fachada deixando passar
+          ar e luz sem precisar de janela ou abertura controlada.
         </p>
         <p className="text-lg leading-relaxed mb-12">
           Em arquitetura contemporânea, o cobogó voltou a ser peça-chave em
@@ -420,6 +441,16 @@ export default function CobogosPage() {
           em terreno urbano, cria divisória que respira em área gourmet e
           desenha sombra projetada em ambientes externos.
         </p>
+
+        <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
+          <Image
+            src="/cluster-cobogos/cobogo-fenestra-concreto-ivoti-02.webp"
+            alt="Muro construído com cobogós Fenestra em concreto pré-moldado pintados em tom bordô vermelho, padrão de arcos duplos formando textura visual orgânica, ambiente externo com vegetação · Central do Concreto Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
 
         <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
           Quais são os 14 modelos da Central do Concreto?
@@ -464,10 +495,10 @@ export default function CobogosPage() {
           Concreto natural ou pintado — como escolher?
         </h2>
         <p className="text-lg leading-relaxed mb-12">
-          A Central oferece os 14 modelos em duas opções: concreto natural
-          (acabamento cinza original da peça) e pintado em fábrica nas cores
-          escolhidas pelo cliente. A escolha define estética e manutenção.
-          A página dedicada{" "}
+          Cobogó de concreto pode ser entregue em duas opções de acabamento:
+          natural (cinza original da peça) ou pintado em fábrica nas cores
+          escolhidas pelo cliente. A Central oferece os 14 modelos nas duas
+          formas. A página dedicada{" "}
           <Link
             href="/cobogos/pintado-ou-natural"
             className="text-cc-orange underline hover:no-underline"
@@ -501,15 +532,24 @@ export default function CobogosPage() {
           para os modelos recomendados em cada caso.
         </p>
 
+        <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
+          <Image
+            src="/cluster-cobogos/cobogo-ao-quadrado-concreto-ivoti-02.webp"
+            alt="Muro alto construído com cobogós Ao Quadrado em concreto pré-moldado pintados em tom grafite escuro, padrão de pequenos quadrados vazados em malha densa, ambiente residencial externo com jardim · Central do Concreto Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
+
         <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
           Como a Central instala cobogós?
         </h2>
         <p className="text-lg leading-relaxed mb-12">
-          Instalação envolve fundação corrida, fio de prumo, argamassa
-          específica e alinhamento por carreira. A Central instala com
-          equipe própria — do projeto à entrega final — com argamassa de
-          assentamento fornecida junto às peças. Veja o passo a passo
-          técnico na página{" "}
+          Instalação de cobogó envolve fundação corrida, fio de prumo, argamassa
+          específica e alinhamento por carreira. A Central instala com equipe
+          própria · do projeto à entrega final · com argamassa de assentamento
+          fornecida junto às peças. Veja o passo a passo técnico na página{" "}
           <Link
             href="/cobogos/instalacao"
             className="text-cc-orange underline hover:no-underline"
@@ -518,6 +558,16 @@ export default function CobogosPage() {
           </Link>
           .
         </p>
+
+        <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
+          <Image
+            src="/cluster-cobogos/cobogo-taco-chines-concreto-ivoti-02.webp"
+            alt="Muro construído com cobogós Taco Chinês em concreto pré-moldado, padrão de barras horizontais e verticais alternadas, ambiente externo iluminado · Central do Concreto Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
 
         <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
           Entrega — 16 cidades no raio de 120 km
@@ -578,7 +628,7 @@ export default function CobogosPage() {
                       href={modeloUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 self-start bg-cc-orange hover:bg-cc-orange/90 text-white px-6 py-3 rounded-full text-base font-semibold transition-colors"
+                      className="inline-flex items-center gap-2 self-start bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-6 py-3 rounded-full text-base font-semibold transition-colors"
                     >
                       Falar sobre {m.nome}
                     </a>
@@ -654,7 +704,7 @@ export default function CobogosPage() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="bg-cc-orange py-16">
+      <section className="bg-cc-black py-16">
         <div className="container mx-auto px-4 max-w-3xl text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Pronto pra orçar seu cobogó?
@@ -668,7 +718,7 @@ export default function CobogosPage() {
             href={ctaUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-white hover:bg-cc-gray-50 text-cc-orange px-8 py-4 rounded-full text-lg font-semibold transition-colors"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full text-lg font-semibold transition-colors"
           >
             <svg
               className="w-6 h-6"
