@@ -567,7 +567,7 @@ export default function CobogoFachadaPage() {
                 href={`${WHATSAPP_URL}?text=${encodeURIComponent(
                   `Olá! Quero falar sobre cobogó para fachada com entrega em ${c}.`
                 )}`}
-                className="inline-flex items-center gap-2 border border-white/30 hover:border-cc-orange hover:text-cc-orange px-4 py-2 rounded-full text-sm transition-colors"
+                className="inline-flex items-center gap-2 border border-white/30 hover:bg-cc-whatsapp hover:border-cc-whatsapp hover:text-white px-4 py-2 rounded-full text-sm transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
