@@ -317,6 +317,13 @@ export default function CobogoInstalacaoPage() {
         >
           Como instalar cobogó · passo a passo em 5 etapas
         </h2>
+        <Image
+          src="/cluster-cobogos/cobogo-citadino-dupla-face-concreto-ivoti.webp"
+          alt="Cobogó modelo Citadino Dupla Face em concreto pré-moldado · muro construído com módulos triangulares vazados em série, ritmo geométrico contínuo, acabamento branco · Central do Concreto Ivoti RS"
+          width={1200}
+          height={1200}
+          className="w-full h-auto rounded-lg mb-6"
+        />
         <p className="text-cc-gray-700 leading-relaxed mb-4">
           Instalar cobogó tem 5 etapas em sequência rígida: fundação corrida, marcação de prumo e cantoneira, assentamento com argamassa específica, alinhamento + rejunte, limpeza final.
         </p>
@@ -358,6 +365,13 @@ export default function CobogoInstalacaoPage() {
         >
           Os 4 erros que separam muro durável de muro com problema
         </h2>
+        <Image
+          src="/cluster-cobogos/cobogo-urbano-concreto-ivoti-01.webp"
+          alt="Cobogó modelo Urbano em concreto pré-moldado · muro de canto duplo com módulos quadrados subdivididos por diagonal, vazado triangular, ambiente externo com vegetação · Central do Concreto Ivoti RS"
+          width={1200}
+          height={1200}
+          className="w-full h-auto rounded-lg mb-6"
+        />
         <p className="text-cc-gray-700 leading-relaxed mb-4">
           Quatro erros são responsáveis por mais de 80% dos defeitos em muros de cobogó: fundação rasa, argamassa errada, prumo torto e rejunte com sobra de argamassa.
         </p>
@@ -391,6 +405,22 @@ export default function CobogoInstalacaoPage() {
           A Central tem equipe própria de instalação no raio de 120 km · serviço completo da fundação ao rejunte. Orçamento personalizado por m² considerando altura, modelo escolhido, distância, complexidade de fundação e prazo. Mande planta ou medidas pelo WhatsApp · resposta em 1 dia útil.
         </p>
 
+        <div className="mt-10 text-center">
+          <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+            Equipe de instalação no raio de 120 km · 16 cidades atendidas. Pede orçamento pelo WhatsApp.
+          </p>
+          <a
+            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+              "Olá, quero falar sobre instalação de cobogó."
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+          >
+            Falar pelo WhatsApp
+          </a>
+        </div>
+
         {/* H2 5 */}
         <h2
           id="custo-instalacao"
@@ -398,6 +428,13 @@ export default function CobogoInstalacaoPage() {
         >
           Quanto custa o serviço de instalação da Central
         </h2>
+        <Image
+          src="/cluster-cobogos/cobogo-fenestra-concreto-ivoti-02.webp"
+          alt="Cobogó modelo Fenestra em concreto pré-moldado · muro construído com módulos Fenestra em série pintados em tom bordô vermelho, padrão de arcos duplos formando textura visual orgânica, ambiente externo com vegetação · Central do Concreto Ivoti RS"
+          width={1200}
+          height={1200}
+          className="w-full h-auto rounded-lg mb-6"
+        />
         <p className="text-cc-gray-700 leading-relaxed mb-4">
           O custo do serviço de instalação depende de quatro variáveis: altura do muro, complexidade da fundação (terreno plano ou em desnível), distância do canteiro até Ivoti e prazo desejado.
         </p>
