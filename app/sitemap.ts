@@ -25,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/produtos/fossa-e-filtro`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
     { url: `${SITE_URL}/produtos/revestimentos-de-concreto`, lastModified: now, changeFrequency: "yearly", priority: 0.8 },
     { url: `${SITE_URL}/cobogos`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/cobogos/fachada`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/sobre`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/contato`, lastModified: now, changeFrequency: "yearly", priority: 0.6 },
     { url: `${SITE_URL}/entregas`, lastModified: now, changeFrequency: "yearly", priority: 0.7 },
