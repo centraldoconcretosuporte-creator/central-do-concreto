@@ -242,7 +242,7 @@ export default function CobogoMuroPage() {
         <div className="absolute inset-0 bg-cc-black/35" />
         <div className="relative container mx-auto px-4 py-16 max-w-3xl text-white">
           <p className="text-cc-orange font-semibold mb-3 uppercase tracking-wide text-sm">
-            Cluster Cobogós · Muro
+            Cobogós · Muro
           </p>
           <h1 className="text-3xl md:text-5xl font-bold mb-5 leading-tight">
             Muro de Cobogó: Privacidade com Ventilação Natural em 14 Modelos
