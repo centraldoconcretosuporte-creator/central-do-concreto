@@ -358,6 +358,22 @@ export default function CobogoInstalacaoPage() {
           Reserve 10% a mais de cobogós além do calculado · quebras durante o assentamento são normais (3 a 7% conforme habilidade do assentador). O cobogó quebrado pode até virar arremate de canto · mas se você não comprou sobra, vai parar a obra esperando reposição.
         </p>
 
+        <div className="mt-10 text-center">
+          <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
+            Argamassa específica entra junto com o pedido · evita fissura por argamassa errada. Fala com o André pelo WhatsApp.
+          </p>
+          <a
+            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
+              "Olá, quero falar sobre instalação de cobogó."
+            )}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
+          >
+            Falar pelo WhatsApp
+          </a>
+        </div>
+
         {/* H2 3 */}
         <h2
           id="erros-comuns"
