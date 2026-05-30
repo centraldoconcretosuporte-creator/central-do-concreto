@@ -6,6 +6,10 @@ import { Eyebrow } from "@/components/Eyebrow";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/instalacao`;
 const WHATSAPP_URL = "https://wa.me/5551996691757";
+const WHATSAPP_HERO_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, vi a página de instalação de cobogós e quero um orçamento.")}`;
+const WHATSAPP_PACOTE_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, quero o pacote material (cobogó + argamassa específica) com entrega.")}`;
+const WHATSAPP_VISITA_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, quero agendar visita técnica pra orçamento de instalação.")}`;
+const WHATSAPP_FINAL_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, quero falar com o André sobre instalação de cobogó.")}`;
 const PAGE_TITLE =
   "Como Instalar Cobogó: Passo a Passo + Serviço da Central | Central do Concreto";
 const PAGE_DESCRIPTION =
@@ -240,15 +244,13 @@ export default function CobogoInstalacaoPage() {
             Como instalar cobogó · passo a passo + serviço de instalação da Central
           </h1>
           <p className="text-lg md:text-xl mb-8 leading-relaxed text-white/95">
-            Cinco etapas em sequência rígida e quatro erros que separam muro durável de muro com problema · ou contrate a equipe da Central no raio de 120 km a partir de Ivoti.
+            Atendimento humano e agilizado · cobogós em 14 modelos com argamassa específica e equipe de instalação própria, sem formulário e sem intermediários.
           </p>
           <a
-            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-              "Olá, quero falar sobre instalação de cobogó."
-            )}`}
+            href={WHATSAPP_HERO_URL}
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white font-semibold px-6 py-3 rounded-md transition-colors"
           >
-            Falar sobre instalação de cobogó
+            Mandar foto ou medidas pelo WhatsApp
           </a>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
             <span className="bg-white/15 backdrop-blur px-3 py-1 rounded">
@@ -360,17 +362,15 @@ export default function CobogoInstalacaoPage() {
 
         <div className="mt-10 text-center">
           <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
-            Argamassa específica entra junto com o pedido · evita fissura por argamassa errada. Fala com o André pelo WhatsApp.
+            Pacote material direto da fábrica · cobogó + argamassa específica entregues juntos no canteiro · evite trincas e atrasos na obra.
           </p>
           <a
-            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-              "Olá, quero falar sobre instalação de cobogó."
-            )}`}
+            href={WHATSAPP_PACOTE_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
-            Falar pelo WhatsApp
+            Pedir pacote pelo WhatsApp
           </a>
         </div>
 
@@ -423,17 +423,15 @@ export default function CobogoInstalacaoPage() {
 
         <div className="mt-10 text-center">
           <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
-            Equipe de instalação no raio de 120 km · 16 cidades atendidas. Pede orçamento pelo WhatsApp.
+            Visita técnica gratuita pra medir e fotografar o terreno · orçamento detalhado em 1 a 2 dias úteis · garantia de 12 meses contra fissura por defeito de execução.
           </p>
           <a
-            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-              "Olá, quero falar sobre instalação de cobogó."
-            )}`}
+            href={WHATSAPP_VISITA_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
-            Falar pelo WhatsApp
+            Agendar visita pelo WhatsApp
           </a>
         </div>
 
@@ -561,15 +559,13 @@ export default function CobogoInstalacaoPage() {
             Vamos definir o cobogó do seu muro?
           </h2>
           <p className="text-white/80 mb-8 text-lg leading-relaxed">
-            Mande foto do local, tamanho aproximado do muro e cidade · respondemos com modelos sugeridos, preço unitário e prazo de entrega.
+            Mande planta, foto do terreno ou as medidas do muro (largura · altura · perímetro) · resposta humana e agilizada direto do André no mesmo dia útil, sem intermediário e sem formulário.
           </p>
           <a
-            href={`${WHATSAPP_URL}?text=${encodeURIComponent(
-              "Olá, quero falar sobre instalação de cobogó."
-            )}`}
+            href={WHATSAPP_FINAL_URL}
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white font-semibold px-8 py-4 rounded-md transition-colors text-lg"
           >
-            Falar agora pelo WhatsApp
+            Falar com o André
           </a>
         </div>
       </section>
