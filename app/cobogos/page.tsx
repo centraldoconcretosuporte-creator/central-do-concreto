@@ -5,6 +5,7 @@ import { Eyebrow } from "@/components/Eyebrow";
 
 const CANONICAL_URL = "https://centraldoconcretoentrega.com.br/cobogos";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
+const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 const PAGE_TITLE =
   "Cobogós de Concreto: 14 Modelos, Instalação e Entrega | Central do Concreto";
@@ -23,6 +24,14 @@ export const metadata: Metadata = {
     type: "article",
     locale: "pt_BR",
     siteName: "Central do Concreto",
+    images: [
+      {
+        url: `${SITE_URL}/cluster-cobogos/cobogo-eclipse-concreto-ivoti-02.webp`,
+        width: 1200,
+        height: 1200,
+        alt: "Muro alto residencial em cobogó modelo Eclipse de concreto pré-moldado · Central do Concreto Ivoti RS",
+      },
+    ],
   },
 };
 
@@ -305,6 +314,29 @@ const jsonLd = {
         },
       })),
     },
+    {
+      "@type": "ItemList",
+      "@id": `${CANONICAL_URL}#modelos`,
+      name: "Modelos de cobogó de concreto da Central",
+      numberOfItems: 14,
+      itemListOrder: "ItemListOrderUnordered",
+      itemListElement: modelos.map((m, idx) => ({
+        "@type": "ListItem",
+        position: idx + 1,
+        item: {
+          "@type": "Product",
+          name: `Cobogó ${m.nome}`,
+          description: m.descricao,
+          image: `${SITE_URL}${m.cardFoto}`,
+          url: `${CANONICAL_URL}#modelo-${m.slug}`,
+          brand: {
+            "@type": "Brand",
+            name: "Central do Concreto",
+          },
+          category: "Cobogó de concreto pré-moldado",
+        },
+      })),
+    },
   ],
 };
 
@@ -318,6 +350,28 @@ export default function CobogosPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+
+      {/* BREADCRUMB VISUAL */}
+      <nav aria-label="Breadcrumb" className="bg-white border-b border-cc-gray-200">
+        <div className="container mx-auto px-4 py-3">
+          <ol className="flex items-center gap-2 text-sm text-cc-gray-600">
+            <li>
+              <Link href="/" className="hover:text-cc-orange transition-colors">
+                Início
+              </Link>
+            </li>
+            <li aria-hidden="true" className="text-cc-gray-400">
+              ›
+            </li>
+            <li
+              className="text-cc-gray-900 font-medium"
+              aria-current="page"
+            >
+              Cobogós
+            </li>
+          </ol>
+        </div>
+      </nav>
 
       {/* HERO */}
       <section className="relative min-h-[560px] md:min-h-[640px] flex items-center justify-center">
@@ -371,7 +425,59 @@ export default function CobogosPage() {
       {/* ARTICLE */}
       <article className="container mx-auto px-4 py-16 max-w-3xl">
         <Eyebrow className="mb-4">Guia do cobogó de concreto</Eyebrow>
-        <h2 className="text-3xl md:text-4xl font-bold mt-4 mb-6">
+        <aside
+          aria-label="Índice deste guia"
+          className="mb-12 p-6 bg-cc-gray-50 rounded-lg border border-cc-gray-200"
+        >
+          <p className="text-sm font-semibold text-cc-gray-700 mb-3 uppercase tracking-wide">
+            Neste guia
+          </p>
+          <nav>
+            <ol className="space-y-2 text-base text-cc-gray-700">
+              <li>
+                <a href="#o-que-e" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  O que é cobogó de concreto
+                </a>
+              </li>
+              <li>
+                <a href="#concreto-vs-ceramico" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Concreto, cerâmico ou gesso
+                </a>
+              </li>
+              <li>
+                <a href="#para-que-serve" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Para que serve um cobogó hoje
+                </a>
+              </li>
+              <li>
+                <a href="#os-14-modelos" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Os 14 modelos da Central
+                </a>
+              </li>
+              <li>
+                <a href="#pintado-ou-natural" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Concreto natural ou pintado
+                </a>
+              </li>
+              <li>
+                <a href="#onde-aplicar" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Onde aplicar cobogó
+                </a>
+              </li>
+              <li>
+                <a href="#como-instalar" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Como a Central instala
+                </a>
+              </li>
+              <li>
+                <a href="#entrega-120km" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Entrega · 16 cidades no raio de 120 km
+                </a>
+              </li>
+            </ol>
+          </nav>
+        </aside>
+        <h2 id="o-que-e" className="text-3xl md:text-4xl font-bold mt-4 mb-6 scroll-mt-24">
           O que é cobogó de concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
@@ -399,7 +505,7 @@ export default function CobogosPage() {
           />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="concreto-vs-ceramico" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Concreto, cerâmico ou gesso — qual ganha em fachada externa?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
@@ -425,7 +531,7 @@ export default function CobogosPage() {
           />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="para-que-serve" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Para que serve um cobogó hoje?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
@@ -452,7 +558,7 @@ export default function CobogosPage() {
           />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="os-14-modelos" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Quais são os 14 modelos da Central do Concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-8">
@@ -491,7 +597,7 @@ export default function CobogosPage() {
           ))}
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="pintado-ou-natural" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Concreto natural ou pintado — como escolher?
         </h2>
         <p className="text-lg leading-relaxed mb-12">
@@ -508,7 +614,7 @@ export default function CobogosPage() {
           traz o comparativo completo com paleta de cores e durabilidade.
         </p>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="onde-aplicar" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Onde aplicar cobogó de concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-12">
@@ -542,7 +648,7 @@ export default function CobogosPage() {
           />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="como-instalar" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Como a Central instala cobogós?
         </h2>
         <p className="text-lg leading-relaxed mb-12">
@@ -569,7 +675,7 @@ export default function CobogosPage() {
           />
         </div>
 
-        <h2 className="text-3xl md:text-4xl font-bold mt-12 mb-6">
+        <h2 id="entrega-120km" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
           Entrega — 16 cidades no raio de 120 km
         </h2>
         <p className="text-lg leading-relaxed mb-4">
@@ -730,6 +836,35 @@ export default function CobogosPage() {
             </svg>
             Falar pelo WhatsApp
           </a>
+        </div>
+      </section>
+
+      {/* CROSS-LINK · EXPLORE MAIS */}
+      <section className="bg-white border-t border-cc-gray-200 py-10">
+        <div className="container mx-auto px-4 max-w-3xl text-center">
+          <p className="text-sm font-semibold text-cc-gray-600 mb-4 uppercase tracking-wide">
+            Explore mais da Central
+          </p>
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-3 text-base">
+            <Link
+              href="/produtos/muros-e-gradis"
+              className="text-cc-gray-700 hover:text-cc-orange underline-offset-4 hover:underline transition-colors"
+            >
+              Muros e Gradis
+            </Link>
+            <Link
+              href="/produtos/pergolado-de-concreto"
+              className="text-cc-gray-700 hover:text-cc-orange underline-offset-4 hover:underline transition-colors"
+            >
+              Pergolados
+            </Link>
+            <Link
+              href="/tubo-de-concreto"
+              className="text-cc-gray-700 hover:text-cc-orange underline-offset-4 hover:underline transition-colors"
+            >
+              Tubos de Concreto
+            </Link>
+          </div>
         </div>
       </section>
     </>
