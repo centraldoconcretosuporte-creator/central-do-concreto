@@ -173,6 +173,38 @@ export default function TuboDeConcretoPage() {
             </div>
           </section>
 
+          {/* O que é manilha */}
+          <section aria-labelledby="manilha">
+            <h2
+              id="manilha"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
+            >
+              O que é manilha de concreto?
+            </h2>
+            <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
+              <p>
+                Manilha de concreto é o nome popular do tubo de concreto · a mesma peça
+                pré-moldada circular usada em drenagem pluvial, galeria, muro de arrimo e
+                canalização. O termo veio do uso em obra e ficou marcado na fala de pedreiro,
+                mestre de obra e projetista de loteamento na região sul. No catálogo técnico, a
+                peça segue chamada de tubo de concreto e atende a NBR 8890.
+              </p>
+              <p>
+                A Central do Concreto fabrica manilha em concreto simples e armado, Ø 20 cm a
+                Ø 150 cm, com encaixe ponta e bolsa (PB) ou macho e fêmea (MF), entrega com
+                caminhão próprio em Ivoti e cidades vizinhas. A versão furada chama tubo dreno ou{" "}
+                <Link
+                  href="/tubo-de-concreto/tubo-dreno"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  manilha perfurada
+                </Link>{" "}
+                · capta a água do solo em vez de transportar. Manda foto da obra no WhatsApp
+                (51) 99669-1757 · orçamento na hora ou em até 1 dia útil.
+              </p>
+            </div>
+          </section>
+
           {/* Tipos de encaixe */}
           <section aria-labelledby="tipos-encaixe">
             <h2

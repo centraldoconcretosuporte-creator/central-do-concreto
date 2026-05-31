@@ -30,11 +30,11 @@ const produtosDestaque = [
   {
     titulo: "Tubos e Caixas",
     descricao:
-      "Tubo de concreto armado para drenagem, esgoto e águas pluviais, em classes PA-1 a PA-4. Caixa de passagem e inspeção pré-moldada. Para construtora, prefeitura e obra rural.",
+      "Tubo de concreto armado para drenagem, esgoto e águas pluviais, em classes PA-1 a PA-4. Caixa de passagem e inspeção pré-moldada. Para construtora, prefeitura e obra rural. Também chamados de manilha.",
     badge: "Mais procurado",
     href: "/tubo-de-concreto",
     foto: "/home/produtos/tubos-concreto-fileira-lateral-perspectiva-diametros-variados-029-central-concreto-ivoti.jpg",
-    alt: "Fileira de tubos de concreto da Central em diâmetros variados, vista em perspectiva no pátio em Ivoti-RS",
+    alt: "Fileira de tubos de concreto, também chamados de manilha, da Central em diâmetros variados, vista em perspectiva no pátio em Ivoti-RS",
     grande: true,
   },
   {
