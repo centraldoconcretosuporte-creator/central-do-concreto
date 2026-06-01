@@ -324,16 +324,11 @@ const jsonLd = {
         "@type": "ListItem",
         position: idx + 1,
         item: {
-          "@type": "Product",
+          "@type": "Thing",
           name: `Cobogó ${m.nome}`,
           description: m.descricao,
           image: `${SITE_URL}${m.cardFoto}`,
           url: `${CANONICAL_URL}#modelo-${m.slug}`,
-          brand: {
-            "@type": "Brand",
-            name: "Central do Concreto",
-          },
-          category: "Cobogó de concreto pré-moldado",
         },
       })),
     },

@@ -165,12 +165,10 @@ const jsonLd = {
         "@type": "ListItem",
         position: i + 1,
         item: {
-          "@type": "Product",
+          "@type": "Thing",
           name: `Cobogó ${m.nome}`,
           description: m.bio,
           image: `${SITE_URL}${m.cardFoto}`,
-          brand: { "@type": "Brand", name: "Central do Concreto" },
-          category: "Cobogó para fachada",
         },
       })),
     },
