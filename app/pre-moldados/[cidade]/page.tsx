@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/Eyebrow";
 import {
   CIDADES_ATENDIMENTO,
+  CIDADES_SERRA,
   getCidade,
   type Cidade,
 } from "@/lib/cidades-atendimento";
@@ -26,8 +27,10 @@ function subtituloHeroCidade(cidade: Cidade): string {
   return `Pergolado de concreto pré-moldado em ${cidade.nome}. Saímos da fábrica em Ivoti e instalamos com equipe própria — estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos. Atendemos ${cidade.perfil.toLowerCase()} em ${vizinhasTexto}.`;
 }
 
+// Item 12 · 8 Litoral viram redirect 301 (ver next.config.ts)
+// So Serra gera pagina estatica · CidadeLitoralView fica como dead code defensivo
 export async function generateStaticParams() {
-  return CIDADES_ATENDIMENTO.map((c) => ({ cidade: c.slug }));
+  return CIDADES_SERRA.map((c) => ({ cidade: c.slug }));
 }
 
 export async function generateMetadata({
@@ -407,8 +410,67 @@ function CidadeLitoralView({ c }: { c: Cidade }) {
 }
 
 function CidadeSerraView({ c }: { c: Cidade }) {
+  const canonicalUrl = `${SITE_URL}/pre-moldados/${c.slug}`;
+
+  // Item 12 · D3 · Service + BreadcrumbList por cidade Serra
+  // provider usa @id global #central · resolve quando Tier 1B (homepage) entrar no ar
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "@id": `${canonicalUrl}#service`,
+        "name": `Pré-moldados de concreto em ${c.nome}`,
+        "serviceType": "Fornecimento de pré-moldados de concreto",
+        "description": `Fornecimento de pergolados, blocos, tubos, caixas, muros e demais artefatos pré-moldados de concreto em ${c.nome}. Direto da fábrica em Ivoti-RS.`,
+        "provider": {
+          "@type": "Organization",
+          "@id": `${SITE_URL}/#central`,
+          "name": "Central do Concreto",
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": c.nome,
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "BRL",
+        },
+        "url": canonicalUrl,
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${canonicalUrl}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": `${SITE_URL}/`,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pré-moldados",
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": c.nome,
+            "item": canonicalUrl,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* HERO · placeholder genérica · conteúdo único vem em rodada futura */}
       <section className="bg-cc-black py-20 md:py-28 text-center">
         <div className="mx-auto max-w-3xl px-4">
