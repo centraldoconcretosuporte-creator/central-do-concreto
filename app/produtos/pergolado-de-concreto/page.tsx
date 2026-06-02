@@ -141,11 +141,117 @@ const faqs = [
   },
 ];
 
-const cidades = CIDADES_LITORAL.map((c) => c.nome);
+// Item 12 · D4-B · pílulas das 8 Litoral viram link WhatsApp por cidade
+const cidades = CIDADES_LITORAL.map((c) => ({
+  nome: c.nome,
+  href: `https://wa.me/5551996691757?text=${encodeURIComponent(
+    `Olá, gostaria de orçar pergolado de concreto em ${c.nome}.`
+  )}`,
+}));
 
 export default function PergoladoDeConcretoPage() {
+  // Item 12 · D4-B · @graph com 5 nodes (CollectionPage + Service + ItemList + FAQPage + BreadcrumbList)
+  // areaServed = 8 cidades Litoral · provider usa @id global #central (resolve no Tier 1B)
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${PAGE_URL}#webpage`,
+        "url": PAGE_URL,
+        "name": "Pergolado de concreto pré-moldado pro Litoral Norte",
+        "description":
+          "Pergolado de concreto pré-moldado direto da fábrica em Ivoti pro Litoral Norte e Médio. Estrutura reforçada, equipe própria de instalação e iluminação integrada.",
+        "isPartOf": { "@id": `${SITE_URL}/#website` },
+        "about": { "@id": `${PAGE_URL}#service` },
+        "mainEntity": { "@id": `${PAGE_URL}#faq` },
+        "breadcrumb": { "@id": `${PAGE_URL}#breadcrumb` },
+      },
+      {
+        "@type": "Service",
+        "@id": `${PAGE_URL}#service`,
+        "name": "Pergolado de concreto pré-moldado",
+        "serviceType": "Fornecimento e instalação de pergolado de concreto",
+        "description":
+          "Pergolado pré-moldado direto da fábrica em Ivoti. Equipe própria de instalação. Estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos.",
+        "provider": {
+          "@type": "Organization",
+          "@id": `${SITE_URL}/#central`,
+          "name": "Central do Concreto",
+        },
+        "areaServed": CIDADES_LITORAL.map((c) => ({
+          "@type": "City",
+          "name": c.nome,
+        })),
+        "offers": {
+          "@type": "AggregateOffer",
+          "availability": "https://schema.org/InStock",
+          "priceCurrency": "BRL",
+        },
+        "url": PAGE_URL,
+      },
+      {
+        "@type": "ItemList",
+        "@id": `${PAGE_URL}#tipos`,
+        "name": "Tipos de pergolado",
+        "numberOfItems": tipos.length,
+        "itemListElement": tipos.map((t, i) => ({
+          "@type": "ListItem",
+          "position": i + 1,
+          "item": {
+            "@type": "Thing",
+            "name": t.title,
+            "description": t.desc,
+          },
+        })),
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${PAGE_URL}#faq`,
+        "mainEntity": faqs.flatMap((g) =>
+          g.perguntas.map((p) => ({
+            "@type": "Question",
+            "name": p.q,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": p.a,
+            },
+          }))
+        ),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${PAGE_URL}#breadcrumb`,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Início",
+            "item": `${SITE_URL}/`,
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Produtos",
+            "item": `${SITE_URL}/produtos`,
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Pergolado de Concreto",
+            "item": PAGE_URL,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* 01 HERO · Full-bleed com overlay verde escuro */}
       <section
         className="relative w-full min-h-[560px] md:min-h-[620px] flex items-center justify-center overflow-hidden"
@@ -497,13 +603,16 @@ export default function PergoladoDeConcretoPage() {
                 residencial de veraneio, condomínio fechado, pousada, hotel e empreendimento.
               </p>
               <div className="flex flex-wrap gap-2">
-                {cidades.map((cidade) => (
-                  <span
-                    key={cidade}
-                    className="px-4 py-1.5 bg-cc-gray-100 border border-cc-gray-200 rounded-full text-sm text-cc-gray-700"
+                {cidades.map((c) => (
+                  <a
+                    key={c.nome}
+                    href={c.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-1.5 bg-cc-gray-100 border border-cc-gray-200 rounded-full text-sm text-cc-gray-700 hover:border-cc-black hover:text-cc-black transition-colors"
                   >
-                    {cidade}
-                  </span>
+                    {c.nome}
+                  </a>
                 ))}
               </div>
             </div>
@@ -595,15 +704,18 @@ export default function PergoladoDeConcretoPage() {
             </p>
 
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-10">
-              {cidades.map((cidade) => (
-                <div
-                  key={cidade}
-                  className="bg-cc-gray-100 border border-cc-gray-200 rounded-lg py-4 px-3 text-center hover:border-cc-black transition-colors"
+              {cidades.map((c) => (
+                <a
+                  key={c.nome}
+                  href={c.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="block bg-cc-gray-100 border border-cc-gray-200 rounded-lg py-4 px-3 text-center hover:border-cc-black transition-colors"
                 >
                   <span className="text-sm font-medium text-cc-gray-700 uppercase tracking-wide">
-                    {cidade}
+                    {c.nome}
                   </span>
-                </div>
+                </a>
               ))}
             </div>
 
