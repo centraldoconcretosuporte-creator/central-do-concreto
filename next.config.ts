@@ -54,6 +54,21 @@ const nextConfig: NextConfig = {
   },
   async redirects() {
     return [
+      // Item 12 · 8 Litoral consolidadas no pilar pergolado (elimina doorway pages)
+      // /pre-moldados/{slug-litoral} -> /produtos/pergolado-de-concreto (301 permanente)
+      ...CIDADES_LITORAL_SLUGS.flatMap((slug) => [
+        {
+          source: `/pre-moldados/${slug}`,
+          destination: "/produtos/pergolado-de-concreto",
+          permanent: true,
+        },
+        {
+          source: `/pre-moldados/${slug}/`,
+          destination: "/produtos/pergolado-de-concreto",
+          permanent: true,
+        },
+      ]),
+      // Legado · /atendimento/{slug} -> /pre-moldados/{slug} (mantido · chain ok)
       ...CIDADES_LITORAL_SLUGS.flatMap((slug) => [
         {
           source: `/atendimento/${slug}`,
