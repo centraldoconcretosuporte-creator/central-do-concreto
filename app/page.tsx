@@ -3,8 +3,89 @@ import Link from "next/link";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
 import { GRUPO_IVOTI_CANON, paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
+import { CIDADES_ATENDIMENTO } from "@/lib/cidades-atendimento";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
+
+const schemaHome = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": `${SITE_URL}/#organization`,
+      "name": "Central do Concreto",
+      "url": SITE_URL,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/cc-logo.png`,
+        "width": 293,
+        "height": 345,
+      },
+      "sameAs": [
+        "https://www.facebook.com/profile.php?id=61583779437292",
+        "https://www.instagram.com/centraldoconcretors/",
+        "https://share.google/FcEUm0ex15p80uGNb",
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+5551996691757",
+        "contactType": "customer service",
+        "areaServed": "BR",
+        "availableLanguage": "Portuguese",
+      },
+    },
+    {
+      "@type": "LocalBusiness",
+      "@id": `${SITE_URL}/#central`,
+      "name": "Central do Concreto",
+      "description":
+        "Pré-moldados e artefatos de concreto pra obra civil, drenagem e pergolados. Fornecimento direto da fábrica em Ivoti-RS com entrega própria, atendendo 22 cidades entre Vale dos Sinos, Serra Gaúcha e Litoral Norte.",
+      "url": SITE_URL,
+      "image": `${SITE_URL}/cc-logo.png`,
+      "telephone": "+5551996691757",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. Bom Jardim, 149, Loja 02",
+        "addressLocality": "Ivoti",
+        "addressRegion": "RS",
+        "postalCode": "93900-000",
+        "addressCountry": "BR",
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": -29.62038,
+        "longitude": -51.16389,
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "08:00",
+          "closes": "18:00",
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "08:00",
+          "closes": "12:00",
+        },
+      ],
+      "areaServed": CIDADES_ATENDIMENTO.map((c) => ({
+        "@type": "City",
+        "name": c.nome,
+      })),
+      "parentOrganization": { "@id": `${SITE_URL}/#organization` },
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${SITE_URL}/#website`,
+      "url": SITE_URL,
+      "name": "Central do Concreto",
+      "inLanguage": "pt-BR",
+      "publisher": { "@id": `${SITE_URL}/#organization` },
+    },
+  ],
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -108,6 +189,10 @@ const cidades = [
 export default function HomePage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaHome) }}
+      />
       {/* HERO */}
       <section className="relative w-full min-h-[560px] md:min-h-[640px] flex items-center justify-center overflow-hidden">
         <Image
