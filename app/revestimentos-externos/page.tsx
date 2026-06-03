@@ -516,17 +516,19 @@ export default function RevestimentosExternosPage() {
           Onde aplicar revestimento cimentício?
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          As duas aplicações cobertas pela Central são fachada residencial e muro
-          divisório externo. Cada uma pede modelos diferentes — fachada pede
-          modelo que dialogue com a arquitetura do imóvel (Rock Face e Moledo
-          combinam com residencial contemporâneo, Mosaico 3D com fachada moderna
-          minimalista), muro pede modelo de boa textura visual a distância
+          Revestimento cimentício se aplica em fachada residencial e muro
+          divisório externo. Cada aplicação pede modelos diferentes · fachada
+          pede modelo que dialogue com a arquitetura do imóvel (Rock Face e
+          Moledo para residencial contemporâneo, Mosaico 3D e Diamante 3D para
+          fachada moderna), muro pede modelo de boa textura visual à distância
           (Ripado e Placa funcionam bem em muro alto).
         </p>
         <p className="text-lg leading-relaxed mb-12">
-          Parede interna não é aplicação coberta pela Central — para acabamento
-          interno, vale consultar pedra natural diretamente com o Bom Jardim
-          Ivoti.
+          Em qualquer aplicação externa · fachada frontal, lateral, muro
+          divisório, painel pontual · o revestimento cimentício entrega
+          durabilidade real (sem desbote, sem trinca por umidade, sem manutenção
+          periódica) e leitura visual rica que valoriza o imóvel ao longo de
+          décadas.
         </p>
 
         <h2 id="como-instalar" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
