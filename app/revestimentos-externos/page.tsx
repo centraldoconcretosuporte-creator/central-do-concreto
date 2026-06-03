@@ -9,9 +9,9 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 const PAGE_TITLE =
-  "Revestimentos Externos Cimentícios: 5 Modelos, Aplicações e Entrega | Central do Concreto";
+  "Revestimentos Externos Cimentícios: 6 Modelos, Aplicações e Entrega | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Revestimento externo manufaturado em concreto em 5 modelos cimentícios — Rock Face, Moledo, Mosaico 3D, Placa e Ripado — com instaladores parceiros e entrega no raio de 120 km a partir de Ivoti-RS.";
+  "Revestimento externo manufaturado em concreto em 6 modelos cimentícios — Rock Face, Moledo, Diamante 3D, Mosaico 3D, Placa e Ripado — com instaladores parceiros e entrega no raio de 120 km a partir de Ivoti-RS.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -72,6 +72,18 @@ const modelos: Modelo[] = [
       "Revestimento Moledo em concreto cimentício · formatos irregulares acabamento natural · Central do Concreto Ivoti RS",
   },
   {
+    slug: "diamante-3d",
+    nome: "Diamante 3D",
+    bio: "Facetas diagonais formando padrão de diamantes em alto relevo",
+    descricao:
+      "Peças quadradas com 4 facetas diagonais que formam padrão de diamantes em alto relevo · efeito tridimensional intenso pela alternância de luz e sombra entre as facetas. Indicado para muros e fachadas que pedem ponto focal visual de grande impacto · funciona em painéis pontuais (entrada, área social) ou parede inteira. Acabamento natural cinza · disponível também com efeito Cortein.",
+    foto: "/cluster-revestimentos-externos/revestimentos-diamante-3d-cimenticio-ivoti.webp",
+    cardAlt:
+      "Revestimento Diamante 3D cimentício · facetas diagonais formando padrão de diamantes em alto relevo · Central do Concreto Ivoti RS",
+    blocoAlt:
+      "Muro residencial com revestimento Diamante 3D em concreto cimentício · facetas diagonais em alto relevo · Central do Concreto Ivoti RS",
+  },
+  {
     slug: "mosaico-3d",
     nome: "Mosaico 3D",
     bio: "Peças cúbicas em relevo tridimensional",
@@ -120,7 +132,7 @@ const faqs = [
   },
   {
     q: "Qual a diferença entre revestimento natural e com efeito Cortein?",
-    a: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 5 modelos da Central podem ser pedidos nas duas opções.",
+    a: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 6 modelos da Central podem ser pedidos nas duas opções.",
   },
   {
     q: "Quantas peças cabem em 1 m² de fachada?",
@@ -195,7 +207,7 @@ const jsonLd = {
           name: "Qual a diferença entre revestimento natural e com efeito Cortein?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 5 modelos da Central podem ser pedidos nas duas opções.",
+            text: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 6 modelos da Central podem ser pedidos nas duas opções.",
           },
         },
         {
@@ -268,14 +280,14 @@ export default function RevestimentosExternosPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Revestimentos Externos
             <span className="block text-2xl md:text-3xl font-medium mt-3 text-cc-orange">
-              5 modelos cimentícios da fábrica em Ivoti
+              6 modelos cimentícios da fábrica em Ivoti
             </span>
           </h1>
           <p className="text-lg md:text-xl mb-8 leading-relaxed">
             Revestimento externo cimentício é placa pré-moldada em concreto que
             veste fachadas e muros com textura, cor e relevo de pedra natural. A
-            Central fabrica 5 modelos em Ivoti — Rock Face, Moledo, Mosaico 3D,
-            Placa e Ripado — em acabamento natural ou com efeito Cortein,
+            Central fabrica 6 modelos em Ivoti — Rock Face, Moledo, Diamante 3D,
+            Mosaico 3D, Placa e Ripado — em acabamento natural ou com efeito Cortein,
             trabalha com instaladores parceiros e entrega no raio de 120 km.
           </p>
           <a
@@ -295,7 +307,7 @@ export default function RevestimentosExternosPage() {
             Falar pelo WhatsApp
           </a>
           <p className="mt-8 text-sm md:text-base text-white/90 flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <span>✓ 5 modelos</span>
+            <span>✓ 6 modelos</span>
             <span>✓ Manufaturado em concreto</span>
             <span>✓ Instaladores parceiros</span>
             <span>✓ Entrega 120 km</span>
@@ -332,7 +344,7 @@ export default function RevestimentosExternosPage() {
               </li>
               <li>
                 <a href="#os-5-modelos" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
-                  Os 5 modelos da Central
+                  Os 6 modelos da Central
                 </a>
               </li>
               <li>
@@ -433,8 +445,8 @@ export default function RevestimentosExternosPage() {
 
         <div className="my-12 relative aspect-[4/3] overflow-hidden rounded-lg">
           <Image
-            src="/cluster-revestimentos-externos/revestimentos-mosaico-3d-cimenticio-ivoti.webp"
-            alt="Revestimento Mosaico 3D cimentício · peças cúbicas em relevo tridimensional · Central do Concreto Ivoti RS"
+            src="/cluster-revestimentos-externos/revestimentos-diamante-3d-cimenticio-ivoti.webp"
+            alt="Muro residencial com revestimento Diamante 3D cimentício · facetas diagonais formando padrão em alto relevo · Central do Concreto Ivoti RS"
             fill
             className="object-cover"
             sizes="(min-width: 768px) 768px, 100vw"
@@ -442,17 +454,17 @@ export default function RevestimentosExternosPage() {
         </div>
 
         <h2 id="os-5-modelos" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
-          Quais são os 5 modelos da Central do Concreto?
+          Quais são os 6 modelos da Central do Concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-8">
-          A Central fabrica 5 modelos catalogados em revestimento cimentício, do
+          A Central fabrica 6 modelos catalogados em revestimento cimentício, do
           Rock Face (placas regulares 30×10 cm em variantes cromáticas) ao Moledo
-          (formatos irregulares com 17 medidas misturadas), passando por Mosaico
-          3D, Placa Cimentícia e Ripado Cimentício. Toque em cada card para ver
-          detalhe.
+          (formatos irregulares com 17 medidas misturadas), passando por Diamante
+          3D, Mosaico 3D, Placa Cimentícia e Ripado Cimentício. Toque em cada card
+          para ver detalhe.
         </p>
 
-        {/* GRADE 5 CARDS */}
+        {/* GRADE 6 CARDS */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-16">
           {modelos.map((m) => (
             <Link
@@ -488,7 +500,7 @@ export default function RevestimentosExternosPage() {
           Revestimento cimentício da Central pode ser entregue em dois
           acabamentos: natural (cinza original da peça) ou com efeito Cortein
           (simulando ferro oxidado/envelhecido com tons quentes de laranja e
-          marrom). A Central oferece os 5 modelos nas duas opções. O comparativo
+          marrom). A Central oferece os 6 modelos nas duas opções. O comparativo
           completo entre cimentício manufaturado e pedra natural fica na página
           dedicada{" "}
           <a
@@ -543,12 +555,12 @@ export default function RevestimentosExternosPage() {
         </p>
       </article>
 
-      {/* 5 ANCHOR SECTIONS */}
+      {/* 6 ANCHOR SECTIONS */}
       <section className="bg-cc-gray-50 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Eyebrow className="mb-4">Catálogo completo</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Os 5 modelos em detalhe
+            Os 6 modelos em detalhe
           </h2>
           <div className="space-y-12">
             {modelos.map((m) => {
@@ -627,6 +639,25 @@ export default function RevestimentosExternosPage() {
         </div>
       </section>
 
+      {/* ENTREGA ÁGIL */}
+      <section className="container mx-auto px-4 py-16 max-w-3xl">
+        <div className="relative aspect-[4/3] overflow-hidden rounded-lg mb-6">
+          <Image
+            src="/cluster-revestimentos-externos/revestimentos-entrega-frota-propria-ivoti.webp"
+            alt="Caminhão Central do Concreto entregando peças em obra residencial · Ivoti RS"
+            fill
+            className="object-cover"
+            sizes="(min-width: 768px) 768px, 100vw"
+          />
+        </div>
+        <p className="text-lg leading-relaxed text-cc-gray-700">
+          Frota própria · sai da fábrica em Ivoti direto pra obra do cliente. Sem
+          terceirização, com peças paletizadas e descarga no local. Prazo
+          combinado conforme volume e cronograma da obra · sem intermediário
+          entre fábrica e cliente.
+        </p>
+      </section>
+
       {/* FAQ */}
       <section className="container mx-auto px-4 py-16 max-w-3xl">
         <div className="text-center mb-10">
@@ -662,7 +693,7 @@ export default function RevestimentosExternosPage() {
             Pronto pra orçar seu revestimento cimentício?
           </h2>
           <p className="text-lg text-white/95 mb-8 leading-relaxed">
-            Fabricação local em Ivoti · 5 modelos disponíveis · natural ou efeito
+            Fabricação local em Ivoti · 6 modelos disponíveis · natural ou efeito
             Cortein · instaladores parceiros indicados · entrega no raio de 120
             km. Toque abaixo e fale pelo WhatsApp com a Central.
           </p>
