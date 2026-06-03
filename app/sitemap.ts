@@ -26,6 +26,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/produtos/revestimentos-de-concreto`, lastModified: now, changeFrequency: "yearly", priority: 0.8 },
     { url: `${SITE_URL}/cobogos`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/revestimentos-externos`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/revestimentos-externos/rock-face`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/revestimentos-externos/moledo`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/cobogos/fachada`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/cobogos/muro`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/cobogos/pintado-ou-natural`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
