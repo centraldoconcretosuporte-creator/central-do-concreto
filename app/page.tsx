@@ -131,7 +131,7 @@ const produtosDestaque = [
   {
     titulo: "Muros e Gradis",
     descricao:
-      "Muro de placa e pilar de concreto, instalado em um dia por equipe própria. Modelo decorativo vazado disponível pra fechar o terreno inteiro com estilo.",
+      "Muro de placa e pilar de concreto, instalado em um dia por equipe própria.",
     badge: null,
     href: "/produtos/muros-e-gradis",
     foto: "/home/produtos/muro-pre-moldado-placas-lisas-pilaretes-005-central-concreto-ivoti.jpg",
@@ -156,6 +156,26 @@ const produtosDestaque = [
     href: "/produtos/fossa-e-filtro",
     foto: "/home/produtos/fossa.webp",
     alt: "Fossa séptica e filtro anaeróbio pré-moldados pela Central do Concreto em Ivoti",
+    grande: false,
+  },
+  {
+    titulo: "Cobogós",
+    descricao:
+      "Elemento vazado pré-moldado em 14 modelos, concreto natural ou pintado. Instalação inclusa e argamassa específica fornecida.",
+    badge: null,
+    href: "/cobogos",
+    foto: "/cluster-cobogos/cobogo-antichuva-concreto-ivoti-01.webp",
+    alt: "Muro construído com cobogó modelo Antichuva em concreto · Central do Concreto Ivoti RS",
+    grande: false,
+  },
+  {
+    titulo: "Revestimentos Externos",
+    descricao:
+      "Placa cimentícia pré-moldada em 6 modelos, acabamento natural ou efeito Cortein. Instaladores parceiros indicados a partir da sua cidade.",
+    badge: null,
+    href: "/revestimentos-externos",
+    foto: "/cluster-revestimentos-externos/revestimentos-diamante-3d-cimenticio-ivoti.webp",
+    alt: "Muro residencial com revestimento Diamante 3D cimentício · facetas diagonais em alto relevo · Central do Concreto Ivoti RS",
     grande: false,
   },
 ];
