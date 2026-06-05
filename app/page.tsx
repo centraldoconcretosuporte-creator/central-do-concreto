@@ -229,7 +229,7 @@ export default function HomePage() {
             Pré-moldados de concreto fabricados em Ivoti, com entrega e instalação na Serra Gaúcha
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Tubo de concreto, revestimento externo, cobogó, pergolado, muro, piso atérmico e fossa séptica saindo direto da forma. Caminhão próprio · raio de 120 km a partir de Ivoti · 16 cidades atendidas em Serra Gaúcha e Vale dos Sinos.
+            Fábrica de pré-moldado em Ivoti-RS · 7 categorias · entrega em raio de 120 km. Tubo, revestimento, cobogó, pergolado, muro, piso atérmico e fossa séptica saindo da forma. Caminhão próprio · 16 cidades atendidas em Serra Gaúcha e Vale dos Sinos.
           </p>
           <div className="flex justify-center mb-8">
             <a
