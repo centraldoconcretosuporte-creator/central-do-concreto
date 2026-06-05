@@ -126,7 +126,7 @@ const produtosDestaque = [
     href: "/produtos/pergolado-de-concreto",
     foto: "/home/produtos/pergolados.webp",
     alt: "Pergolado pré-moldado em concreto armado fabricado pela Central do Concreto em Ivoti",
-    grande: true,
+    grande: false,
   },
   {
     titulo: "Muros e Gradis",
@@ -151,7 +151,7 @@ const produtosDestaque = [
   {
     titulo: "Fossa e Filtro",
     descricao:
-      "Sistema de saneamento completo para imóvel sem rede de esgoto — fossa séptica + filtro anaeróbio pré-moldados, com instalação inclusa. Atende propriedade rural e bairros sem coleta pública.",
+      "Fossa séptica + filtro anaeróbio pré-moldados pra imóvel sem rede de esgoto, com instalação inclusa.",
     badge: null,
     href: "/produtos/fossa-e-filtro",
     foto: "/home/produtos/fossa.webp",
@@ -166,17 +166,17 @@ const produtosDestaque = [
     href: "/cobogos",
     foto: "/cluster-cobogos/cobogo-antichuva-concreto-ivoti-01.webp",
     alt: "Muro construído com cobogó modelo Antichuva em concreto · Central do Concreto Ivoti RS",
-    grande: false,
+    grande: true,
   },
   {
     titulo: "Revestimentos Externos",
     descricao:
-      "Placa cimentícia pré-moldada em 6 modelos, acabamento natural ou efeito Cortein. Instaladores parceiros indicados a partir da sua cidade.",
+      "Placa cimentícia pré-moldada em 6 modelos para fachada e muro, com efeito Cortein exclusivo · acabamento que envelhece como aço corten sem oxidar. Instaladores parceiros indicados a partir da sua cidade.",
     badge: null,
     href: "/revestimentos-externos",
     foto: "/cluster-revestimentos-externos/revestimentos-diamante-3d-cimenticio-ivoti.webp",
     alt: "Muro residencial com revestimento Diamante 3D cimentício · facetas diagonais em alto relevo · Central do Concreto Ivoti RS",
-    grande: false,
+    grande: true,
   },
 ];
 
@@ -229,7 +229,7 @@ export default function HomePage() {
             Pré-moldados de concreto fabricados em Ivoti, com entrega e instalação na Serra Gaúcha
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Tubo, pergolado, muro, piso atérmico e fossa séptica saindo direto da forma. Equipe própria de instalação na Serra · também entregamos no Vale dos Sinos e no Litoral Norte.
+            Tubo de concreto, revestimento externo, cobogó, pergolado, muro, piso atérmico e fossa séptica saindo direto da forma. Caminhão próprio · raio de 120 km a partir de Ivoti · 16 cidades atendidas em Serra Gaúcha e Vale dos Sinos.
           </p>
           <div className="flex justify-center mb-8">
             <a
@@ -262,9 +262,9 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Drenagem, pergolado, muro, piso e fossa · cinco famílias da fábrica</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Quais famílias a Central fabrica direto em Ivoti?</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Tudo pré-moldado em concreto, saindo direto da forma em Ivoti. Tubo e caixa de passagem para drenagem de obra; pergolado pra área externa residencial; muro de placa e pilar pra fechamento; piso atérmico de borda de piscina; e fossa séptica pra imóvel sem rede de esgoto.
+              Sete famílias pré-moldadas saindo direto da forma em Ivoti-RS: tubo de concreto, revestimento externo, cobogó, pergolado, muro, piso atérmico e fossa séptica. Tubo e caixa de passagem para drenagem de obra · revestimento cimentício pra fachada e muro · cobogó vazado decorativo em 14 modelos · pergolado pra área externa residencial com gancho de rede, tomada e iluminação embutidos · muro de placa e pilar pra fechamento de lote · piso atérmico antiderrapante de borda de piscina · fossa séptica + filtro anaeróbio pra imóvel sem rede de esgoto.
             </p>
           </div>
 
@@ -388,9 +388,9 @@ export default function HomePage() {
       {/* === LOGÍSTICA E ENTREGA · Push 5 · era "Onde atendemos" === */}
       <section className="py-16 md:py-24 bg-cc-black/95">
         <div className="mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Pra onde a Central entrega?</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Frete próprio até Caxias e equipe própria de instalação na Serra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
+            16 cidades atendidas em Serra Gaúcha e Vale dos Sinos com caminhão próprio, dentro do raio de 120 km a partir de Ivoti. Instalação com equipe própria para pergolados, cobogós e revestimentos. Sem pedido mínimo na região atendida · orçamento agilizado e atendimento humano direto pelo WhatsApp.
           </p>
 
           <div className="relative aspect-[16/9] max-w-3xl mx-auto mb-6 rounded-lg overflow-hidden">
@@ -414,7 +414,7 @@ export default function HomePage() {
                 href={`https://wa.me/5551996691757?text=${encodeURIComponent(`Olá, quero pedir orçamento pra entrega em ${cidade}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-between gap-2 bg-white/5 hover:bg-cc-whatsapp/15 text-white px-4 py-2.5 rounded-full text-sm transition-colors border border-white/15 hover:border-cc-whatsapp/60"
+                className="inline-flex items-center gap-2 border border-white/30 hover:bg-cc-whatsapp hover:border-cc-whatsapp hover:text-white px-4 py-2 rounded-full text-sm transition-colors"
               >
                 <span>{cidade}</span>
                 <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -511,9 +511,9 @@ export default function HomePage() {
       {/* FALA COM A GENTE */}
       <section className="py-16 md:py-24 bg-cc-black text-center">
         <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Mande foto de sua obra · orçamento em um dia útil</h2>
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Como pedir orçamento na Central?</h2>
           <p className="text-base text-white/85 mb-10">
-            Foto ou medidas pelo WhatsApp e o André responde com orçamento em 1 dia útil. Atendimento direto, sem intermediário, sem formulário.
+            Foto ou medidas da obra pelo WhatsApp · o André responde com orçamento agilizado e atendimento humano direto, sem intermediário, sem formulário.
           </p>
           <a
             href={WHATSAPP_URL}

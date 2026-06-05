@@ -8,9 +8,11 @@ const WHATSAPP_URL =
   "https://wa.me/5551996691757?text=Oi%2C%20visitei%20o%20site%20Central%20do%20Concreto%20e%20gostaria%20de%20atendimento.";
 
 const produtosLinks = [
+  { label: "Tubos de Concreto", href: "/tubo-de-concreto" },
+  { label: "Cobogós", href: "/cobogos" },
+  { label: "Revestimentos Externos", href: "/revestimentos-externos" },
   { label: "Pergolados de Concreto", href: "/produtos/pergolado-de-concreto" },
   { label: "Piso Atérmico", href: "/produtos/piso-atermico" },
-  { label: "Tubos de Concreto", href: "/produtos/tubos" },
   { label: "Caixas de Passagem", href: "/produtos/caixas-de-passagem" },
   { label: "Muros e Gradis", href: "/produtos/muros-e-gradis" },
   { label: "Postes e Meio-fio", href: "/produtos/postes-e-meio-fio" },
