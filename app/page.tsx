@@ -184,7 +184,7 @@ const objetivos = [
   { titulo: "Área externa e jardim", icone: "flower", href: "/produtos/piso-atermico" },
   { titulo: "Drenar o terreno", icone: "drop", href: "/tubo-de-concreto" },
   { titulo: "Construir muro", icone: "wall", href: "/produtos/muros-e-gradis" },
-  { titulo: "Saneamento rural", icone: "home", href: "/produtos/fossa-e-filtro" },
+  { titulo: "Revestir fachada ou muro", icone: "home", href: "/revestimentos-externos" },
 ];
 
 const cidades = [
