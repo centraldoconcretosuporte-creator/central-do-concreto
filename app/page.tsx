@@ -414,7 +414,7 @@ export default function HomePage() {
                 href={`https://wa.me/5551996691757?text=${encodeURIComponent(`Olá, quero pedir orçamento pra entrega em ${cidade}`)}`}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 border border-white/30 hover:bg-cc-whatsapp hover:border-cc-whatsapp hover:text-white px-4 py-2 rounded-full text-sm transition-colors"
+                className="inline-flex items-center gap-2 border border-white/30 text-white hover:bg-cc-whatsapp hover:border-cc-whatsapp px-4 py-2 rounded-full text-sm transition-colors"
               >
                 <span>{cidade}</span>
                 <svg className="w-4 h-4 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -430,6 +430,27 @@ export default function HomePage() {
           >
             Ver cobertura completa →
           </Link>
+        </div>
+      </section>
+
+      {/* FALA COM A GENTE */}
+      <section className="py-16 md:py-24 bg-cc-black text-center">
+        <div className="mx-auto max-w-3xl px-4">
+          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Como pedir orçamento na Central?</h2>
+          <p className="text-base text-white/85 mb-10">
+            Foto ou medidas da obra pelo WhatsApp · o André responde com orçamento agilizado e atendimento humano direto, sem intermediário, sem formulário.
+          </p>
+          <a
+            href={WHATSAPP_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg"
+          >
+            (51) 99669-1757
+          </a>
+          <p className="text-sm text-white/70 mt-6">
+            Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
+          </p>
         </div>
       </section>
 
@@ -505,27 +526,6 @@ export default function HomePage() {
             </a>
 
           </div>
-        </div>
-      </section>
-
-      {/* FALA COM A GENTE */}
-      <section className="py-16 md:py-24 bg-cc-black text-center">
-        <div className="mx-auto max-w-3xl px-4">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Como pedir orçamento na Central?</h2>
-          <p className="text-base text-white/85 mb-10">
-            Foto ou medidas da obra pelo WhatsApp · o André responde com orçamento agilizado e atendimento humano direto, sem intermediário, sem formulário.
-          </p>
-          <a
-            href={WHATSAPP_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg"
-          >
-            (51) 99669-1757
-          </a>
-          <p className="text-sm text-white/70 mt-6">
-            Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
-          </p>
         </div>
       </section>
     </>
