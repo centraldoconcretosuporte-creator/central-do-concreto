@@ -262,9 +262,9 @@ export default function HomePage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-6xl px-4">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Quais famílias a Central fabrica direto em Ivoti?</h2>
+            <h2 className="text-3xl md:text-4xl font-medium text-cc-black mb-3">Quais categorias a Central fabrica direto em Ivoti?</h2>
             <p className="text-base text-cc-gray-600 max-w-2xl mx-auto">
-              Sete famílias pré-moldadas saindo direto da forma em Ivoti-RS: tubo de concreto, revestimento externo, cobogó, pergolado, muro, piso atérmico e fossa séptica. Tubo e caixa de passagem para drenagem de obra · revestimento cimentício pra fachada e muro · cobogó vazado decorativo em 14 modelos · pergolado pra área externa residencial com gancho de rede, tomada e iluminação embutidos · muro de placa e pilar pra fechamento de lote · piso atérmico antiderrapante de borda de piscina · fossa séptica + filtro anaeróbio pra imóvel sem rede de esgoto.
+              Sete categorias de pré-moldado saindo da forma em Ivoti-RS: tubo, revestimento, cobogó, pergolado, muro, piso atérmico e fossa séptica. Tubo e caixa de passagem para drenagem de obra · revestimento cimentício pra fachada e muro · cobogó vazado decorativo em 14 modelos · pergolado pra área externa residencial com gancho de rede, tomada e iluminação embutidos · muro de placa e pilar pra fechamento de lote · piso atérmico antiderrapante de borda de piscina · fossa séptica + filtro anaeróbio pra imóvel sem rede de esgoto.
             </p>
           </div>
 
