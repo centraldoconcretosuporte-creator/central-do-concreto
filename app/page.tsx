@@ -39,7 +39,7 @@ const schemaHome = {
       "@id": `${SITE_URL}/#central`,
       "name": "Central do Concreto",
       "description":
-        "Pré-moldados e artefatos de concreto pra obra civil, drenagem e pergolados. Fornecimento direto da fábrica em Ivoti-RS com entrega própria, atendendo 22 cidades entre Vale dos Sinos, Serra Gaúcha e Litoral Norte.",
+        "Pré-moldados e artefatos de concreto pra obra civil, drenagem e pergolados. Fornecimento direto da fábrica em Ivoti-RS com entrega própria em 16 cidades da Serra Gaúcha e Vale dos Sinos, dentro de raio de 120 km.",
       "url": SITE_URL,
       "image": `${SITE_URL}/cc-logo.png`,
       "telephone": "+5551996691757",
