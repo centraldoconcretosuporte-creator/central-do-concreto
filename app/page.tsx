@@ -89,13 +89,13 @@ const schemaHome = {
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Central do Concreto · Pré-moldados de concreto em Ivoti-RS",
+  title: "Fábrica de pré-moldado em Ivoti-RS · Central do Concreto",
   description:
-    "Fabricante de artefatos de concreto direto da fábrica em Ivoti. Tubos de drenagem, caixas de passagem, fossa séptica, muros, pisantes e pergolados. Equipe própria de instalação · atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte.",
+    "Tubo, cobogó, revestimento, pergolado, muro, piso atérmico e fossa séptica saindo da forma em Ivoti-RS. Entrega em raio de 120 km com caminhão próprio.",
   openGraph: {
-    title: "Central do Concreto · Pré-moldados de concreto em Ivoti-RS",
+    title: "Fábrica de pré-moldado em Ivoti-RS · Central do Concreto",
     description:
-      "Direto da fábrica, com normas técnicas e equipe própria de instalação. Atendemos Serra Gaúcha, Vale dos Sinos e Litoral Norte.",
+      "Direto da fábrica em Ivoti-RS, com produto conforme NBR e equipe própria de instalação. Atendemos Serra Gaúcha e Vale dos Sinos em raio de 120 km.",
     type: "website",
     locale: "pt_BR",
     url: SITE_URL,
