@@ -110,6 +110,14 @@ export default function ProdutosPage() {
               </Link>
             ))}
           </div>
+          <p className="mt-10 text-center text-base text-cc-gray-700">
+            <Link
+              href="/artefatos-de-cimento"
+              className="text-cc-orange underline-offset-4 hover:underline font-medium"
+            >
+              Artefatos de cimento · guia completo da fábrica →
+            </Link>
+          </p>
         </div>
       </section>
     </>
