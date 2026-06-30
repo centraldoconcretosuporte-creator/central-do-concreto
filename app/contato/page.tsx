@@ -72,7 +72,7 @@ export default function ContatoPage() {
             <div className="bg-cc-gray-100 border border-cc-gray-200 rounded-xl p-6">
               <Eyebrow className="mb-3">Horário</Eyebrow>
               <p className="text-base text-cc-black leading-relaxed">
-                Segunda a Sexta · 8h às 18h
+                Segunda a Sexta · 8h às 21h
                 <br />
                 Sábado · 8h às 12h
                 <br />

@@ -56,12 +56,13 @@ const schemaHome = {
         "latitude": -29.62038,
         "longitude": -51.16389,
       },
+      "priceRange": "$$",
       "openingHoursSpecification": [
         {
           "@type": "OpeningHoursSpecification",
           "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
           "opens": "08:00",
-          "closes": "18:00",
+          "closes": "21:00",
         },
         {
           "@type": "OpeningHoursSpecification",
