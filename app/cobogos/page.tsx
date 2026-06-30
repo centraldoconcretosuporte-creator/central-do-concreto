@@ -8,9 +8,9 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 const PAGE_TITLE =
-  "Cobogós de Concreto: 14 Modelos, Instalação e Entrega | Central do Concreto";
+  "Cobogó de Concreto para Muro e Fachada · 14 Modelos · Ivoti-RS | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Cobogó de concreto pré-moldado em 14 modelos, natural ou pintado, com instalação por equipe própria e entrega no raio de 120 km a partir de Ivoti-RS. Central do Concreto, fabricação local.";
+  "Cobogó de concreto em 14 modelos para muro e fachada, natural ou pintado. Fábrica em Ivoti, instalação inclusa e entrega em 120 km. Orçamento no WhatsApp.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,

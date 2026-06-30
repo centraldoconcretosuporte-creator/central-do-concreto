@@ -7,9 +7,9 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/muro`;
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 const PAGE_TITLE =
-  "Muro de Cobogó: Privacidade com Ventilação Natural em 14 Modelos | Central do Concreto";
+  "Muro de Cobogó de Concreto em Ivoti-RS · Privacidade e Ventilação | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Muro de cobogó em concreto pré-moldado · 4 modelos da Central recomendados pra privacidade, ventilação natural e durabilidade externa. Entrega no raio de 120 km a partir de Ivoti-RS.";
+  "Muro de cobogó de concreto: privacidade com ventilação natural, instalação inclusa e entrega em 120 km a partir de Ivoti. Peça seu orçamento no WhatsApp.";
 const OG_IMAGE = `${SITE_URL}/cluster-cobogos/cobogo-antichuva-concreto-ivoti-02.webp`;
 
 type Modelo = {
