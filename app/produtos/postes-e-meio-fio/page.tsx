@@ -5,8 +5,9 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 export const metadata: Metadata = {
-  title: "Postes e Meio-fio · Central do Concreto",
-  description: "Postes de concreto · meio-fio pra rua e infraestrutura urbana.",
+  title: "Poste de Concreto (Poste de Cimento) e Meio-fio · Ivoti-RS | Central do Concreto",
+  description:
+    "Poste de concreto — também chamado poste de cimento — e meio-fio para cerca, rua e infraestrutura. Fábrica em Ivoti-RS, entrega em 120 km. Orçamento no WhatsApp.",
   alternates: { canonical: `${SITE_URL}/produtos/postes-e-meio-fio` },
 };
 

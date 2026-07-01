@@ -5,9 +5,9 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 export const metadata: Metadata = {
-  title: "Muros e Gradis · Central do Concreto",
+  title: "Muro Pré-moldado de Concreto (Muro de Cimento) e Gradil · Ivoti-RS | Central do Concreto",
   description:
-    "Muro pré-moldado com placas e pilares · gradil decorativo vazado em concreto.",
+    "Muro pré-moldado de concreto — o muro de cimento com placas e pilares — e gradil decorativo vazado. Fábrica em Ivoti-RS, entrega em 120 km. Orçamento no WhatsApp.",
   alternates: { canonical: `${SITE_URL}/produtos/muros-e-gradis` },
 };
 

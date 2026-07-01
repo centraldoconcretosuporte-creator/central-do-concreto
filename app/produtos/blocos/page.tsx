@@ -5,8 +5,9 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 export const metadata: Metadata = {
-  title: "Blocos de Concreto · Central do Concreto",
-  description: "Blocos de concreto pra alvenaria estrutural e vedação.",
+  title: "Bloco de Concreto (Bloco de Cimento) para Alvenaria · Ivoti-RS | Central do Concreto",
+  description:
+    "Bloco de concreto para alvenaria estrutural e vedação — o popular bloco de cimento. Fábrica em Ivoti-RS, entrega em 120 km com caminhão próprio. Orçamento no WhatsApp.",
   alternates: { canonical: `${SITE_URL}/produtos/blocos` },
 };
 
