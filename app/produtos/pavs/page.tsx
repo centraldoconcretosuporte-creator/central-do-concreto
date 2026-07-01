@@ -9,7 +9,7 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 
 const PAGE_TITLE = "Piso Intertravado de Concreto · Paver e Bloquete · Ivoti";
 const PAGE_DESCRIPTION =
-  "Piso intertravado de concreto — o paver, ou bloquete — em Ivoti e região, entrega em até 120 km. Peças 6 e 8 cm com laudo de resistência. Orçamento no WhatsApp.";
+  "Piso intertravado de concreto — o paver, ou bloquete — em Ivoti e região, entrega em até 120 km. Peças 6 e 8 cm com laudo de 45 MPa. Orçamento no WhatsApp.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -84,7 +84,7 @@ const faqs = [
   },
   {
     q: "Qual a resistência do piso intertravado?",
-    a: "As peças seguem a NBR 9781, com resistência mínima de 35 MPa, e a Central fornece o laudo [CONFIRMAR MPa]. Essa norma garante que o pavimento aguenta a carga prevista sem fissurar.",
+    a: "As peças seguem a NBR 9781 e têm 45 MPa em laudo, acima do mínimo de 35 MPa da norma. Essa resistência garante que o pavimento aguenta a carga prevista sem fissurar.",
   },
   {
     q: "A Central entrega o paver na minha cidade?",
@@ -297,8 +297,9 @@ export default function PavsPage() {
           constante: pátio, entrada de galpão, estacionamento e área industrial.
           Os dois seguem a NBR 9781, norma das peças de concreto para
           pavimentação, que exige resistência mínima de 35 MPa e espessura de no
-          mínimo 60 mm. As peças da Central vêm com laudo de resistência{" "}
-          [CONFIRMAR MPa]. Na dúvida entre uma e outra, a regra é simples: se
+          mínimo 60 mm. As peças da Central têm 45 MPa de resistência em laudo —
+          acima do mínimo de 35 MPa que a norma exige. Na dúvida entre uma e
+          outra, a regra é simples: se
           caminhão pisa, vá de 8 cm. A Central fornece as duas espessuras e ajuda
           a dimensionar pelo uso da sua área.
         </p>
