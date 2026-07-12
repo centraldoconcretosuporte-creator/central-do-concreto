@@ -30,9 +30,9 @@ const modelos: Modelo[] = [
     bio: "Diagonal triangular vazada · arranjo de canto duplo · pegada contemporânea pra muros residenciais.",
     descricao:
       "Cobogó Urbano no muro cria diagonal contínua de triângulos vazados · ideal pra muros residenciais e comerciais com pegada contemporânea. Geometria simples que combina com fachada moderna · ótimo aliado pra projetos arquitetônicos minimalistas. Visual ganha presença em muros de 2 metros ou mais.",
-    cardFoto: "/cluster-cobogos/cobogo-urbano-concreto-ivoti-02.webp",
+    cardFoto: "/cluster-cobogos/cobogo-urbano-concreto-ivoti-01.webp",
     cardAlt:
-      "Cobogó modelo Urbano em concreto pré-moldado · módulo individual quadrado com diagonal triangular vazada, vista isolada sobre tapete de grama sintética com flor branca decorativa · Central do Concreto Ivoti RS",
+      "Cobogó modelo Urbano em concreto pré-moldado · muro de canto duplo com módulos quadrados subdivididos por diagonal, vazado triangular, ambiente externo com vegetação · Central do Concreto Ivoti RS",
     anchorFoto: "/cluster-cobogos/cobogo-urbano-concreto-ivoti-01.webp",
     anchorAlt:
       "Cobogó modelo Urbano em concreto pré-moldado · muro de canto duplo com módulos quadrados subdivididos por diagonal, vazado triangular, ambiente externo com vegetação · Central do Concreto Ivoti RS",
@@ -69,9 +69,9 @@ const modelos: Modelo[] = [
     bio: "16 furos quadrados em malha 4×4 com superfícies inclinadas · técnico pra muros expostos a chuva direta.",
     descricao:
       "Cobogó Antichuva no muro é a escolha técnica pra muros expostos a chuva direta e vento forte · 16 furos quadrados com superfícies inclinadas impedem entrada de água sem comprometer a ventilação. Padrão regular tipo grelha cria visual ordenado · combina com qualquer estilo arquitetônico.",
-    cardFoto: "/cluster-cobogos/cobogo-antichuva-concreto-ivoti-01.webp",
+    cardFoto: "/cluster-cobogos/cobogo-antichuva-concreto-ivoti-02.webp",
     cardAlt:
-      "Cobogó modelo Antichuva em concreto pré-moldado · módulo individual com 16 quadrados vazados em arranjo 4 por 4, padrão regular tipo grelha, vista isolada sobre tapete de grama sintética com flor branca decorativa · Central do Concreto Ivoti RS",
+      "Cobogó modelo Antichuva em concreto pré-moldado · muro construído com módulos Antichuva em série, padrão de pequenos quadrados vazados em malha regular, ambiente externo com sombras suaves e vegetação ao fundo · Central do Concreto Ivoti RS",
     anchorFoto: "/cluster-cobogos/cobogo-antichuva-concreto-ivoti-02.webp",
     anchorAlt:
       "Cobogó modelo Antichuva em concreto pré-moldado · muro construído com módulos Antichuva em série, padrão de pequenos quadrados vazados em malha regular, ambiente externo com sombras suaves e vegetação ao fundo · Central do Concreto Ivoti RS",
@@ -82,9 +82,9 @@ const modelos: Modelo[] = [
     bio: "Malha fechada de furos quadrados · desenho sóbrio e geométrico · a maior privacidade da linha em muro.",
     descricao:
       "Furos quadrados pequenos em malha apertada — o desenho mais fechado do catálogo, ideal quando privacidade é prioridade. A grade regular passa sobriedade e combina com fachada contemporânea; em grafite, vira um muro de forte presença sem abrir mão da ventilação. Onde outros modelos deixam ver o outro lado, o Ao Quadrado fecha a visão e mantém o ar passando.",
-    cardFoto: "/cluster-cobogos/cobogo-ao-quadrado-concreto-ivoti-01.webp",
+    cardFoto: "/cluster-cobogos/cobogo-ao-quadrado-concreto-ivoti-02.webp",
     cardAlt:
-      "Cobogó Ao Quadrado de concreto, peça de malha quadrada — Central do Concreto, Ivoti-RS",
+      "Muro de cobogó Ao Quadrado em grafite, malha fechada de furos quadrados — Ivoti-RS",
     anchorFoto: "/cluster-cobogos/cobogo-ao-quadrado-concreto-ivoti-02.webp",
     anchorAlt:
       "Muro de cobogó Ao Quadrado em grafite, malha fechada de furos quadrados — Ivoti-RS",
@@ -95,9 +95,9 @@ const modelos: Modelo[] = [
     bio: "Anéis circulares entrelaçados · geometria orgânica que quebra a rigidez · muito ar e luz no muro.",
     descricao:
       "Círculos que se cruzam formam um padrão orgânico — o contraponto às linhas retas dos outros modelos. Rende um muro leve, com bastante passagem de luz e ar, e um ar retrô-moderno que valoriza a fachada residencial. É o desenho que estampa a página do cluster: funciona tão bem em muro que virou a imagem principal dos cobogós da Central.",
-    cardFoto: "/cluster-cobogos/cobogo-eclipse-concreto-ivoti-01.webp",
+    cardFoto: "/cluster-cobogos/cobogo-eclipse-concreto-ivoti-02.webp",
     cardAlt:
-      "Cobogó Eclipse de concreto, peça de círculos entrelaçados — Central do Concreto, Ivoti-RS",
+      "Muro de cobogó Eclipse com círculos entrelaçados em fachada residencial — Ivoti-RS",
     anchorFoto: "/cluster-cobogos/cobogo-eclipse-concreto-ivoti-02.webp",
     anchorAlt:
       "Muro de cobogó Eclipse com círculos entrelaçados em fachada residencial — Ivoti-RS",
@@ -108,9 +108,9 @@ const modelos: Modelo[] = [
     bio: "Arcos duplos em sequência · o mais decorativo da linha · muro que assume o papel de fachada.",
     descricao:
       "Arcos duplos repetidos dão ao Fenestra um desenho de janela clássica em versão vazada — o modelo mais decorativo da linha. Ele pede protagonismo: em muro pintado, como o bordô, deixa de ser divisa e vira o ponto forte da fachada. Bom pra quem quer que o muro seja parte do projeto, não só um limite.",
-    cardFoto: "/cluster-cobogos/cobogo-fenestra-concreto-ivoti-01.webp",
+    cardFoto: "/cluster-cobogos/cobogo-fenestra-concreto-ivoti-02.webp",
     cardAlt:
-      "Cobogó Fenestra de concreto, peça de arcos duplos — Central do Concreto, Ivoti-RS",
+      "Muro de cobogó Fenestra pintado em bordô, arcos duplos — Ivoti-RS",
     anchorFoto: "/cluster-cobogos/cobogo-fenestra-concreto-ivoti-02.webp",
     anchorAlt:
       "Muro de cobogó Fenestra pintado em bordô, arcos duplos — Ivoti-RS",
@@ -121,9 +121,9 @@ const modelos: Modelo[] = [
     bio: "Barras alternadas em treliça · textura ritmada e leve · referência oriental discreta no muro.",
     descricao:
       "Barras que se alternam formam uma treliça ritmada, inspirada nos painéis vazados orientais. O resultado é um muro leve, de textura marcada e boa ventilação, que fica ainda mais vivo quando pintado — como no branco e amarelo. Encaixa em projeto que quer movimento sem o peso de uma malha fechada.",
-    cardFoto: "/cluster-cobogos/cobogo-taco-chines-concreto-ivoti-01.webp",
+    cardFoto: "/cluster-cobogos/cobogo-taco-chines-concreto-ivoti-02.webp",
     cardAlt:
-      "Cobogó Taco Chinês de concreto, peça de barras alternadas — Central do Concreto, Ivoti-RS",
+      "Muro de cobogó Taco Chinês em branco e amarelo, barras alternadas — Ivoti-RS",
     anchorFoto: "/cluster-cobogos/cobogo-taco-chines-concreto-ivoti-02.webp",
     anchorAlt:
       "Muro de cobogó Taco Chinês em branco e amarelo, barras alternadas — Ivoti-RS",
@@ -141,7 +141,7 @@ const faqs = [
   },
   {
     q: "Quanto tempo dura um muro de cobogó exposto à intempérie?",
-    a: "Cobogó de concreto pré-moldado da Central tem durabilidade documentada acima de 30 anos quando bem assentado e bem rejuntado. O concreto não sofre como cerâmico (que trinca) nem como gesso (que desfaz). Manutenção restrita a lavagem ocasional · não precisa de pintura periódica se for natural.",
+    a: "Cobogó de concreto pré-moldado da Central tem durabilidade de décadas quando bem assentado e bem rejuntado. O concreto não sofre como cerâmico (que trinca) nem como gesso (que desfaz). Manutenção restrita a lavagem ocasional · não precisa de pintura periódica se for natural.",
   },
   {
     q: "Cobogó precisa de pilar de sustentação? Quantos por metro?",
@@ -316,7 +316,7 @@ export default function CobogoMuroPage() {
               Raio 120 km · 16 cidades
             </span>
             <span className="bg-white/15 backdrop-blur px-3 py-1 rounded">
-              Pintura em fábrica
+              Consulte instalação na sua cidade
             </span>
           </div>
         </div>
@@ -382,7 +382,7 @@ export default function CobogoMuroPage() {
           Muro de cobogó vence muro fechado em três pontos: ventilação natural sem perder privacidade, estética mais leve e custo competitivo de mão de obra · sem comprometer segurança porque é parede de concreto pré-moldado.
         </p>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
-          Diferente do muro convencional de bloco cerâmico ou tijolo maciço, o cobogó deixa o ar passar e a luz entrar sem abrir o terreno. Quem está dentro vê o reflexo difuso da paisagem · quem está fora vê uma textura geométrica contínua, não o quintal. A barreira visual é real a partir de 1,5 metro de distância e o vento atravessa, evitando o efeito de túmulo que muro fechado cria.
+          Diferente do muro convencional de bloco cerâmico ou tijolo maciço, o cobogó deixa o ar passar e a luz entrar sem abrir o terreno. Quem está dentro vê o reflexo difuso da paisagem · quem está fora vê uma textura geométrica contínua, não o quintal. A barreira visual é real a partir de 1,5 metro de distância e o vento atravessa, evitando a sensação de confinamento que um muro fechado cria.
         </p>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
           Em fachada moderna ou minimalista, o cobogó também resolve estética · o muro deixa de ser apenas um divisor de propriedade e vira elemento de composição. Cor neutra do concreto natural combina com qualquer paleta de fachada · pintura em fábrica permite contraste planejado.
@@ -408,10 +408,10 @@ export default function CobogoMuroPage() {
           Quais modelos da Central funcionam melhor em muro?
         </h2>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
-          Oito modelos da Central cobrem os cenários de muro — do mais fechado, o Ao Quadrado, ao mais decorativo, o Fenestra, passando pelo contemporâneo Urbano e o técnico Antichuva. Qual escolher depende do estilo da fachada, da exposição à chuva e de quanta privacidade você quer; o Citadino Dupla Face, por exemplo, tem acabamento nos dois lados pra quem divide o muro com o vizinho.
+          Oito modelos da Central cobrem os cenários de muro, do mais fechado ao mais decorativo. Qual escolher depende de três variáveis: o estilo da fachada, a exposição à chuva direta e quanta privacidade você quer nos dois lados.
         </p>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
-          A escolha entre eles depende de três variáveis · estilo da fachada, exposição a chuva direta e visibilidade dos dois lados do muro. O Urbano cabe em projetos contemporâneos com leitura geométrica forte. O Citadino Dupla Face resolve divisas entre vizinhos onde os dois lados ficam expostos. O Trançado entrega textura industrial leve · combina com fachadas ortogonais. O Antichuva é a escolha técnica pra muros expostos a chuva forte ou vento de quadrante seco.
+          Pra privacidade máxima, o Ao Quadrado é o mais fechado. Pra muro exposto a chuva e vento, o Antichuva é a escolha técnica. Entre vizinhos, o Citadino Dupla Face resolve os dois lados. Pra um muro que vira fachada, vá de Fenestra (arcos duplos) ou Eclipse (círculos). E pra textura mais leve, o Urbano contemporâneo, o Trançado industrial ou o Taco Chinês de pegada oriental.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 my-10">
           {modelos.map((m) => (
