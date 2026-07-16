@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ConsentBanner from "@/components/ConsentBanner";
 
 export const metadata: Metadata = {
   title: "Central do Concreto — Artefatos de Concreto em Ivoti-RS",
@@ -45,9 +47,34 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body className="min-h-screen flex flex-col">
+        {/* Consent Mode v2 · default DENIED antes do gtag.js (LGPD). Inline cru garante a ordem. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              window.gtag = gtag;
+              gtag('consent', 'default', {
+                analytics_storage: 'denied',
+                ad_storage: 'denied',
+                ad_user_data: 'denied',
+                ad_personalization: 'denied',
+                wait_for_update: 500
+              });
+            `,
+          }}
+        />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-DQLQ8E3VRJ"
+          strategy="afterInteractive"
+        />
+        <Script id="ga-init" strategy="afterInteractive">
+          {`gtag('js', new Date()); gtag('config', 'G-DQLQ8E3VRJ');`}
+        </Script>
         <Header />
         <main className="flex-1">{children}</main>
         <Footer />
+        <ConsentBanner />
       </body>
     </html>
   );
