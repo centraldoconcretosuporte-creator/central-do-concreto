@@ -1,4 +1,5 @@
 import Link from "next/link";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const navegacao = [
   { label: "Início", href: "/" },
@@ -41,14 +42,15 @@ export default function Footer() {
               Sábado · 8h às 12h
             </p>
             <p className="text-sm text-white/90 font-medium">
-              <a
+              <WhatsAppLink
                 href="https://wa.me/5551996691757"
+                source="footer-telefone"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-cc-orange transition-colors"
               >
                 (51) 99669-1757
-              </a>
+              </WhatsAppLink>
             </p>
           </div>
 
