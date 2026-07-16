@@ -2,7 +2,7 @@
 "use client";
 
 import { gtagEvent } from "@/lib/gtag";
-import type { AnchorHTMLAttributes, ReactNode } from "react";
+import type { AnchorHTMLAttributes, MouseEvent, ReactNode } from "react";
 
 type Props = {
   href: string;
@@ -10,14 +10,18 @@ type Props = {
   children: ReactNode;
 } & AnchorHTMLAttributes<HTMLAnchorElement>;
 
-export default function WhatsAppLink({ href, source, children, target, rel, ...rest }: Props) {
+export default function WhatsAppLink({ href, source, children, target, rel, onClick, ...rest }: Props) {
+  const handleClick = (e: MouseEvent<HTMLAnchorElement>) => {
+    gtagEvent("whatsapp_click", { source, destination: "cc" });
+    onClick?.(e);
+  };
   return (
     <a
       href={href}
       data-source={source}
       target={target ?? "_blank"}
       rel={rel ?? "noopener noreferrer"}
-      onClick={() => gtagEvent("whatsapp_click", { source, destination: "cc" })}
+      onClick={handleClick}
       {...rest}
     >
       {children}

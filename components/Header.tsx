@@ -262,6 +262,7 @@ export default function Header() {
               <WhatsAppLink
                 href={WHATSAPP_URL}
                 source="header-menu-mobile"
+                onClick={() => setMenuOpen(false)}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white text-center py-3 rounded-full font-semibold transition-colors"
