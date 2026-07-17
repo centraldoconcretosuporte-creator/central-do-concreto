@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import {
   CIDADES_ATENDIMENTO,
   CIDADES_SERRA,
@@ -495,14 +496,15 @@ function CidadeSerraView({ c }: { c: Cidade }) {
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-8 max-w-2xl mx-auto">
             Pergolados, blocos, tubos e artefatos de concreto pré-moldado direto da fábrica em Ivoti-RS · entrega em {c.nome} e região da Serra Gaúcha.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_PRE_MOLDADOS_URL}
+            source={`cidade-hero-${c.slug}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
             Pedir orçamento no WhatsApp
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
 
@@ -534,14 +536,15 @@ function CidadeSerraView({ c }: { c: Cidade }) {
           <p className="text-base sm:text-lg mb-6 opacity-95">
             Manda no WhatsApp a medida estimada e o produto · respondemos no mesmo dia.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_PRE_MOLDADOS_URL}
+            source={`cidade-cta-${c.slug}`}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-white text-cc-orange hover:bg-cc-gray-100 px-7 py-3.5 rounded-md text-base font-bold transition-colors mb-6"
           >
             Falar no WhatsApp · (51) 99669-1757
-          </a>
+          </WhatsAppLink>
           <p className="text-sm opacity-90">
             Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS
           </p>
