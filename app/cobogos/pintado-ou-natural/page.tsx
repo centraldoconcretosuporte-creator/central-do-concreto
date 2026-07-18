@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/pintado-ou-natural`;
@@ -222,12 +223,13 @@ export default function CobogoPintadoOuNaturalPage() {
           <p className="text-base md:text-lg mb-8 leading-relaxed text-white/90">
             Catálogo Suvinil aberto · pintura acrílica aplicada em fábrica nas 6 faces da peça ou concreto natural cru, sem intermediário entre fábrica e canteiro.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_HERO_URL}
+            source="cobogo-pintado-hero"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white font-semibold px-6 py-3 rounded-md transition-colors"
           >
             Ver cores e modelos pelo WhatsApp
-          </a>
+          </WhatsAppLink>
           <div className="mt-6 flex flex-wrap gap-3 text-sm">
             <span className="bg-white/15 backdrop-blur px-3 py-1 rounded">
               Natural ou pintado
@@ -279,14 +281,15 @@ export default function CobogoPintadoOuNaturalPage() {
           <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
             Concreto natural · prazo padrão, custo menor, liberdade pra pintar depois com cor de obra.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_NATURAL_URL}
+            source="cobogo-pintado-natural"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
             Pedir cobogó natural
-          </a>
+          </WhatsAppLink>
         </div>
 
         {/* H2 3 */}
@@ -311,14 +314,15 @@ export default function CobogoPintadoOuNaturalPage() {
           <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
             Acabamento pronto · cobogó pintado em fábrica nas 6 faces na cor que você escolher do catálogo Suvinil.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_PINTADO_URL}
+            source="cobogo-pintado-pintado"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
             Pedir cobogó pintado em fábrica
-          </a>
+          </WhatsAppLink>
         </div>
 
         {/* H2 4 */}
@@ -436,12 +440,13 @@ export default function CobogoPintadoOuNaturalPage() {
           <p className="text-base md:text-lg text-cc-gray-700 mb-6 leading-relaxed">
             Mande modelo, cor se for o caso e medidas · resposta humana e agilizada direto do André no mesmo dia útil, sem intermediário e sem formulário.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_FINAL_URL}
+            source="cobogo-pintado-final"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
             Falar com o André
-          </a>
+          </WhatsAppLink>
         </div>
       </article>
 
@@ -455,12 +460,19 @@ export default function CobogoPintadoOuNaturalPage() {
             Raio de 120 km a partir de Ivoti-RS · os dois acabamentos entregues com caminhão próprio, descarga ao lado do canteiro de obra.
           </p>
           <div className="flex flex-wrap justify-center gap-3">
-            {cidades.map((c) => (
-              <a
+            {cidades.map((c) => {
+              const slug = c
+                .toLowerCase()
+                .replace(/\s+/g, "-")
+                .normalize("NFD")
+                .replace(/[^a-z0-9-]/g, "");
+              return (
+              <WhatsAppLink
                 key={c}
                 href={`https://wa.me/5551996691757?text=${encodeURIComponent(
                   `Olá, quero saber sobre cobogó pintado ou natural com entrega em ${c}.`
                 )}`}
+                source={`cobogo-pintado-cidade-${slug}`}
                 className="inline-flex items-center gap-2 border border-white/30 hover:bg-cc-whatsapp hover:border-cc-whatsapp hover:text-white px-4 py-2 rounded-full text-sm transition-colors"
               >
                 <svg
@@ -473,8 +485,9 @@ export default function CobogoPintadoOuNaturalPage() {
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                 </svg>
                 {c}
-              </a>
-            ))}
+              </WhatsAppLink>
+              );
+            })}
           </div>
         </div>
       </section>
