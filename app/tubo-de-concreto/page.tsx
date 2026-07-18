@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const CANONICAL_URL = "https://centraldoconcretoentrega.com.br/tubo-de-concreto";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
@@ -111,8 +112,9 @@ export default function TuboDeConcretoPage() {
             Tubo de concreto para drenagem de águas pluviais, bueiros e galerias. A Central do Concreto fornece e entrega em Ivoti, Serra Gaúcha e Vale dos Sinos.
           </p>
           <div className="flex justify-center mb-8">
-            <a
+            <WhatsAppLink
               href={WHATSAPP_URL}
+              source="tubo-de-concreto-hero"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
@@ -121,7 +123,7 @@ export default function TuboDeConcretoPage() {
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
               Orçamento agilizado pelo WhatsApp
-            </a>
+            </WhatsAppLink>
           </div>
           <p className="text-sm text-white/85">
             ✓ Pronta entrega · ✓ Caminhão próprio · ✓ Ivoti e 15 cidades no RS
@@ -239,8 +241,9 @@ export default function TuboDeConcretoPage() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg font-semibold text-cc-black mb-4 text-center">Qual tipo de encaixe você precisa?</p>
-              <a
+              <WhatsAppLink
                 href={WHATSAPP_URL}
+                source="tubo-de-concreto-cta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-2xl bg-green-500 px-8 py-4 text-lg font-bold text-white hover:bg-green-600 transition-colors"
@@ -250,7 +253,7 @@ export default function TuboDeConcretoPage() {
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.117 1.527 5.845L.057 23.998l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.359-.214-3.742.981 1.001-3.648-.234-.374A9.818 9.818 0 012.182 12C2.182 6.577 6.577 2.182 12 2.182S21.818 6.577 21.818 12 17.423 21.818 12 21.818z"/>
                 </svg>
                 Quer saber qual encaixe usar? Fale pelo WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
 
@@ -367,8 +370,9 @@ export default function TuboDeConcretoPage() {
             </div>
             <div className="mt-8 text-center">
               <p className="text-lg font-semibold text-cc-black mb-4">Precisa definir o diâmetro certo para sua obra?</p>
-              <a
+              <WhatsAppLink
                 href={WHATSAPP_URL}
+                source="tubo-de-concreto-cta-2"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-3 rounded-2xl bg-green-500 px-8 py-4 text-lg font-bold text-white hover:bg-green-600 transition-colors"
@@ -378,7 +382,7 @@ export default function TuboDeConcretoPage() {
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.117 1.527 5.845L.057 23.998l6.304-1.654A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.373l-.359-.214-3.742.981 1.001-3.648-.234-.374A9.818 9.818 0 012.182 12C2.182 6.577 6.577 2.182 12 2.182S21.818 6.577 21.818 12 17.423 21.818 12 21.818z"/>
                 </svg>
                 Falar com a equipe pelo WhatsApp
-              </a>
+              </WhatsAppLink>
             </div>
           </section>
 
@@ -475,14 +479,15 @@ export default function TuboDeConcretoPage() {
               </p>
               <p>
                 Fale com a equipe da Central do Concreto pelo WhatsApp{" "}
-                <a
+                <WhatsAppLink
                   href={WHATSAPP_URL}
+                  source="tubo-de-concreto-cta-3"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
                 >
                   (51) 99669-1757
-                </a>
+                </WhatsAppLink>
                 . Descreva a obra — o que precisa drenar, o tipo de via e a região — e a equipe
                 orienta sobre encaixe, classe e diâmetro, e prepara o orçamento.
               </p>
@@ -517,8 +522,9 @@ export default function TuboDeConcretoPage() {
               "Canela",
               "Gramado",
             ].map((cidade) => (
-              <a
+              <WhatsAppLink
                 key={cidade}
+                source={`tubo-de-concreto-cidade-${cidade.toLowerCase().replace(/\s+/g, "-")}`}
                 href={`${WHATSAPP_URL}?text=${encodeURIComponent(
                   `Olá! Quero falar sobre tubos de concreto com entrega em ${cidade}.`,
                 )}`}
@@ -536,7 +542,7 @@ export default function TuboDeConcretoPage() {
                 >
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                 </svg>
-              </a>
+              </WhatsAppLink>
             ))}
           </div>
 
@@ -562,8 +568,9 @@ export default function TuboDeConcretoPage() {
           <p className="text-white/70 text-sm mb-8">
             Fale com a equipe — orçamento rápido pelo WhatsApp.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_URL}
+            source="tubo-de-concreto-cta-4"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex w-full sm:w-auto items-center justify-center gap-3 rounded-2xl bg-green-500 px-8 py-4 text-lg font-bold text-white transition-colors hover:bg-green-600"
@@ -578,7 +585,7 @@ export default function TuboDeConcretoPage() {
               <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
             </svg>
             Pedir orçamento pelo WhatsApp
-          </a>
+          </WhatsAppLink>
         </div>
       </div>
 
@@ -628,14 +635,15 @@ export default function TuboDeConcretoPage() {
             Conte sobre a obra pelo WhatsApp · a equipe da Central orienta sobre encaixe, classe e
             diâmetro e prepara o orçamento.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_URL}
+            source="tubo-de-concreto-final"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium text-base md:text-lg transition-colors shadow-lg"
           >
             Falar no WhatsApp · (51) 99669-1757
-          </a>
+          </WhatsAppLink>
           <p className="mt-6 text-sm text-white/80">
             Endereço: Av. Bom Jardim, 149 — Loja 02 — Vista Alegre, Ivoti-RS
             <br />

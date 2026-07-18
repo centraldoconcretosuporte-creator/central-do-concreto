@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
@@ -48,14 +49,15 @@ export default function RevestimentosDeConcretoPage() {
             superior à madeira ou cerâmica em áreas externas. Ficha técnica completa em breve · já
             está no catálogo · pra orçamento ou dúvida fala direto pelo WhatsApp.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_URL}
+            source="revestimentos-de-concreto-cta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-7 py-3.5 rounded-full font-medium transition-colors shadow-lg"
           >
             Falar no WhatsApp · (51) 99669-1757
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
     </>

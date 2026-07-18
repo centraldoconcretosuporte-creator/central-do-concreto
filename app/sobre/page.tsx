@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 import { paragrafoGrupo } from "@/lib/grupo-ivoti-canon";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
@@ -101,14 +102,15 @@ export default function SobrePage() {
         <div className="mx-auto max-w-3xl px-4">
           <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Quer conversar?</h2>
           <p className="text-base text-white/85 mb-10">Falamos pelo WhatsApp · resposta rápida.</p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_URL}
+            source="sobre-cta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg"
           >
             (51) 99669-1757
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
     </>

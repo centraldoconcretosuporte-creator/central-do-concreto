@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
@@ -37,8 +38,9 @@ export default function ContatoPage() {
       <section className="py-16 md:py-24 bg-white">
         <div className="mx-auto max-w-5xl px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <a
+            <WhatsAppLink
               href="https://wa.me/5551996691757"
+              source="contato-cta"
               target="_blank"
               rel="noopener noreferrer"
               className="group bg-cc-gray-100 border border-cc-gray-200 hover:border-cc-black rounded-xl p-6 transition-colors"
@@ -48,7 +50,7 @@ export default function ContatoPage() {
                 (51) 99669-1757
               </p>
               <p className="text-sm text-cc-gray-600">Resposta rápida · clique pra abrir conversa</p>
-            </a>
+            </WhatsAppLink>
 
             <div className="bg-cc-gray-100 border border-cc-gray-200 rounded-xl p-6">
               <Eyebrow className="mb-3">Endereço</Eyebrow>

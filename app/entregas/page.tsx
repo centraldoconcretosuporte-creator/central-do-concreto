@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Eyebrow } from "@/components/Eyebrow";
+import WhatsAppLink from "@/components/WhatsAppLink";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
@@ -113,14 +114,15 @@ export default function EntregasPage() {
           <p className="text-base text-white/85 mb-10">
             Entra em contato · podemos avaliar entrega especial.
           </p>
-          <a
+          <WhatsAppLink
             href={WHATSAPP_URL}
+            source="entregas-cta"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 bg-cc-whatsapp hover:bg-cc-whatsapp-hover text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors shadow-lg"
           >
             Consultar · (51) 99669-1757
-          </a>
+          </WhatsAppLink>
         </div>
       </section>
     </>
