@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [
     { url: SITE_URL, lastModified: now, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/tubo-de-concreto`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/mourao-de-concreto`, lastModified: now, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/tubo-de-concreto/tipos-de-encaixe`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/classes-de-carga`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/diametros`, lastModified: now, changeFrequency: "monthly", priority: 0.8 },
