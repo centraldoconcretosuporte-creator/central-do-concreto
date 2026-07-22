@@ -139,52 +139,72 @@ export default function MouraoDeConcretoPage() {
         </div>
       </section>
 
-      {/* GALERIA + ÍNDICE */}
-      <section className="bg-white pt-16 md:pt-20" aria-label="Fotos e índice de mourão de concreto">
+      {/* ÍNDICE */}
+      <section className="bg-white pt-16 md:pt-20" aria-label="Índice do guia de mourão de concreto">
         <div className="mx-auto max-w-3xl px-4">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <figure className="m-0">
-              <Image
-                src="/images/mourao/mourao-de-concreto-reto-e-curvo.webp"
-                alt="Mourões de concreto reto e curvo fincados no pátio da Central do Concreto em Ivoti-RS"
-                width={900}
-                height={1200}
-                className="w-full h-auto rounded-lg"
-              />
-            </figure>
-            <figure className="m-0">
-              <Image
-                src="/images/mourao/mourao-de-concreto-para-cerca-detalhe.webp"
-                alt="Mourões de concreto retos para cerca empilhados, com o acabamento do concreto armado à vista"
-                width={675}
-                height={1200}
-                className="w-full h-auto rounded-lg"
-              />
-            </figure>
-            <figure className="m-0">
-              <Image
-                src="/images/mourao/mourao-de-concreto-estoque-fabrica-ivoti.webp"
-                alt="Estoque de mourões de concreto de seção retangular empilhados na fábrica em Ivoti-RS"
-                width={675}
-                height={1200}
-                className="w-full h-auto rounded-lg"
-              />
-            </figure>
-          </div>
-          <nav aria-label="Índice da página" className="mt-10">
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-2 border-l-2 border-cc-gray-200 pl-5 text-base text-cc-gray-700">
-              <li><a href="#o-que-e" className="underline-offset-4 hover:text-cc-black hover:underline">O que é um mourão de concreto?</a></li>
-              <li><a href="#vs-madeira" className="underline-offset-4 hover:text-cc-black hover:underline">Por que mourão de concreto e não de madeira?</a></li>
-              <li><a href="#reto-curvo" className="underline-offset-4 hover:text-cc-black hover:underline">Mourão reto ou curvo — qual escolher?</a></li>
-              <li><a href="#cerca" className="underline-offset-4 hover:text-cc-black hover:underline">Mourão de concreto para cerca</a></li>
-              <li><a href="#parreira" className="underline-offset-4 hover:text-cc-black hover:underline">Mourão de concreto para parreira</a></li>
-              <li><a href="#outros-usos" className="underline-offset-4 hover:text-cc-black hover:underline">Que outros usos tem o mourão de concreto?</a></li>
-              <li><a href="#medidas" className="underline-offset-4 hover:text-cc-black hover:underline">Que medidas de mourão existem e quanto enterrar?</a></li>
-              <li><a href="#preco" className="underline-offset-4 hover:text-cc-black hover:underline">Quanto custa um mourão de concreto?</a></li>
-              <li><a href="#ivoti-regiao" className="underline-offset-4 hover:text-cc-black hover:underline">Mourão de concreto em Ivoti e região</a></li>
-              <li><a href="#faq" className="underline-offset-4 hover:text-cc-black hover:underline">Perguntas frequentes</a></li>
-            </ul>
-          </nav>
+          <Eyebrow className="mb-4">Guia do mourão de concreto</Eyebrow>
+          <aside
+            aria-label="Índice deste guia"
+            className="p-6 bg-cc-gray-50 rounded-lg border border-cc-gray-200"
+          >
+            <p className="text-sm font-semibold text-cc-gray-700 mb-3 uppercase tracking-wide">
+              Neste guia
+            </p>
+            <nav aria-label="Índice da página">
+              <ol className="space-y-2 text-base text-cc-gray-700">
+                <li>
+                  <a href="#o-que-e" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    O que é um mourão de concreto?
+                  </a>
+                </li>
+                <li>
+                  <a href="#vs-madeira" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Por que mourão de concreto e não de madeira?
+                  </a>
+                </li>
+                <li>
+                  <a href="#reto-curvo" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Mourão reto ou curvo — qual escolher?
+                  </a>
+                </li>
+                <li>
+                  <a href="#cerca" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Mourão de concreto para cerca
+                  </a>
+                </li>
+                <li>
+                  <a href="#parreira" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Mourão de concreto para parreira
+                  </a>
+                </li>
+                <li>
+                  <a href="#outros-usos" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Que outros usos tem o mourão de concreto?
+                  </a>
+                </li>
+                <li>
+                  <a href="#medidas" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Que medidas de mourão existem e quanto enterrar?
+                  </a>
+                </li>
+                <li>
+                  <a href="#preco" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Quanto custa um mourão de concreto?
+                  </a>
+                </li>
+                <li>
+                  <a href="#ivoti-regiao" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Mourão de concreto em Ivoti e região
+                  </a>
+                </li>
+                <li>
+                  <a href="#faq" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                    Perguntas frequentes
+                  </a>
+                </li>
+              </ol>
+            </nav>
+          </aside>
         </div>
       </section>
 
@@ -253,6 +273,15 @@ export default function MouraoDeConcretoPage() {
                 pede curvo.
               </p>
             </div>
+            <figure className="my-8 text-center">
+              <Image
+                src="/images/mourao/mourao-de-concreto-reto-e-curvo.webp"
+                alt="Mourões de concreto reto e curvo fincados no pátio da Central do Concreto em Ivoti-RS"
+                width={900}
+                height={1200}
+                className="w-full max-w-md mx-auto h-auto rounded-lg"
+              />
+            </figure>
           </section>
 
           {/* Para cerca */}
@@ -294,6 +323,15 @@ export default function MouraoDeConcretoPage() {
                 Orçar mourão para cerca no WhatsApp
               </WhatsAppLink>
             </div>
+            <figure className="my-8 text-center">
+              <Image
+                src="/images/mourao/mourao-de-concreto-para-cerca-detalhe.webp"
+                alt="Mourões de concreto retos para cerca empilhados, com o acabamento do concreto armado à vista"
+                width={675}
+                height={1200}
+                className="w-full max-w-md mx-auto h-auto rounded-lg"
+              />
+            </figure>
           </section>
 
           {/* Para parreira */}
@@ -415,6 +453,15 @@ export default function MouraoDeConcretoPage() {
                 atende pré-moldados em dezenas de cidades da região.
               </p>
             </div>
+            <figure className="my-8 text-center">
+              <Image
+                src="/images/mourao/mourao-de-concreto-estoque-fabrica-ivoti.webp"
+                alt="Estoque de mourões de concreto de seção retangular empilhados na fábrica em Ivoti-RS"
+                width={675}
+                height={1200}
+                className="w-full max-w-md mx-auto h-auto rounded-lg"
+              />
+            </figure>
           </section>
         </div>
       </article>
