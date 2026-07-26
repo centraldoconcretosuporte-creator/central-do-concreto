@@ -12,9 +12,9 @@ const WHATSAPP_PACOTE_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, qu
 const WHATSAPP_VISITA_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, quero agendar visita técnica pra orçamento de instalação.")}`;
 const WHATSAPP_FINAL_URL = `${WHATSAPP_URL}?text=${encodeURIComponent("Olá, quero falar com o André sobre instalação de cobogó.")}`;
 const PAGE_TITLE =
-  "Como Instalar Cobogó: Passo a Passo + Serviço da Central | Central do Concreto";
+  "Como instalar cobogó: 5 passos e os 4 erros que trincam | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Como instalar cobogó passo a passo · fundação, prumo, argamassa específica, alinhamento e rejunte. A Central instala em 16 cidades no raio de 120 km a partir de Ivoti-RS.";
+  "Os 5 passos: fundação, prumo, argamassa específica, alinhamento e rejunte. Argamassa comum trinca em 6 meses — veja esse e os outros 3 erros mais comuns.";
 const OG_IMAGE = `${SITE_URL}/cluster-cobogos/cobogo-citadino-com-base-floreira-concreto-ivoti.webp`;
 
 const faqs = [
