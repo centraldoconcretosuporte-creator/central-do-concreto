@@ -11,9 +11,9 @@ const WHATSAPP_CTA_MESSAGE = "Olá, quero falar sobre tubos de concreto.";
 const WHATSAPP_CTA_URL = `${WHATSAPP_URL}?text=${encodeURIComponent(WHATSAPP_CTA_MESSAGE)}`;
 
 const PAGE_TITLE =
-  "Classes de carga do tubo de concreto: PA1, PA2, PA3 e PA4 explicadas | Central do Concreto";
+  "PA1 ou PA2? Qual tubo de concreto usar em cada obra | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Entenda as classes de resistência do tubo de concreto pela NBR 8890 (PS1, PS2, PA1, PA2, PA3, PA4): qual usar em cada obra e quanta carga cada uma suporta.";
+  "PA1 vai onde não passa veículo. PA2 aguenta rua e acesso de carro. Veja a diferença entre as classes da NBR 8890 e escolha sem errar a obra.";
 
 const cidades = [
   "Ivoti",
