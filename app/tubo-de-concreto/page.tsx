@@ -7,9 +7,9 @@ import WhatsAppLink from "@/components/WhatsAppLink";
 const CANONICAL_URL = "https://centraldoconcretoentrega.com.br/tubo-de-concreto";
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 
-const PAGE_TITLE = "Tubo de Concreto: Tipos e Medidas | Central do Concreto";
+const PAGE_TITLE = "Manilha de Concreto (Tubo) PA-1 a PA-4 | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Tubo de concreto para drenagem: encaixes, classes de carga, diâmetros do Ø20 ao Ø150 e aplicações. A Central do Concreto fornece e entrega em Ivoti e região.";
+  "Manilha de concreto (tubo PA-1 a PA-4) para drenagem pluvial, bueiros e galerias. Diâmetros Ø20 ao Ø150, NBR 8890. Entrega em Ivoti e RS.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -106,10 +106,10 @@ export default function TuboDeConcretoPage() {
         <div className="absolute inset-0 bg-cc-black/35" aria-hidden="true" />
         <div className="relative z-10 max-w-4xl mx-auto px-6 py-20 md:py-28 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            Tubo de concreto
+            Manilha de concreto — tubo PA-1 a PA-4 para drenagem
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mb-10 leading-relaxed">
-            Tubo de concreto para drenagem de águas pluviais, bueiros e galerias. A Central do Concreto fornece e entrega em Ivoti, Serra Gaúcha e Vale dos Sinos.
+            Manilha de concreto — o tubo de concreto usado em drenagem de águas pluviais, bueiros e galerias. A Central do Concreto fornece manilhas PA-1 a PA-4 nos diâmetros Ø20 ao Ø150 e entrega em Ivoti, Serra Gaúcha e Vale dos Sinos.
           </p>
           <div className="flex justify-center mb-8">
             <WhatsAppLink
