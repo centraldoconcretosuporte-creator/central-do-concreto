@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import { NEGOCIO_NODES } from "@/lib/schema-negocio";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/instalacao`;
@@ -62,6 +63,7 @@ const cidades = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    ...NEGOCIO_NODES,
     {
       "@type": "BreadcrumbList",
       "@id": `${CANONICAL_URL}#breadcrumb`,
@@ -148,11 +150,7 @@ const jsonLd = {
       "@type": "Service",
       "@id": `${CANONICAL_URL}#service`,
       name: "Instalação de cobogó",
-      provider: {
-        "@type": "LocalBusiness",
-        name: "Central do Concreto",
-        url: SITE_URL,
-      },
+      provider: { "@id": `${SITE_URL}/#central` },
       areaServed: {
         "@type": "GeoCircle",
         geoMidpoint: {

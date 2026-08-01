@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 import WhatsAppLink from "@/components/WhatsAppLink";
 import { CIDADES_LITORAL } from "@/lib/cidades-atendimento";
+import { NEGOCIO_NODES } from "@/lib/schema-negocio";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const PAGE_URL = `${SITE_URL}/produtos/pergolado-de-concreto`;
@@ -152,10 +153,11 @@ const cidades = CIDADES_LITORAL.map((c) => ({
 
 export default function PergoladoDeConcretoPage() {
   // Item 12 · D4-B · @graph com 5 nodes (CollectionPage + Service + ItemList + FAQPage + BreadcrumbList)
-  // areaServed = 8 cidades Litoral · provider usa @id global #central (resolve no Tier 1B)
+  // areaServed = 8 cidades Litoral · provider referencia #central, declarado na propria pagina
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      ...NEGOCIO_NODES,
       {
         "@type": "CollectionPage",
         "@id": `${PAGE_URL}#webpage`,
@@ -175,11 +177,7 @@ export default function PergoladoDeConcretoPage() {
         "serviceType": "Fornecimento e instalação de pergolado de concreto",
         "description":
           "Pergolado pré-moldado direto da fábrica em Ivoti. Equipe própria de instalação. Estrutura reforçada pra vento e maresia, ganchos pra rede, tomada e iluminação embutidos.",
-        "provider": {
-          "@type": "Organization",
-          "@id": `${SITE_URL}/#central`,
-          "name": "Central do Concreto",
-        },
+        "provider": { "@id": `${SITE_URL}/#central` },
         "areaServed": CIDADES_LITORAL.map((c) => ({
           "@type": "City",
           "name": c.nome,

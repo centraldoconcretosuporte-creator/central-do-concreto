@@ -10,6 +10,7 @@ import {
   getCidade,
   type Cidade,
 } from "@/lib/cidades-atendimento";
+import { NEGOCIO_NODES } from "@/lib/schema-negocio";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const WHATSAPP_URL =
@@ -414,21 +415,18 @@ function CidadeSerraView({ c }: { c: Cidade }) {
   const canonicalUrl = `${SITE_URL}/pre-moldados/${c.slug}`;
 
   // Item 12 · D3 · Service + BreadcrumbList por cidade Serra
-  // provider usa @id global #central · resolve quando Tier 1B (homepage) entrar no ar
+  // provider referencia #central, declarado na propria pagina
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      ...NEGOCIO_NODES,
       {
         "@type": "Service",
         "@id": `${canonicalUrl}#service`,
         "name": `Pré-moldados de concreto em ${c.nome}`,
         "serviceType": "Fornecimento de pré-moldados de concreto",
         "description": `Fornecimento de pergolados, blocos, tubos, caixas, muros e demais artefatos pré-moldados de concreto em ${c.nome}. Direto da fábrica em Ivoti-RS.`,
-        "provider": {
-          "@type": "Organization",
-          "@id": `${SITE_URL}/#central`,
-          "name": "Central do Concreto",
-        },
+        "provider": { "@id": `${SITE_URL}/#central` },
         "areaServed": {
           "@type": "City",
           "name": c.nome,

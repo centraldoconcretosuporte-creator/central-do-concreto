@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Eyebrow } from "@/components/Eyebrow";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import { NEGOCIO_NODES } from "@/lib/schema-negocio";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/entrega`;
@@ -61,35 +62,7 @@ const cidades = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
-    {
-      "@type": "LocalBusiness",
-      "@id": `${CANONICAL_URL}#localbusiness`,
-      name: "Central do Concreto",
-      url: SITE_URL,
-      telephone: "+555199669-1757",
-      address: {
-        "@type": "PostalAddress",
-        streetAddress: "Av. Bom Jardim 149 · Loja 02",
-        addressLocality: "Ivoti",
-        addressRegion: "RS",
-        postalCode: "93900-000",
-        addressCountry: "BR",
-      },
-      geo: {
-        "@type": "GeoCoordinates",
-        latitude: -29.62038,
-        longitude: -51.16389,
-      },
-      areaServed: {
-        "@type": "GeoCircle",
-        geoMidpoint: {
-          "@type": "GeoCoordinates",
-          latitude: -29.62038,
-          longitude: -51.16389,
-        },
-        geoRadius: "120000",
-      },
-    },
+    ...NEGOCIO_NODES,
     {
       "@type": "BreadcrumbList",
       "@id": `${CANONICAL_URL}#breadcrumb`,
