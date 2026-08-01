@@ -8,7 +8,7 @@ const navegacao = [
   { label: "Onde atendemos", href: "/entregas" },
   { label: "Pergolados", href: "/produtos/pergolado-de-concreto" },
   { label: "Piso Atérmico", href: "/produtos/piso-atermico" },
-  { label: "Tubos", href: "/produtos/tubos" },
+  { label: "Tubos", href: "/tubo-de-concreto" },
   { label: "Caixas de Passagem", href: "/produtos/caixas-de-passagem" },
   { label: "Muros e Gradis", href: "/produtos/muros-e-gradis" },
   { label: "Postes", href: "/produtos/postes-e-meio-fio" },
