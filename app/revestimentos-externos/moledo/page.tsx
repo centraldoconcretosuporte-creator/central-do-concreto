@@ -412,13 +412,12 @@ export default function MoledoPage() {
           varia só o tamanho da peça.
         </p>
         <p className="text-lg leading-relaxed mb-12">
-          Pra comparativo mais completo entre cimentício e pedra natural assentada
-          de verdade, ver{" "}
+          Cimentício e pedra natural assentada se comparam em{" "}
           <Link
-            href="/revestimentos-externos/natural-ou-manufaturado"
+            href="/revestimentos-externos"
             className="text-cc-orange underline hover:no-underline"
           >
-            revestimento natural ou manufaturado
+            revestimentos externos cimentícios
           </Link>
           .
         </p>

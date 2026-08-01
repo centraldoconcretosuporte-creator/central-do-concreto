@@ -440,13 +440,13 @@ export default function RockFacePage() {
           ou com efeito Cortein.
         </p>
         <p className="text-lg leading-relaxed mb-12">
-          Para entender melhor a diferença entre cimentício manufaturado e pedra
-          natural assentada, vale visitar a comparação completa em{" "}
+          A diferença entre cimentício manufaturado e pedra natural assentada
+          está em{" "}
           <Link
-            href="/revestimentos-externos/natural-ou-manufaturado"
+            href="/revestimentos-externos"
             className="text-cc-orange underline hover:no-underline"
           >
-            revestimento natural ou manufaturado
+            revestimentos externos cimentícios
           </Link>
           .
         </p>

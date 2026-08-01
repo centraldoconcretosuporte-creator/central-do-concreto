@@ -502,16 +502,9 @@ export default function RevestimentosExternosPage() {
           Revestimento cimentício da Central pode ser entregue em dois
           acabamentos: natural (cinza original da peça) ou com efeito Cortein
           (simulando ferro oxidado/envelhecido com tons quentes de laranja e
-          marrom). A Central oferece os 6 modelos nas duas opções. O comparativo
-          completo entre cimentício manufaturado e pedra natural fica na página
-          dedicada{" "}
-          <a
-            href="/revestimentos-externos/natural-ou-manufaturado"
-            className="text-cc-orange underline hover:no-underline"
-          >
-            revestimento natural ou manufaturado
-          </a>
-          .
+          marrom). A Central oferece os 6 modelos nas duas opções. A comparação
+          entre cimentício manufaturado, pedra natural e cerâmico está na seção
+          Cimentício, pedra natural ou cerâmico desta mesma página.
         </p>
 
         <h2 id="onde-aplicar" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">

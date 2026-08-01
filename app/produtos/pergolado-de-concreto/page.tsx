@@ -469,7 +469,7 @@ export default function PergoladoDeConcretoPage() {
             {/* Card pequeno 3 · Revestimentos */}
             {/* TODO: avaliar foto definitiva de revestimento (categoria não está totalmente fechada no banco CC) */}
             <a
-              href="/produtos/revestimentos"
+              href="/revestimentos-externos"
               className="md:col-span-1 md:row-span-1 group relative rounded-xl overflow-hidden border border-cc-gray-200 hover:border-cc-black transition-colors min-h-[140px]"
             >
               <Image
