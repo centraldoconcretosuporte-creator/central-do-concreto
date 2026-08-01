@@ -302,6 +302,43 @@ export default function TuboDrenoPage() {
             </div>
           </section>
 
+          {/* H2 2b — Por que o relevo da Serra Gaúcha muda o projeto de drenagem */}
+          <section aria-labelledby="relevo-serra-gaucha">
+            <h2
+              id="relevo-serra-gaucha"
+              className="text-2xl md:text-3xl font-bold text-cc-black mb-5 leading-tight"
+            >
+              Por que o relevo da Serra Gaúcha muda o projeto de drenagem
+            </h2>
+            <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
+              <p>
+                Terreno inclinado muda o comportamento da água. Na Serra Gaúcha, encosta natural,
+                solo mais leve e chuva concentrada fazem a água ganhar velocidade antes de
+                encontrar qualquer ponto de absorção — e água em velocidade não infiltra, ela
+                carrega.
+              </p>
+              <p>
+                O que aparece primeiro é o sulco. Depois vem a brita arrastada, o talude que perde
+                apoio, a calçada que cede na borda e a infiltração que chega na garagem por baixo.
+                Nenhum desses é problema de volume de chuva: é problema de caminho. A água desceu
+                por onde quis.
+              </p>
+              <p>
+                Drenagem em terreno inclinado é definir esse caminho antes. É por isso que a peça
+                de concreto trabalha bem aqui: aguenta a pressão que a inclinação gera, suporta o
+                peso de veículo passando por cima e conduz tanto a água de superfície quanto a que
+                corre no subsolo. Vale pra acesso de casa e vale pra loteamento inteiro — muda o
+                dimensionamento, não o princípio.
+              </p>
+              <p>
+                O tubo dreno entra na parte subterrânea desse sistema. A água de superfície é
+                conduzida por calha, boca de lobo e caixa de passagem; o que satura o solo é
+                captado pelo dreno e levado embora antes de empurrar o talude ou alcançar a
+                fundação.
+              </p>
+            </div>
+          </section>
+
           {/* H2 3 — Onde se usa o tubo dreno de concreto? */}
           <section aria-labelledby="onde-se-usa">
             <h2
