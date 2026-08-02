@@ -12,7 +12,7 @@ const PAGE_DESCRIPTION =
 export const metadata: Metadata = {
   title: PAGE_TITLE,
   description: PAGE_DESCRIPTION,
-  alternates: { canonical: PAGE_URL },
+  alternates: { canonical: `${SITE_URL}/cobogos` },
   openGraph: {
     title: PAGE_TITLE,
     description: PAGE_DESCRIPTION,
