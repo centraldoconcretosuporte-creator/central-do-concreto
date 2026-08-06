@@ -9,7 +9,7 @@ const CANONICAL_URL = `${SITE_URL}/cobogos/muro`;
 const WHATSAPP_URL = "https://wa.me/5551996691757";
 const PAGE_TITLE = "Muro de Cobogó de Concreto: Modelos e Como Escolher";
 const PAGE_DESCRIPTION =
-  "Guia de muro de cobogó de concreto: modelos, medidas, privacidade e como escolher o seu. Peças pré-moldadas com fornecimento e entrega em Ivoti-RS.";
+  "Guia de muro de cobogó de concreto: modelos, medidas, privacidade e como escolher o seu. Entrega própria na região e envio para todo o Rio Grande do Sul.";
 const OG_IMAGE = `${SITE_URL}/cluster-cobogos/cobogo-antichuva-concreto-ivoti-02.webp`;
 
 type Modelo = {
