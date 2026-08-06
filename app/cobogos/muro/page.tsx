@@ -7,10 +7,9 @@ import WhatsAppLink from "@/components/WhatsAppLink";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const CANONICAL_URL = `${SITE_URL}/cobogos/muro`;
 const WHATSAPP_URL = "https://wa.me/5551996691757";
-const PAGE_TITLE =
-  "Muro com Cobogó: quanta privacidade dá de verdade | Central do Concreto";
+const PAGE_TITLE = "Muro de Cobogó de Concreto: Modelos e Como Escolher";
 const PAGE_DESCRIPTION =
-  "Quanta privacidade um muro com cobogó de cimento realmente dá, a altura máxima segura e os 8 modelos da Central. Fábrica em Ivoti, entrega em 16 cidades.";
+  "Guia de muro de cobogó de concreto: modelos, medidas, privacidade e como escolher o seu. Peças pré-moldadas com fornecimento e entrega em Ivoti-RS.";
 const OG_IMAGE = `${SITE_URL}/cluster-cobogos/cobogo-antichuva-concreto-ivoti-02.webp`;
 
 type Modelo = {
