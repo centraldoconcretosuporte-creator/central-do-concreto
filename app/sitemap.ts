@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: SITE_URL, changeFrequency: "weekly", priority: 1.0 },
     { url: `${SITE_URL}/tubo-de-concreto`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/mourao-de-concreto`, changeFrequency: "weekly", priority: 0.9 },
+    { url: `${SITE_URL}/base-de-concreto-para-wind-banner`, changeFrequency: "weekly", priority: 0.9 },
     { url: `${SITE_URL}/tubo-de-concreto/tipos-de-encaixe`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/classes-de-carga`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/diametros`, changeFrequency: "monthly", priority: 0.8 },
