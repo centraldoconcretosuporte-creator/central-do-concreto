@@ -10,9 +10,9 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 const PAGE_TITLE =
-  "Revestimentos Externos Cimentícios: 6 Modelos, Aplicações e Entrega | Central do Concreto";
+  "Revestimentos Externos Cimentícios: 7 Modelos, Aplicações e Entrega | Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Revestimento externo manufaturado em concreto em 6 modelos cimentícios — Rock Face, Moledo, Diamante 3D, Mosaico 3D, Placa e Ripado — com instaladores parceiros e entrega no raio de 120 km a partir de Ivoti-RS.";
+  "Revestimento externo manufaturado em concreto em 7 modelos cimentícios — Rock Face, Moledo, Atacama, Diamante 3D, Mosaico 3D, Placa e Ripado — com instaladores parceiros e entrega no raio de 120 km a partir de Ivoti-RS.";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -42,7 +42,7 @@ type Modelo = {
   nome: string;
   bio: string;
   descricao: string;
-  foto: string;
+  foto: string | null;
   cardAlt: string;
   blocoAlt: string;
 };
@@ -51,26 +51,38 @@ const modelos: Modelo[] = [
   {
     slug: "rock-face",
     nome: "Rock Face",
-    bio: "Placa 30×10 cm em variantes natural e marfim",
+    bio: "Plaqueta 10x30 · areia clara, cinza e grafite",
     descricao:
-      "Placa horizontal 30×10 cm com textura de pedra natural fendida. Disponível em variantes Natural (cinza concreto) e Marfim (creme claro). Aplicação tradicional em fachadas residenciais que pedem textura visual rica sem perder modularidade. Disponível também com efeito Cortein.",
+      "Plaqueta cimentícia 10x30 cm — a mesma peça que muita gente procura escrevendo 30x10 — com face bruta de pedra e relevo aparente. Aplica em fachadas, muros e pilares. Sai nas tonalidades areia clara, cinza e grafite. Tem também o acabamento corten — também chamado de efeito ferrugem, oxidado ou oxi — que aqui vem pronto na peça cimentícia, não é tinta nem textura passada na obra.",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-natural-cimenticio-ivoti.webp",
     cardAlt:
-      "Revestimento Rock Face cimentício · Placa 30×10 cm em variantes natural e marfim · Central do Concreto Ivoti RS",
+      "Revestimento Rock Face cimentício · plaqueta 10x30 cm com face bruta de pedra · Central do Concreto Ivoti RS",
     blocoAlt:
-      "Revestimento Rock Face em concreto cimentício · placa 30×10 cm acabamento natural · Central do Concreto Ivoti RS",
+      "Revestimento Rock Face em concreto cimentício · plaqueta 10x30 cm na tonalidade cinza com relevo aparente · Central do Concreto Ivoti RS",
   },
   {
     slug: "moledo",
     nome: "Moledo",
-    bio: "Formatos irregulares · 17 medidas pra efeito natural",
+    bio: "17 formatos orgânicos · pedra extraída em lascas",
     descricao:
-      "Formatos irregulares em 17 medidas misturadas pra efeito de pedra natural assentada. Quebra a modularidade do Rock Face · ideal para fachadas que pedem textura orgânica e movimento visual. Variantes Areia, Marfim e Natural.",
+      "Formato orgânico que imita pedra extraída em lascas, em 17 formatos que se combinam sem cair na repetição — é a pedra moledo em concreto, um revestimento 3D de leitura irregular. Aplica em fachadas, muros, pilares, torres, lareiras internas e externas e cabanas. Sai nas tonalidades areia clara, cinza e grafite, com acabamento corten disponível — também chamado de efeito ferrugem, oxidado ou oxi — pronto na peça cimentícia, não é tinta nem textura passada na obra.",
     foto: "/cluster-revestimentos-externos/revestimentos-moledo-natural-cimenticio-ivoti.webp",
     cardAlt:
-      "Revestimento Moledo cimentício · Formatos irregulares · 17 medidas pra efeito natural · Central do Concreto Ivoti RS",
+      "Revestimento Moledo cimentício · 17 formatos orgânicos que imitam pedra extraída em lascas · Central do Concreto Ivoti RS",
     blocoAlt:
-      "Revestimento Moledo em concreto cimentício · formatos irregulares acabamento natural · Central do Concreto Ivoti RS",
+      "Revestimento Moledo em concreto cimentício · formatos orgânicos em lascas na tonalidade cinza · Central do Concreto Ivoti RS",
+  },
+  {
+    slug: "atacama",
+    nome: "Atacama",
+    bio: "Revestimento branco · lascas pontiagudas em 18 medidas",
+    descricao:
+      "Revestimento branco para fachada e parede externa branca, com aparência de lascas de rocha de deserto, pontiagudas. São 18 medidas variadas que se alternam na parede sem desenho repetido. Cor branco único · o Atacama não sai em outra tonalidade. Aplica em fachadas, muros, pilares, torres, lareiras internas e externas e cabanas.",
+    foto: null,
+    cardAlt:
+      "Revestimento Atacama cimentício · revestimento branco em lascas de rocha pontiagudas · Central do Concreto Ivoti RS",
+    blocoAlt:
+      "Revestimento Atacama em concreto cimentício · parede externa branca em lascas de rocha de deserto · Central do Concreto Ivoti RS",
   },
   {
     slug: "diamante-3d",
@@ -133,7 +145,7 @@ const faqs = [
   },
   {
     q: "Qual a diferença entre revestimento natural e com efeito Cortein?",
-    a: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 6 modelos da Central podem ser pedidos nas duas opções.",
+    a: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Dos 7 modelos da Central, seis podem ser pedidos nas duas opções · só o Atacama não sai com Cortein, porque é branco único.",
   },
   {
     q: "Quantas peças cabem em 1 m² de fachada?",
@@ -208,7 +220,7 @@ const jsonLd = {
           name: "Qual a diferença entre revestimento natural e com efeito Cortein?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Os 6 modelos da Central podem ser pedidos nas duas opções.",
+            text: "O revestimento natural mantém o acabamento cinza original do concreto, com visual cru e contemporâneo. O efeito Cortein simula ferro oxidado/envelhecido com tons quentes de laranja e marrom · é tratamento aplicado em fábrica nas peças que pedem visual mais marcante. Dos 7 modelos da Central, seis podem ser pedidos nas duas opções · só o Atacama não sai com Cortein, porque é branco único.",
           },
         },
         {
@@ -281,15 +293,16 @@ export default function RevestimentosExternosPage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Revestimentos Externos
             <span className="block text-2xl md:text-3xl font-medium mt-3 text-cc-orange">
-              6 modelos cimentícios da fábrica em Ivoti
+              7 modelos cimentícios da fábrica em Ivoti
             </span>
           </h1>
           <p className="text-lg md:text-xl mb-8 leading-relaxed">
             Revestimento externo cimentício é placa pré-moldada em concreto que
             veste fachadas e muros com textura, cor e relevo de pedra natural. A
-            Central fabrica 6 modelos em Ivoti — Rock Face, Moledo, Diamante 3D,
-            Mosaico 3D, Placa e Ripado — em acabamento natural ou com efeito Cortein,
-            trabalha com instaladores parceiros e entrega no raio de 120 km.
+            Central fabrica 7 modelos em Ivoti — Rock Face, Moledo, Atacama,
+            Diamante 3D, Mosaico 3D, Placa e Ripado — em acabamento natural ou com
+            efeito Cortein, trabalha com instaladores parceiros e entrega no raio
+            de 120 km.
           </p>
           <WhatsAppLink
             href={ctaUrl}
@@ -309,7 +322,7 @@ export default function RevestimentosExternosPage() {
             Falar pelo WhatsApp
           </WhatsAppLink>
           <p className="mt-8 text-sm md:text-base text-white/90 flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <span>✓ 6 modelos</span>
+            <span>✓ 7 modelos</span>
             <span>✓ Manufaturado em concreto</span>
             <span>✓ Instaladores parceiros</span>
             <span>✓ Entrega 120 km</span>
@@ -345,8 +358,8 @@ export default function RevestimentosExternosPage() {
                 </a>
               </li>
               <li>
-                <a href="#os-5-modelos" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
-                  Os 6 modelos da Central
+                <a href="#os-7-modelos" className="hover:text-cc-orange underline-offset-4 hover:underline transition-colors">
+                  Os 7 modelos da Central
                 </a>
               </li>
               <li>
@@ -455,18 +468,18 @@ export default function RevestimentosExternosPage() {
           />
         </div>
 
-        <h2 id="os-5-modelos" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
-          Quais são os 6 modelos da Central do Concreto?
+        <h2 id="os-7-modelos" className="text-3xl md:text-4xl font-bold mt-12 mb-6 scroll-mt-24">
+          Quais são os 7 modelos da Central do Concreto?
         </h2>
         <p className="text-lg leading-relaxed mb-8">
-          A Central fabrica 6 modelos catalogados em revestimento cimentício, do
-          Rock Face (placas regulares 30×10 cm em variantes cromáticas) ao Moledo
-          (formatos irregulares com 17 medidas misturadas), passando por Diamante
-          3D, Mosaico 3D, Placa Cimentícia e Ripado Cimentício. Toque em cada card
-          para ver detalhe.
+          A Central fabrica 7 modelos catalogados em revestimento cimentício, da
+          plaqueta Rock Face 10x30 cm ao Moledo (17 formatos orgânicos) e ao
+          Atacama (branco, em 18 medidas), passando por Diamante 3D, Mosaico 3D,
+          Placa Cimentícia e Ripado Cimentício. Toque em cada card para ver
+          detalhe.
         </p>
 
-        {/* GRADE 6 CARDS */}
+        {/* GRADE 7 CARDS */}
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-16">
           {modelos.map((m) => (
             <Link
@@ -475,13 +488,19 @@ export default function RevestimentosExternosPage() {
               className="group block border border-cc-gray-200 rounded-lg overflow-hidden hover:border-cc-orange transition-colors"
             >
               <div className="relative aspect-square overflow-hidden bg-cc-gray-50">
-                <Image
-                  src={m.foto}
-                  alt={m.cardAlt}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
-                />
+                {m.foto ? (
+                  <Image
+                    src={m.foto}
+                    alt={m.cardAlt}
+                    fill
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
+                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-cc-gray-500">
+                    Foto em breve
+                  </div>
+                )}
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1 group-hover:text-cc-orange transition-colors">
@@ -502,7 +521,8 @@ export default function RevestimentosExternosPage() {
           Revestimento cimentício da Central pode ser entregue em dois
           acabamentos: natural (cinza original da peça) ou com efeito Cortein
           (simulando ferro oxidado/envelhecido com tons quentes de laranja e
-          marrom). A Central oferece os 6 modelos nas duas opções. A comparação
+          marrom). Dos 7 modelos, seis saem nas duas opções · o Atacama é
+          exceção, vem só em branco único. A comparação
           entre cimentício manufaturado, pedra natural e cerâmico está na seção
           Cimentício, pedra natural ou cerâmico desta mesma página.
         </p>
@@ -552,12 +572,12 @@ export default function RevestimentosExternosPage() {
         </p>
       </article>
 
-      {/* 6 ANCHOR SECTIONS */}
+      {/* 7 ANCHOR SECTIONS */}
       <section className="bg-cc-gray-50 py-16">
         <div className="container mx-auto px-4 max-w-4xl">
           <Eyebrow className="mb-4">Catálogo completo</Eyebrow>
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
-            Os 6 modelos em detalhe
+            Os 7 modelos em detalhe
           </h2>
           <div className="space-y-12">
             {modelos.map((m) => {
@@ -570,13 +590,19 @@ export default function RevestimentosExternosPage() {
                   className="grid grid-cols-1 md:grid-cols-2 gap-8 pb-12 border-b border-cc-gray-200 last:border-0 scroll-mt-24"
                 >
                   <div className="relative aspect-square overflow-hidden rounded-lg bg-white">
-                    <Image
-                      src={m.foto}
-                      alt={m.blocoAlt}
-                      fill
-                      className="object-cover"
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                    />
+                    {m.foto ? (
+                      <Image
+                        src={m.foto}
+                        alt={m.blocoAlt}
+                        fill
+                        className="object-cover"
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                      />
+                    ) : (
+                      <div className="absolute inset-0 flex items-center justify-center px-4 text-center text-base text-cc-gray-500">
+                        Foto em breve
+                      </div>
+                    )}
                   </div>
                   <div className="flex flex-col justify-center">
                     <h3 className="text-2xl md:text-3xl font-bold mb-4">
@@ -692,7 +718,7 @@ export default function RevestimentosExternosPage() {
             Pronto pra orçar seu revestimento cimentício?
           </h2>
           <p className="text-lg text-white/95 mb-8 leading-relaxed">
-            Fabricação local em Ivoti · 6 modelos disponíveis · natural ou efeito
+            Fabricação local em Ivoti · 7 modelos disponíveis · natural ou efeito
             Cortein · instaladores parceiros indicados · entrega no raio de 120
             km. Toque abaixo e fale pelo WhatsApp com a Central.
           </p>

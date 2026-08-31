@@ -10,13 +10,13 @@ const WHATSAPP_URL = "https://wa.me/5551996691757";
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
 const PAGE_TITLE =
-  "Revestimento Rock Face Cimentício · Placa 30×10 cm em 4 cores · Central do Concreto";
+  "Revestimento Rock Face Cimentício · Placa 30×10 cm em 3 cores · Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Revestimento Rock Face cimentício em placa pré-moldada 30×10 cm · variantes Natural, Marfim, Areia e Grafite com opção de efeito Cortein · fabricação local em Ivoti-RS com entrega no raio de 120 km.";
+  "Revestimento Rock Face cimentício em placa pré-moldada 30×10 cm · variantes areia clara, cinza e grafite com opção de efeito Cortein · fabricação local em Ivoti-RS com entrega no raio de 120 km.";
 const HERO_IMG =
   "/cluster-revestimentos-externos/revestimentos-rock-face-natural-cimenticio-ivoti.webp";
 const HERO_ALT =
-  "Revestimento Rock Face em concreto cimentício acabamento natural · placa 30×10 cm · Central do Concreto Ivoti RS";
+  "Revestimento Rock Face em concreto cimentício tonalidade cinza · placa 30×10 cm · Central do Concreto Ivoti RS";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -56,47 +56,47 @@ type Variante = {
 
 const variantes: Variante[] = [
   {
-    nome: "Natural",
+    nome: "Cinza",
     bio: "Cinza concreto puro · base versátil",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-natural-cimenticio-ivoti.webp",
-    alt: "Variante Natural do Rock Face cimentício · cinza concreto puro · Central do Concreto Ivoti RS",
+    alt: "Variante cinza do Rock Face cimentício · cinza concreto puro · Central do Concreto Ivoti RS",
   },
   {
-    nome: "Marfim",
-    bio: "Creme claro · suaviza fachadas grandes",
+    nome: "Areia clara",
+    bio: "Bege claro · suaviza fachadas grandes",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-marfim-cimenticio-ivoti.webp",
-    alt: "Variante Marfim do Rock Face cimentício · creme claro · Central do Concreto Ivoti RS",
+    alt: "Variante areia clara do Rock Face cimentício · bege claro · Central do Concreto Ivoti RS",
   },
   {
     nome: "Grafite",
     bio: "Cinza escuro · pegada urbana moderna",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-grafite-cimenticio-ivoti.webp",
-    alt: "Variante Grafite do Rock Face cimentício · cinza escuro profundo · Central do Concreto Ivoti RS",
+    alt: "Variante grafite do Rock Face cimentício · cinza escuro profundo · Central do Concreto Ivoti RS",
   },
   {
-    nome: "Natural com Cortein",
+    nome: "Cinza com Cortein",
     bio: "Cinza + tons quentes de ferro envelhecido",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-cortein-cimenticio-ivoti.webp",
-    alt: "Variante Natural com efeito Cortein do Rock Face cimentício · tons de ferro envelhecido · Central do Concreto Ivoti RS",
+    alt: "Variante cinza com efeito Cortein do Rock Face cimentício · tons de ferro envelhecido · Central do Concreto Ivoti RS",
   },
   {
-    nome: "Areia com Cortein",
+    nome: "Areia clara com Cortein",
     bio: "Bege quente · contraste decorativo",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-areia-cortein-cimenticio-ivoti.webp",
-    alt: "Variante Areia com efeito Cortein do Rock Face cimentício · bege quente com tons oxidados · Central do Concreto Ivoti RS",
+    alt: "Variante areia clara com efeito Cortein do Rock Face cimentício · bege quente com tons oxidados · Central do Concreto Ivoti RS",
   },
   {
     nome: "Grafite com Cortein",
     bio: "Cinza escuro + tons oxidados",
     foto: "/cluster-revestimentos-externos/revestimentos-rock-face-grafite-cortein-cimenticio-ivoti.webp",
-    alt: "Variante Grafite com efeito Cortein do Rock Face cimentício · cinza escuro com tons oxidados · Central do Concreto Ivoti RS",
+    alt: "Variante grafite com efeito Cortein do Rock Face cimentício · cinza escuro com tons oxidados · Central do Concreto Ivoti RS",
   },
 ];
 
 const faqs = [
   {
     q: "Rock Face desbota com o tempo se ficar exposto ao sol?",
-    a: "Não. A cor do Rock Face é sólida do miolo da peça · pigmento adicionado ao concreto fresco antes da prensagem, não é pintura aplicada na superfície. Isso significa que mesmo após anos de exposição UV a cor permanece, sem desbote nem descascamento. Aplica-se às quatro cores (Natural, Marfim, Areia, Grafite) e ao efeito Cortein.",
+    a: "Não. A cor do Rock Face é sólida do miolo da peça · pigmento adicionado ao concreto fresco antes da prensagem, não é pintura aplicada na superfície. Isso significa que mesmo após anos de exposição UV a cor permanece, sem desbote nem descascamento. Aplica-se às três cores (areia clara, cinza e grafite) e ao efeito Cortein.",
   },
   {
     q: "Quantas peças de Rock Face cabem em 1 m² de fachada?",
@@ -104,7 +104,7 @@ const faqs = [
   },
   {
     q: "Qual variante do Rock Face combina melhor com fachada moderna?",
-    a: "Para fachada residencial contemporânea, Grafite (com ou sem Cortein) é a variante mais escolhida · cria base sóbria que combina com esquadrias pretas, madeira tratada e elementos metálicos. Marfim funciona melhor em fachadas grandes onde a cor clara expande visualmente o pé direito. Natural é a opção mais versátil · dialoga com qualquer estilo arquitetônico sem competir.",
+    a: "Para fachada residencial contemporânea, grafite (com ou sem Cortein) é a variante mais escolhida · cria base sóbria que combina com esquadrias pretas, madeira tratada e elementos metálicos. Areia clara funciona melhor em fachadas grandes onde a cor clara expande visualmente o pé direito. Cinza é a opção mais versátil · dialoga com qualquer estilo arquitetônico sem competir.",
   },
 ];
 
@@ -161,7 +161,7 @@ const jsonLd = {
           name: "Rock Face desbota com o tempo se ficar exposto ao sol?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Não. A cor do Rock Face é sólida do miolo da peça · pigmento adicionado ao concreto fresco antes da prensagem, não é pintura aplicada na superfície. Isso significa que mesmo após anos de exposição UV a cor permanece, sem desbote nem descascamento. Aplica-se às quatro cores (Natural, Marfim, Areia, Grafite) e ao efeito Cortein.",
+            text: "Não. A cor do Rock Face é sólida do miolo da peça · pigmento adicionado ao concreto fresco antes da prensagem, não é pintura aplicada na superfície. Isso significa que mesmo após anos de exposição UV a cor permanece, sem desbote nem descascamento. Aplica-se às três cores (areia clara, cinza e grafite) e ao efeito Cortein.",
           },
         },
         {
@@ -177,7 +177,7 @@ const jsonLd = {
           name: "Qual variante do Rock Face combina melhor com fachada moderna?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Para fachada residencial contemporânea, Grafite (com ou sem Cortein) é a variante mais escolhida · cria base sóbria que combina com esquadrias pretas, madeira tratada e elementos metálicos. Marfim funciona melhor em fachadas grandes onde a cor clara expande visualmente o pé direito. Natural é a opção mais versátil · dialoga com qualquer estilo arquitetônico sem competir.",
+            text: "Para fachada residencial contemporânea, grafite (com ou sem Cortein) é a variante mais escolhida · cria base sóbria que combina com esquadrias pretas, madeira tratada e elementos metálicos. Areia clara funciona melhor em fachadas grandes onde a cor clara expande visualmente o pé direito. Cinza é a opção mais versátil · dialoga com qualquer estilo arquitetônico sem competir.",
           },
         },
       ],
@@ -241,14 +241,14 @@ export default function RockFacePage() {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
             Revestimento Rock Face
             <span className="block text-2xl md:text-3xl font-medium mt-3 text-cc-orange">
-              Placa 30×10 cm em 4 cores · Central do Concreto Ivoti
+              Placa 30×10 cm em 3 cores · Central do Concreto Ivoti
             </span>
           </h1>
           <p className="text-lg md:text-xl mb-8 leading-relaxed">
             Rock Face é o revestimento cimentício mais clássico da Central · placa
             horizontal 30×10 cm com textura de pedra natural fendida, modular,
-            fácil de instalar. Fabricado em Ivoti em quatro cores (Natural,
-            Marfim, Areia, Grafite) com opção de efeito Cortein (também chamado
+            fácil de instalar. Fabricado em Ivoti em três cores (areia clara,
+            cinza e grafite) com opção de efeito Cortein (também chamado
             Oxi) simulando ferro envelhecido. Entrega no raio de 120 km com
             caminhão próprio e instaladores parceiros indicados.
           </p>
@@ -271,7 +271,7 @@ export default function RockFacePage() {
           </WhatsAppLink>
           <p className="mt-8 text-sm md:text-base text-white/90 flex flex-wrap justify-center gap-x-6 gap-y-2">
             <span>✓ Placa 30×10 cm</span>
-            <span>✓ 4 cores · Cortein opcional</span>
+            <span>✓ 3 cores · Cortein opcional</span>
             <span>✓ Instaladores parceiros</span>
             <span>✓ Entrega 120 km</span>
           </p>
@@ -357,26 +357,25 @@ export default function RockFacePage() {
           Variantes do Rock Face
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          A Central fabrica Rock Face em quatro cores · Natural (cinza concreto
-          puro), Marfim (creme claro), Areia (bege quente) e Grafite (cinza
-          escuro profundo) · todas com opção de efeito Cortein (também chamado
+          A Central fabrica Rock Face em três cores · areia clara (bege claro),
+          cinza (cinza concreto puro) e grafite (cinza escuro profundo) · todas
+          com opção de efeito Cortein (também chamado
           Oxi) aplicado em fábrica simulando tom de ferro oxidado/envelhecido. A
           cor é sólida do miolo da peça · não é pintura sobre a superfície, o que
           elimina risco de desbote ou descascamento ao longo dos anos.
         </p>
         <p className="text-lg leading-relaxed mb-4">
-          Cada cor combina com famílias diferentes de projeto · Natural é a
-          escolha versátil que dialoga com qualquer estilo, Marfim suaviza
-          fachadas grandes e cria sensação de amplitude, Areia traz tom quente que
-          combina com madeira tratada e elementos naturais, Grafite ancora
-          fachadas modernas com pegada urbana. O efeito Cortein é o coringa
-          decorativo · sobre qualquer das quatro cores cria contraste de tons
-          quentes que destaca a parede como ponto focal arquitetônico.
+          Cada cor combina com famílias diferentes de projeto · cinza é a
+          escolha versátil que dialoga com qualquer estilo, areia clara suaviza
+          fachadas grandes e traz tom quente que combina com madeira tratada e
+          elementos naturais, grafite ancora fachadas modernas com pegada
+          urbana. O efeito Cortein é o coringa decorativo · sobre qualquer das
+          três cores cria contraste de tons quentes que destaca a parede como
+          ponto focal arquitetônico.
         </p>
         <p className="text-lg leading-relaxed mb-8">
-          A grade abaixo mostra as 6 variantes com estoque rápido · Areia pura e
-          Marfim com Cortein são fabricadas sob consulta com prazo conforme
-          metragem.
+          A grade abaixo mostra as 6 variantes · as três cores, cada uma na
+          versão sólida e na versão com Cortein.
         </p>
 
         {/* GRADE 6 VARIANTES */}
@@ -414,9 +413,9 @@ export default function RockFacePage() {
           competir com outros elementos arquitetônicos da casa.
         </p>
         <p className="text-lg leading-relaxed mb-12">
-          Para fachada moderna minimalista, a variante Grafite (sólida ou com
+          Para fachada moderna minimalista, a variante grafite (sólida ou com
           Cortein) cria base sóbria que combina com esquadrias pretas e madeira
-          tratada. Para projeto residencial clássico, Natural e Marfim são as
+          tratada. Para projeto residencial clássico, cinza e areia clara são as
           escolhas mais comuns. Em muro divisório de fundo, Rock Face funciona
           melhor que cobogó porque fecha 100% da visão e ainda sobe rápido por
           carreira.
@@ -436,7 +435,7 @@ export default function RockFacePage() {
           entrega ritmo previsível e cabe bem em fachadas que dialogam com
           elementos modulares (esquadrias, brise, painel ripado). Moledo entrega
           aleatoriedade controlada e cabe melhor em fachadas que pedem textura
-          orgânica de muro de pedra. Ambos podem ser pedidos em acabamento natural
+          orgânica de muro de pedra. Ambos podem ser pedidos em acabamento sólido
           ou com efeito Cortein.
         </p>
         <p className="text-lg leading-relaxed mb-12">
@@ -548,7 +547,7 @@ export default function RockFacePage() {
             Pronto pra orçar seu Rock Face?
           </h2>
           <p className="text-lg text-white/95 mb-8 leading-relaxed">
-            Placa 30×10 cm em 4 cores · efeito Cortein (também chamado Oxi)
+            Placa 30×10 cm em 3 cores · efeito Cortein (também chamado Oxi)
             opcional · instaladores parceiros indicados · entrega no raio de 120
             km. Toque abaixo e fale pelo WhatsApp com a Central.
           </p>
