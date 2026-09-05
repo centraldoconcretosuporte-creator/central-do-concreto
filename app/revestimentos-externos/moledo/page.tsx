@@ -70,7 +70,7 @@ const variantes: Variante[] = [
   {
     nome: "grafite",
     bio: "Cinza escuro fechado · contraste forte na fachada",
-    foto: null,
+    foto: "/cluster-revestimentos-externos/revestimentos-moledo-grafite-cimenticio-ivoti.webp",
     alt: "Variante grafite do Moledo cimentício · cinza escuro fechado, quase antracite · Central do Concreto Ivoti RS",
   },
 ];

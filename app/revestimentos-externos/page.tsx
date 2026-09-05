@@ -78,7 +78,7 @@ const modelos: Modelo[] = [
     bio: "Revestimento branco · lascas pontiagudas em 18 medidas",
     descricao:
       "Revestimento branco para fachada e parede externa branca, com aparência de lascas de rocha de deserto, pontiagudas. São 18 medidas variadas que se alternam na parede sem desenho repetido. Cor branco único · o Atacama não sai em outra tonalidade. Aplica em fachadas, muros, pilares, torres, lareiras internas e externas e cabanas.",
-    foto: null,
+    foto: "/cluster-revestimentos-externos/revestimentos-atacama-cimenticio-ivoti.webp",
     cardAlt:
       "Revestimento Atacama cimentício · revestimento branco em lascas de rocha pontiagudas · Central do Concreto Ivoti RS",
     blocoAlt:
