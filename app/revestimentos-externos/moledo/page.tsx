@@ -12,11 +12,11 @@ const SITE_URL = "https://centraldoconcretoentrega.com.br";
 const PAGE_TITLE =
   "Revestimento Moledo Cimentício · 17 Medidas Irregulares · Central do Concreto";
 const PAGE_DESCRIPTION =
-  "Revestimento Moledo cimentício em formatos irregulares · 17 medidas misturadas pra efeito de pedra natural assentada · variantes Areia, Marfim e Natural · fabricação local em Ivoti-RS com entrega no raio de 120 km.";
+  "Revestimento Moledo cimentício em formatos irregulares · 17 medidas misturadas pra efeito de pedra natural assentada · tonalidades areia clara, cinza e grafite · fabricação local em Ivoti-RS com entrega no raio de 120 km.";
 const HERO_IMG =
   "/cluster-revestimentos-externos/revestimentos-moledo-natural-cimenticio-ivoti.webp";
 const HERO_ALT =
-  "Revestimento Moledo em concreto cimentício acabamento natural · formatos irregulares · Central do Concreto Ivoti RS";
+  "Revestimento Moledo em concreto cimentício na tonalidade cinza · formatos irregulares · Central do Concreto Ivoti RS";
 
 export const metadata: Metadata = {
   title: PAGE_TITLE,
@@ -50,28 +50,28 @@ export const metadata: Metadata = {
 type Variante = {
   nome: string;
   bio: string;
-  foto: string;
+  foto: string | null;
   alt: string;
 };
 
 const variantes: Variante[] = [
   {
-    nome: "Areia",
+    nome: "areia clara",
     bio: "Bege claro com tom dourado · variante mais quente",
     foto: "/cluster-revestimentos-externos/revestimentos-moledo-areia-cimenticio-ivoti.webp",
-    alt: "Variante Areia do Moledo cimentício · bege claro com tom dourado suave · Central do Concreto Ivoti RS",
+    alt: "Variante areia clara do Moledo cimentício · bege claro com tom dourado suave · Central do Concreto Ivoti RS",
   },
   {
-    nome: "Marfim",
-    bio: "Creme neutro · expande fachadas pequenas",
-    foto: "/cluster-revestimentos-externos/revestimentos-moledo-marfim-cimenticio-ivoti.webp",
-    alt: "Variante Marfim do Moledo cimentício · creme neutro luminoso · Central do Concreto Ivoti RS",
-  },
-  {
-    nome: "Natural",
+    nome: "cinza",
     bio: "Cinza concreto cru · base versátil",
     foto: "/cluster-revestimentos-externos/revestimentos-moledo-natural-cimenticio-ivoti.webp",
-    alt: "Variante Natural do Moledo cimentício · cinza concreto cru · Central do Concreto Ivoti RS",
+    alt: "Variante cinza do Moledo cimentício · cinza concreto cru · Central do Concreto Ivoti RS",
+  },
+  {
+    nome: "grafite",
+    bio: "Cinza escuro fechado · contraste forte na fachada",
+    foto: null,
+    alt: "Variante grafite do Moledo cimentício · cinza escuro fechado, quase antracite · Central do Concreto Ivoti RS",
   },
 ];
 
@@ -85,8 +85,8 @@ const faqs = [
     a: "Não. Moledo se instala com argamassa colante AC-III e movimento simples de assentamento por carreira · qualquer pedreiro com experiência em revestimento cerâmico ou pedra dá conta. A única diferença é não tentar criar padrão · a regra é pegar a próxima peça do palete sem escolher. A Central pode indicar instaladores parceiros que já conhecem o produto na sua cidade.",
   },
   {
-    q: "Moledo Areia, Marfim e Natural envelhecem de cores diferentes com o tempo?",
-    a: "Não. As três variantes (Areia, Marfim, Natural) mantêm a cor original ao longo dos anos porque o pigmento é sólido no miolo da peça, não pintura superficial. O que muda visualmente com o tempo é o leve assentamento de pó urbano nas peças · em ambiente com muita poluição, o tom pode ficar levemente mais escuro, recuperável com lavagem simples. Em ambiente residencial limpo, as três cores se mantêm idênticas.",
+    q: "Moledo areia clara, cinza e grafite envelhecem de cores diferentes com o tempo?",
+    a: "Não. As três tonalidades (areia clara, cinza e grafite) mantêm a cor original ao longo dos anos porque o pigmento é sólido no miolo da peça, não pintura superficial. O que muda visualmente com o tempo é o leve assentamento de pó urbano nas peças · em ambiente com muita poluição, o tom pode ficar levemente mais escuro, recuperável com lavagem simples. Em ambiente residencial limpo, as três cores se mantêm idênticas.",
   },
 ];
 
@@ -156,10 +156,10 @@ const jsonLd = {
         },
         {
           "@type": "Question",
-          name: "Moledo Areia, Marfim e Natural envelhecem de cores diferentes com o tempo?",
+          name: "Moledo areia clara, cinza e grafite envelhecem de cores diferentes com o tempo?",
           acceptedAnswer: {
             "@type": "Answer",
-            text: "Não. As três variantes (Areia, Marfim, Natural) mantêm a cor original ao longo dos anos porque o pigmento é sólido no miolo da peça, não pintura superficial. O que muda visualmente com o tempo é o leve assentamento de pó urbano nas peças · em ambiente com muita poluição, o tom pode ficar levemente mais escuro, recuperável com lavagem simples. Em ambiente residencial limpo, as três cores se mantêm idênticas.",
+            text: "Não. As três tonalidades (areia clara, cinza e grafite) mantêm a cor original ao longo dos anos porque o pigmento é sólido no miolo da peça, não pintura superficial. O que muda visualmente com o tempo é o leve assentamento de pó urbano nas peças · em ambiente com muita poluição, o tom pode ficar levemente mais escuro, recuperável com lavagem simples. Em ambiente residencial limpo, as três cores se mantêm idênticas.",
           },
         },
       ],
@@ -231,7 +231,7 @@ export default function MoledoPage() {
             natural assentada na fachada com 17 medidas diferentes misturadas no
             mesmo palete. Cada parede revestida com Moledo fica visualmente única
             · sem repetição de padrão, sem trama industrial. Fabricado em Ivoti em
-            três cores naturais (Areia, Marfim, Natural) com opção de Cortein
+            três tonalidades (areia clara, cinza e grafite) com opção de Cortein
             (também chamado Oxi) sob consulta.
           </p>
           <WhatsAppLink
@@ -253,7 +253,7 @@ export default function MoledoPage() {
           </WhatsAppLink>
           <p className="mt-8 text-sm md:text-base text-white/90 flex flex-wrap justify-center gap-x-6 gap-y-2">
             <span>✓ 17 medidas irregulares</span>
-            <span>✓ 3 cores naturais</span>
+            <span>✓ 3 tonalidades</span>
             <span>✓ Instaladores parceiros</span>
             <span>✓ Entrega 120 km</span>
           </p>
@@ -337,19 +337,20 @@ export default function MoledoPage() {
           Variantes do Moledo
         </h2>
         <p className="text-lg leading-relaxed mb-4">
-          Moledo tem três cores fabricadas em pigmento sólido · Areia (bege claro
-          com tom dourado suave), Marfim (creme neutro próximo ao branco quente) e
-          Natural (cinza concreto cru). As três variantes funcionam em fachada
-          externa e muro · a escolha vai pelo diálogo com o restante do projeto.
+          Moledo tem três tonalidades fabricadas em pigmento sólido · areia clara
+          (bege claro com tom dourado suave), cinza (cinza concreto cru) e grafite
+          (cinza escuro fechado, quase antracite). As três variantes funcionam em
+          fachada externa e muro · a escolha vai pelo diálogo com o restante do
+          projeto.
         </p>
         <p className="text-lg leading-relaxed mb-8">
-          Areia é a variante mais quente · combina com madeira tratada, esquadrias
-          em tom natural, telhas cerâmicas tradicionais. Marfim é a mais luminosa
-          · expande fachadas pequenas, dialoga bem com pedras claras (Madeira,
-          Quartzo Branco) e funciona em projeto contemporâneo. Natural é a opção
-          neutra · combina com tudo e dá pegada urbana ao imóvel. Efeito Cortein
-          (também chamado Oxi) é fabricado sob consulta nas três cores · prazo
-          conforme volume.
+          A areia clara é a variante mais quente · combina com madeira tratada,
+          esquadrias em tom natural, telhas cerâmicas tradicionais. O cinza é a
+          opção neutra · combina com tudo e dá pegada urbana ao imóvel. O grafite
+          é o tom mais escuro · fecha a fachada com contraste forte, destaca
+          esquadrias e elementos claros e funciona em projeto contemporâneo de
+          linhas retas. Efeito Cortein (também chamado Oxi) é fabricado sob
+          consulta nas três tonalidades · prazo conforme volume.
         </p>
 
         {/* GRADE 3 VARIANTES */}
@@ -360,13 +361,19 @@ export default function MoledoPage() {
               className="block border border-cc-gray-200 rounded-lg overflow-hidden"
             >
               <div className="relative aspect-square overflow-hidden bg-cc-gray-50">
-                <Image
-                  src={v.foto}
-                  alt={v.alt}
-                  fill
-                  className="object-cover"
-                  sizes="(min-width: 768px) 33vw, 50vw"
-                />
+                {v.foto ? (
+                  <Image
+                    src={v.foto}
+                    alt={v.alt}
+                    fill
+                    className="object-cover"
+                    sizes="(min-width: 768px) 33vw, 50vw"
+                  />
+                ) : (
+                  <div className="absolute inset-0 flex items-center justify-center px-3 text-center text-sm text-cc-gray-500">
+                    Foto em breve
+                  </div>
+                )}
               </div>
               <div className="p-3">
                 <h3 className="text-base font-semibold mb-1">{v.nome}</h3>
