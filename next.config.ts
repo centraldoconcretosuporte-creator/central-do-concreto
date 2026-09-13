@@ -39,6 +39,7 @@ const REDIRECTS_SITE_ANTIGO: Array<{ source: string; destination: string }> = [
   { source: "/gramado-e-canela_meio", destination: "/pre-moldados/gramado" },
   { source: "/gramado-e-canela_fundo", destination: "/pre-moldados/gramado" },
   { source: "/gramado-canela-meio", destination: "/pre-moldados/gramado" },
+  { source: "/gramado-e-canela_topo", destination: "/pre-moldados/gramado" },
   {
     source: "/produtos/revestimentos-de-concreto",
     destination: "/revestimentos-externos",
