@@ -7,6 +7,7 @@ import WhatsAppLink from "@/components/WhatsAppLink";
 import {
   CIDADES_ATENDIMENTO,
   CIDADES_SERRA,
+  SLUGS_SEM_PAGINA,
   getCidade,
   type Cidade,
 } from "@/lib/cidades-atendimento";
@@ -32,7 +33,9 @@ function subtituloHeroCidade(cidade: Cidade): string {
 // Item 12 · 8 Litoral viram redirect 301 (ver next.config.ts)
 // So Serra gera pagina estatica · CidadeLitoralView fica como dead code defensivo
 export async function generateStaticParams() {
-  return CIDADES_SERRA.map((c) => ({ cidade: c.slug }));
+  return CIDADES_SERRA.filter((c) => !SLUGS_SEM_PAGINA.includes(c.slug)).map(
+    (c) => ({ cidade: c.slug }),
+  );
 }
 
 export async function generateMetadata({

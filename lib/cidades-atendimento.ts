@@ -220,6 +220,22 @@ export const CIDADES_SERRA: Cidade[] = [
   },
 ];
 
+// Cidades de Serra sem página própria · /pre-moldados/{slug} redireciona pra /entregas (ver next.config.ts)
+// Continuam em CIDADES_SERRA porque o areaServed de lib/schema-negocio.ts deriva dessa lista
+export const SLUGS_SEM_PAGINA = [
+  "canela",
+  "nova-petropolis",
+  "picada-cafe",
+  "feliz",
+  "bom-principio",
+  "linha-nova",
+  "harmonia",
+  "tres-coroas",
+  "morro-reuter",
+  "novo-hamburgo",
+  "santa-maria-do-herval",
+];
+
 export const CIDADES_ATENDIMENTO: Cidade[] = [
   ...CIDADES_LITORAL,
   ...CIDADES_SERRA,

@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { CIDADES_ATENDIMENTO } from "@/lib/cidades-atendimento";
+import { CIDADES_ATENDIMENTO, SLUGS_SEM_PAGINA } from "@/lib/cidades-atendimento";
 
 const SITE_URL = "https://centraldoconcretoentrega.com.br";
 
@@ -38,7 +38,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/entregas`, changeFrequency: "yearly", priority: 0.7 },
   ];
 
-  const cidadesRoutes: MetadataRoute.Sitemap = CIDADES_ATENDIMENTO.map((c) => ({
+  const cidadesRoutes: MetadataRoute.Sitemap = CIDADES_ATENDIMENTO.filter(
+    (c) => !SLUGS_SEM_PAGINA.includes(c.slug),
+  ).map((c) => ({
     url: `${SITE_URL}/pre-moldados/${c.slug}`,
     changeFrequency: "yearly",
     priority: 0.7,
