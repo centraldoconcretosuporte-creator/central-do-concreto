@@ -59,13 +59,13 @@ export const NEGOCIO_NODES = [
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
         "opens": "08:00",
-        "closes": "21:00",
+        "closes": "19:00",
       },
       {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": "Saturday",
-        "opens": "08:00",
-        "closes": "12:00",
+        "opens": "08:30",
+        "closes": "11:30",
       },
     ],
     "areaServed": CIDADES_ATENDIMENTO.map((c) => ({

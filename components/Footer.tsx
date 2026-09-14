@@ -37,9 +37,9 @@ export default function Footer() {
               CEP 93900-000
             </p>
             <p className="text-sm text-white/80 leading-relaxed mb-3">
-              Segunda a Sexta · 8h às 21h
+              Segunda a Sexta · 8h às 19h
               <br />
-              Sábado · 8h às 12h
+              Sábado · 8h30 às 11h30
             </p>
             <p className="text-sm text-white/90 font-medium">
               <WhatsAppLink
