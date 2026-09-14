@@ -352,6 +352,11 @@ export default function CobogoMuroPage() {
               </a>
             </li>
             <li>
+              <a href="#parte-de-cima" className="hover:text-cc-orange">
+                Cobogó só na parte de cima do muro →
+              </a>
+            </li>
+            <li>
               <a
                 href="#altura-maxima-muro"
                 className="hover:text-cc-orange"
@@ -383,7 +388,10 @@ export default function CobogoMuroPage() {
           Muro de cobogó vence muro fechado em três pontos: ventilação natural sem perder privacidade, estética mais leve e custo competitivo de mão de obra · sem comprometer segurança porque é parede de concreto pré-moldado.
         </p>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
-          Diferente do muro convencional de bloco cerâmico ou tijolo maciço, o cobogó deixa o ar passar e a luz entrar sem abrir o terreno. Quem está dentro vê o reflexo difuso da paisagem · quem está fora vê uma textura geométrica contínua, não o quintal. A barreira visual é real a partir de 1,5 metro de distância e o vento atravessa, evitando a sensação de confinamento que um muro fechado cria.
+          Cobogó de cimento e cobogó de concreto são a mesma peça, com dois nomes. Cimento é como a maioria chama na obra, e concreto é o nome de fábrica: o cobogó é feito com mistura de cimento, agregado e água em fôrma metálica, vibrada e curada. Pode pedir pelos dois nomes.
+        </p>
+        <p className="text-cc-gray-700 leading-relaxed mb-4">
+          Diferente do muro convencional de bloco cerâmico ou tijolo maciço, o cobogó deixa o ar passar e a luz entrar sem abrir o terreno. Quem está dentro vê o reflexo difuso da paisagem · quem está fora vê uma textura geométrica contínua, não o quintal. A barreira visual é real a partir de 1,5 metro de distância e o vento atravessa, evitando a sensação de confinamento que um muro fechado cria. Na prática, o muro de cobogó é um muro com abertura para ventilação, e as aberturas são o próprio vazado de cada peça.
         </p>
         <p className="text-cc-gray-700 leading-relaxed mb-4">
           Em fachada moderna ou minimalista, o cobogó também resolve estética · o muro deixa de ser apenas um divisor de propriedade e vira elemento de composição. Cor neutra do concreto natural combina com qualquer paleta de fachada · pintura em fábrica permite contraste planejado.
@@ -465,6 +473,17 @@ export default function CobogoMuroPage() {
             className="object-cover"
           />
         </div>
+
+        {/* H2 3b */}
+        <h2
+          id="parte-de-cima"
+          className="scroll-mt-24 text-3xl font-bold text-cc-gray-700 mt-12 mb-4"
+        >
+          Dá pra fazer muro com cobogó só na parte de cima?
+        </h2>
+        <p className="text-cc-gray-700 leading-relaxed mb-4">
+          Dá, e é a combinação que a Central recomenda quando a privacidade precisa ser maior perto do muro: base sólida embaixo e cobogó na parte de cima. A base fechada corta a visão e o ruído mais baixo, e o cobogó em cima deixa passar o ar e a luz.
+        </p>
 
         {/* H2 4 */}
         <h2
