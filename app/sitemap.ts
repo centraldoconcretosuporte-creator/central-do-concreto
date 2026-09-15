@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${SITE_URL}/tubo-de-concreto/diametros`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/tubo-dreno`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/tubo-de-concreto/aplicacoes`, changeFrequency: "monthly", priority: 0.8 },
+    { url: `${SITE_URL}/tubo-de-concreto/gramado`, changeFrequency: "monthly", priority: 0.8 },
     { url: `${SITE_URL}/produtos`, changeFrequency: "yearly", priority: 0.9 },
     { url: `${SITE_URL}/produtos/pergolado-de-concreto`, changeFrequency: "yearly", priority: 0.9 },
     { url: `${SITE_URL}/produtos/caixas-de-passagem`, changeFrequency: "yearly", priority: 0.7 },
