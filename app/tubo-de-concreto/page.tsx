@@ -134,6 +134,73 @@ export default function TuboDeConcretoPage() {
       {/* CONTEÚDO PRINCIPAL */}
       <article className="py-16 md:py-20 bg-white">
         <div className="mx-auto max-w-3xl px-4 space-y-14">
+          {/* Índice — pedido 68 */}
+          <aside
+            aria-label="Índice deste guia"
+            className="bg-cc-gray-50 border border-cc-gray-200 rounded-lg p-6"
+          >
+            <p className="text-base font-semibold text-cc-gray-700 mb-3 uppercase tracking-wide">
+              Neste guia
+            </p>
+            <ol className="space-y-2 text-cc-gray-700">
+              <li>
+                <a href="#o-que-e" className="hover:text-cc-orange">
+                  O que é um tubo de concreto? →
+                </a>
+              </li>
+              <li>
+                <a href="#manilha" className="hover:text-cc-orange">
+                  O que é manilha de concreto? →
+                </a>
+              </li>
+              <li>
+                <a href="#tipos-encaixe" className="hover:text-cc-orange">
+                  Quais são os tipos de encaixe do tubo de concreto? →
+                </a>
+              </li>
+              <li>
+                <a href="#classes-carga" className="hover:text-cc-orange">
+                  O que são as classes de carga PA1 e PA2? →
+                </a>
+              </li>
+              <li>
+                <a href="#tubo-dreno" className="hover:text-cc-orange">
+                  O que é tubo dreno? →
+                </a>
+              </li>
+              <li>
+                <a href="#diametros" className="hover:text-cc-orange">
+                  Quais diâmetros e medidas estão disponíveis? →
+                </a>
+              </li>
+              <li>
+                <a href="#aplicacoes" className="hover:text-cc-orange">
+                  Onde o tubo de concreto é usado? →
+                </a>
+              </li>
+              <li>
+                <a href="#como-escolher" className="hover:text-cc-orange">
+                  Como escolher o tubo de concreto certo? →
+                </a>
+              </li>
+              <li>
+                <a href="#ivoti-regiao" className="hover:text-cc-orange">
+                  Tubo de concreto em Ivoti e região →
+                </a>
+              </li>
+              <li>
+                <a href="#faq-title" className="hover:text-cc-orange">
+                  Perguntas frequentes sobre tubo de concreto →
+                </a>
+              </li>
+              <li>
+                <a href="#precisa-de-tubo-de-concreto-para-a-sua-obra" className="hover:text-cc-orange">
+                  Precisa de tubo de concreto para a sua obra? →
+                </a>
+              </li>
+            </ol>
+          </aside>
+
           {/* O que é */}
           <section aria-labelledby="o-que-e">
             <h2
@@ -628,7 +695,7 @@ export default function TuboDeConcretoPage() {
       {/* CTA FINAL */}
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">
+          <h2 id="precisa-de-tubo-de-concreto-para-a-sua-obra" className="text-2xl md:text-3xl font-bold mb-3">
             Precisa de tubo de concreto para a sua obra?
           </h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">

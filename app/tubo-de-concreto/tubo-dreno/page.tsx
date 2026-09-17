@@ -226,6 +226,73 @@ export default function TuboDrenoPage() {
       {/* CONTEÚDO PRINCIPAL */}
       <article className="py-16 md:py-20 bg-white">
         <div className="mx-auto max-w-3xl px-4 space-y-14">
+          {/* Índice — pedido 68 */}
+          <aside
+            aria-label="Índice deste guia"
+            className="bg-cc-gray-50 border border-cc-gray-200 rounded-lg p-6"
+          >
+            <p className="text-base font-semibold text-cc-gray-700 mb-3 uppercase tracking-wide">
+              Neste guia
+            </p>
+            <ol className="space-y-2 text-cc-gray-700">
+              <li>
+                <a href="#o-que-e-tubo-dreno" className="hover:text-cc-orange">
+                  O que é o tubo dreno de concreto? →
+                </a>
+              </li>
+              <li>
+                <a href="#para-que-serve" className="hover:text-cc-orange">
+                  Para que serve um tubo dreno? →
+                </a>
+              </li>
+              <li>
+                <a href="#relevo-serra-gaucha" className="hover:text-cc-orange">
+                  Por que o relevo da Serra Gaúcha muda o projeto de drenagem →
+                </a>
+              </li>
+              <li>
+                <a href="#onde-se-usa" className="hover:text-cc-orange">
+                  Onde se usa o tubo dreno de concreto? →
+                </a>
+              </li>
+              <li>
+                <a href="#concreto-vs-pead" className="hover:text-cc-orange">
+                  Tubo dreno de concreto e tubo dreno de PEAD — quando escolher cada um? →
+                </a>
+              </li>
+              <li>
+                <a href="#como-se-instala" className="hover:text-cc-orange">
+                  Como se instala um tubo dreno? →
+                </a>
+              </li>
+              <li>
+                <a href="#diametros-tubo-dreno" className="hover:text-cc-orange">
+                  Diâmetros do tubo dreno de concreto →
+                </a>
+              </li>
+              <li>
+                <a href="#tubo-dreno-central" className="hover:text-cc-orange">
+                  Tubo dreno disponível na Central do Concreto →
+                </a>
+              </li>
+              <li>
+                <a href="#entregamos-em-16-cidades-serra-gaucha-vale-dos-sinos-e-litor" className="hover:text-cc-orange">
+                  Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte →
+                </a>
+              </li>
+              <li>
+                <a href="#faq-title" className="hover:text-cc-orange">
+                  Perguntas frequentes sobre tubo dreno →
+                </a>
+              </li>
+              <li>
+                <a href="#fale-direto-com-o-andre-no-whatsapp-atendimento-agilizado-se" className="hover:text-cc-orange">
+                  Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário →
+                </a>
+              </li>
+            </ol>
+          </aside>
+
           {/* H2 1 — O que é o tubo dreno de concreto? */}
           <section aria-labelledby="o-que-e-tubo-dreno">
             <h2
@@ -938,7 +1005,7 @@ export default function TuboDrenoPage() {
       {/* CITY PILLS · tarja full-bleed com fundo escuro sólido · padrão home (LOGÍSTICA E ENTREGA) */}
       <section className="bg-cc-black/95 py-16 md:py-24">
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
-          <h2 className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
+          <h2 id="entregamos-em-16-cidades-serra-gaucha-vale-dos-sinos-e-litor" className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
             Frete próprio até Caxias e equipe própria de instalação na Serra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
           </p>
@@ -1013,7 +1080,7 @@ export default function TuboDrenoPage() {
       {/* CTA FINAL */}
       <section className="bg-cc-black py-14 md:py-16">
         <div className="mx-auto max-w-3xl px-4 text-center text-white">
-          <h2 className="text-2xl md:text-3xl font-bold mb-3">Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário</h2>
+          <h2 id="fale-direto-com-o-andre-no-whatsapp-atendimento-agilizado-se" className="text-2xl md:text-3xl font-bold mb-3">Fale direto com o André no WhatsApp · atendimento agilizado, sem intermediário</h2>
           <p className="text-base md:text-lg text-white/90 mb-8 leading-relaxed">
             A Central do Concreto entrega tubo dreno de concreto em Ivoti e nas cidades da Serra
             Gaúcha num raio de cerca de 120 km. Mande foto da obra ou as medidas (diâmetro, classe,
