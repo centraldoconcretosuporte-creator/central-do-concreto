@@ -24,8 +24,8 @@ const pilares = [
     desc: "Concreto armado calculado conforme especificação. Resistência testada · garantia.",
   },
   {
-    titulo: "Equipe própria de instalação",
-    desc: "Não terceirizamos a obra. Nossa equipe vai até o local · monta · entrega pronto.",
+    titulo: "Fabricação própria e entrega na obra",
+    desc: "Produzimos em Ivoti com acabamento diferenciado e entregamos com caminhão próprio direto no endereço da obra. Em cobogós e pergolados, quem preferir pode contratar também a montagem com a nossa equipe. No tubo de concreto, a entrega vem com a orientação técnica da rede: nivelamento, alinhamento, vedação da junta e declividade.",
   },
 ];
 
@@ -47,8 +47,8 @@ export default function SobrePage() {
             Sobre a Central do Concreto
           </h1>
           <p className="text-base md:text-lg text-white/90 max-w-2xl mx-auto leading-relaxed">
-            Fábrica em Ivoti-RS · pré-moldados de concreto com normas técnicas e equipe própria de
-            instalação.
+            Fábrica em Ivoti-RS · pré-moldados de concreto com normas técnicas, acabamento
+            diferenciado e entrega ágil direto na obra.
           </p>
         </div>
       </section>
