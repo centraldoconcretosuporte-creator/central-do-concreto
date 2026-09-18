@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     q: "Vocês instalam ou só fornecem?",
-    a: "A Central só fornece. Fabricamos e entregamos os tubos no endereço da obra com caminhão próprio · a instalação fica com a equipe do cliente, ou com uma empreiteira parceira que a Central pode indicar.",
+    a: "A Central só fornece. Fabricamos e entregamos os tubos no endereço da obra com caminhão próprio · a instalação fica com a equipe do cliente.",
   },
 ];
 
@@ -1024,8 +1024,7 @@ export default function AplicacoesPage() {
                 Presidente Lucena, Bom Princípio, São José do Hortêncio, Campo
                 Bom, Sapiranga, Morro Reuter, Picada Café, Santa Maria do
                 Herval, Nova Petrópolis, Gramado e Canela. Entrega com caminhão
-                próprio. Para quem prefere o serviço completo, a Central
-                indica empreiteira parceira da região.
+                próprio.
               </p>
             </div>
 
@@ -1053,7 +1052,7 @@ export default function AplicacoesPage() {
         <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <h2 id="entregamos-em-16-cidades-serra-gaucha-vale-dos-sinos-e-litor" className="text-3xl md:text-4xl font-medium text-white mb-3">Entregamos em 16 cidades · Serra Gaúcha, Vale dos Sinos e Litoral Norte</h2>
           <p className="text-base md:text-lg text-white/90 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Frete próprio até Caxias e equipe própria de instalação na Serra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
+            Frete próprio até Caxias. Entrega agilizada direto na obra. Vale dos Sinos e Litoral Norte atendidos por parceiro de transporte. Sem pedido mínimo · do tubo avulso à obra inteira.
           </p>
 
           <p className="text-sm md:text-base text-white/75 mb-6 max-w-2xl mx-auto">

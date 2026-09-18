@@ -45,7 +45,7 @@ const faqs = [
   },
   {
     q: "A Central do Concreto instala o tubo de concreto?",
-    a: "Não. A Central só fornece. Produzimos os tubos em Ivoti e entregamos com caminhão próprio no endereço da obra. A instalação fica com a equipe do cliente, ou com uma empreiteira parceira que a Central pode indicar.",
+    a: "Não. A Central só fornece. Produzimos os tubos em Ivoti e entregamos com caminhão próprio no endereço da obra. A instalação fica com a equipe do cliente.",
   },
 ];
 

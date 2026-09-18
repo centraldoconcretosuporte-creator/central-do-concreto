@@ -350,8 +350,7 @@ export default function TuboGramadoPage() {
             <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
               <p>
                 Não. O fornecimento da Central termina com o tubo entregue na obra, e o
-                assentamento é da equipe da construtora. Quando falta equipe para a rede, a Central
-                indica uma empreiteira parceira da região.
+                assentamento é da equipe da construtora.
               </p>
               <p>
                 Para quem vai executar, a equipe técnica repassa as boas práticas de assentamento
