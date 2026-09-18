@@ -519,6 +519,18 @@ function CidadeSerraView({ c }: { c: Cidade }) {
           <p className="text-base text-cc-gray-600 leading-relaxed mb-8">
             Pergolados, tubos, caixas, muros, blocos, fossa e mais · tudo saindo da forma em Ivoti.
           </p>
+          {c.slug === "gramado" && (
+            <p className="text-base text-cc-gray-600 leading-relaxed mb-8">
+              Para rede pluvial e drenagem, veja{" "}
+              <Link
+                href="/tubo-de-concreto/gramado"
+                className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+              >
+                tubo de concreto em Gramado
+              </Link>
+              .
+            </p>
+          )}
           <Link
             href="/produtos"
             className="inline-flex items-center gap-2 bg-cc-orange hover:bg-cc-orange/90 text-white px-7 py-3.5 rounded-full font-medium transition-colors"

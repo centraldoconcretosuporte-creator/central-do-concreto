@@ -634,6 +634,15 @@ export default function TiposDeEncaixePage() {
             ))}
           </div>
 
+          <p className="text-sm md:text-base text-white/75 mb-6 max-w-2xl mx-auto">
+            <Link
+              href="/tubo-de-concreto/gramado"
+              className="text-white underline decoration-cc-orange underline-offset-4 hover:text-cc-orange"
+            >
+              Tubo de concreto em Gramado
+            </Link>
+          </p>
+
           <Link
             href="/entregas"
             className="inline-flex items-center gap-2 border border-white/30 hover:border-white/60 text-white px-6 py-3 rounded-full font-medium text-sm transition-colors"

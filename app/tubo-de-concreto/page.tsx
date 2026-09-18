@@ -545,6 +545,16 @@ export default function TuboDeConcretoPage() {
                 o ponto de partida é entender a obra.
               </p>
               <p>
+                <Link
+                  href="/tubo-de-concreto/gramado"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  Tubo de concreto em Gramado
+                </Link>{" "}
+                — entrega para construtora, com calha de drenagem e caixa de passagem na mesma
+                rede.
+              </p>
+              <p>
                 Fale com a equipe da Central do Concreto pelo WhatsApp{" "}
                 <WhatsAppLink
                   href={WHATSAPP_URL}
