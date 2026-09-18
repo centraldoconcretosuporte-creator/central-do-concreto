@@ -166,6 +166,18 @@ export default function TuboGramadoPage() {
       {/* CONTEÚDO PRINCIPAL */}
       <article className="py-16 md:py-20 bg-white">
         <div className="mx-auto max-w-3xl px-4 space-y-14">
+          {/* Contexto — chuva e solo de Gramado (pedido 85) */}
+          <div className="space-y-4 text-base text-cc-gray-700 leading-relaxed">
+            <p>
+              Em Gramado, drenagem é projeto, não acabamento. A média anual de chuva é de cerca de
+              2.055 mm, na climatologia de 30 anos da Climatempo, e janeiro (222 mm) e outubro
+              (221 mm) puxam o acumulado. O relevo vai de 500 a 900 m de altitude, sobre
+              cambissolo, de profundidade variável e drenagem irregular, segundo a Embrapa Solos.
+              Em setembro de 2023 a estação de Canela mediu 433,6 mm, contra média de 170 a 190 mm,
+              no mês das rachaduras e dos deslizamentos na região.
+            </p>
+          </div>
+
           {/* H2 1 — O que a Central fornece para obra em Gramado? */}
           <section aria-labelledby="linha-gramado">
             <h2
@@ -244,6 +256,17 @@ export default function TuboGramadoPage() {
                   tipos de encaixe
                 </Link>
                 .
+              </p>
+              <p>
+                Em Gramado a construtora não pede tubo solto: pede o sistema junto — tubo, calha de
+                drenagem (canaleta) e{" "}
+                <Link
+                  href="/produtos/caixas-de-passagem"
+                  className="text-cc-orange underline underline-offset-4 hover:text-cc-black"
+                >
+                  caixa de passagem
+                </Link>
+                . No memorial, vale listar a rede inteira, não só os trechos de tubo.
               </p>
             </div>
           </section>
