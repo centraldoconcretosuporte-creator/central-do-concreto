@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { Eyebrow } from "@/components/Eyebrow";
 import WhatsAppLink from "@/components/WhatsAppLink";
+import { NEGOCIO_NODES } from "@/lib/schema-negocio";
 
 const CANONICAL_URL = "https://centraldoconcretoentrega.com.br/mourao-de-concreto";
 
@@ -57,6 +58,7 @@ const faqs = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    ...NEGOCIO_NODES,
     {
       "@type": "BreadcrumbList",
       "@id": `${CANONICAL_URL}#breadcrumb`,
