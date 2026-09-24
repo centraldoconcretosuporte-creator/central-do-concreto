@@ -7,7 +7,7 @@ This version has breaking changes — APIs, conventions, and file structure may 
 <!-- BEGIN:method -->
 # Método de trabalho
 
-Toda sessão neste repositório segue: convenções da stack, princípios K1-K4, regras críticas operacionais e editoriais, padrões editoriais de copy (ski ramp + humanizer), stack e identidade, formato `/goal` de abertura, e os POPs abaixo.
+Toda sessão neste repositório segue: convenções da stack, princípios K1-K4, regras críticas operacionais e editoriais, padrões editoriais de copy (ski ramp + humanizer), stack e identidade, e os POPs abaixo.
 
 Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump de histórico. Histórico e estado vivem no PK do projeto; aqui só mora método.
 
@@ -28,7 +28,7 @@ Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump d
 
 **K3 · Surgical Changes.** Toca só o que precisa · não "melhora" código adjacente · não refatora o que não está quebrado. `git add` sempre nominal por caminho · nunca `-A` nem `.`. Combinar style existente mesmo discordando.
 
-**K4 · Goal-Driven Execution.** Cada pedido abre com `/goal` (formato abaixo) com critério forte e verificável. Referência exata · "usar wrapper X do componente Y" · não vago tipo "padrão da home".
+K1–K4 seguem o CLAUDE.md global.
 
 ## Regras operacionais críticas
 
@@ -36,8 +36,7 @@ Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump d
 - Git · `git add caminho/especifico` · nunca `git add -A` nem `git add .`.
 - Sem `rm -rf` · usar `Remove-Item -Recurse` se realmente preciso (bloqueado por segurança).
 - Sem script runner externo · sem `node -e` · sem `child_process` dinâmico · sem `exec` em pedido autônomo.
-- Pedido pro Code · arquivo `.md` autossuficiente na Desktop quando passar de poucas linhas.
-- Relatórios `.md` gerados pelo Code salvam em `C:\Users\reusa\Desktop\` (nunca na raiz do projeto).
+- Pedido e relatório seguem o Fluxo da ponte do CLAUDE.md global.
 - Toda fase com commit termina no Push Gate do CLAUDE.md global · se o gate libera, `git push origin main` é o passo final · se pede autorização, parar e pedir · nunca deixar push pendente sem avisar.
 
 ## Regras editoriais críticas
@@ -80,20 +79,6 @@ Referência canônica · `humanizer/SKILL.md` no PK · 26 padrões com exemplos 
 | Endereço | Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS · 93900-000 |
 | GPS | `-29.62038, -51.16389` (EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global) |
 | WhatsApp | (51) 99669-1757 |
-
-## Formato /goal
-
-Todo pedido enviado pelo André abre com header `/goal` de três campos obrigatórios + um opcional:
-
-```
-/goal
-Objetivo: [frase única, ação + critério verificável]
-Pronto quando: [estado terminal observável]
-Verificador: [quem confirma — André / Cowork / Code / GSC / build]
-Não-objetivo: [opcional — usar quando há risco de drift]
-```
-
-Se o pedido chegar sem `/goal`, parar e pedir antes de executar.
 
 ## POPs
 
@@ -141,19 +126,9 @@ Indexação no Google é outro escopo, executado via Cowork.
 
 **Pronto quando**: build verde, todos os marcadores substituídos, commit pushed.
 
-### POP 3 · Pedido autossuficiente para o Code
+### POP 3 · Pedido para o Code
 
-**Gatilho**: aplica-se a TODO pedido `.md` que o André monta para o Code, sem exceção.
-
-**Estrutura obrigatória do arquivo `.md`**:
-1. Header `/goal` (formato acima).
-2. Contexto curto — por que esta sessão existe.
-3. **O que fazer**: passos numerados, na ordem.
-4. **O que NÃO fazer**: lista explícita de comandos e tipos de mudança proibidas (anti-drift), incluindo `git add -A` / `git add .` / `rm -rf` / `node -e` / script runner externo / criação de arquivo em `app/` não pedida.
-5. **Entregável**: caminho exato do relatório final em `C:\Users\reusa\Desktop\`.
-6. **Critério de pronto**: condições observáveis para encerrar.
-
-**Pronto quando**: arquivo salvo em `C:\Users\reusa\Desktop\` em kebab-case curto, Code invocado com "Lê o arquivo X e executa tudo que está nele", relatório `.md` de volta para o André.
+Pedido e relatório seguem o Fluxo da ponte do CLAUDE.md global.
 
 ## Aprendizado persistente
 
