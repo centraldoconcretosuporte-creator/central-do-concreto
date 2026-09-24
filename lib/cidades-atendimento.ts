@@ -234,7 +234,15 @@ export const SLUGS_SEM_PAGINA = [
   "morro-reuter",
   "novo-hamburgo",
   "santa-maria-do-herval",
+  // Pedido 146 · consolidadas, nunca indexadas
+  "dois-irmaos",
+  "ivoti",
 ];
+
+// Destino do redirect quando não é /entregas · Ivoti vai pra home (pedido 146)
+export const DESTINO_SEM_PAGINA: Record<string, string> = {
+  ivoti: "/",
+};
 
 export const CIDADES_ATENDIMENTO: Cidade[] = [
   ...CIDADES_LITORAL,

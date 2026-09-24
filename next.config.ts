@@ -1,6 +1,6 @@
 import path from "path";
 import type { NextConfig } from "next";
-import { SLUGS_SEM_PAGINA } from "./lib/cidades-atendimento";
+import { DESTINO_SEM_PAGINA, SLUGS_SEM_PAGINA } from "./lib/cidades-atendimento";
 
 const CIDADES_LITORAL_SLUGS = [
   "imbe",
@@ -74,11 +74,11 @@ const nextConfig: NextConfig = {
           permanent: true,
         },
       ]),
-      // 11 cidades de Serra sem página própria -> /entregas (308 permanente)
+      // 13 cidades de Serra sem página própria -> /entregas (Ivoti -> /) (308 permanente)
       // Só sem barra · o Next tira a barra antes de aplicar o redirect
       ...SLUGS_SEM_PAGINA.map((slug) => ({
         source: `/pre-moldados/${slug}`,
-        destination: "/entregas",
+        destination: DESTINO_SEM_PAGINA[slug] ?? "/entregas",
         permanent: true,
       })),
       // Legado · /atendimento/{slug} -> /pre-moldados/{slug} (mantido · chain ok)
