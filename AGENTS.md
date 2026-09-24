@@ -55,7 +55,7 @@ Todo texto novo escrito pra páginas, FAQs, `alt`, EXIF description ou CTA passa
 
 H1 entrega produto + uso principal numa frase única. Primeira frase de cada H2 responde a pergunta implícita da seção · cauda preenche com norma, dimensão, prova. Trechos auto-contidos de 130 a 160 palavras por H2. Razão técnica · AI Overview puxa parágrafos, não páginas inteiras (Mike King, Lily Ray) · sem ski ramp, o parágrafo não é citável.
 
-Aplica também a foto · o primeiro frame visual resolve o produto sem depender de legenda. `alt` e EXIF description carregam entidades SEO da página (categoria · aplicação · região) na primeira frase. FAQ idem · pergunta + resposta direta + 1 linha de prova.
+Aplica também a foto · o primeiro frame visual resolve o produto sem depender de legenda. `alt` e EXIF description carregam entidades SEO da página (categoria · aplicação) na primeira frase; EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global. FAQ idem · pergunta + resposta direta + 1 linha de prova.
 
 Referência canônica · `ski-ramp-principio-universal.md` no PK · cobre 6 domínios (páginas, fotos, comunicação @cinzento, aprendizado, operação física → ativos, GMB).
 
@@ -78,7 +78,7 @@ Referência canônica · `humanizer/SKILL.md` no PK · 26 padrões com exemplos 
 | Domínio oficial | `centraldoconcretoentrega.com.br` |
 | Domínio que NÃO é nosso | `centraldoconcreto.com.br` (empresa MG · jamais referenciar) |
 | Endereço | Av. Bom Jardim, 149 · Loja 02 · Vista Alegre · Ivoti-RS · 93900-000 |
-| GPS | `-29.62038, -51.16389` (variação 5-10 m em EXIF) |
+| GPS | `-29.62038, -51.16389` (EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global) |
 | WhatsApp | (51) 99669-1757 |
 
 ## Formato /goal
@@ -130,11 +130,11 @@ Indexação no Google é outro escopo, executado via Cowork.
 **Passos**:
 1. Para cada imagem listada no pedido:
    - Converter para WebP.
-   - Injetar EXIF: GPS base `-29.62038, -51.16389` com variação aleatória de 5–10 m; autor `Central do Concreto`; cidade `Ivoti-RS`; data atual.
+   - Injetar EXIF: autor `Central do Concreto`. EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global.
    - Renomear em kebab-case curto.
 2. Salvar em `public/<subpasta-do-cluster>/` correspondente ao tipo de página.
 3. No JSX da página, substituir cada marcador `FOTO_X` pela tag de imagem apontando ao arquivo, com `alt` carregando entidades SEO do tema da página.
-4. **Auditoria editorial** · `alt` e EXIF description seguem ski ramp · primeira frase carrega entidades SEO da página (categoria · aplicação · região). Humanizer aplicado em qualquer description de mais de uma frase.
+4. **Auditoria editorial** · `alt` e EXIF description seguem ski ramp · primeira frase carrega entidades SEO da página (categoria · aplicação); EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global. Humanizer aplicado em qualquer description de mais de uma frase.
 5. `npm run build`.
 6. `git add` nominal por caminho · **nunca** `git add .` nem `git add -A`. Exemplo: `git add public/<subpasta>/ app/<rota>/page.tsx`.
 7. `git commit -m "feat: adiciona N imagens com EXIF em <pagina>"` · `git push origin main` conforme o Push Gate do CLAUDE.md global.
