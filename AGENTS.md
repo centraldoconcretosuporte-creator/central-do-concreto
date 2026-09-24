@@ -16,7 +16,7 @@ Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump d
 - **Stack**: Next.js 16 + React 19 + Tailwind v4. Tailwind v4 não usa `tailwind.config.*` — config vive em `postcss.config.mjs`.
 - **Lint**: ESLint 9 com flat config (`eslint.config.mjs`). Não existe `.eslintrc`.
 - **Estrutura**: App Router clássico. `app/` na raiz, sem `src/`. `lib/` e `components/` também na raiz.
-- **Branch**: `main`. Push direto para `main` autorizado (workflow single-developer, registrado em `autoMode.allow`).
+- **Branch**: `main`. Push vai direto para `main` (workflow single-developer), mas segue o Push Gate do CLAUDE.md global (`C:\Users\reusa\.claude\CLAUDE.md`): sem pedir autorização só nos casos que não introduzem afirmação nova; todo o resto, autorização explícita. A permissão `Bash(git push:*)` em `.claude/settings.json` só dispensa o prompt da ferramenta, não o gate.
 - **Build de verificação**: sempre `npm run build` antes de commit. Verde obrigatório.
 - **Shell**: PowerShell. `;` encadeia comandos · nunca `&&`.
 
@@ -38,7 +38,7 @@ Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump d
 - Sem script runner externo · sem `node -e` · sem `child_process` dinâmico · sem `exec` em pedido autônomo.
 - Pedido pro Code · arquivo `.md` autossuficiente na Desktop quando passar de poucas linhas.
 - Relatórios `.md` gerados pelo Code salvam em `C:\Users\reusa\Desktop\` (nunca na raiz do projeto).
-- Toda fase com commit inclui `git push origin main` como passo final · nunca deixar push manual pendente.
+- Toda fase com commit termina no Push Gate do CLAUDE.md global · se o gate libera, `git push origin main` é o passo final · se pede autorização, parar e pedir · nunca deixar push pendente sem avisar.
 
 ## Regras editoriais críticas
 
@@ -110,7 +110,7 @@ Se o pedido chegar sem `/goal`, parar e pedir antes de executar.
 6. **Auditoria editorial** · aplicar Padrões editoriais de copy (seção acima) em H1, todos os H2, FAQ, CTA e `alt` de imagem. Ski ramp obrigatório em cada H2 · humanizer obrigatório em cada parágrafo de prosa. Sem essa auditoria, build verde não basta.
 7. `npm run build` — confirmar build verde com a nova rota na lista.
 8. `git add` nominal por caminho · cada arquivo tocado citado explicitamente · **nunca** `git add .` nem `git add -A`. Exemplo: `git add app/<rota>/page.tsx app/sitemap.ts`.
-9. `git commit -m "feat: publicar pagina <nome>"` + `git push origin main`.
+9. `git commit -m "feat: publicar pagina <nome>"` · `git push origin main` conforme o Push Gate do CLAUDE.md global.
 
 **Pronto quando** (checklist completo, não só build):
 - `npm run build` verde, com a nova rota na lista
@@ -137,7 +137,7 @@ Indexação no Google é outro escopo, executado via Cowork.
 4. **Auditoria editorial** · `alt` e EXIF description seguem ski ramp · primeira frase carrega entidades SEO da página (categoria · aplicação · região). Humanizer aplicado em qualquer description de mais de uma frase.
 5. `npm run build`.
 6. `git add` nominal por caminho · **nunca** `git add .` nem `git add -A`. Exemplo: `git add public/<subpasta>/ app/<rota>/page.tsx`.
-7. `git commit -m "feat: adiciona N imagens com EXIF em <pagina>"` + `git push origin main`.
+7. `git commit -m "feat: adiciona N imagens com EXIF em <pagina>"` · `git push origin main` conforme o Push Gate do CLAUDE.md global.
 
 **Pronto quando**: build verde, todos os marcadores substituídos, commit pushed.
 
