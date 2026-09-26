@@ -41,4 +41,5 @@ yarn-error.log*
 next-env.d.ts
 
 # claude code
-.claude/
+.claude/*
+!.claude/fatos-balcao.md
