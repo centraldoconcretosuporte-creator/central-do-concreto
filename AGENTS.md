@@ -16,7 +16,7 @@ Este arquivo é mantido tão curto quanto necessário — alto sinal, sem dump d
 - **Stack**: Next.js 16 + React 19 + Tailwind v4. Tailwind v4 não usa `tailwind.config.*` — config vive em `postcss.config.mjs`.
 - **Lint**: ESLint 9 com flat config (`eslint.config.mjs`). Não existe `.eslintrc`.
 - **Estrutura**: App Router clássico. `app/` na raiz, sem `src/`. `lib/` e `components/` também na raiz.
-- **Branch**: `main`. Push vai direto para `main` (workflow single-developer), mas segue o Push Gate do CLAUDE.md global (`C:\Users\reusa\.claude\CLAUDE.md`): sem pedir autorização só nos casos que não introduzem afirmação nova; todo o resto, autorização explícita. A permissão `Bash(git push:*)` em `.claude/settings.json` só dispensa o prompt da ferramenta, não o gate.
+- **Branch**: `main`. Push só sai de pedido de push da ponte; o gancho `trava-push` barra qualquer outro (PK-009 §8).
 - **Build de verificação**: sempre `npm run build` antes de commit. Verde obrigatório.
 - **Shell**: PowerShell. `;` encadeia comandos · nunca `&&`.
 
@@ -37,7 +37,7 @@ K1–K4 seguem o CLAUDE.md global.
 - Sem `rm -rf` · usar `Remove-Item -Recurse` se realmente preciso (bloqueado por segurança).
 - Sem script runner externo · sem `node -e` · sem `child_process` dinâmico · sem `exec` em pedido autônomo.
 - Pedido e relatório seguem o Fluxo da ponte do CLAUDE.md global.
-- Toda fase com commit termina no Push Gate do CLAUDE.md global · se o gate libera, `git push origin main` é o passo final · se pede autorização, parar e pedir · nunca deixar push pendente sem avisar.
+- A fase termina em commit. O push é pedido próprio, faixa 3 (PK-009 §8).
 
 ## Regras editoriais críticas
 
@@ -95,7 +95,7 @@ Referência canônica · `humanizer/SKILL.md` no PK · 26 padrões com exemplos 
 6. **Auditoria editorial** · aplicar Padrões editoriais de copy (seção acima) em H1, todos os H2, FAQ, CTA e `alt` de imagem. Ski ramp obrigatório em cada H2 · humanizer obrigatório em cada parágrafo de prosa. Sem essa auditoria, build verde não basta.
 7. `npm run build` — confirmar build verde com a nova rota na lista.
 8. `git add` nominal por caminho · cada arquivo tocado citado explicitamente · **nunca** `git add .` nem `git add -A`. Exemplo: `git add app/<rota>/page.tsx app/sitemap.ts`.
-9. `git commit -m "feat: publicar pagina <nome>"` · `git push origin main` conforme o Push Gate do CLAUDE.md global.
+9. `git commit -m "feat: publicar pagina <nome>"`. A fase termina em commit. O push é pedido próprio, faixa 3 (PK-009 §8).
 
 **Pronto quando** (checklist completo, não só build):
 - `npm run build` verde, com a nova rota na lista
@@ -104,7 +104,7 @@ Referência canônica · `humanizer/SKILL.md` no PK · 26 padrões com exemplos 
 - Tag `<link rel="canonical">` da página aponta para a própria URL final
 - Bloco JSON-LD `@graph` válido — `FAQPage` com pelo menos 3 perguntas, `BreadcrumbList` completo
 - Auditoria editorial concluída · ski ramp em cada H2 · humanizer aplicado em prosa
-- Commit pushed para `main`
+- Commit feito em `main` (push é pedido próprio)
 
 Indexação no Google é outro escopo, executado via Cowork.
 
@@ -122,9 +122,9 @@ Indexação no Google é outro escopo, executado via Cowork.
 4. **Auditoria editorial** · `alt` e EXIF description seguem ski ramp · primeira frase carrega entidades SEO da página (categoria · aplicação); EXIF, GPS, data e cidade seguem a Regra de foto do CLAUDE.md global. Humanizer aplicado em qualquer description de mais de uma frase.
 5. `npm run build`.
 6. `git add` nominal por caminho · **nunca** `git add .` nem `git add -A`. Exemplo: `git add public/<subpasta>/ app/<rota>/page.tsx`.
-7. `git commit -m "feat: adiciona N imagens com EXIF em <pagina>"` · `git push origin main` conforme o Push Gate do CLAUDE.md global.
+7. `git commit -m "feat: adiciona N imagens com EXIF em <pagina>"`. A fase termina em commit. O push é pedido próprio, faixa 3 (PK-009 §8).
 
-**Pronto quando**: build verde, todos os marcadores substituídos, commit pushed.
+**Pronto quando**: build verde, todos os marcadores substituídos, commit feito (push é pedido próprio).
 
 ### POP 3 · Pedido para o Code
 
