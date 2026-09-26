@@ -10,3 +10,8 @@ Ratificado por André em 24/09/2026.
 - **Medidas.** Placa 49×49 cm e borda 49×32 cm.
 - **Piscina de fibra e oval.** O piso e a borda atendem piscina de fibra e piscina oval.
 - **Piso que imita madeira.** Existe, mas não é foco por enquanto. Nenhuma página, foto ou texto novo sobre ele até o André dizer o contrário.
+
+## Piso atérmico — cor, ratificada em 26/09/2026
+Ratificado por André em 26/09/2026.
+
+- **Cor do piso atérmico.** A cor do piso atérmico é chamada de marfim. Um nome só, nos dois sites (BJ e CC).
